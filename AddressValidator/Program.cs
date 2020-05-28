@@ -12,7 +12,7 @@ namespace AddressValidator
             string[] lines = File.ReadAllLines(FILE);
             foreach (string line in lines)
             {
-                string[] cols = line.Split("\t");
+                string[] cols = line.Split('\t');
                 HouseNumber(cols[0]);
                 Console.WriteLine($"Suburb: {cols[1]}");
                 Console.WriteLine($"State: {cols[2]}");
