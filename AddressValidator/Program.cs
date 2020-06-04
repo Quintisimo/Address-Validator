@@ -47,6 +47,11 @@ namespace AddressValidator
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Extract street name from address
+        /// </summary>
+        /// <param name="streetCombined">street name with house/unit number</param>
+        /// <returns>street name if found otherwise null</returns>
         static string StreetName(string streetCombined)
         {
             Match numberCheck = Regex.Match(streetCombined, @"(.*\d[a-z]?)");
@@ -55,7 +60,7 @@ namespace AddressValidator
             {
                 return streetCombined.Substring(numberCheck.Index + numberCheck.Length).Trim();
             }
-            return "";
+            return null;
         }
     }
 }

@@ -36,7 +36,13 @@ namespace AddressValidator
             return db;
 
         }
-        private static bool checkRows(SqlCommand query)
+
+        /// <summary>
+        /// Check if db row exists
+        /// </summary>
+        /// <param name="query">sql query</param>
+        /// <returns>true if row exists otherwise false</returns>
+        private static bool CheckRows(SqlCommand query)
         {
             try
             {
@@ -54,6 +60,13 @@ namespace AddressValidator
             return false;
         }
 
+        /// <summary>
+        /// Check if address value is in db
+        /// </summary>
+        /// <param name="field">address field</param>
+        /// <param name="value">value of address field</param>
+        /// <param name="db">database connection</param>
+        /// <returns>true if found otherwise false</returns>
         public static bool CheckValid(FieldName field, string value, SqlConnection db)
         {
             if (field == FieldName.Postcode)
@@ -61,21 +74,21 @@ namespace AddressValidator
                 string queryStatement = @"SELECT count(address_detail_pid) FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL] WHERE postcode = @postcode";
                 SqlCommand query = new SqlCommand(queryStatement, db);
                 query.Parameters.Add(new SqlParameter("@postcode", SqlDbType.Int) { Value = value });
-                return checkRows(query);
+                return CheckRows(query);
             }
             else if (field == FieldName.State)
             {
                 string queryStatement = @"SELECT count(state_pid) FROM [PSMA_G-NAF].[dbo].[STATE] WHERE DIFFERENCE(state_abbreviation, @state) > 2";
                 SqlCommand query = new SqlCommand(queryStatement, db);
                 query.Parameters.Add(new SqlParameter("@state", SqlDbType.NVarChar) { Value = value });
-                return checkRows(query);
+                return CheckRows(query);
             }
             else if (field == FieldName.Locality)
             {
                 string queryStatement = @"SELECT count(locality_pid) FROM [PSMA_G-NAF].[dbo].[LOCALITY] WHERE DIFFERENCE(locality_name, @locality) = 4";
                 SqlCommand query = new SqlCommand(queryStatement, db);
                 query.Parameters.Add(new SqlParameter("@locality", SqlDbType.NVarChar) { Value = value });
-                return checkRows(query);
+                return CheckRows(query);
             }
             else if (field == FieldName.StreetName)
             {
@@ -84,11 +97,19 @@ namespace AddressValidator
                 SqlCommand query = new SqlCommand(queryStatement, db);
                 query.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar) { Value = value });
                 query.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar) { Value = streetType });
-                return checkRows(query);
+                return CheckRows(query);
             }
             return false;
         }
 
+        /// <summary>
+        /// Get street locality id of address in Australia
+        /// </summary>
+        /// <param name="state">state</param>
+        /// <param name="locality">suburb</param>
+        /// <param name="streetName">street name</param>
+        /// <param name="db">database connection</param>
+        /// <returns>street locality id if found otherwise null</returns>
         public static string GetStreetLocalityId(string state, string locality, string streetName, SqlConnection db)
         {
             string stateIdStatement = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE] 
