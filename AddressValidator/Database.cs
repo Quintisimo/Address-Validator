@@ -92,12 +92,16 @@ namespace AddressValidator
             }
             else if (field == FieldName.StreetName)
             {
-                string streetType = value.Split(' ').Last();
-                string queryStatement = @"SELECT count(street_locality_pid) FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] WHERE DIFFERENCE(street_name, @name) = 4 AND street_type_code LIKE '%' + @type + '%'";
-                SqlCommand query = new SqlCommand(queryStatement, db);
-                query.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar) { Value = value });
-                query.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar) { Value = streetType });
-                return CheckRows(query);
+                if (value != null)
+                {
+                    string streetType = value.Split(' ').Last();
+                    string queryStatement = @"SELECT count(street_locality_pid) FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] WHERE DIFFERENCE(street_name, @name) = 4 AND street_type_code LIKE '%' + @type + '%'";
+                    SqlCommand query = new SqlCommand(queryStatement, db);
+                    query.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar) { Value = value });
+                    query.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar) { Value = streetType });
+                    return CheckRows(query);
+                }
+                return false;
             }
             return false;
         }

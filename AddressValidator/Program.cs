@@ -13,6 +13,7 @@ namespace AddressValidator
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
             SqlConnection db = Database.Connect();
+            int foundNumber = 0;
             foreach (string line in lines)
             {
                 string[] cols = line.Split('\t');
@@ -30,6 +31,7 @@ namespace AddressValidator
                     if (streetLocalityId != null)
                     {
                         Console.WriteLine(streetLocalityId);
+                        foundNumber++;
                     }
                     else
                     {
@@ -43,6 +45,8 @@ namespace AddressValidator
                 }
                 Console.WriteLine("");
             }
+            Console.WriteLine($"Total Address: {lines.Length}");
+            Console.WriteLine($"Found Address: {foundNumber}");
             db.Close();
             Console.ReadLine();
         }
