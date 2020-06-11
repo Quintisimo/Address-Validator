@@ -20,7 +20,7 @@ namespace AddressValidator
                 bool validPostcode = Database.CheckValid(Database.FieldName.Postcode, cols[3], db);
                 bool validState = Database.CheckValid(Database.FieldName.State, cols[2], db);
                 bool validLocality = Database.CheckValid(Database.FieldName.Locality, cols[1], db);
-                string streetName = StreetName(cols[0]);
+                string streetName = StreetName(cols[0].Replace("\"", string.Empty));
                 bool validStreet = Database.CheckValid(Database.FieldName.StreetName, streetName, db);
 
                 if (validPostcode && validState && validLocality && validStreet)
@@ -45,8 +45,6 @@ namespace AddressValidator
                 }
                 Console.WriteLine("");
             }
-            Console.WriteLine($"Total Address: {lines.Length}");
-            Console.WriteLine($"Found Address: {foundNumber}");
             db.Close();
             Console.ReadLine();
         }
@@ -58,11 +56,19 @@ namespace AddressValidator
         /// <returns>street name if found otherwise null</returns>
         static string StreetName(string streetCombined)
         {
-            Match numberCheck = Regex.Match(streetCombined, @"(.*\d[a-z]?)");
+            Match numberCheck = Regex.Match(streetCombined, @"\d+");
+            Match streetNumber = Regex.Match(streetCombined, @"(.*)\d+[A-z]?");
+            Match postbpox = Regex.Match(streetCombined, @"P\.*O\.* BOX", RegexOptions.IgnoreCase);
 
-            if (numberCheck.Success)
+
+            if (!numberCheck.Success)
             {
-                return streetCombined.Substring(numberCheck.Index + numberCheck.Length).Trim();
+                return streetCombined;
+            }
+
+            if (streetNumber.Success && !postbpox.Success)
+            {
+                return streetCombined.Substring(streetNumber.Index + streetNumber.Length).Trim();
             }
             return null;
         }
