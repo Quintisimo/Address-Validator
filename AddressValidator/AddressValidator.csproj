@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="DiskLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

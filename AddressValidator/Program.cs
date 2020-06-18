@@ -13,7 +13,6 @@ namespace AddressValidator
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
             SqlConnection db = Database.Connect();
-            int foundNumber = 0;
             foreach (string line in lines)
             {
                 string[] cols = line.Split('\t');
@@ -25,28 +24,25 @@ namespace AddressValidator
 
                 if (validPostcode && validState && validLocality && validStreet)
                 {
-                    Console.WriteLine(line);
                     string streetLocalityId = Database.GetStreetLocalityId(cols[2], cols[1], streetName, db);
 
                     if (streetLocalityId != null)
                     {
-                        Console.WriteLine(streetLocalityId);
-                        foundNumber++;
+                        //Console.WriteLine(streetLocalityId);
                     }
                     else
                     {
-                        Console.WriteLine("Not Found");
+                        //Console.WriteLine(line);
+                        DiskLog.WriteLog(line);
                     }
                 }
                 else
                 {
-                    Console.WriteLine(line);
-                    Console.WriteLine("Not Found");
+                    //Console.WriteLine(line);
+                    //DiskLog.WriteLog(line);
                 }
-                Console.WriteLine("");
             }
             db.Close();
-            Console.ReadLine();
         }
 
         /// <summary>
