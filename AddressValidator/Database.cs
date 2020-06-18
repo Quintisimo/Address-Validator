@@ -106,44 +106,88 @@ namespace AddressValidator
             return false;
         }
 
+        private static object GetValue(string sqlCommand, SqlParameter[] parameters, SqlConnection db)
+        {
+            SqlCommand command = new SqlCommand(sqlCommand, db);
+            command.Parameters.AddRange(parameters);
+            object value = command.ExecuteScalar();
+            command.Parameters.Clear();
+            return value;
+        }
+
+
         /// <summary>
         /// Get street locality id of address in Australia
         /// </summary>
         /// <param name="state">state</param>
         /// <param name="locality">suburb</param>
-        /// <param name="streetName">street name</param>
+        /// <param name="street">street name</param>
         /// <param name="db">database connection</param>
         /// <returns>street locality id if found otherwise null</returns>
-        public static string GetStreetLocalityId(string state, string locality, string streetName, SqlConnection db)
+        public static string GetStreetLocalityId(string state, string locality, string street, SqlConnection db)
         {
-            string stateIdStatement = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE] 
-                                      WHERE DIFFERENCE(state_abbreviation, @state) > 2 
-                                      ORDER BY DIFFERENCE(state_abbreviation, @state) DESC";
-            SqlCommand stateIdQuery = new SqlCommand(stateIdStatement, db);
-            stateIdQuery.Parameters.Add(new SqlParameter("@state", SqlDbType.NVarChar) { Value = state });
-            int stateId = Convert.ToInt32(stateIdQuery.ExecuteScalar());
+            string stateIdExact = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE]
+                                  WHERE state_abbreviation = @state";
+
+            string stateIdDifference = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE] 
+                                       WHERE DIFFERENCE(state_abbreviation, @state) > 2 
+                                       ORDER BY DIFFERENCE(state_abbreviation, @state) DESC";
+
+            SqlParameter[] stateIdParams = new SqlParameter[] { new SqlParameter("@state", SqlDbType.NVarChar) { Value = state } };
+
+            int stateId = Convert.ToInt32(GetValue(stateIdExact, stateIdParams, db));
+
+            if (stateId == 0)
+            {
+                stateId = Convert.ToInt32(GetValue(stateIdDifference, stateIdParams, db));
+            }
 
             if (stateId != 0)
             {
-                string localityIdStatement = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                string localityIdExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY]
+                                         WHERE locality_name = @locality and state_pid = @stateId";
+
+                string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
                                              WHERE DIFFERENCE(locality_name, @locality) = 4 and state_pid = @stateId 
                                              ORDER BY DIFFERENCE(locality_name, @locality) DESC";
-                SqlCommand localityIdQuery = new SqlCommand(localityIdStatement, db);
-                localityIdQuery.Parameters.Add(new SqlParameter("@locality", SqlDbType.NVarChar) { Value = locality });
-                localityIdQuery.Parameters.Add(new SqlParameter("@stateId", SqlDbType.Int) { Value = stateId });
-                string localityId = (string)localityIdQuery.ExecuteScalar();
+
+                SqlParameter[] localityIdParams = new SqlParameter[]
+                {
+                    new SqlParameter("@locality", SqlDbType.NVarChar) { Value = locality },
+                    new SqlParameter("@stateId", SqlDbType.Int) { Value = stateId },
+                };
+
+                string localityId = (string)GetValue(localityIdExact, localityIdParams, db);
+
+                if (locality == null)
+                {
+                    localityId = (string)GetValue(localityIdDifference, localityIdParams, db);
+                }
 
                 if (localityId != null)
                 {
-                    string streetType = streetName.Split(' ').Last();
-                    string streetLocalityIdStatement = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                              WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId AND street_type_code LIKE '%' + @type + '%' 
-                                              ORDER BY DIFFERENCE(street_name, @name) DESC";
-                    SqlCommand streetLocalityIdQuery = new SqlCommand(streetLocalityIdStatement, db);
-                    streetLocalityIdQuery.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar) { Value = streetName });
-                    streetLocalityIdQuery.Parameters.Add(new SqlParameter("@localityId", SqlDbType.NVarChar) { Value = localityId });
-                    streetLocalityIdQuery.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar) { Value = streetType });
-                    string streetLocalityId = (string)streetLocalityIdQuery.ExecuteScalar();
+                    string[] streetName = street.Split();
+
+                    string streetLocalityIdExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                                   WHERE street_name = @name AND locality_pid = @localityId";
+
+                    string streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                       WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId 
+                                                       ORDER BY DIFFERENCE(street_name, @name) DESC";
+
+                    SqlParameter[] streetLocalityIdParams = new SqlParameter[]
+                    {
+                        new SqlParameter("@name", SqlDbType.NVarChar) { Value = string.Join(" ", streetName.Take(streetName.Length - 1)) },
+                        new SqlParameter("@localityId", SqlDbType.NVarChar) { Value = localityId }
+                    };
+
+                    string streetLocalityId = (string)GetValue(streetLocalityIdExact, streetLocalityIdParams, db);
+
+                    if (streetLocalityId == null)
+                    {
+                        streetLocalityId = (string)GetValue(streetLocalityIdDifference, streetLocalityIdParams, db);
+                    }
+
                     return streetLocalityId;
                 }
             }
