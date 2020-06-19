@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text;
 
 namespace AddressValidator
 {
@@ -6,16 +7,20 @@ namespace AddressValidator
     {
         private const string FILENAME = @"D:\Work Experience\AddressValidator\Missed.txt";
 
-        /// <summary>
         /// Write log to file
         /// </summary>
         /// <param name="log">log row</param>
         public static void WriteLog(string log)
         {
-
             if (!File.Exists(FILENAME))
             {
-                File.Create(FILENAME);
+                File.Delete(FILENAME);
+            }
+
+            using (FileStream fs = File.Create(FILENAME))
+            {
+                byte[] info = new UTF8Encoding(true).GetBytes("Cannot Find\n");
+                fs.Write(info, 0, info.Length);
             }
 
             using (StreamWriter fsAppend = File.AppendText(FILENAME))

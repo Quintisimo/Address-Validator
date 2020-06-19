@@ -159,7 +159,7 @@ namespace AddressValidator
 
                 string localityId = (string)GetValue(localityIdExact, localityIdParams, db);
 
-                if (locality == null)
+                if (localityId == null)
                 {
                     localityId = (string)GetValue(localityIdDifference, localityIdParams, db);
                 }

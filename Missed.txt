@@ -1,0 +1,41 @@
+Cannot Find
+Xxxx	Xxxx	WA	6000	
+10 Hillview Tce	St James	WA	6104	
+26 tahlee retreat	neerabup	TAS	6031	
+6 Auger Green	Geraldton	WA	6530	
+10 Casdira Pl	Cooloongup	WA	6169	
+2 La Page St	Esperance	WA	6450	
+8 Urawa Street	Geraldton	WA	6530	
+9 Bushby Road	Wembley Downs	WA	6019	
+13 Nottingham Green	Highwycombe	WA	6057	
+47/289 Sydney Road	Gnangara	WA	6077	
+64/42 Waterroo	East Perth	WA	6004	
+11 Jeanhuller Rd	High Wycombe	WA	6057	
+6 Indjidup Loop	Clarkson	WA	6030	
+No Address	Not Provided	QLD	0	
+1/66 Hammond st	bayswater	WA	6053	
+subiaco	subiaco	WA	6061	
+No Address	Perth	WA	6000	
+33 Comer St	Ferndale	WA	6147	
+33 ackland rd	geraldton	WA	6530	
+11 Lister Cl	Mosman Park	VIC	6012	
+125 Mueller Street	Albany	WA	6330	
+10 Nabberu	Cooloongup	WA	6168	
+38 sitina road	ashby	WA	6065	
+14 Bentley Close	Claremont	WA	6010	
+santa rosalia vista	wanneroo	VIC	6065	
+5 Fitzoy Cl	Cooloongup	WA	6168	
+12 /378 Guildford St	Perth	WA	6000	
+20 Westley Way	Coolongup	WA	6168	
+Unit 14 45 Winnetta Ridge	Tarcoola	WA	6530	
+13/54 Glenview St	Mt Tarcoola	WA	6530	
+50 Bluebell Avenue	Maida Vale	WA	6056	
+33 Pearson Street	Geraldton	WA	6530	
+Karri Lodge	19 Hughie Edwards dr	WA	6030	
+61 woodland street	swanville	WA	6010	
+29 Solomon Circle	Rangeway	WA	6530	
+1	1	WA	6000	
+7 Ziena Place	Parkwood	WA	6147	
+0	0	WA	0	
+4 Leewood Cl	Safety Bay	WA	6169	
+11 West End Parade	Canningvale	WA	6155	
