@@ -147,10 +147,6 @@ namespace AddressValidator
                 string localityIdExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY]
                                          WHERE locality_name = @locality and state_pid = @stateId";
 
-                string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                             WHERE DIFFERENCE(locality_name, @locality) = 4 and state_pid = @stateId 
-                                             ORDER BY DIFFERENCE(locality_name, @locality) DESC";
-
                 SqlParameter[] localityIdParams = new SqlParameter[]
                 {
                     new SqlParameter("@locality", SqlDbType.NVarChar) { Value = locality },
@@ -159,9 +155,33 @@ namespace AddressValidator
 
                 string localityId = (string)GetValue(localityIdExact, localityIdParams, db);
 
+                // Locality cannot be found so try vage search
                 if (localityId == null)
                 {
+                    string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                                                  WHERE DIFFERENCE(locality_name, @locality) = 4 and state_pid = @stateId 
+                                                  ORDER BY DIFFERENCE(locality_name, @locality) DESC";
+
                     localityId = (string)GetValue(localityIdDifference, localityIdParams, db);
+                }
+
+                // Locality cannot be found so try searching without state exact
+                if (localityId == null)
+                {
+                    string localityIdWithoutStateExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                                                    WHERE locality_name = @locality";
+
+                    localityId = (string)GetValue(localityIdWithoutStateExact, localityIdParams, db);
+                }
+
+                // Locality cannot be found so try searching without state vage
+                if (localityId == null)
+                {
+                    string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                                                              WHERE DIFFERENCE(locality_name, @locality) = 4 
+                                                              ORDER BY DIFFERENCE(locality_name, @locality) DESC";
+
+                    localityId = (string)GetValue(localityIdWithoutStateDifference, localityIdParams, db);
                 }
 
                 if (localityId != null)
@@ -171,10 +191,6 @@ namespace AddressValidator
                     string streetLocalityIdExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
                                                    WHERE street_name = @name AND locality_pid = @localityId";
 
-                    string streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                       WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId 
-                                                       ORDER BY DIFFERENCE(street_name, @name) DESC";
-
                     SqlParameter[] streetLocalityIdParams = new SqlParameter[]
                     {
                         new SqlParameter("@name", SqlDbType.NVarChar) { Value = string.Join(" ", streetName.Take(streetName.Length - 1)) },
@@ -182,10 +198,34 @@ namespace AddressValidator
                     };
 
                     string streetLocalityId = (string)GetValue(streetLocalityIdExact, streetLocalityIdParams, db);
-
+                    
+                    // Street cannot be found try vage search
                     if (streetLocalityId == null)
                     {
+                        string streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                            WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId 
+                                                            ORDER BY DIFFERENCE(street_name, @name) DESC";
+
                         streetLocalityId = (string)GetValue(streetLocalityIdDifference, streetLocalityIdParams, db);
+                    }
+                    
+                    // Street cannot be found try searching without locality exact
+                    if (streetLocalityId == null)
+                    {
+                        string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                                                      WHERE street_name = @name";
+                        
+                        streetLocalityId = (string)GetValue(streetLocalityIdWithoutLocalityExact, streetLocalityIdParams, db);
+                    }
+
+                    // Street cannot be found try searching without locality vague
+                    if (streetLocalityId == null)
+                    {
+                        string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                                           WHERE DIFFERENCE(street_name, @name) = 4
+                                                                           ORDER BY DIFFERENCE(street_name, @name) DESC";
+
+                        streetLocalityId = (string)GetValue(streetLocalityIdWithoutLocalityDifference, streetLocalityIdParams, db);
                     }
 
                     return streetLocalityId;

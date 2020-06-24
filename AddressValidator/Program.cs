@@ -9,11 +9,12 @@ namespace AddressValidator
 {
     class Program
     {
-        const string FILE = @"D:\Work Experience\AddressValidator\Missed.txt";
+        const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
         static void Main(string[] args)
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
             SqlConnection db = Database.Connect();
+            DiskLog.CreateFile();
             foreach (string line in lines)
             {
                 string[] cols = line.Split('\t');
@@ -31,16 +32,17 @@ namespace AddressValidator
                     string streetLocalityId = Database.GetStreetLocalityId(state, locality, streetName, db);
                     if (streetLocalityId != null)
                     {
-                        //Console.WriteLine(streetLocalityId);
+                        Console.WriteLine(streetLocalityId);
                     }
                     else
                     {
                         Console.WriteLine(line);
-                        //DiskLog.WriteLog(line);
+                        DiskLog.WriteLog(line);
                     }
                 }
             }
             db.Close();
+            Console.WriteLine("DONE");
             Console.ReadLine();
         }
 

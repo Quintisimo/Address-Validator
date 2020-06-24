@@ -7,10 +7,10 @@ namespace AddressValidator
     {
         private const string FILENAME = @"D:\Work Experience\AddressValidator\Missed.txt";
 
-        /// Write log to file
+        /// <summary>
+        /// Create log file
         /// </summary>
-        /// <param name="log">log row</param>
-        public static void WriteLog(string log)
+        public static void CreateFile()
         {
             if (!File.Exists(FILENAME))
             {
@@ -22,7 +22,13 @@ namespace AddressValidator
                 byte[] info = new UTF8Encoding(true).GetBytes("Cannot Find\n");
                 fs.Write(info, 0, info.Length);
             }
+        }
 
+        /// Write log to file
+        /// </summary>
+        /// <param name="log">log row</param>
+        public static void WriteLog(string log)
+        {
             using (StreamWriter fsAppend = File.AppendText(FILENAME))
             {
                 fsAppend.WriteLine(log);
