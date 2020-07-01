@@ -29,7 +29,7 @@ public class MathFunctions
         {
             for (int j = 1; j <= targetLength; j++)
             {
-                int cost = (sourceStr[j - 1] == targetStr[i - 1]) ? 0 : 1;
+                int cost = (sourceStr[i - 1] == targetStr[j - 1]) ? 0 : 1;
                 matrix[i, j] = Math.Min(Math.Min(matrix[i - 1, j] + 1, matrix[i, j - 1] + 1), matrix[i - 1, j - 1] + cost);
             }
         }
