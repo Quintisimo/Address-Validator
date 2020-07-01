@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Data.SqlTypes;
 
-namespace AddressValidator
+namespace SQLFunctions
 {
-    class SQLFunctions
+    public class SQLFunctions
     {
         /// <summary>
         /// Caculate Levenshtein distance (based off: https://gist.github.com/Davidblkx/e12ab0bb2aff7fd8072632b396538560)
-        /// Compile: csc -target:library SQLFunctions.cs
         /// </summary>
         /// <param name="source">source word</param>
         /// <param name="target">target word</param>
