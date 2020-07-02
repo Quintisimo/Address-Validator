@@ -132,7 +132,7 @@ namespace AddressValidator
 
             string stateIdDifference = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE] 
                                        WHERE DIFFERENCE(state_abbreviation, @state) > 2 
-                                       ORDER BY [PSMA_G-NAF].[dbo].[Distance](state_abbreviation, @state) DESC";
+                                       ORDER BY [PSMA_G-NAF].[dbo].[Distance](state_abbreviation, @state)";
 
             SqlParameter[] stateIdParams = new SqlParameter[] { new SqlParameter("@state", SqlDbType.NVarChar) { Value = state } };
 
@@ -160,8 +160,8 @@ namespace AddressValidator
                 if (localityId == null)
                 {
                     string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                                  WHERE DIFFERENCE(locality_name, @locality) = 4 and state_pid = @stateId 
-                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality) DESC";
+                                                  WHERE DIFFERENCE(locality_name, @locality) > 2 and state_pid = @stateId 
+                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality)";
 
                     localityId = (string)GetValue(localityIdDifference, localityIdParams, db);
                 }
@@ -179,8 +179,8 @@ namespace AddressValidator
                 if (localityId == null)
                 {
                     string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                                              WHERE DIFFERENCE(locality_name, @locality) = 4 
-                                                              ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality) DESC";
+                                                              WHERE DIFFERENCE(locality_name, @locality) > 2 
+                                                              ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality)";
 
                     localityId = (string)GetValue(localityIdWithoutStateDifference, localityIdParams, db);
                 }
@@ -204,8 +204,8 @@ namespace AddressValidator
                     if (streetLocalityId == null)
                     {
                         string streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                            WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId 
-                                                            ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) DESC";
+                                                            WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId 
+                                                            ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name)";
 
                         streetLocalityId = (string)GetValue(streetLocalityIdDifference, streetLocalityIdParams, db);
                     }
@@ -223,8 +223,8 @@ namespace AddressValidator
                     if (streetLocalityId == null)
                     {
                         string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                                           WHERE DIFFERENCE(street_name, @name) = 4
-                                                                           ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) DESC";
+                                                                           WHERE DIFFERENCE(street_name, @name) > 2
+                                                                           ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name)";
 
                         streetLocalityId = (string)GetValue(streetLocalityIdWithoutLocalityDifference, streetLocalityIdParams, db);
                     }
