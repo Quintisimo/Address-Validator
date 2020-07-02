@@ -95,7 +95,8 @@ namespace AddressValidator
                 if (value != null)
                 {
                     string streetType = value.Split(' ').Last();
-                    string queryStatement = @"SELECT count(street_locality_pid) FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] WHERE DIFFERENCE(street_name, @name) = 4 AND street_type_code LIKE '%' + @type + '%'";
+                    string queryStatement = @"SELECT count(street_locality_pid) FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                            WHERE DIFFERENCE(street_name, @name) = 4 AND street_type_code LIKE '%' + @type + '%'";
                     SqlCommand query = new SqlCommand(queryStatement, db);
                     query.Parameters.Add(new SqlParameter("@name", SqlDbType.NVarChar) { Value = value });
                     query.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar) { Value = streetType });
@@ -131,7 +132,7 @@ namespace AddressValidator
 
             string stateIdDifference = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE] 
                                        WHERE DIFFERENCE(state_abbreviation, @state) > 2 
-                                       ORDER BY DIFFERENCE(state_abbreviation, @state) DESC";
+                                       ORDER BY [PSMA_G-NAF].[dbo].[Distance](state_abbreviation, @state) DESC";
 
             SqlParameter[] stateIdParams = new SqlParameter[] { new SqlParameter("@state", SqlDbType.NVarChar) { Value = state } };
 
@@ -160,7 +161,7 @@ namespace AddressValidator
                 {
                     string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
                                                   WHERE DIFFERENCE(locality_name, @locality) = 4 and state_pid = @stateId 
-                                                  ORDER BY DIFFERENCE(locality_name, @locality) DESC";
+                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality) DESC";
 
                     localityId = (string)GetValue(localityIdDifference, localityIdParams, db);
                 }
@@ -169,7 +170,7 @@ namespace AddressValidator
                 if (localityId == null)
                 {
                     string localityIdWithoutStateExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                                    WHERE locality_name = @locality";
+                                                         WHERE locality_name = @locality";
 
                     localityId = (string)GetValue(localityIdWithoutStateExact, localityIdParams, db);
                 }
@@ -179,7 +180,7 @@ namespace AddressValidator
                 {
                     string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
                                                               WHERE DIFFERENCE(locality_name, @locality) = 4 
-                                                              ORDER BY DIFFERENCE(locality_name, @locality) DESC";
+                                                              ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality) DESC";
 
                     localityId = (string)GetValue(localityIdWithoutStateDifference, localityIdParams, db);
                 }
@@ -204,7 +205,7 @@ namespace AddressValidator
                     {
                         string streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
                                                             WHERE DIFFERENCE(street_name, @name) = 4 AND locality_pid = @localityId 
-                                                            ORDER BY DIFFERENCE(street_name, @name) DESC";
+                                                            ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) DESC";
 
                         streetLocalityId = (string)GetValue(streetLocalityIdDifference, streetLocalityIdParams, db);
                     }
@@ -223,7 +224,7 @@ namespace AddressValidator
                     {
                         string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
                                                                            WHERE DIFFERENCE(street_name, @name) = 4
-                                                                           ORDER BY DIFFERENCE(street_name, @name) DESC";
+                                                                           ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) DESC";
 
                         streetLocalityId = (string)GetValue(streetLocalityIdWithoutLocalityDifference, streetLocalityIdParams, db);
                     }

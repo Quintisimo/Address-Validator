@@ -10,7 +10,7 @@ namespace AddressValidator
     class Program
     {
         const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
-        static void Main(string[] args)
+        static void Main()
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
             SqlConnection db = Database.Connect();

@@ -1,8 +1,0 @@
-- Outside in search
-- Start with state -> suburb name or postcode -> city -> street -> number
-
-- Use difference function to compensate for spelling mistakes
-- Four digit number for postcode
-- Word before street prefix for street name?
-- Determine house or apartment ? If apartment extract number using regex
-
