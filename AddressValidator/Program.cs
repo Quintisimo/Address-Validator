@@ -1,5 +1,4 @@
-﻿using Microsoft.SqlServer.Server;
-using System;
+﻿using System;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
@@ -9,7 +8,7 @@ namespace AddressValidator
 {
     class Program
     {
-        const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
+        const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
         static void Main()
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
@@ -25,7 +24,7 @@ namespace AddressValidator
 
                 string state = RemoveSpaces(cols[2]);
                 string locality = RemoveSpaces(cols[1]);
-                string streetName = StreetName(cols[0].Replace("\"", string.Empty));
+                string streetName = StreetName(Regex.Replace(cols[0], @"[^a-zA-Z\\s+]", string.Empty));
 
                 if (state != null && locality != null && streetName != null)
                 {
