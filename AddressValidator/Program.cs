@@ -9,6 +9,7 @@ namespace AddressValidator
     class Program
     {
         const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
+        //const string FILE = @"D:\Work Experience\AddressValidator\Missed.txt";
         static void Main()
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
@@ -24,11 +25,11 @@ namespace AddressValidator
 
                 string state = RemoveSpaces(cols[2]);
                 string locality = RemoveSpaces(cols[1]);
-                string streetName = StreetName(Regex.Replace(cols[0], @"[^a-zA-Z\\s+]", string.Empty));
+                (string streetName, string streetNumber) = StreetName(cols[0]);
 
                 if (state != null && locality != null && streetName != null)
                 {
-                    string addressId = Database.GetAddressId(cols[0], state, locality, streetName, db);
+                    string addressId = Database.GetAddressId(state, locality, streetName, streetNumber, db);
                     if (addressId != null)
                     {
                         Console.WriteLine(addressId);
@@ -50,25 +51,24 @@ namespace AddressValidator
         /// </summary>
         /// <param name="streetCombined">street name with house/unit number</param>
         /// <returns>street name if found otherwise null</returns>
-        private static string StreetName(string streetCombined)
+        private static (string, string) StreetName(string streetCombined)
         {
             Match numberCheck = Regex.Match(streetCombined, @"\d+");
             Match streetNumber = Regex.Match(streetCombined, @"(.*)\d+[A-z]?");
             Match postbpox = Regex.Match(streetCombined, @"P\.*O\.* BOX", RegexOptions.IgnoreCase);
 
-
             if (!numberCheck.Success)
             {
-                return streetCombined;
+                return (streetCombined, streetNumber.Value);
             }
 
             if (streetNumber.Success && !postbpox.Success)
             {
-                return RemoveSpaces(streetCombined.Substring(streetNumber.Index + streetNumber.Length).Trim());
+                return (RemoveSpaces(streetCombined.Substring(streetNumber.Index + streetNumber.Length).Trim()), streetNumber.Value);
             }
-            return null;
+            return (null, streetNumber.Value);
         }
-        
+
         /// <summary>
         /// Remove muiltiple spaces in words and replace with a single space
         /// </summary>
