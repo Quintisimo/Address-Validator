@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.ComponentModel.Design;
 
 namespace AddressValidator
 {
@@ -220,7 +221,7 @@ namespace AddressValidator
         /// </summary>
         /// <param name="streetName">street name</param>
         /// <param name="db"></param>
-        /// <returns></returns>
+        /// <returns>street id</returns>
         private static string GetStreetWithoutLocality(string street, SqlConnection db)
         {
             string streetId = null;
@@ -250,6 +251,13 @@ namespace AddressValidator
             return streetId;
         }
 
+        /// <summary>
+        /// Get street
+        /// </summary>
+        /// <param name="localityId">locality id</param>
+        /// <param name="street">street name</param>
+        /// <param name="db">db connection</param>
+        /// <returns>street id</returns>
         private static string GetStreet(string localityId, string street, SqlConnection db)
         {
             string streetId = null;
@@ -279,19 +287,38 @@ namespace AddressValidator
             return streetId;
         }
 
+        private static string GetAddress(string streetId, string house, SqlConnection db)
+        {
+            string addressId = null;
+
+            if (int.TryParse(house, out int houseNumber))
+            {
+                SqlParameter[] addressIdParams = new SqlParameter[]
+                {
+                   new SqlParameter("@streetId", SqlDbType.NVarChar) { Value = streetId },
+                   new SqlParameter("@houseNumber", SqlDbType.Int) { Value = houseNumber }
+                };
+                string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                        WHERE number_first = @houseNumber AND street_locality_pid = @streetId";
+                addressId = (string)GetValue(addressIdExact, addressIdParams, db);
+            }
+            return addressId;
+        }
+
         /// <summary>
-        /// Get street locality id of address in Australia
+        /// Get address id of address in Australia
         /// </summary>
         /// <param name="state">state</param>
         /// <param name="locality">suburb</param>
         /// <param name="street">street name</param>
         /// <param name="db">database connection</param>
         /// <returns>street locality id if found otherwise null</returns>
-        public static string GetStreetLocalityId(string state, string locality, string street, SqlConnection db)
+        public static string GetAddressId(string house, string state, string locality, string street, SqlConnection db)
         {
             int stateId = GetState(state, db);
             string localityId = null;
             string streetId = null;
+            string addressId = null;
 
             if (stateId == 0)
             {
@@ -312,7 +339,12 @@ namespace AddressValidator
             {
                 streetId = GetStreet(localityId, street, db);
             }
-            return streetId;
+
+            if (streetId != null)
+            {
+                addressId = GetAddress(streetId, house, db);
+            }
+            return addressId;
         }
     }
 }

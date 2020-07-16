@@ -8,7 +8,7 @@ namespace AddressValidator
 {
     class Program
     {
-        const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
+        const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
         static void Main()
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
@@ -28,10 +28,10 @@ namespace AddressValidator
 
                 if (state != null && locality != null && streetName != null)
                 {
-                    string streetLocalityId = Database.GetStreetLocalityId(state, locality, streetName, db);
-                    if (streetLocalityId != null)
+                    string addressId = Database.GetAddressId(cols[0], state, locality, streetName, db);
+                    if (addressId != null)
                     {
-                        Console.WriteLine(streetLocalityId);
+                        Console.WriteLine(addressId);
                     }
                     else
                     {
