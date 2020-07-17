@@ -1,72 +1,7 @@
 Cannot Find
-206/173 Mounts Bay Rd	Perth	WA	6000	
-Unit 23/27 Goongarrie Drive	Cooloongup	WA	6168	
-4/91 Hybanthus Rd	Ferndale	WA	6148	
-2/56 Frederick st	Wanneroo	WA	6065	
-3/20 Mcness Rd	Kallamunda	WA	6076	
-2/141 Claremont Cresc	Swanbourne	WA	6010	
-Xxxx	Xxxx	WA	6000	
-10 Hillview Tce	St James	WA	6104	
-Unit 16/44 Harvey Street	Mosman Park	WA	6012	
-26 tahlee retreat	neerabup	TAS	6031	
-8/32 Outram St	West Perth	WA	6005	
-11a Markham Way	High Wycombe	WA	6057	
-20 Dunlow Loop	Warnbro	WA	6169	
-3 Harley Place	Kinsley	WA	6026	
-65/76 RIDGEWOOD BLVD	RIDGEWOOD	WA	6030	
-8/19 Flynn St	Churchlands	WA	6018	
-222/26 Hood St	Subiaco	WA	6008	
-87 Poincare St	Balcatta	WA	6021	
-205 / 30 Hood St	Subiaco	WA	6008	
-U 15/1 Waterway Court	Churchlands	WA	6018	
-7/177 Wanaroo Rd	Tuart Hill	WA	6060	
-12/418 Murray Street	Perth	WA	6000	
-7 Karoona Street	Baldivis	WA	6171	
-5/32 Moreton Crescent	Warnbro	WA	6169	
-288 Nichlson Road	Subiaco	WA	6008	
-18 Marian Avenue	Aramadale	WA	6112	
-2/351 Hawtin Rod	Forrestfield	WA	6058	
-45/59 Malcolm St	West Perth	WA	6001	
-2 La Page St	Esperance	WA	6450	
-21 Bingaham Rd	Bullsbrook	WA	6284	
-600 Hay St	Perth	WA	6000	
-unit 2 7 shearwater tce	ballajura	WA	6066	
-3 Polston Close	Hocking	WA	6065	
-4/71 Mount Street	West Perth	WA	6005	
-8 Urawa Street	Geraldton	WA	6530	
-17 Dolphin Rd	Safety	WA	6169	
-2/18 York Street	Tuart Hill	WA	6060	
-9 Bushby Road	Wembley Downs	WA	6019	
-13 Nottingham Green	Highwycombe	WA	6057	
-3 Parke Rd	Kalamunda	WA	6057	
-2/73 Grand Building	Joondalup	WA	6027	
-1-31 Baird  Ave	Nedlands	WA	6009	
-12 Quindalup Ct	Hilman	WA	6168	
-"Unit 1, 2 Redbud Mews"	Cooloongup	WA	6168	
-124/22 St. Georges Tce	Perth	WA	6000	
-56/7 Harman Rd	Sorrento	WA	6020	
-47/289 Sydney Road	Gnangara	WA	6077	
-1-209 Walcott Street	North Perth	WA	6006	
-4/445 Rockaby Rd	Shantam Park	WA	6008	
-64/42 Waterroo	East Perth	WA	6004	
-11 Jeanhuller Rd	High Wycombe	WA	6057	
-12/23 Helm St	Maddington	WA	6109	
-8/9 Piranha Cres	Beechboro	WA	6063	
-No Address	Not Provided	QLD	0	
-1/66 Hammond st	bayswater	WA	6053	
-subiaco	subiaco	WA	6061	
-178 Louis Road	Forrestfield	WA	6058	
-No Address	Perth	WA	6000	
-1/26 Hood St	Subiaco	WA	6008	
-4/42 Monument Street	Mosman Park	WA	6012	
-685 Casuarina Way	Casuarina	WA	2487	
-U2 131 Ninth Ave	Inglewood	WA	6052	
-33 Comer St	Ferndale	WA	6147	
-33 ackland rd	geraldton	WA	6530	
-32 Arlide Gr	Eglinton	WA	6034	
-11 Lister Cl	Mosman Park	VIC	6012	
-50 Axminter Street	Warnbro	WA	6168	
-910 Tijuana Road	Armadale	WA	6112	
-3/72 Subiaco Rd	Subiaco	WA	6008	
-5/34 Astley St	Gosnells	WA	6109	
-17a carri way	ferndale	WA	6147	
+169 Bookera Rd East	Bookera	WA	6525	
+1	1	WA	6000	
+0	0	WA	0	
+902/30 The Circus	Burswood	WA	6100	
+36 Saint Clares Garden	Attwell	WA	6164	
+Unit 53 St Louis Estate	Claremont	WA	6010	

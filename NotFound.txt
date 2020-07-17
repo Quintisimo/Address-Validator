@@ -1,0 +1,36 @@
+Cannot Find
+Xxxx	Xxxx	WA	6000	
+26 tahlee retreat	neerabup	TAS	6031	
+3 Harley Place	Kinsley	WA	6026	
+6 Auger Green	Geraldton	WA	6530	
+17 Dolphin Rd	Safety	WA	6169	
+13 Nottingham Green	Highwycombe	WA	6057	
+12 Quindalup Ct	Hilman	WA	6168	
+47/289 Sydney Road	Gnangara	WA	6077	
+64/42 Waterroo	East Perth	WA	6004	
+No Address	Not Provided	QLD	0	
+subiaco	subiaco	WA	6061	
+685 Casuarina Way	Casuarina	WA	2487	
+33 ackland rd	geraldton	WA	6530	
+11 Lister Cl	Mosman Park	VIC	6012	
+10 Nabberu	Cooloongup	WA	6168	
+14 Bentley Close	Claremont	WA	6010	
+santa rosalia vista	wanneroo	VIC	6065	
+12 Brandon Wy	Lynwood	WA	6147	
+20 Westley Way	Coolongup	WA	6168	
+Unit 14 45 Winnetta Ridge	Tarcoola	WA	6530	
+13/54 Glenview St	Mt Tarcoola	WA	6530	
+169 Bookera Rd East	Bookera	WA	6525	
+50 Bluebell Avenue	Maida Vale	WA	6056	
+61 woodland street	swanville	WA	6010	
+29 Solomon Circle	Rangeway	WA	6530	
+40 The Boulevard	Floreat	WA	6014	
+1	1	WA	6000	
+0	0	WA	0	
+11 West End Parade	Canningvale	WA	6155	
+902/30 The Circus	Burswood	WA	6100	
+36 Saint Clares Garden	Attwell	WA	6164	
+6 Portsea Pl	Cooloongup	VIC	6169	
+3 Knave Way	Innaloo	WA	6018	
+No Address Moving	No Address Moving	WA	6169	
+Unit 53 St Louis Estate	Claremont	WA	6010	
