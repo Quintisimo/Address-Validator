@@ -1,7 +1,1 @@
 Cannot Find
-169 Bookera Rd East	Bookera	WA	6525	
-1	1	WA	6000	
-0	0	WA	0	
-902/30 The Circus	Burswood	WA	6100	
-36 Saint Clares Garden	Attwell	WA	6164	
-Unit 53 St Louis Estate	Claremont	WA	6010	

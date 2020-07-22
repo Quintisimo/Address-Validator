@@ -255,7 +255,6 @@ namespace AddressValidator
             string streetId = null;
             string[] streetName = street.Split();
             string type = GetStreetType(streetName[streetName.Length - 1], db);
-            Console.WriteLine(type);
             SqlParameter[] streetIdParams = new SqlParameter[]
             {
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = string.Join(" ", streetName.Take(streetName.Length - 1)) },
@@ -308,7 +307,6 @@ namespace AddressValidator
             string streetId = null;
             string[] streetName = street.Split();
             string type = GetStreetType(streetName[streetName.Length - 1], db);
-            Console.WriteLine(type);
             SqlParameter[] streetIdParams = new SqlParameter[]
             {
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = string.Join(" ", streetName.Take(streetName.Length - 1)) },
@@ -365,6 +363,40 @@ namespace AddressValidator
                                         WHERE number_first = @houseNumber AND street_locality_pid = @streetId";
                 addressId = (string)GetValue(addressIdExact, addressIdParams, db);
             }
+            else if (Regex.IsMatch(house, @"/|,"))
+            {
+                string flatRegex = Regex.Match(house, @"(.*)(?=/)").Value;
+                string houseRegex = Regex.Match(house, @"(?<=/)(.*)").Value;
+
+                if (int.TryParse(flatRegex.Trim(), out int flat))
+                {
+                    SqlParameter[] addressIdParams = new SqlParameter[]
+                    {
+                        new SqlParameter("@streetId", SqlDbType.NVarChar) { Value = streetId },
+                        new SqlParameter("@flatNumber", SqlDbType.Int) { Value = flat },
+                        new SqlParameter("@houseNumber", SqlDbType.Int) { Value = int.Parse(houseRegex) }
+                    };
+
+                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                            WHERE number_first @houseNumber AND flat_number = @flatNumber AND street_locality_pid = @streeId";
+                    addressId = (string)GetValue(addressIdExact, addressIdParams, db);
+                }
+                else if (Regex.IsMatch(flatRegex.Trim(), @"[0-9]+[A-z]{1}$"))
+                {
+                    string flatWithLetter = Regex.Match(flatRegex.Trim(), @"[0-9]+[A-z]{1}$").Value;
+
+                    SqlParameter[] addressIdParams = new SqlParameter[]
+                    {
+                       new SqlParameter("@streetId", SqlDbType.NVarChar) { Value = streetId },
+                       new SqlParameter("@houseNumber", SqlDbType.Int) { Value = int.Parse(flatWithLetter.Remove(flatWithLetter.Length - 1)) },
+                       new SqlParameter("@suffix", SqlDbType.NVarChar) { Value = flatWithLetter[flatWithLetter.Length - 1] }
+                    };
+
+                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                            WHERE number_first = @houseNumber AND flat_number = @flatNumber AND flat_number_suffix = @suffix AND street_locality_pid = @streetId";
+                    addressId = (string)GetValue(addressIdExact, addressIdParams, db);
+                }
+            }
             else if (Regex.IsMatch(house, @"[0-9]+[A-z]{1}$"))
             {
                 SqlParameter[] addressIdParams = new SqlParameter[]
@@ -375,7 +407,7 @@ namespace AddressValidator
                 };
 
                 string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
-                                        WHERE number_first = @houseNumber AND street_locality_pid = @streetId AND number_first_suffix = @suffix";
+                                        WHERE number_first = @houseNumber AND number_first_suffix = @suffix AND street_locality_pid = @streetId";
                 addressId = (string)GetValue(addressIdExact, addressIdParams, db);
             }
             return addressId;
@@ -428,11 +460,11 @@ namespace AddressValidator
                 streetId = GetStreetWithoutLocality(street, db);
             }
 
-            //if (streetId != null)
-            //{
-            //    addressId = GetAddress(streetId, streetNumber, db);
-            //}
-            return streetId;
+            if (streetId != null)
+            {
+                addressId = GetAddress(streetId, streetNumber, db);
+            }
+            return addressId;
         }
     }
 }
