@@ -164,14 +164,19 @@ namespace AddressValidator
                 string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
                                                               WHERE street_name = @name";
 
-                if (type != null) streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                                         WHERE street_name = @name AND street_type_code = @type";
-
                 Tuple<string, string>[] sqlParams =
                 {
-                    Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1))),
-                    Tuple.Create("@type", type)
+                    Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1)))
                 };
+
+                if (type != null)
+                {
+                    streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                                           WHERE street_name = @name AND street_type_code = @type";
+
+                    sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
+                }
+                    
 
                 string streetId = GetValue(streetLocalityIdWithoutLocalityExact, db, sqlParams);
 
@@ -203,20 +208,25 @@ namespace AddressValidator
         {
             string[] streetName = street.Split();
             string type = GetStreetType(streetName[streetName.Length - 1], db);
-            Tuple<string, string>[] sqlParams = 
-            {
-                Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1))),
-                Tuple.Create("@localityId", localityId),
-                Tuple.Create("@type", type)
-            };
 
             if (street != "")
             {
                 string streetLocalityIdExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
                                                WHERE street_name = @name AND locality_pid = @localityId";
 
-                if (type != null) streetLocalityIdExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                          WHERE street_name = @name AND locality_pid = @localityId AND street_type_code = @type";
+                Tuple<string, string>[] sqlParams =
+                {
+                    Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1))),
+                    Tuple.Create("@localityId", localityId),
+                };
+
+                if (type != null)
+                {
+                    streetLocalityIdExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                            WHERE street_name = @name AND locality_pid = @localityId AND street_type_code = @type";
+
+                    sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
+                }
 
 
                 string streetId = GetValue(streetLocalityIdExact, db, sqlParams);
@@ -266,13 +276,18 @@ namespace AddressValidator
                     if (Regex.IsMatch(flat, @"^[0-9]+$"))
                     {
                         string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
-                                                WHERE number_first @houseNumber AND flat_number = @flatNumber AND street_locality_pid = @streeId";
+                                                WHERE number_first = @houseNumber AND flat_number = @flatNumber AND street_locality_pid = @streetId";
+
+                        if (house == "28-30")
+                        {
+                            Console.WriteLine();
+                        }
 
                         Tuple<string, string>[] sqlParams = 
                         {
-                            Tuple.Create("@streetId", streetId),
+                            Tuple.Create("@houseNumber", house.IndexOf('-') != -1 ? house.Substring(0, house.IndexOf('-')) : house),
                             Tuple.Create("@flatNumber", flat),
-                            Tuple.Create("@houseNumber", house)
+                            Tuple.Create("@streetId", streetId)
                         };
 
                         return GetValue(addressIdExact, db, sqlParams);
@@ -286,9 +301,10 @@ namespace AddressValidator
 
                         Tuple<string, string>[] sqlParams = 
                         {
-                            Tuple.Create("@streetId", streetId),
-                            Tuple.Create("@houseNumber", flatWithLetter.Remove(flatWithLetter.Length - 1)),
-                            Tuple.Create("@suffix", flatWithLetter[flatWithLetter.Length - 1].ToString())
+                            Tuple.Create("@houseNumber", house),
+                            Tuple.Create("@flatNumber", flatWithLetter.Remove(flatWithLetter.Length - 1)),
+                            Tuple.Create("@suffix", flatWithLetter[flatWithLetter.Length - 1].ToString()),
+                            Tuple.Create("@streetId", streetId)
                         };
 
                         return GetValue(addressIdExact, db, sqlParams);
@@ -296,6 +312,10 @@ namespace AddressValidator
                 }
                 else if (Regex.IsMatch(streetNumber, @"[0-9]+[A-z]{1}$"))
                 {
+
+                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                            WHERE number_first = @houseNumber AND number_first_suffix = @suffix AND street_locality_pid = @streetId";
+                    
                     Tuple<string, string>[] sqlParams =
                     {
                         Tuple.Create("@streetId", streetId),
@@ -303,9 +323,6 @@ namespace AddressValidator
                         Tuple.Create("@suffix", streetNumber[streetNumber.Length - 1].ToString())
                     };
 
-                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
-                                            WHERE number_first = @houseNumber AND number_first_suffix = @suffix AND street_locality_pid = @streetId";
-                    
                     return GetValue(addressIdExact, db, sqlParams);
                 }
             }
