@@ -278,11 +278,6 @@ namespace AddressValidator
                         string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                                 WHERE number_first = @houseNumber AND flat_number = @flatNumber AND street_locality_pid = @streetId";
 
-                        if (house == "28-30")
-                        {
-                            Console.WriteLine();
-                        }
-
                         Tuple<string, string>[] sqlParams = 
                         {
                             Tuple.Create("@houseNumber", house.IndexOf('-') != -1 ? house.Substring(0, house.IndexOf('-')) : house),
@@ -308,6 +303,8 @@ namespace AddressValidator
                         };
 
                         return GetValue(addressIdExact, db, sqlParams);
+
+                        // TODO: Search without flat_number if not found
                     }
                 }
                 else if (Regex.IsMatch(streetNumber, @"[0-9]+[A-z]{1}$"))
@@ -324,6 +321,9 @@ namespace AddressValidator
                     };
 
                     return GetValue(addressIdExact, db, sqlParams);
+                        
+                    // TODO: Search without flat_number if not found
+
                 }
             }
             return null;
