@@ -1,5 +1,4 @@
 Cannot Find
-206/173 Mounts Bay Rd	Perth	WA	6000	
 Unit 23/27 Goongarrie Drive	Cooloongup	WA	6168	
 Xxxx	Xxxx	WA	6000	
 Unit 16/44 Harvey Street	Mosman Park	WA	6012	
@@ -37,7 +36,6 @@ Unit 14 45 Winnetta Ridge	Tarcoola	WA	6530
 115a Summers St	East Perth	WA	6004	
 13/54 Glenview St	Mt Tarcoola	WA	6530	
 169 Bookera Rd East	Bookera	WA	6525	
-23/163 Planet St	Carlisle	WA	6101	
 50 Bluebell Avenue	Maida Vale	WA	6056	
 33 Pearson Street	Geraldton	WA	6530	
 Karri Lodge	19 Hughie Edwards dr	WA	6030	
@@ -63,7 +61,6 @@ Rockingham Holiday Village 147 Dixon Rd	Rockingham	WA	6168
 U13/54 Glenview St	Geraldton	WA	6530	
 "Unit 4, 9 Stoackman Way"	Canning	WA	6107	
 22 austin st	subiaco	WA	6008	
-3/6 Mundering prd	Claremont	WA	6001	
 70 Bendle St	Geelong	VIC	3219	
 84 Shenton Rd	Claremont	WA	6010	
 390 Durlacher St	Geraldton	WA	6530	
@@ -111,7 +108,6 @@ U 10/1 Kings Park Ave	Crawley	WA	6009
 122 Gyde Street	Mosman Park	WA	6012	
 24 James St	Shenton Park	VIC	6008	
 U60/1140 wanneroo road	Wanneroo	WA	6065	
-8/109 Flora Terrace	North Beach	WA	6020	
 1 Christian Cr	Quinns Rock	WA	6030	
 Unit 1 14 Vista Ave	Rockingham	WA	6168	
 183 Harrington Waters	Waikiki	WA	6169	
@@ -123,7 +119,6 @@ Unit 9/10 Maitland Close	Cooloongup	WA	6169
 57 Norman Street	Inaloo	WA	6018	
 52 Sailers Lane	West End Geraldton	WA	6530	
 unit 15 100 subiaco rd	Subiaco	WA	6008	
-1/82 Bondi St	Mt Hawthorn	WA	6016	
 109 Donnelly Ramble	Wanneroo	WA	6065	
 26b Thomas St	Subiaco	WA	6008	
 Po 1857	Roebck	WA	6725	

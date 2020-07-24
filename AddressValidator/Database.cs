@@ -251,41 +251,46 @@ namespace AddressValidator
             return null;
         }
 
-        private static string GetAddress(string streetId, string streetNumber, SqlConnection db)
+        private static string GetHouseAddress(string streetId, string streetNumber, SqlConnection db)
         {
-            if (streetNumber != "")
-            {
-                if (Regex.IsMatch(streetNumber, @"^[0-9]+$"))
-                {
-                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+            string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                             WHERE number_first = @houseNumber AND street_locality_pid = @streetId";
 
-                    Tuple<string, string>[] sqlParams =
-                    {
+            Tuple<string, string>[] sqlParams =
+            {
                         Tuple.Create("@streetId", streetId),
                         Tuple.Create("@houseNumber", streetNumber)
                     };
 
-                    return GetValue(addressIdExact, db, sqlParams);
-                }
+            return GetValue(addressIdExact, db, sqlParams);
+        }
+
+        private static string GetAddress(string streetId, string streetNumber, SqlConnection db)
+        {
+            if (streetNumber != "")
+            {
+                if (Regex.IsMatch(streetNumber, @"^[0-9]+$")) return GetHouseAddress(streetId, streetNumber, db);
                 else if (Regex.IsMatch(streetNumber, @"/|,"))
                 {
                     string flat = Regex.Match(streetNumber, @"(.*)(?=/)").Value.Trim();
-                    string house = Regex.Match(streetNumber, @"(?<=/)(.*)").Value.Trim();
+                    string houseRegex = Regex.Match(streetNumber, @"(?<=/)(.*)").Value.Trim();
+                    string house = houseRegex.IndexOf('-') != -1 ? houseRegex.Substring(0, houseRegex.IndexOf('-')) : houseRegex;
 
                     if (Regex.IsMatch(flat, @"^[0-9]+$"))
                     {
                         string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                                 WHERE number_first = @houseNumber AND flat_number = @flatNumber AND street_locality_pid = @streetId";
 
-                        Tuple<string, string>[] sqlParams = 
+                        Tuple<string, string>[] sqlParams =
                         {
-                            Tuple.Create("@houseNumber", house.IndexOf('-') != -1 ? house.Substring(0, house.IndexOf('-')) : house),
+                            Tuple.Create("@houseNumber", house),
                             Tuple.Create("@flatNumber", flat),
                             Tuple.Create("@streetId", streetId)
                         };
 
-                        return GetValue(addressIdExact, db, sqlParams);
+                        string addressId = GetValue(addressIdExact, db, sqlParams);
+                        if (addressId == null) return GetHouseAddress(streetId, house, db);
+                        return addressId;
                     }
                     else if (Regex.IsMatch(flat, @"[0-9]+[A-z]{1}$"))
                     {
@@ -294,7 +299,7 @@ namespace AddressValidator
                         string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                                 WHERE number_first = @houseNumber AND flat_number = @flatNumber AND flat_number_suffix = @suffix AND street_locality_pid = @streetId";
 
-                        Tuple<string, string>[] sqlParams = 
+                        Tuple<string, string>[] sqlParams =
                         {
                             Tuple.Create("@houseNumber", house),
                             Tuple.Create("@flatNumber", flatWithLetter.Remove(flatWithLetter.Length - 1)),
@@ -302,9 +307,9 @@ namespace AddressValidator
                             Tuple.Create("@streetId", streetId)
                         };
 
-                        return GetValue(addressIdExact, db, sqlParams);
-
-                        // TODO: Search without flat_number if not found
+                        string addressId = GetValue(addressIdExact, db, sqlParams);
+                        if (addressId == null) return GetHouseAddress(streetId, house, db);
+                        return addressId;
                     }
                 }
                 else if (Regex.IsMatch(streetNumber, @"[0-9]+[A-z]{1}$"))
@@ -312,7 +317,7 @@ namespace AddressValidator
 
                     string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                             WHERE number_first = @houseNumber AND number_first_suffix = @suffix AND street_locality_pid = @streetId";
-                    
+
                     Tuple<string, string>[] sqlParams =
                     {
                         Tuple.Create("@streetId", streetId),
@@ -321,9 +326,6 @@ namespace AddressValidator
                     };
 
                     return GetValue(addressIdExact, db, sqlParams);
-                        
-                    // TODO: Search without flat_number if not found
-
                 }
             }
             return null;
