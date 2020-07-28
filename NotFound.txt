@@ -1,10 +1,5 @@
 Cannot Find
-Unit 23/27 Goongarrie Drive	Cooloongup	WA	6168	
-Xxxx	Xxxx	WA	6000	
-Unit 16/44 Harvey Street	Mosman Park	WA	6012	
-3 Harley Place	Kinsley	WA	6026	
 17 Cade St	Greenwood	WA	6024	
-U 15/1 Waterway Court	Churchlands	WA	6018	
 600 Hay St	Perth	WA	6000	
 unit 2 7 shearwater tce	ballajura	WA	6066	
 8 Urawa Street	Geraldton	WA	6530	
@@ -12,7 +7,6 @@ unit 2 7 shearwater tce	ballajura	WA	6066
 13 Nottingham Green	Highwycombe	WA	6057	
 3 Parke Rd	Kalamunda	WA	6057	
 1-31 Baird  Ave	Nedlands	WA	6009	
-"Unit 1, 2 Redbud Mews"	Cooloongup	WA	6168	
 47/289 Sydney Road	Gnangara	WA	6077	
 1-209 Walcott Street	North Perth	WA	6006	
 64/42 Waterroo	East Perth	WA	6004	
@@ -43,7 +37,6 @@ Karri Lodge	19 Hughie Edwards dr	WA	6030
 1	1	WA	6000	
 0	0	WA	0	
 85 Queensville Ave	Parkwood	WA	6147	Australia
-Unit 1/107 Birkett Street	Bedford	WA	6052	
 1 Unit 4 Harding Close	Waikiki	WA	6169	
 Stannard St	St James	WA	6102	
 31 Barlee Crescent	Cooloongup	WA	6168	
@@ -68,19 +61,16 @@ U13/54 Glenview St	Geraldton	WA	6530
 414a Walter Road	Morley	WA	6062	
 28 Millgrove Avenue	Cooloongup	WA	6168	
 Australia				
-Unit 1/17 Bridal Cresent	Kenwick	WA	6107	
 66 Broadway	Bassendean	WA	6059	
 NIL	NIL	WA	6000	
 158 St George Tce	Perth	WA	6000	
 220 Westfield Road	Maddington	WA	6109	
 825 hay st	perth	VIC	6000	
 64a Wilkie Street	64A Wilkie Street	VIC	6021	
-UNIT 2701/237 ADELAIDE TCE	PERTH	WA	6000	
 16b Baldwin St	Como	WA	6152	
 Lakeside Caravan Park	Baldivis	WA	6171	
 35 Cilantro Parkway	Treebuy	WA	6164	
 265 Kalamanda Rd	Maidavale	WA	6057	
-3 Merrima Crt	Cooloongup	WA	6168	
 11/85 Mcdowell Loop	Parkerville	WA	6081	
 50 Wittennom	East Perth	WA	6004	
 "8 Jecks Street,"	Maida Vale	WA	6057	
@@ -94,17 +84,12 @@ Mudroch	South Perth	WA	6150
 20 Highview Rd	Greenmount	WA	6056	
 8 60 henry lawson	east perth	VIC	6004	
 17 Inverness Crt	Rockingham	WA	6168	
-Unit 16/5 Elliott Rd	Claremont	VIC	6010	
 50 Baile Road	Lesmurdie	WA	6076	
 13 norling Rd	High Wycomb	WA	6057	
 95 Clayton Rd	Merridin	WA	6312	
 44 Baroonga Rd	Nedlands	WA	6009	
 5 Boreham	Cottlesloe	WA	6011	
-unit 238/85 Hester AVE	Merriwa	WA	6030	
-14 Butlet Ave	Mt Claremont	WA	6010	
 10 Tree Fern Garden	Maida Vale	WA	6057	
-Saint Ives Centro 145/6 Tighe St	Jolimont	WA	6014	
-U 10/1 Kings Park Ave	Crawley	WA	6009	
 122 Gyde Street	Mosman Park	WA	6012	
 24 James St	Shenton Park	VIC	6008	
 U60/1140 wanneroo road	Wanneroo	WA	6065	
@@ -114,7 +99,6 @@ Unit 1 14 Vista Ave	Rockingham	WA	6168
 U3 23-25 Harris St	Palmyra	WA	6012	
 55/57 Layle St	Mt Claremont	WA	6010	
 12 Chapel Rd	Kingsley	WA	6026	
-Unit 9/10 Maitland Close	Cooloongup	WA	6169	
 50b Mccourt St	West Leedeville	WA	6007	
 57 Norman Street	Inaloo	WA	6018	
 52 Sailers Lane	West End Geraldton	WA	6530	

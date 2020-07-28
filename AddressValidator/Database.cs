@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Runtime.ExceptionServices;
 using System.Text.RegularExpressions;
 
 namespace AddressValidator
@@ -260,8 +258,7 @@ namespace AddressValidator
             {
                         Tuple.Create("@streetId", streetId),
                         Tuple.Create("@houseNumber", streetNumber)
-                    };
-
+            };
             return GetValue(addressIdExact, db, sqlParams);
         }
 
@@ -272,8 +269,8 @@ namespace AddressValidator
                 if (Regex.IsMatch(streetNumber, @"^[0-9]+$")) return GetHouseAddress(streetId, streetNumber, db);
                 else if (Regex.IsMatch(streetNumber, @"/|,"))
                 {
-                    string flat = Regex.Match(streetNumber, @"(.*)(?=/)").Value.Trim();
-                    string houseRegex = Regex.Match(streetNumber, @"(?<=/)(.*)").Value.Trim();
+                    string flat = Regex.Match(streetNumber, @"(\w+\s*)(?=/|,)").Value.Trim();
+                    string houseRegex = Regex.Match(streetNumber, @"(?<=/|,)(\s*\w+)").Value.Trim();
                     string house = houseRegex.IndexOf('-') != -1 ? houseRegex.Substring(0, houseRegex.IndexOf('-')) : houseRegex;
 
                     if (Regex.IsMatch(flat, @"^[0-9]+$"))
