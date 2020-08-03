@@ -29,7 +29,6 @@ Unit 14 45 Winnetta Ridge	Tarcoola	WA	6530
 13/54 Glenview St	Mt Tarcoola	WA	6530	
 169 Bookera Rd East	Bookera	WA	6525	
 50 Bluebell Avenue	Maida Vale	WA	6056	
-33 Pearson Street	Geraldton	WA	6530	
 Karri Lodge	19 Hughie Edwards dr	WA	6030	
 61 woodland street	swanville	WA	6010	
 1	1	WA	6000	
@@ -81,15 +80,11 @@ Lakeside Caravan Park	Baldivis	WA	6171
 Mudroch	South Perth	WA	6150	
 20 Highview Rd	Greenmount	WA	6056	
 8 60 henry lawson	east perth	VIC	6004	
-17 Inverness Crt	Rockingham	WA	6168	
-50 Baile Road	Lesmurdie	WA	6076	
-13 norling Rd	High Wycomb	WA	6057	
 95 Clayton Rd	Merridin	WA	6312	
 44 Baroonga Rd	Nedlands	WA	6009	
 5 Boreham	Cottlesloe	WA	6011	
 10 Tree Fern Garden	Maida Vale	WA	6057	
 122 Gyde Street	Mosman Park	WA	6012	
-24 James St	Shenton Park	VIC	6008	
 U60/1140 wanneroo road	Wanneroo	WA	6065	
 1 Christian Cr	Quinns Rock	WA	6030	
 Unit 1 14 Vista Ave	Rockingham	WA	6168	

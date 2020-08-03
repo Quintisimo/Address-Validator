@@ -75,25 +75,25 @@ namespace AddressValidator
         /// <param name="locality">locality name</param>
         /// <param name="db">db connection</param>
         /// <returns>locality id</returns>
-        private static string GetLocalityWithoutState(string locality, SqlConnection db)
-        {
-            if (locality != "")
-            {
-                string localityIdWithoutStateExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                                     WHERE locality_name = @locality";
+        //private static string GetLocalityWithoutState(string locality, SqlConnection db)
+        //{
+        //    if (locality != "")
+        //    {
+        //        string localityIdWithoutStateExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+        //                                             WHERE locality_name = @locality";
 
-                string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
-                                                          WHERE DIFFERENCE(locality_name, @locality) > 2 
-                                                          ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality), DIFFERENCE(locality_name, @locality) desc";
+        //        string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+        //                                                  WHERE DIFFERENCE(locality_name, @locality) > 2 
+        //                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality), DIFFERENCE(locality_name, @locality) desc";
 
-                Tuple<string, string> sqlParam = Tuple.Create("@locality", locality);
+        //        Tuple<string, string> sqlParam = Tuple.Create("@locality", locality);
 
-                string localityId = GetValue(localityIdWithoutStateExact, db, sqlParam);
-                if (localityId == null) localityId = GetValue(localityIdWithoutStateDifference, db, sqlParam);
-                return localityId;
-            }
-            return null;
-        }
+        //        string localityId = GetValue(localityIdWithoutStateExact, db, sqlParam);
+        //        if (localityId == null) localityId = GetValue(localityIdWithoutStateDifference, db, sqlParam);
+        //        return localityId;
+        //    }
+        //    return null;
+        //}
 
         /// <summary>
         /// Get locality
@@ -110,18 +110,27 @@ namespace AddressValidator
                 string localityIdExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY]
                                          WHERE locality_name = @locality and state_pid = @stateId";
 
+                string localityIdWithoutStateExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                                                     WHERE locality_name = @locality";
+
                 string localityIdDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
                                               WHERE DIFFERENCE(locality_name, @locality) > 2 and state_pid = @stateId 
                                               ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality) asc, DIFFERENCE(locality_name, @locality) desc";
 
+                string localityIdWithoutStateDifference = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY] 
+                                                          WHERE DIFFERENCE(locality_name, @locality) > 2 
+                                                          ORDER BY [PSMA_G-NAF].[dbo].[Distance](locality_name, @locality), DIFFERENCE(locality_name, @locality) desc";
+
                 Tuple<string, string>[] sqlParams =
                 {
-                    Tuple.Create("@locality",locality),
-                    Tuple.Create("@stateId", stateId),
+                    Tuple.Create("@locality", locality),
                 };
 
-                string localityId = GetValue(localityIdExact, db, sqlParams);
-                if (localityId == null) localityId = GetValue(localityIdDifference, db, sqlParams);
+                string localityId = null;
+                if (stateId != null) localityId = GetValue(localityIdExact, db, sqlParams.Append(Tuple.Create("@stateId", stateId)).ToArray());
+                if (localityId == null) localityId = GetValue(localityIdWithoutStateExact, db, sqlParams);
+                if (localityId == null && stateId != null) localityId = GetValue(localityIdDifference, db, sqlParams.Append(Tuple.Create("@stateId", stateId)).ToArray());
+                if (localityId == null) localityId = GetValue(localityIdWithoutStateDifference, db, sqlParams);
                 return localityId;
             }
             return null;
@@ -152,48 +161,48 @@ namespace AddressValidator
         /// <param name="streetName">street name</param>
         /// <param name="db"></param>
         /// <returns>street id</returns>
-        private static string GetStreetWithoutLocality(string street, SqlConnection db)
-        {
-            string[] streetName = street.Split();
-            string type = GetStreetType(streetName[streetName.Length - 1], db);
+        //private static string GetStreetWithoutLocality(string street, SqlConnection db)
+        //{
+        //    string[] streetName = street.Split();
+        //    string type = GetStreetType(streetName[streetName.Length - 1], db);
 
-            if (street != "")
-            {
-                string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                              WHERE street_name = @name";
+        //    if (street != "")
+        //    {
+        //        string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+        //                                                      WHERE street_name = @name";
 
-                Tuple<string, string>[] sqlParams =
-                {
-                    Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1)))
-                };
+        //        Tuple<string, string>[] sqlParams =
+        //        {
+        //            Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1)))
+        //        };
 
-                if (type != null)
-                {
-                    streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                           WHERE street_name = @name AND street_type_code = @type";
+        //        if (type != null)
+        //        {
+        //            streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+        //                                                   WHERE street_name = @name AND street_type_code = @type";
 
-                    sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
-                }
+        //            sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
+        //        }
                     
 
-                string streetId = GetValue(streetLocalityIdWithoutLocalityExact, db, sqlParams);
+        //        string streetId = GetValue(streetLocalityIdWithoutLocalityExact, db, sqlParams);
 
-                if (streetId == null)
-                {
-                    string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                                       WHERE DIFFERENCE(street_name, @name) > 2
-                                                                       ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+        //        if (streetId == null)
+        //        {
+        //            string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+        //                                                               WHERE DIFFERENCE(street_name, @name) > 2
+        //                                                               ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
-                    if (type != null) streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                                                  WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type
-                                                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+        //            if (type != null) streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+        //                                                                          WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type
+        //                                                                          ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
-                    streetId = GetValue(streetLocalityIdWithoutLocalityDifference, db, sqlParams);
-                }
-                return streetId;
-            }
-            return null;
-        }
+        //            streetId = GetValue(streetLocalityIdWithoutLocalityDifference, db, sqlParams);
+        //        }
+        //        return streetId;
+        //    }
+        //    return null;
+        //}
 
         /// <summary>
         /// Get street
@@ -215,7 +224,6 @@ namespace AddressValidator
                 Tuple<string, string>[] sqlParams =
                 {
                     Tuple.Create("@name", string.Join(" ", streetName.Take(streetName.Length - 1))),
-                    Tuple.Create("@localityId", localityId),
                 };
 
                 if (type != null)
@@ -226,8 +234,19 @@ namespace AddressValidator
                     sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
                 }
 
+                string streetId = null;
+                if (localityId != null) streetId = GetValue(streetLocalityIdExact, db, sqlParams.Append(Tuple.Create("@localityId", localityId)).ToArray());
 
-                string streetId = GetValue(streetLocalityIdExact, db, sqlParams);
+                if (streetId == null)
+                {
+                    string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                                                  WHERE street_name = @name";
+
+                    if (type != null) streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
+                                                                             WHERE street_name = @name AND street_type_code = @type";
+
+                    streetId = GetValue(streetLocalityIdWithoutLocalityExact, db, sqlParams);
+                }
 
                 if (streetId == null)
                 {
@@ -235,14 +254,24 @@ namespace AddressValidator
                                                         WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId 
                                                         ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
-                    if (type != null)
-                    {
-                        streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                     WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId AND street_type_code = @type
-                                                     ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
-                    }
+                    if (type != null) streetLocalityIdDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                                   WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId AND street_type_code = @type
+                                                                   ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
-                    streetId = GetValue(streetLocalityIdDifference, db, sqlParams);
+                    if (localityId != null) streetId = GetValue(streetLocalityIdDifference, db, sqlParams.Append(Tuple.Create("@localityId", localityId)).ToArray());
+                }
+
+                if (streetId == null)
+                {
+                    string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                                       WHERE DIFFERENCE(street_name, @name) > 2
+                                                                       ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+
+                    if (type != null) streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
+                                                                                  WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type
+                                                                                  ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+
+                    streetId = GetValue(streetLocalityIdWithoutLocalityDifference, db, sqlParams);
                 }
                 return streetId;
             }
@@ -339,41 +368,41 @@ namespace AddressValidator
         public static string GetAddressId(string state, string locality, string street, string streetNumber, SqlConnection db)
         {
             string stateId = GetState(state, db);
-            string localityId = null;
-            string streetId = null;
+            string localityId = GetLocality(stateId, locality, db);
+            string streetId = GetStreet(localityId, street, db);
             string addressId = null;
 
-            if (stateId == null)
-            {
-                // Try searching without state
-                localityId = GetLocalityWithoutState(locality, db);
-            }
-            else
-            {
-                localityId = GetLocality(stateId, locality, db);
-            }
+            //if (stateId == null)
+            //{
+            //    // Try searching without state
+            //    localityId = GetLocalityWithoutState(locality, db);
+            //}
+            //else
+            //{
+            //    localityId = GetLocality(stateId, locality, db);
+            //}
 
-            if (localityId == null)
-            {
-                // Try searching without state
-                localityId = GetLocalityWithoutState(locality, db);
-            }
+            //if (localityId == null)
+            //{
+            //    // Try searching without state
+            //    localityId = GetLocalityWithoutState(locality, db);
+            //}
 
-            if (localityId == null)
-            {
-                // Try searching without locality
-                streetId = GetStreetWithoutLocality(street, db);
-            }
-            else
-            {
-                streetId = GetStreet(localityId, street, db);
-            }
+            //if (localityId == null)
+            //{
+            //    // Try searching without locality
+            //    streetId = GetStreetWithoutLocality(street, db);
+            //}
+            //else
+            //{
+            //    streetId = GetStreet(localityId, street, db);
+            //}
 
-            if (streetId == null)
-            {
-                // Try searching without locality
-                streetId = GetStreetWithoutLocality(street, db);
-            }
+            //if (streetId == null)
+            //{
+            //    // Try searching without locality
+            //    streetId = GetStreetWithoutLocality(street, db);
+            //}
 
             if (streetId != null)
             {
