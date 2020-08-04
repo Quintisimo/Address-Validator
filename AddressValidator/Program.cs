@@ -35,7 +35,6 @@ namespace AddressValidator
             }
             db.Close();
             Console.WriteLine("DONE");
-            Console.ReadLine();
         }
 
         /// <summary>
