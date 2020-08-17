@@ -26,7 +26,6 @@ namespace AddressValidator
                 Console.WriteLine($"Connection Error: {e.Message}");
             }
             return db;
-
         }
 
         /// <summary>
@@ -149,12 +148,12 @@ namespace AddressValidator
 
                 Tuple<string, string>[] sqlParams =
                 {
-                    Tuple.Create("@name", type != null ? string.Join(" ", streetName.Take(streetName.Length - 1)) : street)
+                    Tuple.Create("@name", type != null ? string.Join(" ", streetName.Take(streetName.Length - 1)) : street),
+                    Tuple.Create("@state", state)
                 };
 
                 Tuple<string, string>[] extraPramas =
                 {
-                    Tuple.Create("@state", state),
                     Tuple.Create("@localityId", localityId)
                 };
 
@@ -172,10 +171,10 @@ namespace AddressValidator
                 if (streetId == null)
                 {
                     string streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                                  WHERE street_name = @name";
+                                                                  WHERE street_name = @name AND street_locality_pid LIKE @state + '%'";
 
                     if (type != null) streetLocalityIdWithoutLocalityExact = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY]
-                                                                             WHERE street_name = @name AND street_type_code = @type";
+                                                                             WHERE street_name = @name AND street_type_code = @type AND street_locality_pid LIKE @state + '%'";
 
                     streetId = GetValue(streetLocalityIdWithoutLocalityExact, db, sqlParams);
                 }
@@ -196,11 +195,11 @@ namespace AddressValidator
                 if (streetId == null)
                 {
                     string streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                                       WHERE DIFFERENCE(street_name, @name) > 2
+                                                                       WHERE DIFFERENCE(street_name, @name) > 2 AND street_locality_pid LIKE @state + '%'
                                                                        ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
                     if (type != null) streetLocalityIdWithoutLocalityDifference = @"SELECT TOP(1) street_locality_pid FROM [PSMA_G-NAF].[dbo].[STREET_LOCALITY] 
-                                                                                  WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type
+                                                                                  WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type AND street_locality_pid LIKE @state + '%'
                                                                                   ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
 
                     streetId = GetValue(streetLocalityIdWithoutLocalityDifference, db, sqlParams);
@@ -215,12 +214,17 @@ namespace AddressValidator
             string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
                                     WHERE number_first = @houseNumber AND street_locality_pid = @streetId";
 
+            string addressIdRange = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                    WHERE street_locality_pid = @streetId AND @houseNumber BETWEEN number_first and number_last";
+
             Tuple<string, string>[] sqlParams =
             {
                 Tuple.Create("@streetId", streetId),
                 Tuple.Create("@houseNumber", streetNumber)
             };
-            return GetValue(addressIdExact, db, sqlParams);
+            string houseId = GetValue(addressIdExact, db, sqlParams);
+            if (houseId == null) houseId = GetValue(addressIdRange, db, sqlParams);
+            return houseId;
         }
 
         private static string GetAddress(string streetId, string streetNumber, SqlConnection db)
@@ -228,10 +232,10 @@ namespace AddressValidator
             if (streetNumber != "")
             {
                 if (Regex.IsMatch(streetNumber, @"^[0-9]+$")) return GetHouseAddress(streetId, streetNumber, db);
-                else if (Regex.IsMatch(streetNumber, @"/|,"))
+                else if (Regex.IsMatch(streetNumber, @"(\d+\w*\s*)(/|,|\s)"))
                 {
-                    string flat = Regex.Match(streetNumber, @"(\w+\s*)(?=/|,)").Value.Trim();
-                    string houseRegex = Regex.Match(streetNumber, @"(?<=/|,)(\s*\w+)").Value.Trim();
+                    string flat = Regex.Match(streetNumber, @"(\d+\w*\s*)(?=/|,|\s)").Value.Trim();
+                    string houseRegex = Regex.Match(streetNumber, @"(?<=(\s|/|,)(?!.*(\s|/|,)))(.*)").Value.Trim();
                     string house = houseRegex.IndexOf('-') != -1 ? houseRegex.Substring(0, houseRegex.IndexOf('-')) : houseRegex;
 
                     if (Regex.IsMatch(flat, @"^[0-9]+$"))
@@ -285,6 +289,27 @@ namespace AddressValidator
 
                     return GetValue(addressIdExact, db, sqlParams);
                 }
+                else if (Regex.IsMatch(streetNumber, @"-"))
+                {
+                    string first = Regex.Match(streetNumber, @"(\d+)(?=-)").Value.Trim();
+                    string last = Regex.Match(streetNumber, @"(?<=-)(\d+)").Value.Trim();
+
+                    string addressIdExact = @"SELECT TOP(1) address_detail_pid FROM [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                            WHERE number_first = @first AND number_last = @last AND street_locality_pid = @streetId";
+
+                    Tuple<string, string>[] sqlParams =
+                    {
+                        Tuple.Create("@streetId", streetId),
+                        Tuple.Create("@first", first),
+                        Tuple.Create("@last", last)
+                    };
+
+                    string addressId = GetValue(addressIdExact, db, sqlParams);
+
+                    if (addressId == null) addressId = GetHouseAddress(streetId, first, db);
+                    if (addressId == null) addressId = GetHouseAddress(streetId, last, db);
+                    return addressId;
+                }
             }
             return null;
         }
@@ -302,12 +327,15 @@ namespace AddressValidator
             string stateId = GetState(state, db);
             string localityId = GetLocality(stateId, locality, db);
             string streetId = GetStreet(state, localityId, street, false, db);
-            if (streetId == null) streetId = GetStreet(state, localityId, street, true, db);
-            return streetId;
-            //string addressId = null;
+            string addressId = null;
 
-            //if (streetId != null) addressId = GetAddress(streetId, streetNumber, db);
-            //return addressId;
+            if (streetId == null) streetId = GetStreet(state, localityId, street, true, db);
+            if (streetId != null) addressId = GetAddress(streetId, streetNumber, db);
+
+            if (addressId == null) streetId = GetStreet(state, localityId, street, true, db); 
+            if (streetId != null) addressId = GetAddress(streetId, streetNumber, db);
+            
+            return addressId;
         }
     }
 }

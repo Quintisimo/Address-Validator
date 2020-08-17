@@ -9,7 +9,7 @@ namespace AddressValidator
     class Program
     {
         //const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
-        const string FILE = @"D:\Work Experience\AddressValidator\NF.txt";
+        const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
         static void Main()
         {
             string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
