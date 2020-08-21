@@ -12,8 +12,8 @@ public class MathFunctions
     [Microsoft.SqlServer.Server.SqlFunction]
     public static SqlInt32 Distance(SqlString source, SqlString target)
     {
-        string sourceStr = source.ToString();
-        string targetStr = target.ToString();
+        string sourceStr = source.ToString().ToLower();
+        string targetStr = target.ToString().ToLower();
         int sourceLength = sourceStr.Length;
         int targetLength = targetStr.Length;
 
