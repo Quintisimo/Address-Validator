@@ -10,17 +10,46 @@ namespace AddressValidator
     {
         //const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
         const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
+        const string CSV_FILE = @"D:\Work Experience\AddressValidator\Addresses for Test.csv"; 
         static void Main()
         {
-            string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
+            //string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
+            //SqlConnection db = Database.Connect();
+            //DiskLog.CreateFile();
+            //foreach (string line in lines)
+            //{
+            //    string[] cols = line.Split('\t');
+            //    string state = RemoveSpaces(cols[2]);
+            //    string locality = RemoveSpaces(cols[1]);
+            //    (string streetName, string streetNumber) = StreetName(cols[0]);
+
+            //    if (state != null && locality != null && streetName != null)
+            //    {
+            //        string addressId = Database.GetAddressId(state, locality, streetName, streetNumber, db);
+            //        if (addressId != null) Console.WriteLine(addressId);
+            //        else
+            //        {
+            //            Console.WriteLine(line);
+            //            DiskLog.WriteLog(line);
+            //        }
+            //    }
+            //}
+            //db.Close();
+            CSVFile();
+            Console.WriteLine("DONE");
+        }
+
+        static void CSVFile()
+        {
+            string[] lines = File.ReadAllLines(CSV_FILE).Skip(2).ToArray();
             SqlConnection db = Database.Connect();
             DiskLog.CreateFile();
             foreach (string line in lines)
             {
-                string[] cols = line.Split('\t');
-                string state = RemoveSpaces(cols[2]);
-                string locality = RemoveSpaces(cols[1]);
-                (string streetName, string streetNumber) = StreetName(cols[0]);
+                string[] cols = line.Split(',');
+                string state = RemoveSpaces(cols[4]);
+                string locality = RemoveSpaces(cols[3]);
+                (string streetName, string streetNumber) = StreetName(cols[1]);
 
                 if (state != null && locality != null && streetName != null)
                 {
@@ -34,8 +63,9 @@ namespace AddressValidator
                 }
             }
             db.Close();
-            Console.WriteLine("DONE");
+
         }
+
 
         /// <summary>
         /// Extract street name from address
