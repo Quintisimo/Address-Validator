@@ -51,7 +51,7 @@ namespace AddressValidator
                 string locality = RemoveSpaces(cols[3]);
                 (string streetName, string streetNumber) = StreetName(cols[1]);
 
-                if (state != null && locality != null && streetName != null)
+                if (!string.IsNullOrEmpty(state) && !string.IsNullOrEmpty(locality) && !string.IsNullOrEmpty(streetName) && !string.IsNullOrEmpty(streetNumber))
                 {
                     string addressId = Database.GetAddressId(state, locality, streetName, streetNumber, db);
                     if (addressId != null) Console.WriteLine(addressId);
