@@ -42,7 +42,6 @@ namespace AddressValidator
         static void CSVFile()
         {
             string[] lines = File.ReadAllLines(CSV_FILE).Skip(1).ToArray();
-            SqlConnection db = Database.Connect();
             DiskLog.CreateFile();
             foreach (string line in lines)
             {
@@ -53,7 +52,7 @@ namespace AddressValidator
 
                 if (!string.IsNullOrEmpty(state) && !string.IsNullOrEmpty(locality) && !string.IsNullOrEmpty(streetName) && !string.IsNullOrEmpty(streetNumber))
                 {
-                    string addressId = Database.GetAddressId(state, locality, streetName, streetNumber, db);
+                    string addressId = Database.GetAddressId(state, locality, streetName, streetNumber);
                     if (addressId != null) Console.WriteLine(addressId);
                     else
                     {
@@ -62,8 +61,6 @@ namespace AddressValidator
                     }
                 }
             }
-            db.Close();
-
         }
 
 
