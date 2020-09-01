@@ -231,7 +231,22 @@ namespace AddressValidator
         {
             if (streetNumber != "")
             {
-                if (Regex.IsMatch(streetNumber, @"^[0-9]+$")) return GetHouseAddress(streetId, streetNumber, db);
+                if (Regex.IsMatch(streetNumber, @"^[0-9]+$"))
+                {
+                    string addressId = GetHouseAddress(streetId, streetNumber, db);
+
+                    string addressIdExact = @"SELECT TOP(1) address_detail_pid from [PSMA_G-NAF].[dbo].[ADDRESS_DETAIL]
+                                            WHERE flat_number = @flatNumber AND street_locality_pid = @streetId";
+
+                    Tuple<string, string>[] sqlParams =
+                    {
+                        Tuple.Create("@flatNumber", streetNumber),
+                        Tuple.Create("@streetId", streetId)
+                    };
+
+                    if (addressId == null) addressId = GetValue(addressIdExact, db, sqlParams);
+                    return addressId;
+                }
                 else if (Regex.IsMatch(streetNumber, @"^[0-9]+[A-z]{1}$"))
                 {
 

@@ -10,7 +10,7 @@ namespace AddressValidator
     {
         //const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
         const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
-        const string CSV_FILE = @"D:\Work Experience\AddressValidator\Addresses for Test.csv"; 
+        const string CSV_FILE = @"D:\Work Experience\AddressValidator\NotFoundCSV.txt"; 
         static void Main()
         {
             //string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
@@ -41,7 +41,7 @@ namespace AddressValidator
 
         static void CSVFile()
         {
-            string[] lines = File.ReadAllLines(CSV_FILE).Skip(2).ToArray();
+            string[] lines = File.ReadAllLines(CSV_FILE).Skip(1).ToArray();
             SqlConnection db = Database.Connect();
             DiskLog.CreateFile();
             foreach (string line in lines)
@@ -88,6 +88,6 @@ namespace AddressValidator
         /// </summary>
         /// <param name="str">string</param>
         /// <returns>formated string</returns>
-        private static string RemoveSpaces(string str) => Regex.Replace(str, @"\s+", @" ").Trim();
+        private static string RemoveSpaces(string str) => Regex.Replace(str, @"\s+|/", @" ").Trim();
     }
 }
