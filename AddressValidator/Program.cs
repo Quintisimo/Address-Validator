@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -10,39 +10,11 @@ namespace AddressValidator
     {
         //const string FILE = @"D:\Work Experience\AddressValidator\20200515_AddressExamples.txt";
         const string FILE = @"D:\Work Experience\AddressValidator\NotFound.txt";
-        const string CSV_FILE = @"D:\Work Experience\AddressValidator\NotFoundCSV.txt"; 
         static void Main()
         {
-            //string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
-            //SqlConnection db = Database.Connect();
-            //DiskLog.CreateFile();
-            //foreach (string line in lines)
-            //{
-            //    string[] cols = line.Split('\t');
-            //    string state = RemoveSpaces(cols[2]);
-            //    string locality = RemoveSpaces(cols[1]);
-            //    (string streetName, string streetNumber) = StreetName(cols[0]);
-
-            //    if (state != null && locality != null && streetName != null)
-            //    {
-            //        string addressId = Database.GetAddressId(state, locality, streetName, streetNumber, db);
-            //        if (addressId != null) Console.WriteLine(addressId);
-            //        else
-            //        {
-            //            Console.WriteLine(line);
-            //            DiskLog.WriteLog(line);
-            //        }
-            //    }
-            //}
-            //db.Close();
-            CSVFile();
-            Console.WriteLine("DONE");
-        }
-
-        static void CSVFile()
-        {
-            string[] lines = File.ReadAllLines(CSV_FILE).Skip(1).ToArray();
+            string[] lines = File.ReadAllLines(FILE).Skip(1).ToArray();
             DiskLog.CreateFile();
+            System.Diagnostics.Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
             foreach (string line in lines)
             {
                 string[] cols = line.Split(',');
@@ -52,17 +24,22 @@ namespace AddressValidator
 
                 if (!string.IsNullOrEmpty(state) && !string.IsNullOrEmpty(locality) && !string.IsNullOrEmpty(streetName) && !string.IsNullOrEmpty(streetNumber))
                 {
-                    string addressId = Database.GetAddressId(state, locality, streetName, streetNumber);
-                    if (addressId != null) Console.WriteLine(addressId);
+                    System.Diagnostics.Stopwatch each = System.Diagnostics.Stopwatch.StartNew();
+                    List<string> addressIds = Database.GetAddressId(state, locality, streetName, streetNumber);
+                    each.Stop();
+
+                    if (addressIds != null && addressIds.Count > 0) Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms");
                     else
                     {
-                        Console.WriteLine(line);
+                        Console.WriteLine($"{line} - {each.ElapsedMilliseconds} ms");
                         DiskLog.WriteLog(line);
                     }
                 }
             }
+            watch.Stop();
+            Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
+            Console.ReadLine();
         }
-
 
         /// <summary>
         /// Extract street name from address
