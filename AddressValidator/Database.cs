@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -14,6 +15,12 @@ namespace AddressValidator
         private static SqlConnection Connect()
         {
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DB Connection"];
+            return new SqlConnection(settings.ConnectionString);
+        }
+
+        private static SqlConnection ConnectLoyaltyDB()
+        {
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DB Loyalty Connection"];
             return new SqlConnection(settings.ConnectionString);
         }
 
@@ -235,7 +242,7 @@ namespace AddressValidator
             return houseId;
         }
 
-        private static string GetAddress(string streetId, string streetNumber, int count)
+        private static string GetAddress(string streetId, string streetNumber, int count, Address add)
         {
             using(SqlConnection db = Connect())
             {
@@ -387,35 +394,154 @@ namespace AddressValidator
         /// <param name="street">street name</param>
         /// <param name="db">database connection</param>
         /// <returns>street locality id if found otherwise null</returns>
-        public static List<string> GetAddressId(string state, string locality, string street, string streetNumber)
+        internal static List<string> GetAddressId(Address address)
         {
-            string stateId = GetState(state);
+            string stateId = GetState(address.State);
 
-            if (!string.IsNullOrEmpty(stateId))
+            if (!string.IsNullOrWhiteSpace(stateId))
             {
-                string localityId = GetLocality(stateId, locality);
-                List<string> streetIds = GetStreet(state, localityId, street, false);
+                string localityId = GetLocality(stateId, address.Locality);
+                List<string> streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, false);
                 ConcurrentBag<string> addressIds = new ConcurrentBag<string>();
                 List<string> addresses = new List<string>();
 
-                if (streetIds.Count == 0) streetIds = GetStreet(state, localityId, street, true);
+                if (streetIds.Count == 0) streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, true);
 
-                //streetIds.ForEach(streetId => addressIds.Add(GetAddress(streetId, streetNumber)));
-                Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, streetNumber, streetIds.Count)));
+                Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
                 addresses = addressIds.ToArray().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
 
                 if (addresses.Count == 0)
                 {
-                    streetIds = GetStreet(state, localityId, street, true);
-                    //streetIds.ForEach(streetId => addressIds.Add(GetAddress(streetId, streetNumber)));
-
-                    Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, streetNumber, streetIds.Count)));
+                    streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, true);
+                    Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
                     addresses = addressIds.ToList().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
                 }
 
+                address.AddressIds = addresses;
                 return addresses;
             }
             return null;
         }
+
+        internal static void UpdateAddressList(List<Address> addresses)
+        {
+            using(SqlConnection db = ConnectLoyaltyDB())
+            {
+                db.Open();
+                StringBuilder bulkQuery = new StringBuilder();
+
+                foreach(var address in addresses)
+                {
+                    if (address.AddressIds == null || address.AddressIds.Count == 0)
+                    {
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED]
+                                             ([CustomerID]
+                                             ,[ProcessedOn]
+                                             )
+                                             VALUES
+                                             ({address.CustomerId}
+                                             ,'{DateTime.Now}'
+                                             )");
+                    }
+                    else if (address.AddressIds.Count == 1)
+                    {
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED]
+                                            ([CustomerID]
+                                            ,[ProcessedOn]
+                                            ,[GnafDetailPid]
+                                            )
+                                            VALUES
+                                            ({address.CustomerId}
+                                            ,'{DateTime.Now}'
+                                            ,'{address.AddressIds.First()}'
+                                            )");
+                    } 
+                    else
+                    {
+                        for (int i = 0; i < address.AddressIds.Count; i++)
+                        {
+                            bulkQuery.AppendLine($@"INSERT INTO [dbo].[CustomerAddress_NORMALIZED_Extra]
+                                                 ([CustomerID]
+                                                 ,[ProcessedOn]
+                                                 ,[GnafDetailPid]
+                                                 )
+                                                 VALUES
+                                                 ({address.CustomerId}
+                                                 ,'{DateTime.Now}'
+                                                 ,'{address.AddressIds[i]}'
+                                                 )");
+                        }
+                    }
+                }
+
+                SqlCommand command = new SqlCommand(bulkQuery.ToString(), db);
+                command.ExecuteNonQuery();
+            }
+        }
+        internal static List<Address> GetAddresses()
+        {
+            List<Address> addresses = new List<Address>();
+            using (SqlConnection db = ConnectLoyaltyDB())
+            {
+                db.Open();
+                string query = @"SELECT TOP (100)
+                                c.CustomerID,
+                                c.AddressLine1,
+                                c.AddressLine2,
+                                c.Suburb,
+                                c.State,
+                                c.PostCode
+                                FROM [KIALSVR05].[Loyalty].dbo.Customer c
+                                LEFT JOIN [KIALSVR05].Loyalty.dbo.CustomerAddress_NORMALIZED CAN on can.CustomerID = c.CustomerID
+                                WHERE CAN.ProcessedOn IS NULL
+                                ORDER BY c.CustomerID";
+
+                SqlCommand command = new SqlCommand(query, db);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Address item = new Address();
+                    if (!reader.IsDBNull(0)) item.CustomerId = reader.GetInt64(0);
+                    if (!reader.IsDBNull(1)) item.AddressLine = reader.GetString(1);
+                    //if (!reader.IsDBNull(2))  
+                    if (!reader.IsDBNull(3)) item.Locality = reader.GetString(3);
+                    if (!reader.IsDBNull(4)) item.State = reader.GetString(4);
+                    if (!reader.IsDBNull(5)) item.Postcode = reader.GetString(5);
+                    if (item.CustomerId > 0 && !string.IsNullOrWhiteSpace(item.StreetData.Item1) && !string.IsNullOrWhiteSpace(item.StreetData.Item2) 
+                        && !string.IsNullOrWhiteSpace(item.Locality) && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode)) addresses.Add(item);
+                }
+            }
+
+            return addresses;
+        }
+    }
+
+    internal class Address
+    {
+        public long CustomerId { get; set; }
+
+        private string state;
+        public string State { get { return state; } set { state = RemoveSpaces(value); } }
+
+        private string locality;
+        public string Locality { get { return locality; } set { locality = RemoveSpaces(value); } }
+        public string AddressLine { set { StreetData = StreetName(value); } }
+        public string Postcode { get; set; }
+
+        public List<string> AddressIds { get; set; }
+
+        public Tuple<string, string> StreetData { get; private set; }
+        private static Tuple<string, string> StreetName(string streetCombined)
+        {
+            Match numberCheck = Regex.Match(streetCombined, @"\d+");
+            Match streetNumber = Regex.Match(streetCombined, @"(.*)\d+[A-z]?");
+            Match postbpox = Regex.Match(streetCombined, @"P\.*O\.* BOX", RegexOptions.IgnoreCase);
+
+            if (!numberCheck.Success) return Tuple.Create(streetCombined, streetNumber.Value);
+            if (streetNumber.Success && !postbpox.Success) return Tuple.Create(RemoveSpaces(streetCombined.Substring(streetNumber.Index + streetNumber.Length).Trim()), streetNumber.Value);
+            return Tuple.Create<string, string>(null, streetNumber.Value);
+        }
+
+        private static string RemoveSpaces(string str) => Regex.Replace(str, @"\s+|/", @" ").Trim();
     }
 }

@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="DiskLog.cs" />
     <Compile Include="Program.cs" />
