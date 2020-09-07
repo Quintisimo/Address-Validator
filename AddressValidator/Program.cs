@@ -23,23 +23,9 @@ namespace AddressValidator
             var addresses = Database.GetAddresses();
             DiskLog.CreateFile();
             System.Diagnostics.Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
-            foreach (var line in addresses)
-            {
-                System.Diagnostics.Stopwatch each = System.Diagnostics.Stopwatch.StartNew();
-                List<string> addressIds = Database.GetAddressId(line);
-                each.Stop();
-
-                if (addressIds != null && addressIds.Count > 0) Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms");
-                else
-                {
-                    Console.WriteLine($"CustomerId {line.CustomerId} - {each.ElapsedMilliseconds} ms");
-                }
-            }
-            var db = System.Diagnostics.Stopwatch.StartNew();
-            Database.UpdateAddressList(addresses);
-            db.Stop();
-            watch.Stop();
-            Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms, DB Time: {db.ElapsedMilliseconds} ms");
+            Database.GetAddressIds(addresses);
+            //Database.UpdateAddressList(addresses);
+            Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
             Console.ReadLine();
         }
 

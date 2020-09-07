@@ -80,25 +80,28 @@ namespace AddressValidator
         }
 
         /// <summary>
-        /// Get state id
+        /// Get states from db
         /// </summary>
-        /// <param name="state">state name</param>
-        /// <returns>state id</returns>
-        private static string GetState(string state)
+        /// <returns>states list</returns>
+        private static List<Tuple<string, string>> GetStates()
         {
-            string stateIdExact = @"SELECT TOP(1) state_pid FROM [PSMA_G-NAF].[dbo].[STATE]
-                                  WHERE state_abbreviation = @state";
-            Tuple<string, string>[] sqlParam = { Tuple.Create("@state", state) };
-            return GetValue(stateIdExact, sqlParam);
+            List<Tuple<string, string>> states = new List<Tuple<string, string>>();
+            using (SqlConnection db = Connect())
+            {
+                SqlCommand query = new SqlCommand("SELECT state_pid, state_abbreviation FROM [PSMA_G-NAF].[dbo].[STATE]", db);
+                query.Connection.Open();
+                SqlDataReader reader = query.ExecuteReader();
+                while (reader.Read()) states.Add(Tuple.Create(reader.GetString(0), reader.GetString(1)));
+            }
+            return states;
         }
 
+
         /// <summary>
-        /// Get locality
+        /// Get localities from db
         /// </summary>
-        /// <param name="stateId">state id</param>
-        /// <param name="locality">locality name</param>
         /// <returns>locality id</returns>
-        private static string GetLocality(string stateId, string locality)
+        private static string GetLocality(string locality, string stateId)
         {
             string localityIdExact = @"SELECT TOP(1) locality_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY]
                                      WHERE locality_name = @locality and state_pid = @stateId";
@@ -116,6 +119,19 @@ namespace AddressValidator
             string localityId = GetValue(localityIdExact, sqlParams);
             if (localityId == null) localityId = GetValue(localityIdDifference, sqlParams);
             return localityId;
+        }
+
+        private static List<Tuple<string, string, string>> GetLocalities()
+        {
+            List<Tuple<string, string, string>> localities = new List<Tuple<string, string, string>>();
+            using (SqlConnection db = Connect())
+            {
+                SqlCommand query = new SqlCommand("SELECT locality_pid, locality_name, state_pid FROM [PSMA_G-NAF].[dbo].[LOCALITY]", db);
+                query.Connection.Open();
+                SqlDataReader reader = query.ExecuteReader();
+                while (reader.Read()) localities.Add(Tuple.Create(reader.GetString(0), reader.GetString(1), reader.GetString(2)));
+            }
+            return localities;
         }
 
         /// <summary>
@@ -394,33 +410,46 @@ namespace AddressValidator
         /// <param name="street">street name</param>
         /// <param name="db">database connection</param>
         /// <returns>street locality id if found otherwise null</returns>
-        internal static List<string> GetAddressId(Address address)
+        internal static void GetAddressIds(List<Address> addresses)
         {
-            string stateId = GetState(address.State);
+            List<Tuple<string, string>> states = GetStates();
+            //List<Tuple<string, string, string>> localities = GetLocalities();
 
-            if (!string.IsNullOrWhiteSpace(stateId))
+            foreach (Address address in addresses)
             {
-                string localityId = GetLocality(stateId, address.Locality);
+                var each = System.Diagnostics.Stopwatch.StartNew();
+                string stateId = states.Find(tuple => tuple.Item2 == address.State).Item1;
+                string localityId = GetLocality(address.Locality, stateId);
+
+                //string localityId = localities.Find(tuple => tuple.Item2 == address.Locality && tuple.Item3 == stateId)?.Item1;
+
+                //if (localityId == null)
+                //{
+                //    List<Tuple<string, string, string>> stateLocalities = localities.FindAll(tuple => tuple.Item3 == stateId);
+                //    List<int> distances = stateLocalities.ConvertAll(tuple => Levenshtein.Distance(address.Locality, tuple.Item2));
+                //    localityId = localities[distances.IndexOf(distances.Max())].Item1;
+                //}
+
                 List<string> streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, false);
-                ConcurrentBag<string> addressIds = new ConcurrentBag<string>();
-                List<string> addresses = new List<string>();
+                ConcurrentBag<string> addressBag = new ConcurrentBag<string>();
+                List<string> addressIds = new List<string>();
 
                 if (streetIds.Count == 0) streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, true);
 
-                Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                addresses = addressIds.ToArray().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
+                Parallel.ForEach(streetIds, streetId => addressBag.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
+                addressIds = addressBag.ToArray().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
 
-                if (addresses.Count == 0)
+                if (addressIds.Count == 0)
                 {
                     streetIds = GetStreet(address.State, localityId, address.StreetData.Item1, true);
-                    Parallel.ForEach(streetIds, streetId => addressIds.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                    addresses = addressIds.ToList().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
+                    Parallel.ForEach(streetIds, streetId => addressBag.Add(GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
+                    addressIds = addressBag.ToList().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
                 }
 
-                address.AddressIds = addresses;
-                return addresses;
+                each.Stop();
+                Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms");
+                address.AddressIds = addressIds;
             }
-            return null;
         }
 
         internal static void UpdateAddressList(List<Address> addresses)
@@ -434,42 +463,20 @@ namespace AddressValidator
                 {
                     if (address.AddressIds == null || address.AddressIds.Count == 0)
                     {
-                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED]
-                                             ([CustomerID]
-                                             ,[ProcessedOn]
-                                             )
-                                             VALUES
-                                             ({address.CustomerId}
-                                             ,'{DateTime.Now}'
-                                             )");
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now}')");
                     }
                     else if (address.AddressIds.Count == 1)
                     {
-                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED]
-                                            ([CustomerID]
-                                            ,[ProcessedOn]
-                                            ,[GnafDetailPid]
-                                            )
-                                            VALUES
-                                            ({address.CustomerId}
-                                            ,'{DateTime.Now}'
-                                            ,'{address.AddressIds.First()}'
-                                            )");
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds.First()}')");
                     } 
                     else
                     {
                         for (int i = 0; i < address.AddressIds.Count; i++)
                         {
-                            bulkQuery.AppendLine($@"INSERT INTO [dbo].[CustomerAddress_NORMALIZED_Extra]
-                                                 ([CustomerID]
-                                                 ,[ProcessedOn]
-                                                 ,[GnafDetailPid]
-                                                 )
-                                                 VALUES
-                                                 ({address.CustomerId}
-                                                 ,'{DateTime.Now}'
-                                                 ,'{address.AddressIds[i]}'
-                                                 )");
+                            bulkQuery.AppendLine($@"INSERT INTO [dbo].[CustomerAddress_NORMALIZED_Extra] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                                 VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds[i]}')");
                         }
                     }
                 }
