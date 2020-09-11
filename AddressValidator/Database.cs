@@ -14,15 +14,27 @@ namespace AddressValidator
     {
         private static SortedList<string, State> states;
         private static SortedList<string, SortedList<string, Locality>> postcodeLocalities;
-        private static SortedList<int, SortedList<string, Locality>> localities;
+        private static SortedList<int, SortedList<string, SortedList<string, Locality>>> nameLocalities;
+        private static SortedList<int, SortedList<string, Locality>> stateLocalities;
+        private static SortedList<string, Locality> localities;
         private static SortedList<string, StreeType> types;
+        private static SortedList<string, StreetLocality> streets;
+        private static SortedList<string, SortedList<string, List<StreetLocality>>> streetLocalities;
+        private static SortedList<string, SortedList<string, List<StreetLocality>>> streetLocalitiesAlias;
+        private static SortedList<string, StreeType> streetSuffix;
 
         static Database()
         {
             states = new SortedList<string, State>();
             postcodeLocalities = new SortedList<string, SortedList<string, Locality>>();
-            localities = new SortedList<int, SortedList<string, Locality>>();
+            nameLocalities = new SortedList<int, SortedList<string, SortedList<string, Locality>>>();
+            stateLocalities = new SortedList<int, SortedList<string, Locality>>();
+            localities = new SortedList<string, Locality>();
             types = new SortedList<string, StreeType>();
+            streets = new SortedList<string, StreetLocality>();
+            streetLocalities = new SortedList<string, SortedList<string, List<StreetLocality>>>();
+            streetLocalitiesAlias = new SortedList<string, SortedList<string, List<StreetLocality>>>();
+            streetSuffix = new SortedList<string, StreeType>();
         }
 
         private static SqlConnection Connect()
@@ -37,41 +49,14 @@ namespace AddressValidator
             return new SqlConnection(settings.ConnectionString);
         }
 
-        ///// <summary>
-        ///// Execute SQL command with single row
-        ///// </summary>
-        ///// <param name="sqlCommand">sql query</param>
-        ///// <param name="parameters">sql query parameters</param>
-        ///// <returns>sql query result</returns>
-        //private static string GetValue(string sqlCommand, Tuple<string, string>[] parameters, SqlConnection dbc = null, int timemout = 30)
-        //{
-        //    if (dbc == null)
-        //    {
-        //        using (SqlConnection db = Connect())
-        //        {
-        //            SqlCommand command = new SqlCommand(sqlCommand, db);
-        //            foreach (Tuple<string, string> param in parameters) command.Parameters.AddWithValue(param.Item1, param.Item2);
-        //            command.Connection.Open();
-        //            return (string)command.ExecuteScalar();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        SqlCommand command = new SqlCommand(sqlCommand, dbc);
-        //        command.CommandTimeout = timemout;
-        //        foreach (Tuple<string, string> param in parameters) command.Parameters.AddWithValue(param.Item1, param.Item2);
-        //        try
-        //        {
-        //            return (string)command.ExecuteScalar();
-        //        }
-        //        catch
-        //        {
-        //            Console.WriteLine("Error in Query");
-        //            return null;
-        //        }
-        //    }
-        //}
-        
+        /// <summary>
+        /// Execute SQL command with single row
+        /// </summary>
+        /// <param name="sqlCommand">sql query</param>
+        /// <param name="parameters">sql query parameters</param>
+        /// <param name="dbc">optional db connection</param>
+        /// <param name="timemout">db connection timeout</param>
+        /// <returns>sql query result</returns>
         private static async Task<string> GetValueAsync(string sqlCommand, Tuple<string, string>[] parameters, SqlConnection dbc = null, int timemout = 30)
         {
             if (dbc == null)
@@ -101,27 +86,12 @@ namespace AddressValidator
             }
         }
 
-        ///// <summary>
-        ///// Execute SQL command with multiple rows
-        ///// </summary>
-        ///// <param name="sqlCommand">sql query</param>
-        ///// <param name="parameters">sql query parameters</param>
-        ///// <returns>sql query results</returns>
-        //private static List<string> GetValues(string sqlCommand, params Tuple<string, string>[] parameters)
-        //{
-        //    using (SqlConnection db = Connect())
-        //    {
-        //        SqlCommand command = new SqlCommand(sqlCommand, db);
-        //        foreach (Tuple<string, string> param in parameters) command.Parameters.AddWithValue(param.Item1, param.Item2);
-        //        command.Connection.Open();
-        //        SqlDataReader reader = command.ExecuteReader();
-        //        List<string> values = new List<string>();
-        //        while (reader.Read()) values.Add(reader.GetString(0));
-        //        return values;
-        //    }
-        //}
-
-
+        /// <summary>
+        /// Execute SQL command with multiple rows
+        /// </summary>
+        /// <param name="sqlCommand">sql query</param>
+        /// <param name="parameters">sql query parameters</param>
+        /// <returns>sql query results</returns>
         private static async Task<List<string>> GetValuesAsync(string sqlCommand, params Tuple<string, string>[] parameters)
         {
             using (SqlConnection db = Connect())
@@ -147,8 +117,13 @@ namespace AddressValidator
                 {
                     SqlCommand query = new SqlCommand(@"SELECT state_pid, state_abbreviation, state_name FROM STATE
                                                       SELECT code, name FROM STREET_TYPE_AUT
-                                                      SELECT * From (SELECT DISTINCT l.locality_pid, l.locality_name, l.state_pid, coalesce(coalesce(ad.postcode, l.primary_postcode), '') postcode 
-                                                      FROM LOCALITY l LEFT JOIN (SELECT DISTINCT locality_pid, postcode FROM ADDRESS_DETAIL) ad on l.locality_pid = ad.locality_pid) T WHERE postcode IS NULL or postcode NOT LIKE '9%'", db);
+                                                      SELECT DISTINCT l.locality_pid, l.locality_name, l.state_pid, coalesce(coalesce(ad.postcode, l.primary_postcode), '') postcode, locality_class_code 
+                                                      FROM LOCALITY l LEFT JOIN (SELECT DISTINCT locality_pid, postcode FROM ADDRESS_DETAIL) ad on l.locality_pid = ad.locality_pid
+                                                      SELECT oitpostcode, name, stateId, pid, created, reason from OITPOSTCODES
+                                                      SELECT street_locality_pid, street_name, street_type_code, street_suffix_code, locality_pid from STREET_LOCALITY WHERE date_retired IS NULL
+                                                      SELECT street_locality_pid, street_name, street_type_code, street_suffix_code from STREET_LOCALITY_ALIAS WHERE date_retired IS NULL
+                                                      SELECT locality_pid, name, postcode, state_pid FROM LOCALITY_ALIAS WHERE date_retired IS NULL
+                                                      SELECT code, name FROM STREET_SUFFIX_AUT", db);
                     await query.Connection.OpenAsync();
                     SqlDataReader reader = await query.ExecuteReaderAsync();
                     while (await reader.ReadAsync())
@@ -160,11 +135,11 @@ namespace AddressValidator
                         State state = new State()
                         {
                             Pid = stateId,
-                            abbreviation = reader.GetString(1),
-                            name = reader.GetString(2)
+                            Abbreviation = reader.GetString(1),
+                            Name = reader.GetString(2)
                         };
 
-                        states.Add(state.abbreviation, state);
+                        states.Add(state.Abbreviation, state);
                     }
 
                     if (await reader.NextResultAsync())
@@ -173,17 +148,17 @@ namespace AddressValidator
                         {
                             StreeType type = new StreeType 
                             { 
-                                code = reader.GetString(0), 
+                                Code = reader.GetString(0), 
                                 Name = reader.GetString(1) 
                             };
 
-                            types.Add(type.code, type);
+                            types.Add(type.Code, type);
                         }
                     }
 
                     if (await reader.NextResultAsync())
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync())
                         {
                             string statePid = reader.GetString(2);
                             int stateId;
@@ -194,27 +169,225 @@ namespace AddressValidator
                                 Name = reader.GetString(1),
                                 Pid = reader.GetString(0),
                                 StateId = stateId,
-                                Postcode = reader.GetString(3)
+                                Postcode = reader.GetString(3).PadLeft(4, '0')
                             };
 
-                            if (!localities.ContainsKey(loc.StateId)) localities.Add(loc.StateId, new SortedList<string, Locality>());
+                            string localityCode = reader.GetString(4);
+                            switch(localityCode)
+                            {
+                                case "G":
+                                    loc.ClassCodeOrder = 0;
+                                    break;
+                                case "I":
+                                    loc.ClassCodeOrder = 1;
+                                    break;
+                                case "H":
+                                    loc.ClassCodeOrder = 2;
+                                    break;
+                                case "T":
+                                    loc.ClassCodeOrder = 3;
+                                    break;
+                                case "D":
+                                    loc.ClassCodeOrder = 4;
+                                    break;
+                                case "U":
+                                    loc.ClassCodeOrder = 6;
+                                    break;
+                                default:
+                                    loc.ClassCodeOrder = 5;
+                                    break;
+                            }
+
+                            if (!localities.ContainsKey(loc.Pid)) localities.Add(loc.Pid, loc);
+                            else localities[loc.Pid].Postcodes.Add(loc.Postcode);
+
+                            if (!stateLocalities.ContainsKey(loc.StateId)) stateLocalities.Add(loc.StateId, new SortedList<string, Locality>());
+                            if (!postcodeLocalities.ContainsKey(loc.Postcode)) postcodeLocalities.Add(loc.Postcode, new SortedList<string, Locality>());
+                            if (!nameLocalities.ContainsKey(loc.StateId)) nameLocalities.Add(loc.StateId, new SortedList<string, SortedList<string, Locality>>());
+                            if (!nameLocalities[loc.StateId].ContainsKey(loc.Name)) nameLocalities[loc.StateId].Add(loc.Name, new SortedList<string, Locality>());
+
+                            if (!nameLocalities[loc.StateId][loc.Name].ContainsKey(loc.Pid)) nameLocalities[loc.StateId][loc.Name].Add(loc.Pid, loc);
+                            else
+                            {
+                                var locAdd = nameLocalities[loc.StateId][loc.Name][loc.Pid];
+                                if (!locAdd.Postcodes.Contains(loc.Postcode))
+                                {
+                                    locAdd.Postcodes.Add(loc.Postcode);
+                                }
+                            }
+
+                            postcodeLocalities[loc.Postcode].Add(loc.Pid, loc);
+
+                            if (stateLocalities[loc.StateId].ContainsKey(loc.Pid))
+                            {
+                                var temp = stateLocalities[loc.StateId][loc.Pid];
+                                temp.Postcodes.Add(loc.Postcode);
+                            }
+                            else stateLocalities[loc.StateId].Add(loc.Pid, loc);
+                        }
+                    }
+
+                    if (await reader.NextResultAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            var loc = new Locality()
+                            {
+                                Pid = reader.GetString(3),
+                                Name = reader.GetString(1),
+                                StateId = reader.GetByte(2),
+                                Postcode = reader.GetInt16(0).ToString("0000")
+                            };
+
+                            if (!stateLocalities.ContainsKey(loc.StateId)) stateLocalities.Add(loc.StateId, new SortedList<string, Locality>());
                             if (!postcodeLocalities.ContainsKey(loc.Postcode)) postcodeLocalities.Add(loc.Postcode, new SortedList<string, Locality>());
                             
                             postcodeLocalities[loc.Postcode].Add(loc.Pid, loc);
-                            
-                            if (localities[loc.StateId].ContainsKey(loc.Pid))
+
+                            if (stateLocalities[loc.StateId].ContainsKey(loc.Pid))
                             {
-                                var temp = localities[loc.StateId][loc.Pid];
+                                var temp = stateLocalities[loc.StateId][loc.Pid];
                                 temp.Postcodes.Add(loc.Postcode);
                             }
-                            else localities[loc.StateId].Add(loc.Pid, loc);
+                            else stateLocalities[loc.StateId].Add(loc.Pid, loc);
+                        }
+                    }
+
+                    if (await reader.NextResultAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            string localityId = reader.GetString(4);
+                            var streetLoc = new StreetLocality()
+                            {
+                                Pid = reader.GetString(0),
+                                Name = reader.GetString(1),
+                                Type = "",
+                                Suffix = ""
+                            };
+
+                            if (!reader.IsDBNull(2)) streetLoc.Type = reader.GetString(2);
+                            if (!reader.IsDBNull(3)) streetLoc.Suffix = reader.GetString(3);
+
+                            streets.Add(streetLoc.Pid, streetLoc);
+
+                            if (localities.ContainsKey(localityId))
+                            {
+                                streetLoc.Locality = localities[localityId];
+                                if (!streetLocalities.ContainsKey(localityId)) streetLocalities.Add(localityId, new SortedList<string, List<StreetLocality>>());
+                                if (!streetLocalities[localityId].ContainsKey(streetLoc.Name)) streetLocalities[localityId].Add(streetLoc.Name, new List<StreetLocality>());
+                                streetLocalities[localityId][streetLoc.Name].Add(streetLoc);
+                            }
+                            else
+                            {
+                                string whyTho = ":(";
+                            }
+                        }
+                    }
+
+                    if (await reader.NextResultAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            var streetAlias = new StreetLocality()
+                            {
+                                Pid = reader.GetString(0),
+                                Name = reader.GetString(1),
+                                Type = "",
+                                Suffix = ""
+                            };
+
+                            if (!reader.IsDBNull(2)) streetAlias.Type = reader.GetString(2);
+                            if (!reader.IsDBNull(3)) streetAlias.Suffix = reader.GetString(3);
+
+                            if (streets.ContainsKey(streetAlias.Pid))
+                            {
+                                streetAlias.Locality = streets[streetAlias.Pid].Locality;
+                                if (!streetLocalitiesAlias.ContainsKey(streetAlias.Locality.Pid)) streetLocalitiesAlias.Add(streetAlias.Locality.Pid, new SortedList<string, List<StreetLocality>>());
+                                if (!streetLocalitiesAlias[streetAlias.Locality.Pid].ContainsKey(streetAlias.Name)) streetLocalitiesAlias[streetAlias.Locality.Pid].Add(streetAlias.Name, new List<StreetLocality>());
+                                streetLocalitiesAlias[streetAlias.Locality.Pid][streetAlias.Name].Add(streetAlias);
+                            }
+                            else
+                            {
+                                string whyTho = ":(";
+                            }
+                        }
+                    }
+
+                    if (await reader.NextResultAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            string statePid = reader.GetString(3);
+                            int stateId;
+                            int.TryParse(statePid, out stateId);
+
+                            var loc = new Locality()
+                            {
+                                Pid = reader.GetString(0),
+                                Name = reader.GetString(1),
+                                StateId = stateId,
+                                Postcode = ""
+                            };
+
+                            if (!reader.IsDBNull(2)) loc.Postcode = reader.GetString(2).PadLeft(4, '0');
+
+                            if (!localities.ContainsKey(loc.Pid))
+                            {
+                                localities.Add(loc.Pid, loc);
+                            }
+                            else
+                            {
+                                if (!string.IsNullOrWhiteSpace(loc.Postcode) && !localities[loc.Pid].Postcodes.Contains(loc.Postcode)) localities[loc.Pid].Postcodes.Add(loc.Postcode);
+                                else if (string.IsNullOrWhiteSpace(loc.Postcode)) loc.Postcode = localities[loc.Pid].Postcode;
+                            }
+
+                            if (!postcodeLocalities.ContainsKey(loc.Postcode)) postcodeLocalities.Add(loc.Postcode, new SortedList<string, Locality>());
+                            if (!nameLocalities[loc.StateId].ContainsKey(loc.Name)) nameLocalities[loc.StateId].Add(loc.Name, new SortedList<string, Locality>());
+
+                            if (!nameLocalities[loc.StateId][loc.Name].ContainsKey(loc.Pid)) nameLocalities[loc.StateId][loc.Name].Add(loc.Pid, loc);
+                            else
+                            {
+                                var locAdd = nameLocalities[loc.StateId][loc.Name][loc.Pid];
+                                if (!loc.Postcodes.Contains(loc.Postcode))
+                                {
+                                    locAdd.Postcodes.Add(loc.Postcode);
+                                }
+                            }
+
+
+                            if (!postcodeLocalities.ContainsKey(loc.Postcode)) postcodeLocalities[loc.Postcode].Add(loc.Pid, loc);
+
+                            if (stateLocalities[loc.StateId].ContainsKey(loc.Pid))
+                            {
+                                var temp = stateLocalities[loc.StateId][loc.Pid];
+                                temp.Postcodes.Add(loc.Postcode);
+                            }
+                            else stateLocalities[loc.StateId].Add(loc.Pid, loc);
+                        }
+                    }
+
+                    if (await reader.NextResultAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            StreeType suffix = new StreeType()
+                            {
+                                Code = reader.GetString(0),
+                                Name = reader.GetString(1)
+                            };
+                            streetSuffix.Add(suffix.Code, suffix);
                         }
                     }
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine($"Cache Error: {e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Cache Loaded");
             }
         }
 
@@ -228,8 +401,8 @@ namespace AddressValidator
         {
             string rval;
             type = type.ToUpper();
-            if (types.ContainsKey(type)) rval = types[type].code;
-            else rval = types.Values.ToList().FirstOrDefault(v => v.code.StartsWith(type))?.code;
+            if (types.ContainsKey(type)) rval = types[type].Code;
+            else rval = types.Values.ToList().FirstOrDefault(v => v.Code.StartsWith(type))?.Code;
             return rval;
         }
 
@@ -240,74 +413,96 @@ namespace AddressValidator
         /// <param name="localityId">locality id</param>
         /// <param name="street">street name</param>
         /// <returns>street id</returns>
-        private static async Task<List<string>> GetStreet(string state, string localityId, string street, bool ignoreType)
+        private static List<StreetLocality> GetStreet(Address address, Locality locality, string street, bool ignoreType)
         {
-            string[] streetName = street.Split();
-            string type = null;
-            if (!ignoreType) type = GetStreetType(streetName[streetName.Length - 1]);
+            string[] streetName = street.ToUpper().Split();
+            string type = ignoreType ? null : GetStreetType(streetName[streetName.Length - 1]);
+            string name = type != null ? string.Join(" ", streetName.Take(streetName.Length - 1)) : street;
+            List<StreetLocality> matchedStreets = new List<StreetLocality>();
 
-            string streetLocalityIdExact = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                           WHERE street_name = @name AND locality_pid = @localityId AND street_locality_pid LIKE @state + '%'";
-
-            Tuple<string, string>[] sqlParams =
+            if (streetLocalities.ContainsKey(locality.Pid) && streetLocalities[locality.Pid].ContainsKey(name))
             {
-                Tuple.Create("@name", type != null ? string.Join(" ", streetName.Take(streetName.Length - 1)) : street),
-                Tuple.Create("@state", state)
-            };
+                matchedStreets = streetLocalities[locality.Pid][name];
 
-            Tuple<string, string>[] extraPramas =
-            {
-                    Tuple.Create("@localityId", localityId)
-            };
-
-            if (type != null)
-            {
-                streetLocalityIdExact = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                        WHERE street_name = @name AND locality_pid = @localityId AND street_type_code = @type AND street_locality_pid LIKE @state + '%'";
-
-                sqlParams = sqlParams.Append(Tuple.Create("@type", type)).ToArray();
+                if (type != null && matchedStreets.Count > 1)
+                {
+                    var temp = matchedStreets.Where(s => s.Type == type).ToList();
+                    if (temp.Count > 0) matchedStreets = temp;
+                }
             }
 
-            List<string> streetId = new List<string>();
-            if (localityId != null) streetId = await GetValuesAsync(streetLocalityIdExact, sqlParams.Concat(extraPramas).ToArray());
-
-            if (streetId.Count == 0)
+            if (matchedStreets.Count == 0 && streetLocalitiesAlias.ContainsKey(locality.Pid) && streetLocalitiesAlias[locality.Pid].ContainsKey(name))
             {
-                string streetLocalityIdWithoutLocalityExact = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                                              WHERE street_name = @name AND street_locality_pid LIKE @state + '%'";
+                matchedStreets = streetLocalitiesAlias[locality.Pid][name];
 
-                if (type != null) streetLocalityIdWithoutLocalityExact = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                                                         WHERE street_name = @name AND street_type_code = @type AND street_locality_pid LIKE @state + '%'";
-
-                streetId = await GetValuesAsync(streetLocalityIdWithoutLocalityExact, sqlParams);
+                if (type != null && matchedStreets.Count > 1)
+                {
+                    var temp = matchedStreets.Where(s => s.Type == type).ToList();
+                    if (temp.Count > 0) matchedStreets = temp;
+                }
             }
 
-            if (streetId.Count == 0)
+            if (matchedStreets.Count == 0)
             {
-                string streetLocalityIdDifference = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                                    WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId AND street_locality_pid LIKE @state + '%' 
-                                                    ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+                matchedStreets = streets.Values.Where(s => s.Name == name).ToList();
 
-                if (type != null) streetLocalityIdDifference = @"SELECT street_locality_pid FROM STREET_LOCALITY
-                                                               WHERE DIFFERENCE(street_name, @name) > 2 AND locality_pid = @localityId AND street_type_code = @type AND street_locality_pid LIKE @state + '%'
-                                                               ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+                if (type != null && matchedStreets.Count > 1)
+                {
+                    if (matchedStreets.Count > 1)
+                    {
+                        var temp = matchedStreets.Where(s => s.Locality.StateId == locality.StateId).ToList();
+                        if (temp.Count > 0) matchedStreets = temp;
+                    }
 
-                if (localityId != null) streetId = await GetValuesAsync(streetLocalityIdDifference, sqlParams.Concat(extraPramas).ToArray());
+                    if (matchedStreets.Count > 1)
+                    {
+                        var temp = matchedStreets.Where(s => s.Type == type).ToList();
+                        if (temp.Count > 0) matchedStreets = temp;
+                    }
+                }
             }
 
-            if (streetId.Count == 0)
+            if (streets.Count == 0 && streetLocalities.ContainsKey(locality.Pid) && streetName.Length > 1)
             {
-                string streetLocalityIdWithoutLocalityDifference = @"SELECT street_locality_pid FROM STREET_LOCALITY 
-                                                                   WHERE DIFFERENCE(street_name, @name) > 2 AND street_locality_pid LIKE @state + '%'
-                                                                   ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+                for (int i = streetName.Length - 1; i > 0; i--)
+                {
+                    if (streetSuffix.ContainsKey(streetName[i]))
+                    {
+                        var alias = string.Join(" ", streetName.Take(i - 1));
 
-                if (type != null) streetLocalityIdWithoutLocalityDifference = @"SELECT street_locality_pid FROM STREET_LOCALITY 
-                                                                              WHERE DIFFERENCE(street_name, @name) > 2 AND street_type_code = @type AND street_locality_pid LIKE @state + '%'
-                                                                              ORDER BY [PSMA_G-NAF].[dbo].[Distance](street_name, @name) asc, DIFFERENCE(street_name, @name) desc";
+                        if (streetLocalities[locality.Pid].ContainsKey(alias))
+                        {
+                            matchedStreets = streetLocalities[locality.Pid][alias];
 
-                streetId = await GetValuesAsync(streetLocalityIdWithoutLocalityDifference, sqlParams);
+                            if (type != null && matchedStreets.Count > 1)
+                            {
+                                var temp = matchedStreets.FindAll(s => s.Type == type);
+                                if (temp.Count > 0) matchedStreets = temp;
+                            }
+                        }
+                    }
+                }
             }
-            return streetId;
+            
+            if (matchedStreets.Count == 0 && streetLocalities.ContainsKey(locality.Pid))
+            {
+                var streetList = streetLocalities[locality.Pid];
+                var distances = streetList.Select(s => new StreetLocalityDistance() { Distance = Levenshtein.Distance(s.Key, name), StreetLocality = s.Value }).OrderBy(x => x.Distance).ToList();
+                
+                if (distances.Count > 1)
+                {
+                    foreach(var item in distances)
+                    {
+                        var temp = item.StreetLocality.FindAll(s => s.Type == type);
+                        if (temp.Count > 0)
+                        {
+                            matchedStreets = temp;
+                            break;
+                        }
+                    }
+                }
+            }
+            return matchedStreets;
         }
 
         /// <summary>
@@ -334,7 +529,7 @@ namespace AddressValidator
             return houseId;
         }
 
-        private static async Task<string> GetAddress(string streetId, string streetNumber, int count, Address add)
+        private static async Task<AddressLocality> GetAddress(StreetLocality street, string streetNumber, int count, Address add)
         {
             using(SqlConnection db = Connect())
             {
@@ -342,7 +537,7 @@ namespace AddressValidator
                 int timeout = count * 3;
                 if (Regex.IsMatch(streetNumber, @"^[0-9]+$"))
                 {
-                    string addressId = await GetHouseAddress(streetId, streetNumber, db, timeout);
+                    string addressId = await GetHouseAddress(street.Pid, streetNumber, db, timeout);
 
                     string addressIdExact = @"SELECT TOP(1) address_detail_pid from ADDRESS_DETAIL
                                             WHERE flat_number = @flatNumber AND street_locality_pid = @streetId";
@@ -350,11 +545,11 @@ namespace AddressValidator
                     Tuple<string, string>[] sqlParams =
                     {
                         Tuple.Create("@flatNumber", streetNumber),
-                        Tuple.Create("@streetId", streetId)
+                        Tuple.Create("@streetId", street.Pid)
                     };
 
                     if (addressId == null) addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
-                    return addressId;
+                    return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                 }
                 else if (Regex.IsMatch(streetNumber, @"^[0-9]+[A-z]{1}$"))
                 {
@@ -364,12 +559,13 @@ namespace AddressValidator
 
                     Tuple<string, string>[] sqlParams =
                     {
-                        Tuple.Create("@streetId", streetId),
+                        Tuple.Create("@streetId", street.Pid),
                         Tuple.Create("@houseNumber", streetNumber.Remove(streetNumber.Length - 1)),
                         Tuple.Create("@suffix", streetNumber[streetNumber.Length - 1].ToString())
                     };
 
-                    return await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                    string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                    return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                 }
                 else if (Regex.IsMatch(streetNumber, @"-"))
                 {
@@ -381,16 +577,16 @@ namespace AddressValidator
 
                     Tuple<string, string>[] sqlParams =
                     {
-                        Tuple.Create("@streetId", streetId),
+                        Tuple.Create("@streetId", street.Pid),
                         Tuple.Create("@first", first),
                         Tuple.Create("@last", last)
                     };
 
                     string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
 
-                    if (addressId == null) addressId = await GetHouseAddress(streetId, first, db, timeout);
-                    if (addressId == null) addressId = await GetHouseAddress(streetId, last, db, timeout);
-                    return addressId;
+                    if (addressId == null) addressId = await GetHouseAddress(street.Pid, first, db, timeout);
+                    if (addressId == null) addressId = await GetHouseAddress(street.Pid, last, db, timeout);
+                    return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                 }
                 else if (Regex.IsMatch(streetNumber, @"(\d+\w*\s*)(/|,|\s)"))
                 {
@@ -410,10 +606,11 @@ namespace AddressValidator
                                 Tuple.Create("@houseNumber", house.Remove(house.Length - 1)),
                                 Tuple.Create("@suffix", house[house.Length - 1].ToString()),
                                 Tuple.Create("@flatNumber", flat),
-                                Tuple.Create("@streetId", streetId)
+                                Tuple.Create("@streetId", street.Pid)
                             };
 
-                            return await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                            string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                            return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                         }
                         else
                         {
@@ -424,12 +621,12 @@ namespace AddressValidator
                             {
                                 Tuple.Create("@houseNumber", house),
                                 Tuple.Create("@flatNumber", flat),
-                                Tuple.Create("@streetId", streetId)
+                                Tuple.Create("@streetId", street.Pid)
                             };
 
                             string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
-                            if (addressId == null) return await GetHouseAddress(streetId, house, db, timeout);
-                            return addressId;
+                            if (addressId == null) addressId = await GetHouseAddress(street.Pid, house, db, timeout);
+                            return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                         }
                     }
                     else if (Regex.IsMatch(flat, @"^[0-9]+[A-z]{1}$"))
@@ -447,10 +644,11 @@ namespace AddressValidator
                                 Tuple.Create("@suffix", house[house.Length - 1].ToString()),
                                 Tuple.Create("@flatNumber", flatWithLetter.Remove(flatWithLetter.Length - 1)),
                                 Tuple.Create("@flatSuffix", flatWithLetter[flatWithLetter.Length - 1].ToString()),
-                                Tuple.Create("@streetId", streetId)
+                                Tuple.Create("@streetId", street.Pid)
                             };
 
-                            return await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                            string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
+                            return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                         }
                         else
                         {
@@ -464,12 +662,12 @@ namespace AddressValidator
                                 Tuple.Create("@houseNumber", house),
                                 Tuple.Create("@flatNumber", flatWithLetter.Remove(flatWithLetter.Length - 1)),
                                 Tuple.Create("@suffix", flatWithLetter[flatWithLetter.Length - 1].ToString()),
-                                Tuple.Create("@streetId", streetId)
+                                Tuple.Create("@streetId", street.Pid)
                             };
 
                             string addressId = await GetValueAsync(addressIdExact, sqlParams, db, timeout);
-                            if (addressId == null) return await GetHouseAddress(streetId, house, db, timeout);
-                            return addressId;
+                            if (addressId == null) addressId = await GetHouseAddress(street.Pid, house, db, timeout);
+                            return new AddressLocality() { addressId = addressId, StreetLoc = street, CombinedStreet = "" };
                         }
                     }
 
@@ -478,39 +676,38 @@ namespace AddressValidator
             return null;
         }
 
-        private static async Task<List<string>> AddressIds(Address address, string localityId)
-        {
-            List<string> streetIds = await GetStreet(address.State, localityId, address.StreetData.Item1, false);
-            ConcurrentBag<string> addressBag = new ConcurrentBag<string>();
-            List<string> addressIds = new List<string>();
 
-            if (streetIds.Count == 0) streetIds = await GetStreet(address.State, localityId, address.StreetData.Item1, true);
+        private static async Task<List<AddressLocality>> AddressIds(Address address, Locality locality)
+        {
+            var streets = GetStreet(address, locality, address.StreetData.Item1, false);
+            ConcurrentBag<AddressLocality> addressBag = new ConcurrentBag<AddressLocality>();
+            List<AddressLocality> addressIds = new List<AddressLocality>();
+
+            if (streets.Count == 0) streets =  GetStreet(address, locality, address.StreetData.Item1, true);
             
-            if (streetIds.Count < 50)
+            if (streets.Count < 50)
             {
-                streetIds.ForEach(async streetId => addressBag.Add(await GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                //Parallel.ForEach(streetIds, async streetId => addressBag.Add(await GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                addressIds = addressBag.ToArray().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
+                foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetData.Item2, streets.Count, address));
+                addressIds = addressBag.ToArray().Where(s => s != null && !string.IsNullOrEmpty(s.addressId)).Distinct().ToList();
 
                 if (addressIds.Count == 0)
                 {
-                    streetIds = await GetStreet(address.State, localityId, address.StreetData.Item1, true);
-                    if (streetIds.Count < 50)
+                    streets = GetStreet(address, locality, address.StreetData.Item1, true);
+                    if (streets.Count < 50)
                     {
-                        streetIds.ForEach(async streetId => addressBag.Add(await GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                        //Parallel.ForEach(streetIds, async streetId => addressBag.Add(await GetAddress(streetId, address.StreetData.Item2, streetIds.Count, address)));
-                        addressIds = addressBag.ToList().Where(s => !string.IsNullOrEmpty(s)).Distinct().ToList();
+                        foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetData.Item2, streets.Count, address));
+                        addressIds = addressBag.ToList().Where(s => s != null && !string.IsNullOrEmpty(s.addressId)).Distinct().ToList();
 
                     }
                     else
                     {
-                        Console.WriteLine($"Too many streets - {streetIds.Count}");
+                        Console.WriteLine($"Too many streets - {streets.Count}");
                     }
                 }
             }
             else
             {
-                Console.WriteLine($"Too many streets - {streetIds.Count}");
+                Console.WriteLine($"Too many streets - {streets.Count}");
             }
             return addressIds;
         }
@@ -525,41 +722,89 @@ namespace AddressValidator
         /// <returns>street locality id if found otherwise null</returns>
         internal static async Task GetAddressIds(List<Address> addresses)
         {
-
-            foreach (Address address in addresses)
+            try
             {
-                var each = System.Diagnostics.Stopwatch.StartNew();
-                int stateId;
 
-                if (states.ContainsKey(address.State))
+                foreach (Address address in addresses)
                 {
-                    stateId = states[address.State].Pid;
-                }
-                else
-                {
-                    stateId = states.Values.ToList().Find(s => s.name == address.State.ToUpper()).Pid;
-                }
+                    var each = System.Diagnostics.Stopwatch.StartNew();
+                    int stateId;
 
-                var memTime = System.Diagnostics.Stopwatch.StartNew();
-                string localityId;
-                var stateLocalities = localities[stateId];
+                    if (states.ContainsKey(address.State))
+                    {
+                        stateId = states[address.State].Pid;
+                    }
+                    else
+                    {
+                        var state = states.Values.ToList().FirstOrDefault(s => s.Name == address.State.ToUpper());
+                        if (state == null) state = states.Values.ToList().FirstOrDefault(s => s.Abbreviation == address.State.ToUpper());
 
-                if (stateLocalities.ContainsKey(address.Locality))
-                {
-                    localityId = stateLocalities[address.Locality].Pid;
-                }
-                else
-                {
-                    var postcodeLoc = postcodeLocalities[address.Postcode].Values.ToList();
-                    var distances = postcodeLoc.ConvertAll(loc => Levenshtein.Distance(loc.Name, address.Locality));
-                    localityId = postcodeLoc[distances.IndexOf(distances.Min())].Pid;
-                }
-                memTime.Stop();
+                        if (state != null) stateId = state.Pid;
+                        else
+                        {
+                            stateId = 0;
+                            if (postcodeLocalities.ContainsKey(address.Postcode))
+                            {
+                                var postcodeLoc = postcodeLocalities[address.Postcode].Values.FirstOrDefault();
+                                if (postcodeLoc != null) stateId = postcodeLoc.StateId;
+                            }
+                        }
+                    }
 
-                var addressIds = await AddressIds(address, localityId);
-                each.Stop();
-                Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms, mem - {memTime.ElapsedMilliseconds} ms");
-                address.AddressIds = addressIds;
+                    var memTime = System.Diagnostics.Stopwatch.StartNew();
+                    Locality locality = null;
+                    var stateLocalities = Database.stateLocalities[stateId];
+
+                    if (stateLocalities.ContainsKey(address.Locality))
+                    {
+                        locality = stateLocalities[address.Locality];
+                    }
+                    else
+                    {
+                        List<Locality> postcodeLoc = null;
+
+                        if (postcodeLocalities.ContainsKey(address.Postcode))
+                        {
+                            postcodeLoc = postcodeLocalities[address.Postcode].Values.ToList();
+
+                            if (postcodeLoc.Count > 1)
+                            {
+                                var postcodeLocName = postcodeLoc.FindAll(l => l.Name == address.Locality.ToUpper());
+                                if (postcodeLocName.Count > 0) postcodeLoc = postcodeLocName;
+                            }
+                        }
+                        else if (nameLocalities[stateId].ContainsKey(address.Locality.ToUpper())) postcodeLoc = nameLocalities[stateId][address.Locality.ToUpper()].Values.ToList();
+                        else locality = null;
+
+                        if (postcodeLoc != null && postcodeLoc.Count > 0)
+                        {
+                            if (postcodeLoc.Count != 1)
+                            {
+                                var distances = postcodeLoc.ConvertAll(l => Levenshtein.Distance(l.Name, address.Locality));
+                                locality = postcodeLoc[distances.IndexOf(distances.Min())];
+                            }
+                            else locality = postcodeLoc.First();
+                        }
+                    }
+
+                    memTime.Stop();
+
+                    var addressIds = await AddressIds(address, locality);
+                    each.Stop();
+                    //Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms, mem - {memTime.ElapsedMilliseconds} ms {address.CustomerId}");
+                    address.AddressIds = addressIds;
+                    Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()}");
+                    
+                    foreach(var addressId in addressIds)
+                    {
+                        Console.WriteLine($"Found Locality: {addressId.StreetLoc.Locality.Name} Expected Street: {addressId.StreetLoc.Name} {addressId.StreetLoc.Type}");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
             }
         }
 
@@ -621,7 +866,6 @@ namespace AddressValidator
                     Address item = new Address();
                     if (!reader.IsDBNull(0)) item.CustomerId = reader.GetInt64(0);
                     if (!reader.IsDBNull(1)) item.AddressLine = reader.GetString(1);
-                    //if (!reader.IsDBNull(2))  
                     if (!reader.IsDBNull(3)) item.Locality = reader.GetString(3);
                     if (!reader.IsDBNull(4)) item.State = reader.GetString(4);
                     if (!reader.IsDBNull(5)) item.Postcode = reader.GetString(5);
@@ -646,7 +890,7 @@ namespace AddressValidator
         public string AddressLine { set { StreetData = StreetName(value); } }
         public string Postcode { get; set; }
 
-        public List<string> AddressIds { get; set; }
+        public List<AddressLocality> AddressIds { get; set; }
 
         public Tuple<string, string> StreetData { get; private set; }
         private static Tuple<string, string> StreetName(string streetCombined)
@@ -669,6 +913,7 @@ namespace AddressValidator
         public string Name { get; set; }
         public int StateId { get; set; }
         public string Postcode { get; set; }
+        public byte ClassCodeOrder { get; set; }
         public List<string> Postcodes { get; set; }
 
         public Locality()
@@ -677,16 +922,43 @@ namespace AddressValidator
         }
     }
 
+    internal class StreetLocality
+    {
+        public string Pid { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public string Suffix { get; set; }
+        public Locality Locality { get; set; }
+    }
+
+    internal class StreetLocalityDistance
+    {
+        public int Distance { get; set; }
+        public List<StreetLocality> StreetLocality { get; set; }
+
+        public StreetLocalityDistance()
+        {
+            StreetLocality = new List<StreetLocality>();
+        }
+    }
+
     internal class State
     {
         public int Pid { get; set; }
-        public string abbreviation { get; set; }
-        public string name { get; set; }
+        public string Abbreviation { get; set; }
+        public string Name { get; set; }
     }
 
     internal class StreeType
     {
         public string Name { get; set; }
-        public string code { get; set; }
+        public string Code { get; set; }
+    }
+
+    internal class AddressLocality
+    {
+        public StreetLocality StreetLoc;
+        public string addressId;
+        public string CombinedStreet;
     }
 }
