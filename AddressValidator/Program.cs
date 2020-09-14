@@ -18,7 +18,7 @@ namespace AddressValidator
             var addresses = Database.GetAddresses();
             DiskLog.CreateFile();
             System.Diagnostics.Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
-            var t2 = Task.Run(async () => await Database.GetAddressIds(addresses));
+            var t2 = Task.Run(async () => await Database.GetAddresses(addresses));
             t2.Wait();
             //Database.UpdateAddressList(addresses);
             Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
