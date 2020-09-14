@@ -12,16 +12,16 @@ namespace AddressValidator
         /// </summary>
         public static void CreateFile()
         {
-            if (!File.Exists(FILENAME))
-            {
-                File.Delete(FILENAME);
-            }
+            //if (!File.Exists(FILENAME))
+            //{
+            //    File.Delete(FILENAME);
+            //}
 
-            using (FileStream fs = File.Create(FILENAME))
-            {
-                byte[] info = new UTF8Encoding(true).GetBytes("Cannot Find\n");
-                fs.Write(info, 0, info.Length);
-            }
+            //using (FileStream fs = File.Create(FILENAME))
+            //{
+            //    byte[] info = new UTF8Encoding(true).GetBytes("Cannot Find\n");
+            //    fs.Write(info, 0, info.Length);
+            //}
         }
 
         /// Write log to file
