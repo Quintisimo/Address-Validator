@@ -1,0 +1,3168 @@
+Cannot Find
+101,445 Stuart Street,,TOWNSVILLE,QLD,4810
+123,225 Ally Place,,GLENDENNING,NSW,2761
+158,2 10a Vera Street,,SOUTH TAMWORTH,NSW,2340
+159,75/67 Manooka Drive,,Cannonvale,QLD,4802
+181,11 Morris Street,,Mordialloc,VIC,3195
+210,41/ South Terrace,,South Perth,WA,6151
+218,Level14-4/3 Phillip St,,WATERLOO,NSW,2017
+219,7/7 Minjungbal Drive,,South Tweed Heads,NSW,2486
+220,14 Weir Road,,Morayfield,QLD,4506
+222,1201 Kingsthorpe-haden Road,,Oakey,QLD,4401
+225,Unit/14 Alicides Ave,,LUNAH VALLEY,TAS,7008
+226,Rmb/9060 Needhams Road,,Willow Grove,VIC,3825
+265,1133 Araluen Road,,Moruia,NSW,2537
+268,15 Teesdale Road,,Capalaba,QLD,4157
+279,43 Moran Street,,BENDIGO,VIC,3550
+283,Shop 27 Sanctuary Lakes Shopping Centre Pt Cook Road,,SANCTUARY LAKES,VIC,3030
+302,1 Beresford Station,,Clermont,QLD,4721
+306,60 Ballina Road,,GOONELLABAH,NSW,2480
+344,22 Duff Street,,Arncliffe,New South Wales,2205
+345,29 10 Violet Close,,EIGHT MILE PLAINS,QLD,4113
+348,310 Northriver Road,,CARNARVON,WA,6701
+361,Lot 1 Fenaughty St,,KYABRAM,VIC,3620
+365,62 10 Violet Close,,EIGHT MILE PLAINS,QLD,4113
+372,80 Greenacre Drive,,ARUNDEL,QLD,4214
+376,71 Sugarcoast Village,,URANGAN,QLD,4655
+381,94 Grass Hill Road,,Karrinyup,WA,6173
+384,64 Wattle Tree Road,,Bunyip,VIC,3815
+393,105 Mathieson Street,,BELLBIRD,NSW,2325
+396,5/610 Prune Street,,LAVINGTON,NSW,2641
+417,18 Wyrallah Road,,LISMORE,NSW,2480
+434,19 Mt Rulburne Road,,Jensen,QLD,4818
+461,1380 Timboon Road,,Timboon,VIC,3268
+482,349 Tuckers Lane,,North Rothbury,NSW,2335
+498,Ms 367 Vanderwolf Rd,,BUNYA CREEK,QLD,4655
+509,17 6 St Martins Road,,CANNONVALE,QLD,4802
+536,3/28 Beechmont Road,,Canungra,QLD,4275
+546,108 Gordon Avenue,,HAMILTON,NSW,2303
+579,3/33 'The Drive' Merimbula Road,,MERIMBULA,NSW,2548
+601,70 Lodge Cres Access,,Berwick,VIC,3806
+610,"210 Hooper Road ",,Tatura,VIC,3616
+611,1587 Muchea East Road,,CHITTERING,WA,6084
+617,321 Mc Donalds Road,,EPPING,VIC,3076
+651,17 May Street,,Hamlyn Heights,VIC,3215
+674,13 Strickland Court,,BURNSIDE,VIC,3023
+684,45 Boondooma Close,,Albany Creek,QLD,4035
+686,668 Brentwood Village,,KINCUMBE,NSW,2251
+697,5143/1 The Vistas Drive,,CARRARA,QLD,4511
+741,65 31 Lake Placid Road,,CARAVONICA,QLD,4878
+764,238 Tolmie Road,,Tatong,VIC,3673
+765,1049 Right Bank Road,,BELMORE RIVER,NSW,2440
+767,244 57 Empire Bay Drive,,KINCUMBER,NSW,2251
+800,35 Ballarat Rd,,DEER PARK,VIC,3023
+810,1/7 Wattle Avenue,,Carneige,VIC,3163
+829,63 Pacific Highway,,RAYMOND TERRACE,NSW,2324
+836,814 Bentley Way,,MILL PARK,VIC,3082
+855,40 Huntley Road,,Dapto,NSW,2530
+877,10 Cookworthy Road,,BROADWATER,WA,6280
+879,39A Powers Road,,NANNEELLA,VIC,3561
+896,1 Srathbogie Road,,Euroa,VIC,3666
+899,4/7 Flynn Street,,CHURCHLANDS,WA,6018
+933,1870 Sextonville Road,,Dyraaba,NSW,2470
+956,791 Wisemans Ferry Road,,MANGROVE MOUNTAIN,NSW,2250
+957,"78 hollsroad ",,lusconbe,QLD,4207
+990,408 Trevastin Road,,KYABRAM,VIC,3620
+1006,34 Haynes Road,,Dalkeith,WA,6009
+1015,7/59 Boniievale Street,,GLENDALOUGH,WA,6016
+1040,RSD 23 Brookman Rd,,MEADOWS,SA,5201
+1043,28 Boomerang Street,,Bundall,QLD,4217
+1062,323 Princess Highway,,Werribee,VIC,3030
+1081,2 Ian Drive,,CURRA,QLD,4570
+1106,Rmb 6108 Wilhelmena Falls Rd,,MURRINDINDI,VIC,3717
+1134,103 Davistown Road,,DAVISTOWN,NSW,2251
+1135,8140 Willung Road,,Willung,VIC,3847
+1159,Lot 1 Clear Mountain Rd,,CLEAR MOUNTAIN,QLD,4500
+1194,45 River Road,,East Devonport,TAS,7310
+1207,38 Shinnecock Place,,HOPE ISLAND,QLD,4212
+1217,5A Sinclair Street,,EAST BRISBANE,QLD,4169
+1222,318 Warraba Road,,BOORAL,NSW,2425
+1232,96 Caloundra Road,,CALOUNDRA,QLD,4611
+1260,914 Mt Terricks Road,,Echuca,VIC,3564
+1262,"32 Boundary Street ",,Currumbin,QLD,4223
+1291,33 201 Aumuller Street,,WESTCOURT,QLD,4870
+1298,156/ Barrett Street,,Lennox Head,NSW,2481
+1315,18 Hood Street,,BOOKER BAY,NSW,2257
+1329,"11 Pinegrove ",,WARRAGUL,VIC,3820
+1331,97/120 Sturt Street,,SOUTH MELBOURNE,VIC,3205
+1337,1329 Upper Mt Hicks Road,,Wynyard,TAS,7325
+1369,Lot 1 Bains Rd,,WOODCROFT,SA,5162
+1448,Lot 722 Bathurst St,,SAWYERS GULLY,NSW,2326
+1469,32/ Bulwar Street,,Longford,TAS,7301
+1504,Villa 33 harbouside,,shoal bay,NSW,2315
+1505,20 White Road,,WONTHAGGI,VIC,3995
+1526,289 Keppel Street,,BATHURST,NSW,2795
+1557,27/258 Lyons Street,,BUNGALOW,QLD,4870
+1561,1498 Ross River Road,,KELSO,QLD,4815
+1567,3/479 The Esplande,,HERVEY BAY,QLD,4655
+1580,Rmb 1379 Yarramalong Rd,,YARRAMALONG,NSW,2259
+1601,Lot 69/2 Fernances Crossing,,LAGUNA,NSW,2325
+1610,Lot 8 Galvin Rd,,UPPER BROOKFIELD,QLD,4069
+1616,4/35 O'Connor Street,,HORSHAM,VIC,3400
+1626,1/377 Lawerence Street,,WODONGA,VIC,5665
+1637,16 Usher Crescent,,BATHURST,NSW,2795
+1643,11 Gould Avenue,,PETERSHAM,NSW,2049
+1711,47 Hambleton Street,,MIDDLE PARK,VIC,3206
+1743,Lot 27 Reserve Rd,,BOATSWAIN POINT,SA,5275
+1777,257 Egerton Stud,,BELHUS,WA,6069
+1788,Lot 14 Loftus Road,,CRESCENT HEAD,NSW,2440
+1791,7/1-3 Peidmont Street,,Box Hill,VIC,3128
+1795,867 Upper-rose River Road,,CHESHUNT,VIC,3678
+1825,31 Lockman Street,,LAKESIDE,QLD,4621
+1833,73 Bobs Street,,BENDIGO,VIC,3550
+1834,13 Mcrose Street,,Sorrento,VIC,3943
+1835,4133 Wonson Avenue,,Albion Park,NSW,2527
+1855,20 Emery Road,,ALDGATE,SA,5154
+1866,Lot 4 Seaforth Rd,,SEAFORTH,QLD,4741
+1875,623 Hnery Kendall Village,,WYOMING,NSW,2250
+1894,Lot 9 West St,,WATTAMONDARA,NSW,2794
+1900,335 Alison Road,,DUNGOG,NSW,2420
+1906,Rmb 288 Casley Rd,,THE GAP,NSW,2652
+1907,39 First Avenue,,Willoughby,NSW,268
+1941,408A Middleborough Road,,BLACKBURN,VIC,3130
+1969,9 Brooks Street,,GRACEMERE,QLD,4702
+1999,34 Lilburne Road,,Duncraig,WA,6023
+2028,160A Station Street,,ROOTY HILL,NSW,2766
+2046,207-208 King Street,,NEWCASTLE,NSW,2300
+2062,2/15 Gavan Street,,BURWOOD,VIC,3125
+2075,14 Grey Street,,MOUNT MORGAN,QLD,4714
+2103,146 Pedder Place,,JOONDALUP,WA,6027
+2109,3280 Bells Line Of Road,,BILPIN,NSW,2758
+2114,Robinvale Winery 45b/ Sea Lake Road,,Robinvale,VIC,3549
+2155,148 Holmes Street,,BRIGHTON,QLD,4017
+2173,22 The Fiarway,,ALICE SPRINGS,NT,0870
+2180,86 Blackhills Road,,NEW NORFOLK,TAS,7140
+2183,5 Lucas Circ,,KELLYVILLE,NSW,2155
+2199,48 Smith Dorrien Street,,Kingswood,SA,5062
+2220,116 1body Street,,KULIN,WA,6365
+2269,45 Bimbimbie Lodge,,MERIMBULA,NSW,2548
+2331,63 Broomdykes Drive,,ANDERGROVE,QLD,4740
+2344,E84 Cathedral Pl,,FORTITUDE VALLEY,QLD,4006
+2356,Lot 922 Markwell Rd,,MARKWELL,NSW,2423
+2367,0 Micklegate Bundarra Road,,Armidale,NSW,2350
+2379,17 Roberta Street,,Daglish,WA,6008
+2393,A/101 Rae Avenue,,EDITHVALE,VIC,3196
+2431,751 Eighteenth Street,,PARADISE BEACH,VIC,3851
+2433,7 Patterson Street,,WYNNUM WEST,QLD,4178
+2458,Lot 17 Francis Ct,,MARYBOROUGH,QLD,4650
+2463,36 Korong Street,,SOUTHPORT,TAS,7109
+2530,61 Palmer Court,,Gorae West,VIC,3305
+2587,50-52 The Imperial Centre,,GOSFORD,NSW,2250
+2593,Lot 1 Mount Hope Rd,,TYERS,VIC,3844
+2603,5/78 Undercliffe Street,,EARLWOOD,NSW,2206
+2604,./9 Wakeford Street,,Orange,NSW,2800
+2608,41 Twenty Fifth Avenue,,SAWTELL,NSW,2452
+2635,RMB 9184 Whitfield Rd,,WANGARATTA FORWARD,VIC,3678
+2675,30 Nile Street,,RAGLAN,NSW,2795
+2706,339 Matnards Plains Road,,Dorrigo,NSW,2453
+2709,16 Sansom Road,,BANGALOW,NSW,2479
+2717,342 Wollombi Road,,BELLBIRD,NSW,2325
+2724,6D Quinan Parade,,SHEPPARTON,TAS,3630
+2731,16/59 Nerang Broad Beach Road,,Nerang,QLD,4211
+2734,117 Farmborough Road,,UNANDERRA,NSW,2526
+2745,29 Millaroo Road,,Clare,QLD,4807
+2755,31/66 Archipelago Street,,GAVEN,QLD,4211
+2761,211 Alder Street,,LANGWARRIN,VIC,3910
+2782,Lot 17 Gardiners Rd,,HABANA,QLD,4740
+2806,Rsd 2357 Punt Lane,,KERANG,VIC,3579
+2807,Farm 958 Wargam Rd,,STANBRIDGE,NSW,2705
+2835,18 Corowa Court,,BURNSIDE,VIC,3023
+2882,21 Rowe Court,,WALKLEY HEIGHTS,SA,5098
+2888,1A Ingrams Road,,RESEARCH,VIC,3095
+2892,9 Queen Street,,Tamworth,NSW,2340
+2894,95 Bellara Drive,,BRIBIE ISLAND,QLD,4507
+2898,Fairways T38/22 Links Court,,WOORIM,QLD,4507
+2905,60 Parkhall Village Way,,WEST WODONGA,VIC,3690
+2908,435 Brooker Avenue,,DERWENT PARK,TAS,7009
+2941,3 Fysh Court,,ST HELENS,TAS,7216
+2972,2a/ Kangaroo Road,,Chelsea,VIC,3196
+2975,332 Albury Street,,MURRUMBURRAH,NSW,2587
+2984,117/ Skyline Terrace,,Burleigh Heads,ACT,4220
+2990,37A Headlands Drive,,LENNOX HEAD,NSW,2478
+2993,18 Coral Street,,Robinvale,VIC,3549
+3050,U2/61 Allumba Street,,Howrah,TAS,7018
+3078,26/183 Koorootang Village,,MOUNT MARTHA,VIC,3934
+3082,Shop8 91 Coast Creek Road,,BURNSIDE,QLD,4560
+3091,94a Forrest Avenue,,Bunbury,WA,6230
+3120,2 Carnarvon Road,,ROMA,QLD,4455
+3130,RMB 4515 Newry,,MAFFRA UPPER,VIC,3859
+3132,456 Danson Road,,Yalca,VIC,3637
+3170,176 Pinnucks Road,,KATUNGA,VIC,3640
+3184,135 Boulevarde,,TORONTO,NSW,2283
+3185,1 Pipeclay Road,,KINDEE,NSW,2446
+3199,Lot 2 Rathjen Rd,,MYPOLONGA,SA,5254
+3200,20 Railway Street,,KURRI KURRI,NSW,2327
+3243,Rmb 1780 Macdonalds Trk,,COALVILLE,VIC,3825
+3256,Lot 1 Red Hill Rd,,TRARALGON SOUTH,VIC,3844
+3275,15A Chruchill Street,,EAST DONCASTER,VIC,3109
+3280,3/103 Lincoln Road,,PORT MACQUARIE,NSW,2444
+3282,104 Birv Foley Street,,BONGAREE,QLD,4507
+3305,703 stanley river road,,MALENY,QLD,4552
+3328,Ms 1307 Greens Rd,,ALTON DOWNS,QLD,4702
+3344,8 Lord Avenue,,Dingley Village,.VIC,3172
+3346,"49 coode st ",,south perth,WA,6151
+3363,Lot 489 Maddington Rd,,ORANGE GROVE,WA,6109
+3386,33 Jackaroo Court,,Gilston,QLD,4211
+3393,214 Vernia Place,,BIGGERA WATERS,QLD,4216
+3406,105 Jesmond Road,,INDOOROOPILLY,QLD,4068
+3416,Villa 41 Tavistock Ct,,TORQUAY,QLD,4655
+3457,42 Depot Road,,WARWICK,QLD,4370
+3462,46b Nerang-murwillumbah Road,,Nerang,QLD,4211
+3484,12 Cleverdon Court,,Chinchilla,QLD,4413
+3489,100 West Street,,Glenroy,TAS,3046
+3520,RMB 3990 Fraser Rd,,KOYUGA,VIC,3622
+3526,234-252 Anderson Street,,Toolern Vale,VIC,3337
+3569,11 Chelmsford Avenue,,NEWTOWN,VIC,3200
+3589,206 Keilambete Road,,TERANG,QLD,3264
+3602,9 Balfours Road,,BAIRNSDALE,VIC,3875
+3605,58 Price Street,,Chinchilla,QLD,4413
+3631,RMB 5230 Cornwells Rd,,RIVERSLEA,VIC,3860
+3643,33 St Albana Road,,WOOLAHAKA RD,WA,6061
+3654,370 Marys Bay Road,,KEMPSEY,NSW,2440
+3655,681 Soldiers Settlement Road,,Tamworth,NSW,2340
+3668,194/764 moray field road,,burpengary,QLD,4505
+3670,63 Khatabundah Street,,WINGHAM,NSW,2429
+3677,77 Baroda ST,,Rosebud,VIC,3939
+3711,"25 Hickman Ave ",,Aspendale gardens,VIC,3195
+3713,357 Eastbourne Road,,ROSEBUD,VIC,3939
+3715,39 Rosenthal Drive,,BERRI,SA,5343
+3775,1004 Sheppard Street,,Ballarat North,VIC,335
+3791,26 Lyons Street,,GLENHUNTLY,VIC,3163
+3792,MS 293 Johnson Rd,,GRACEMERE,QLD,4702
+3793,1/221 Glengara Road,,SUNSHINE,VIC,3020
+3829,RMB 4750 Grimmes Rd,,DENISON,VIC,3858
+3875,Lot 7 Phillip St,,CARROLL,NSW,2340
+3900,Little Lakes 1 The Lakes Way,,Mayers Flat,NSW,2423
+3919,16/148 Box Forrest Rd,,GLENROY,VIC,3046
+3945,175 Main Road,,HEPBURN SPRINGS,VIC,3461
+3948,29/ Hibiscus Way,,Forrestfield,WA,6058
+3953,Old Gordan 25 Coreen Road,,Dingo,QLD,4702
+3966,199 Smiths Lane,,CRANBOURNE,VIC,3977
+3980,191 Popondetta Road,,DHARRUK,NSW,2770
+3981,271/ Boundray Street,,Coolangatta,NSW,4225
+3984,8212/ Bos Dve,,Coomera,QLD,4209
+3990,241 Bayway Village,,FULLERTON COVE,NSW,2318
+3991,20 Valmodre Street,,LAKE PLACID,QLD,4878
+3993,18 Bentst West,,TAMWORTH,NSW,2340
+3999,74 Wondall Road,,WYNNUM WEST,QLD,4178
+4005,Lot 105 Bell St Caravan Parking,,DUNBOGAN,NSW,2443
+4018,69 Marius Street,,Tamworth,NSW,2340
+4051,24 Charlton Avenue,,CESSNOCK,NSW,2325
+4096,90 Northcote Avenue,,SWANSEA HEADS,NSW,2281
+4122,250 Broken Head Road,,BROKEN HEAD,NSW,2481
+4155,45 Weroona Court,,FERNTREE GULLY,VIC,3156
+4159,3332 Gin Gin Bundaberg Road,,BULLYARD,QLD,4671
+4169,207 Whites Lane,,KERANG,VIC,3579
+4173,91 Howes Crk Road,,Mansfield,VIC,3722
+4194,1A Yandon Street,,BENDIGO,VIC,3550
+4195,723 Cherry Gardens Road,,CHERRY GARDENS,SA,5157
+4221,77 Bayowet Head Road,,Albany,WA,6330
+4224,RMB 8263 Eastwood Rd,,BAIRNSDALE,VIC,3875
+4304,112 Mitchell Street,,CROYDON PARK,NSW,2133
+4308,101 Falloons Road,,ASHBOURNE,VIC,3442
+4326,226 Gertrudest,,GOSFORD,NSW,2250
+4331,376/ Wright Road,,Valley View,SA,5093
+4337,Kilmarnock Rmb 3300 Lawlors Rd,,FINLEY,NSW,2713
+4349,7602/177-219 Mitchell Road,,ALEXANDRIA,NSW,2015
+4386,162 Mc Intyre Street,,Calen,QLD,4798
+4442,63/ Meilland Street,,Yeppoon,QLD,4703
+4446,57 Grange Road,,ALPHINGTON,VIC,3078
+4455,34 Scarborough Court,,ALBION PARK,NSW,2527
+4487,61/ Kondellia Drive,,Upper Coomera,QLD,4209
+4547,104/601 Fishery Point Road,,BONNELLS BAY,NSW,2264
+4561,166 Myocum Road,,MYOCUM,NSW,2481
+4605,4 Woodrise Road,,Melton,VIC,3337
+4606,700 Terang Road,,Cobrico,VIC,3266
+4638,65 Little Road,,BANKSTOWN,NSW,2200
+4641,35/12 Denton Park Drive,,Aberglasslyn,NSW,2320
+4653,104 Bauman-way Street,,BLACKWATER,QLD,4717
+4665,B312a Walker Street,,Bowral,NSW,2576
+4674,1119 Nerang Beaudesert Road,,Clagiraba,QLD,4211
+4680,Lot 18 Strathalbyn Rd,,CALLINGTON,SA,5254
+4692,829 Hurney Road,,HOME HILL,QLD,4806
+4701,31 Kingfisher Court,,FLAGSTAFF HILL,SA,5159
+4709,61/112 Drydock Road,,Tweed Heads South,NSW,2486
+4711,68 Bowillia Court Avenue Road,,PAYNEHAM,SA,5070
+4746,76 Newton Court,,THUNGONG,NSW,2641
+4799,196 B Cypress Street,,URANGAN,QLD,4655
+4817,35 Fowlers Road,,Dapto,NSW,2530
+4824,268 Ridgelands Road,,Alton Downs,QLD,4702
+4829,2181 Wonwondah Road,,HORSHAM,VIC,3401
+4854,4/25 Albert Street,,KEMPSEY,NSW,2440
+4871,157 River Road,,EMU PLAINS,NSW,2750
+4875,1/108 Greenacre Drive,,Arundel,QLD,4214
+4882,150 Mary Street,,Westbury,SA,7303
+4883,Southport Village 31 Beryl Street,,SOUTHPORT,QLD,4215
+4890,1/6a Old Bundarra Road,,Inverell,NSW,2360
+4897,1/24 Edinbourgh Castle,,Wavell Heights,QLD,4012
+4904,27 Greenbank Court,,CARRARA,QLD,4211
+4923,23 Unit4 Berega Street,,Howrah,TAS,7018
+4932,123/ Heeb Street,,Benowa,QLD,4217
+4970,Rmb 280u Warrah Rd,,HALLSVILLE,NSW,2340
+4989,175 Christensens Road,,GLENGARRY WEST,VIC,3854
+5027,10/69 Holmead Road,,EIGHT MILE PLAINS,QLD,4113
+5064,1/52 Casinov Village,,NERANG,QLD,4211
+5096,947 Ross River Road,,CONDON,QLD,4815
+5097,76 Banksia Court,,FOREST LAKE,QLD,4078
+5149,88 Edward Street,,SOUTH TAMWORTH,NSW,2340
+5151,146 Ryans Road,,ELTHAM,VIC,3095
+5167,6/511 Milsons Arm Road,,LAGUNA,NSW,2325
+5173,185/112 Drydock Road,,Tweed Heads South,NSW,2486
+5194,104/ Reef Apartments Avenue,,Forster,NSW,2428
+5200,455 Lismore Road Camperdown 3260 null,,CAMPERDOWN,VIC,3260
+5207,195 Pitt Road,,VERVALE,VIC,3814
+5271,RMB 6082 null,,STAWELL,VIC,3380
+5272,1287 Upper Ross River Road,,KELSO,QLD,4815
+5293,4 Montrath Place,,East Doncaster,VIC,3109
+5297,193 Clarkes Road,,TUNNACK,TAS,7120
+5299,14/77 Promenade Avenue,,Robina,QLD,4226
+5307,9/48 Lower Dandenong Road,,MORDIALLOC,VIC,3195
+5308,28 Ellis Drive Access,,Mudgeeraba,QLD,4213
+5326,53 Taronga Avenue,,MANGERTON,NSW,2500
+5330,564 D'Arcy Road,,CARINA,QLD,4152
+5331,44 Lakeview Court,,BALLINA,NSW,2478
+5335,522 Shady Creek Road,,DARNUM,VIC,3822
+5355,Villa 19/41 Ridley Rd,,BRIDGEMAN DOWNS,QLD,4035
+5372,28 Matpi Street,,PORMPURAAW,QLD,4871
+5380,RMB 1214 Sinclair Rd,,TONGALA,VIC,3621
+5408,'37 Tamaree Rd,,Gympie,QLD,4570
+5432,120 Hawkins Village,,EDGEWORTH,NSW,2285
+5448,372 'melita' Back River Road,,MAGRA,TAS,7140
+5455,5/10 Croydon Road,,Woodridge,QLD,4114
+5473,Lot 72 Harold Doulas Dr,,DARDANUP,WA,6236
+5475,106/5 Parker Street,,LABRADOR,QLD,4215
+5509,915 Merewether Street,,MEREWETHER,NSW,2291
+5518,Villa 377/Village Gl Eastbourne Road,,Rosebud West,VIC,3940
+5521,18D/3540 'Sunbird' Main Beach Parade,,MAIN BEACH,QLD,4217
+5535,2B Seaview Road,,WEST BEACH,SA,5024
+5546,43 Wittenoom Street,,Geraldton,WA,6530
+5581,52 Pembridge Court,,URRAWEEN,QLD,4655
+5595,6 - 30 Ugainvillea Court,,MARANGAROO,WA,6064
+5601,209 Richardson Road,,CAMPVALE,NSW,2318
+5634,Lot 1 Crowe Lane,,TRESCO,VIC,3583
+5682,1/40 City Road,,MEREWETHER,NSW,2291
+5684,2/90 Dwyer Court,,DRIVER,NT,0830
+5698,7 Prior Drive,,COOPERS SHOOT,NSW,2479
+5704,4 Willander Place,,DAPTO,NSW,2530
+5707,33 Fitzroy Place,,Hobart,TAS,7000
+5716,Lot 49 Moledina Cres,,MOUNT CROSBY,QLD,4306
+5729,UNIT 3/21 VANHEURICK ST,,CASTLEMAINE,VIC,3450
+5740,117 Bovey Road,,Mackay,QLD,4740
+5828,5/ Benowa Road,,Ashmore,QLD,4214
+5839,"285 diggers road ",,Werribee South,VIC,3030
+5873,5 The Welkin Trl,,KURUNJANG,VIC,3337
+5898,Lowes Amcal 8/ Fountain Court,,Werribee,VIC,3030
+5925,8 The Mews,,VERMONT,VIC,3133
+5935,60 Settlers Road,,KOORNALLA,VIC,3844
+5938,58 Wooramel Way,,WAIKIKI,WA,6169
+5939,27 Short Street,,GLADSTONE,QLD,4680
+5947,RMB 1850 Johnsons Lane,,SEATON,VIC,3858
+5956,169 Sydney Nolan Drive,,RUNAWAY BAY,QLD,4216
+5995,99 Banbury Crest,,Craigieburn,VIC,3064
+6004,44 Berwick Brae,,BERWICK,VIC,3806
+6013,1/15a Lady Belmore Drive,,Toormina,NSW,2452
+6023,Lot 27 Winston Dr,,EAGLETON,NSW,2324
+6039,Lot 89 Kirra Ave,,MURRAY BRIDGE,SA,5253
+6058,161 Hotham Court,,THURGOONA,NSW,2640
+6065,25 Wharparilla Road,,ECHUCA,VIC,3564
+6072,4 Verwood Street,,Alexandra,QLD,4161
+6074,3756 Upper Orara Road,,KARANGI,NSW,2450
+6087,145 Broadway Street,,Wycheproof,VIC,3527
+6088,109 Scenic Drive,,LEWISHAM,TAS,7173
+6105,224 Mckay''S Road,,Scottsdale,TAS,7260
+6115,568 Lancaster Road,,KYABRAM,VIC,3620
+6118,283 Amaroo Drive,,BANORA POINT,NSW,2486
+6124,45 View Road,,Burnie,TAS,7320
+6125,3/43 Sergison Court,,RAPID CREEK,NT,0810
+6126,64 Wynn Vale Drive,,SALISBURY EAST,SA,5109
+6129,157 Banksia Grove Nelson Bay Road,,WILLIAMTOWN,NSW,2318
+6153,8 The Mews,,VIEWBANK,VIC,3084
+6157,9/11 Tattenham Street,,CARNEGIE,VIC,3163
+6200,47 Pacific Highway,,TUGGERAH,NSW,2259
+6217,45 The Avenue,,ARMIDALE,NSW,2350
+6221,678 Top Swanfels Road,,YANGAN,QLD,4371
+6231,17 O''Shanesy Street,,Gracemere,QLD,4702
+6248,39 Prendiville Avenue,,OCEAN REEF,WA,6027
+6278,3/49 Frederick Street,,POINT FREDERICK,NSW,2250
+6280,26 Mawson Court,,WOODCROFT,SA,5162
+6282,3537 Mount William Road,,TATYOON,VIC,3378
+6291,739 Stannifer Road,,Elsmore,NSW,2360
+6315,26 Fenech Avenue,,ALLIGATOR CREEK,QLD,4741
+6320,"8 Sandbridge way ",,Meadow Springs,WA,6210
+6335,RMB 234 Manilla Rd,,TAMWORTH,NSW,2340
+6338,25 Wahn Ave - Forrester Park,,GERALDTON,WA,6530
+6356,27 Dellwood Court,,MOLENDINAR,QLD,4214
+6407,12 Fergus Road,,QUEANBEYAN,NSW,2620
+6429,1/27 Halvorson Road,,Morley,WA,6062
+6450,37 The Crescent,,TYABB,VIC,3913
+6463,Lot 14 Carlisle St,,BOWRAL,NSW,2576
+6490,330 Vallambrosa Street,,ALBURY,NSW,2640
+6501,290 Moolooolah Connection Road,,Glenview,QLD,4553
+6586,127 West Street,,Glenroy,VIC,3046
+6593,171 Westline Road,,Benger,WA,6223
+6606,63 Sergison Court,,RAPID CREEK,NT,0810
+6624,Lot 33 Alidenes Rd,,WILSONS CREEK,NSW,2482
+6636,8 Sovereign Court,,TEMPLESTOWE,VIC,3106
+6644,25/ Crystal Brook Road,,Greenbank,QLD,4124
+6708,59/270 South West Highway,,ARMADALE,WA,6112
+6710,Bayview Towers 21 Bayview Street,,RUNAWAY BAY,QLD,4216
+6763,2/16 Babeler Crt,,Miami,QLD,4220
+6813,"14 prospect place ",,cooroy,QLD,4563
+6876,Lot 12 Warraderry Way null,,GOOLOOGONG,NSW,2805
+6878,7/360 Norton Street,,LEICHHARDT,NSW,2040
+6882,717 Pine Road,,PENGUIN,TAS,7316
+6890,43 Glastonbury Court,,POINT COOK,VIC,3030
+6902,62 Maple Road,,ST MARYS,NSW,2760
+6954,Lot 3 Mcallisters Rd,,BILAMBIL HEIGHTS,NSW,2486
+6991,85 Molloy Road,,MORNINGSIDE,QLD,4170
+7016,Lot 1 Oxleys Hill Rd,,BERRIMA,NSW,2577
+7027,27 Burleigh Town Village - Wognship Drive,,WEST BURLEIGH,QLD,4219
+7065,Lot 31 Shenton Rd,,BUREKUP,WA,6227
+7068,9/39 Wanneroo Road,,TUART HILL,WA,6060
+7089,215 Wattle Street,,Bendigo,VIC,3550
+7093,40 Boundary Road,,WONDUNNA,QLD,4655
+7115,18 Thegarden Walk,,WORRIGEE,NSW,2540
+7131,11B Powlett Street,,HEIDELBERG,VIC,3084
+7162,3739 Loddon Valley Highway,,KERANG,VIC,3579
+7247,52 The Grove Way,,SALISBURY HEIGHTS,SA,5109
+7248,2582 Korumburra Road,,WARRAGUL SOUTH,VIC,3821
+7251,18 Thuddungra Road,,Thuddungra,NSW,2594
+7255,Lot 3 Bilwon Road,,BIBOONHRA,QLD,4880
+7261,1 Kulaluk Community Court,,Coconut Grove,NT,0810
+7299,144 Wentworth Road,,WONTHAGGI,VIC,3995
+7320,"63 Park rd ",,"Surrey Hills ",VIC,3127
+7342,19 Albourne Way,,BALGA,WA,6061
+7365,Lot 44 Pine Rd,,WOODCROFT,SA,5162
+7373,21 Kulgun Street,,Inala,QLD,4077
+7419,Lot 10 Government Rd null,,STAWELL,VIC,3380
+7428,47 Cozens Way,,HIGHLAND PARK,QLD,4211
+7434,18 Nicklon Street,,ORMOND,VIC,3204
+7446,3192/ Princes Highway,,Lakes Entrance,VIC,3909
+7454,4/1260 Glenhuntly Road,,Glenhuntly,VIC,3163
+7458,21/1 Rolan Court,,Palm Beach,WA,4221
+7480,116 Ramsay Street,,INVERLOCH,VIC,3996
+7488,7 First Avenue,,LISMORE,NSW,2480
+7504,919 Pascoe Vale Road,,Glenroy,TAS,3046
+7508,120 Wyrallah Road,,LISMORE,NSW,2480
+7574,1 Burwood Student Village Road,,Burwood,VIC,3125
+7588,19 Third Avenue,,Willoughby,NSW,2068
+7604,2139 Stanley River Rd,,Maleny,QLD,4552
+7655,33A Eastern Road,,BEROWRA HEIGHTS,NSW,2082
+7679,29 Hood Street,,WARRNAMBOOL,VIC,3280
+7680,./4 South Terrace,,Orange,NSW,2800
+7694,302 Svendsens Road,,EMU PARK,QLD,4710
+7698,Lot 1 Bernard St,,MOUNT HELENA,WA,6082
+7702,Rmb 168 Clark-Stewart Road,,DROMEDARY,TAS,7030
+7740,97 Exhibition Road,,Gympie,QLD,4570
+7741,RMB 4750 Hall Rd,,NAMBROK,VIC,3847
+7760,21 Montello Court,,SPRINGFIELD LAKES,QLD,4300
+7766,224 Broadwater Court,,KINCUMBER,NSW,2251
+7768,460 Grants Road,,Whittlesea,VIC,3757
+7874,Lot 3 River Rd,,MURRAYDALE,VIC,3585
+7905,14 South Esplanade,,GLENELG,SA,5045
+7917,47 Macleod Road,,HOWARD SPRINGS,NT,0835
+7936,19 Dukomp Street,,ALBANY CREEK,QLD,4035
+7942,3022 Strathalbyn Road,,Macclesfield,NSW,5153
+7971,75 Schmidt Road,,CEDAR CREEK,QLD,4207
+7993,Lot 202 Maywood Rd,,CARVARVOIN,WA,6701
+8019,P\o Box 4644 Bathurst Street,,Hobart,TAS,7000
+8027,864 Frankston Dandenong Road,,DANDENONG SOUTH,VIC,3164
+8035,1258 Upper Ross River Road,,KELSO,QLD,4815
+8079,21/116 Cavenagh Street,,DARWIN,NT,0800
+8081,489 Mystic Park,,KERANG,VIC,3579
+8085,11 Leichardt Place,,Glenden,QLD,4743
+8096,11 Kepler Street,,Bedourie,Queensland,4829
+8131,8- South Concurse,,BEAUMARIS,VIC,3193
+8138,RMB 2758 Nelson Bay Rd,,SALT ASH,NSW,2318
+8162,29 High Street,,Framlingham,VIC,3265
+8188,357 Boulevarde Cove,,North Arm Cove,NSW,2324
+8208,218 Radcliffe Est Viaduct,,QUEANBEYAN,NSW,2620
+8214,9/141 CLAREMONT CLOSE,,SWANBOURNE,WA,6010
+8243,98 Padbury Road,,DARDANUP,WA,6236
+8276,Lot 1 Mcintyre Way,,BOMADERRY,NSW,2541
+8283,510 Verney Road,,Shepparton,VIC,3630
+8295,58 Hollinsworth Street,,NORTH ROCKHAMPTON,QLD,4701
+8336,112/50 Barwarre Road,,Grovedale,VIC,3216
+8360,15 The Crest Cove,,VALENTINE,NSW,2280
+8363,27b Cottege,,BELLBROOK,NSW,2440
+8383,16 Mussau Close,,PACIFIC PINES,QLD,4211
+8391,4/160 Forbes Street,,EMU PLAINS,NSW,2750
+8421,2332/32 Surfers Paradise Boulevard,,Surfers Paradise,QLD,4217
+8454,4/34 Alexandra Avenue,,Broadbeach,QLD,4218
+8474,9 Bestwick Street,,DEER PARK,VIC,3023
+8483,34 Winderadeen Drive,,NERANG,QLD,4211
+8487,3 Mt Clifton Court,,ALLIGATOR CREEK,QLD,4816
+8526,68 Douglas Street,,REDFERN,NSW,2016
+8530,Lot 5 Jarrahwood Glen,,BULLSBROOK,WA,6084
+8566,67 Westview,,HAMILTON ISLAND,QLD,4803
+8627,1/148 Alexander Street,,ALBURY,NSW,2640
+8629,45/ Kallaroo Court,,Ashmore,QLD,4214
+8638,1878 Harrow Road,,Balmoral,VIC,3407
+8677,112B Botanical Court,,BANORA POINT,NSW,2486
+8679,715 Albert Place,,BLACKWOOD,SA,5051
+8721,6/ Prouwse Street,,South Tweed,NSW,2486
+8731,16/ Oakleigh Street,,Robina,QLD,4227
+8763,Rmb 2918 Nelson Bay Road,,SALT ASH,NSW,2318
+8778,40/ Swan Lane Aapts Drive,,Southport,QLD,4215
+8832,217 Carlyle Gardens,,CONDON,QLD,4815
+8838,226 Watson Street,,Mt Magnet,WA,6638
+8865,1/12 - 14 Swan Place,,KIAMA,NSW,2533
+8923,39/ Avondale Road,,Dapto,NSW,2530
+8934,15401 Maine Street,,SOUTH YARRA,VIC,3141
+8964,Carlyle Gardens 232 Beck Road,,CONDON,QLD,4815
+9034,Lot 27 Beechmont Rd,,CANUNGRA,QLD,4275
+9046,84 Dryden Concourse Avenue,,Mooroolbark,VIC,3138
+9062,436 Tandara Hopkins Falls Road,,CUDGEE,VIC,3265
+9064,203 Acland-brymaroo Road,,Dalby,QLD,4405
+9088,Ran 4471 Paddys Flat Road,,UPPER TOOLOOM,NSW,2475
+9123,57 Balgownie Road,,BALGOWNIE,NSW,2519
+9129,22 burnside drive,,WODONGA,VIC,3690
+9143,24/ Mariest Street,,Murrarrie,QLD,4172
+9145,13/44 Reglan Street,,Pt Melb,VIC,3207
+9183,Rmb 9249 Old Eleher Rd,,ALBANY,WA,6330
+9184,231 Marrydouglas Road,,Dardanup,WA,6236
+9196,12c Old Burleigh Road,,Surfers Paradise,QLD,421
+9219,50 Lowery Road,,PANMURE,VIC,3265
+9262,9/76 The Grove,,Coburg,VIC,3058
+9309,101 O'Neills Road,,MELTON,VIC,3337
+9353,54 Murray Drive,,WHARPARILLA,VIC,3564
+9366,Lot 6 Burnett Hwy,,MOUNT MORGAN,QLD,4714
+9386,4345 Bylong Road,,RYLSTONE,NSW,2849
+9421,Lot 53 Badgery Rd,,COWRA,NSW,2794
+9428,556 East Deep Creek Road,,CEDAR POCKET,QLD,4570
+9433,1220 Henry Kendall Village,,WYOMING,NSW,2250
+9464,4122 [ost Office Box,,Crescent Head,NSW,2440
+9497,75/ Kpmcgrath Drive,,Elanora,QLD,4221
+9512,305 Maclagan Mailing Road,,Maclagan,QLD,4352
+9525,26 Equine Court,,Melton South,VIC,3338
+9527,RMB 717A Gan Gan Rd,,ANNA BAY,NSW,2316
+9541,49 Sandycamp Road,,WYNNUM NORTH,QLD,4178
+9555,6/435 Waterdale Road,,Heidelberg Heights,VIC,3081
+9564,15A Nathaniel Way,,ORELIA,WA,6167
+9581,184 River Road,,EMU PLAINS,NSW,2750
+9587,170 Gilroy Village,,Merrylands,NSW,2160
+9606,5 Rock Lilly Place,,Worrigee,NSW,2540
+9621,12 Turkey Beach Road,,TURKEY BEACH,QLD,4678
+9643,70 Leila Road,,ORMOND,VIC,3204
+9648,209 Corindi Park Drive,,CORINDI BEACH,NSW,2456
+9700,2058 Surfview Avenue,,FORSTER,NSW,2428
+9716,24/ Kanning Street,,Albany,WA,6330
+9717,40 Bay Vista La,,BYRON BAY,NSW,2481
+9782,11 Robiliard Street,,Westmead,NSW,2145
+9785,41 West Street,,KEMPSEY,NSW,2440
+9804,228/98 Eastern Service Road,,BURPENGARY,QLD,4505
+9820,40 The Terrace,,BRUNSWICK HEADS,NSW,2483
+9823,42a Newton Street,,Surrey Hills,VIC,3127
+9827,RMB 6038 Freemans Rd,,LONGFORD,VIC,3851
+9851,24/320 Riordan Street,,Alexandria,NSW,2015
+9868,5 Cranford Road,,St Ives,NSW,2423
+9883,37/990 Elmglade Close,,ALBURY,NSW,2640
+9884,98/456 Riverside Home Paric Nerang Broadbeach Road,,Carrara,QLD,4211
+9959,1 Thomas Street,,BURWOOD,VIC,3125
+9970,4/24 - 26 Brougham Street,,BOX HILL,VIC,3128
+9979,Lot 4 Erinmore Ct,,GLENGARRY,VIC,3854
+9983,7 The Heights,,Hillvue,NSW,2340
+10058,6 Rankine Road,,RANGEVIEW,QLD,4882
+10088,1402 The Buckets Way,,Stroud,NSW,2415
+10126,233 Bribie Pines Island Village,,BONGAREE,QLD,4507
+10130,1453 Bolinda Road,,DARRAWEIT GUIM,VIC,3756
+10153,97 Bundall Road,,Bundall,QLD,4217
+10154,2/12 Olive,,MENTONE,VIC,3194
+10159,240 Scotch Road,,MILLERS FOREST,NSW,2324
+10160,36 Hansen Street,,ALBANY,WA,6330
+10161,3668/ Hattah Road,,Robinvale,VIC,3549
+10184,RMB 4480 Sale Rd,,YARRAM,VIC,3971
+10205,14 Mantra Place,,MEADOW HEIGHTS,VIC,3048
+10215,52 Heritage Drive,,CLAGIRABA,QLD,4211
+10216,160/ Lae Dve,,Runaway Bay,QLD,4216
+10282,245 Christie Road,,NANNEELLA,VIC,3561
+10287,26 Redgum Street,,Renmark,SA,5267
+10303,Lot 2 Adelyne St,,DUNEDOO,NSW,2844
+10309,2/6 Academy Str,,Studio Village,QLD,4210
+10366,39E Shaggy Ridge Road,,ROBINVALE,VIC,3549
+10374,960 Kalang Road,,Bellingen,NSW,2454
+10423,76a Bentinck Street,,Portland,VIC,3305
+10430,305 Wollombi Road,,BELLBIRD,NSW,2325
+10460,129 Old Toolangi Road,,TOOLANGI,VIC,3777
+10467,30 Braemar Road,,CAVES BEACH,NSW,2281
+10488,845 Malling Boundary Road,,Maclagan,QLD,4352
+10489,13 Mahogony Place,,NOWRA NORTH,NSW,2541
+10515,358/144 Binya Avenue,,TWEED HEADS,NSW,2485
+10535,653 Lowood Road,,GLAMORGAN VALE,QLD,4306
+10542,49B Claffey Road,,THE DAWN,QLD,4570
+10547,"3 LAKE RD ",,SWANSEA,NSW,2281
+10549,60 7 Mariners Drive,,NORTH WARD,QLD,4810
+10552,RMB 2323A Main Rd,,FULLERTON COVE,NSW,2318
+10614,1/12 Beatrice Street,,INNALOO,WA,6019
+10641,43 Daintree Drive,,Arundel,QLD,4214
+10656,5/75 Ferguson Street,,MIDVALE,WA,6056
+10658,31 Wattle Tree Road,,BUNYIP,VIC,3815
+10664,2/7 St Albans Road,,At Albans,NSW,3044
+10703,Coolamon 125 Shultz Rd,,WITTA,QLD,4552
+10715,21/3 Rise Street,,Mt Gravatt,QLD,4122
+10719,30 Northcotte Parade,,WAGGA WAGGA,NSW,2650
+10740,59 Kirchner Road,,BULLYARD,QLD,4671
+10741,69 Beveridges Road,,Lake Bunga,VIC,3909
+10755,4/ Derrimut Road,,White Hills,VIC,3550
+10772,14/ Queen Road,,Calamvale,QLD,4127
+10802,477/ Robinson Street,,Carnarvon,WA,6701
+10824,4/316 Fern Street,,Clovelly,NSW,2031
+10861,697/ Bussell Highway,,Busselton,WA,
+10863,Lot 12 Burford Hill Rd,,MOUNT TORRENS,SA,5244
+10870,35 Karbethon Street,,MANLY,NSW,2095
+10873,378 Tooryburn Road,,URALLA,NSW,2358
+10926,1/57 Kariong Court,,DUNCRAIG,WA,6023
+10970,28 Early Street,,QUEANBEYAN,NSW,2620
+11010,20 Megan Court,,NAIRNE,SA,5252
+11013,Villa 149/21 'Lagunga Retirement Village' Weyba Rd,,NOOSAVILLE,QLD,4566
+11032,87/ Hannarma Drive,,Fambrough Heights,NSW,2526
+11051,208/ Walter Street,,Geraldton,WA,6530
+11087,45 Banksia Grove Village Nelson Bay Road,,WILLIAMTOWN,NSW,2318
+11099,14 Mayfield Court,,ALBION PARK,NSW,2527
+11133,37 Apollo Crescent,,BROADMEADOWS,VIC,3047
+11135,2 Mary Street,,NYAH WEST,VIC,3595
+11154,666 Old North Road,,ALLANDALE,NSW,2320
+11161,RMB 3300OLD Tolmie Rd,,TOLMIE,VIC,3723
+11176,253/57 Nautical Village,,KINCUMBER,NSW,2251
+11177,33 Queen Street,,GREEN HILLS,NSW,2440
+11204,151 Bribie Pines Vg - Cotterill Avenue,,BRIBIE ISLAND,QLD,4507
+11223,32A Union Street,,MONKLAND,QLD,4570
+11228,42 Laguna Court,,TINGALPA,QLD,4173
+11246,804 Frogmor Road,,SURAT,QLD,4417
+11259,7/56 Hasting Street,,SCARBOROUGH,WA,6018
+11262,53B/405 Newstead Terrace,,NEWSTEAD,QLD,4006
+11343,24 Coventry Court,,SEAFORD RISE,SA,5169
+11373,4C Wombejan Court,,WATTLE GROVE,NSW,2173
+11380,2172 Seaforth Road,,SEAFORTH,QLD,4741
+11387,1 Ebert Street,,LAVINGTON,NSW,2641
+11445,Lot 1 Linda St,,HILL TOP,NSW,2575
+11462,975 The Northern Road,,BRINGELLY,NSW,2556
+11493,9 Lyell Crescent,,Wulguru,QLD,4811
+11497,1425 Princes Highway,,TABOURIE LAKE,NSW,2539
+11507,5 Wedgewood Drive,,ROSEBUD,VIC,3939
+11515,26/ Colbert Court,,Frankston,VIC,3199
+11536,82 Kirkwood Rd West,,South Tweed Heads,NSW,2486
+11551,Lot 21 Paterson Rd,,RAVENSWOOD,WA,6208
+11572,6/ Reef Water Circut,,Cabarita Beach,NSW,2488
+11613,Lot 2 Redland Bay Rd,,REDLAND BAY,QLD,4165
+11641,11 Lindrum Road,,FRANKSTON,VIC,3199
+11648,4/64 Timor Street,,COONABARABRAN,NSW,2357
+11659,201 Pacific Haven Court,,PACIFIC HAVEN,QLD,4659
+11661,83 Penrice Road,,Angaston,SA,5353
+11703,897 Allambie Towarra Road,,Bingara,NSW,2404
+11743,14 North Bay Street,,BIDWILL,NSW,2770
+11744,33 Strickland Street,,EPSOM,VIC,3551
+11749,65 Omeo Highway,,BRUTHEN,VIC,3885
+11757,43 Kingrd,,BNUNBURY,WA,6230
+11773,36 Burleigh Street,,DRYSDALE,VIC,3222
+11776,402 Armidale Road,,TAMWORTH,NSW,2340
+11779,Carinya 16 Black Road,,Riordanvale,QLD,4800
+11817,45 High Street,,LAMBTON,NSW,2299
+11820,10 Queens Street,,NORTH WARD,QLD,4810
+11823,"19 The Boulevard ",,PattersonLakes,VIC,3197
+11831,RMB 1352 Jumbuk Rd,,YINNAR,VIC,3869
+11839,117 Panorama Drive,,Unanderra,NSW,2526
+11846,26 Bangalow Close,,TAREE,NSW,2423
+11874,521 Carlyle Gardens,,CONDON,QLD,4815
+11884,Ms 1626 Cool Waters,,YEPPOON,QLD,4703
+11888,2110 Hume Highway Street,,Campbellfield,VIC,3061
+11903,2/300 Dunsmore Road,,COWES,VIC,3922
+11917,175 Deptford Road,,CLIFTON CREEK,VIC,3875
+11921,Lot 8 Collins Ave,,SARINA,QLD,4737
+11970,48/685 Casuarina Way,,Kingscliff,NSW,2487
+11983,748 Pialba Burrum Hds Road,,DUNDOWRAN,QLD,4655
+11987,311 Peregrine Avenue,,CALALA,NSW,2340
+11999,79 Ellavale Drive,,TRARALGON,VIC,3844
+12019,32 Le Muela Court,,Invermay Park,VIC,3350
+12053,28 Settlers Village,,RAVENSWOOD,WA,6208
+12075,33 Albert Street,,KEMPSEY,NSW,2440
+12100,0 Caravelle Crescent,,Strathmore Heights,VIC,3041
+12146,"72 Ferrells ",,COOROY,QLD,4563
+12155,1\5 Lowther Street,,Alphington,VIC,3078
+12246,73 A Hamersley Place,,MORLEY,WA,6062
+12293,1928 Day Road,,TONGALA,VIC,3621
+12340,19C Estelle Court,,ALTONA NORTH,VIC,3025
+12345,RMB 4562 Alpine Ridge Dr,,MERRIJIG,VIC,3723
+12375,42b Baillieu St West Street,,Wonthagggi,VIC,3995
+12389,594/ The Pines Plumptons Rd,,Finley,NSW,2713
+12411,333 Borella Road,,ALBURY,NSW,2640
+12434,Lot 2 Homestead Dr,,ABERFOYLE PARK,SA,5159
+12450,Rmb 5300 Colwell Rd 38-44 Colwell Road,,Tamworth,NSW,2340
+12477,97 Medowie Road,,MEDOWIE,NSW,2318
+12485,535 Napier Street,,BENDIGO,VIC,3550
+12497,18/8 Northcliffe Drive,,Warrawong,NSW,2502
+12544,491 Underwood Road,,Rochedale,QLD,4123
+12551,64 Myrtle Road,,Epsom,VIC,3551
+12553,43a/ Warren Street,,Mordialloc,VIC,3195
+12559,260 Brown Road,,OFFICER,VIC,3809
+12567,821 Ackland Hill Road,,CHERRY GARDENS,SA,5157
+12588,220/1215 Kappler Crt Grandjunction Road,,Hope Valley,SA,5090
+12593,1 Knapp Road,,Darkan,WA,6392
+12627,14/1398 Pioneer Road,,TOWRADGI,NSW,2518
+12639,16 Cosmo Rd Access,,Trentham,VIC,3458
+12648,2/3 Nash Rd,,Gympie,QLD,4570
+12703,23 Southern Lights Drive,,Upper Coomera,QLD,4209
+12712,9/10 Pope Court,,Aitkenvale,QLD,4814
+12728,94 Cooma Street,,QUEANBEYAN,NSW,2620
+12759,48 LOCH ST,,CLAREMONT,WA,6010
+12773,4 Michael Close,,NIAGARA PARK,NSW,2250
+12810,64/ Ibis Crescent,,Forest Lake,QLD,4078
+12811,Lot 16 Riverside Rd,,EMU HEIGHTS,NSW,2750
+12848,16.24 Box Forest Road,,Glenroy,VIC,3046
+12856,415 Cornwall Street,,Lathlain,WA,6100
+12868,124 Gilroy Village,,MERRYLANDS,NSW,2160
+12881,14 Geographe Villas,,BUSSELTON,WA,6280
+12888,9/92-94 King William Road,,HYDE PARK,SA,5061
+12892,140 The Grange,,Tea Gardens,NSW,2324
+12901,19 MILLY CIRC,,ORMEAU,QLD,4208
+12906,Lot 7 Nea St,,MONTEAGLE,NSW,2594
+12909,19 Lexington Drive Access,,Worosngsry,QLD,4213
+12913,U10 Clauscen Street,,Airport West,VIC,3068
+12918,1108 Porongerup Road,,Mount Barker,WA,6324
+12928,77/85a Old Burleigh Road,,Surfers Paradise,QLD,4217
+12946,21/ Gambling Rd,,Berri,SA,5343
+12955,45 Sullivan Drive,,LYSTERFIELD,VIC,3163
+12956,1127 Fosterton Road,,DUNGOG,NSW,2420
+12963,0 Willowbank Way,,Bundarra,NSW,2359
+13004,Farm 38 Macauley Rd,,WAMDOON,NSW,2705
+13014,B/1 Mead Street,,Cohuna,VIC,3568
+13021,8 Lake Entrance,,NOOSAVILLE,QLD,4566
+13030,Lot 1 Molongle Beach Rd,,GUMLU,QLD,4805
+13034,246 Winleighton Street,,Lake Boga,VIC,3584
+13044,588/ Russell Creek Road,,Hill  End,VIC,3825
+13046,715 Lancefield Road,,KILMORE,VIC,3764
+13062,231 The Bolovard Road,,Shepparton,VIC,3630
+13076,2-4 Lady Belmore Drive,,BOAMBEE EAST,NSW,2452
+13089,228 Mount Nathan Road,,MOUNT NATHAN,QLD,4211
+13091,16 Rankin Road,,GOOLWA,SA,5214
+13109,69 Jacaranda Avenue,,KINGSTON,QLD,4127
+13139,135 Jersey Road,,BLACKETT,NSW,2770
+13141,110/110 King St,,EAST DONCASTER,VIC,3109
+13155,27 Sydney Street,,CONCORD,NSW,2137
+13166,16 Hilton Parade,,MALVERN,VIC,3144
+13202,38 Kerry Court,,TRARALGON SOUTH,VIC,3844
+13226,Lot 2 Tanglewood Rd,,MOONBI,NSW,2353
+13252,196/ Shearwater Boulevard,,Shearwater,TAS,7307
+13282,19 Treefern Close,,Repton,NSW,2454
+13285,275/ Illawarra Highway,,Tongarra,NSW,2527
+13306,83 Plantation Road,,Cudgen,NSW,2487
+13319,71 Belah Grove Main Road,,WESTERWAY,TAS,7140
+13328,Lot 6 Andrew St,,MORWELL,VIC,3840
+13342,119 Rawson Avenue,,SUNSHINE,VIC,3020
+13344,77a Cross Street,,Deception Bay,QLD,4508
+13346,1854 Rubyvale Road,,Clermont,QLD,4721
+13357,1/28 Gerona Court,,VARSITY LAKES,QLD,4227
+13371,30 B Newborough Street,,KARRINYUP,WA,6018
+13462,7 Barbousis Street,,TOWNSVILLE,QLD,4810
+13465,171 Mitiamo Road,,ECHUCA WEST,VIC,3564
+13467,156/58 Nissen Street,,PIALBA,QLD,4655
+13509,2 A Tobruk Street,,BULLEEN,VIC,3105
+13530,RMB 5950 Mcdonalds Rd,,BROADFORD,VIC,3658
+13550,23 Farleysi Road,,PORT FAIRY,VIC,3284
+13573,80/337 Station Street,,FAIRFIELD,VIC,3078
+13575,Carv 4 Friends Court,,Yeppoon,QLD,4703
+13588,Lot 101 Bruxner Hwy,,WOLLONGBAR,NSW,2477
+13630,64 Colson Drive,,WANGARATTA,VIC,3677
+13632,34 Lake Bunga Beach Road,,LAKES ENTRANCE,VIC,3909
+13638,12 Hastie Road,,MAREEBA,QLD,4880
+13643,Lot 7 Fecelity Rd,,THE PALMS VIA GYMPIE,QLD,4570
+13666,24/4 Nerida Place,,WEST MOONAH,TAS,7009
+13669,Vnita/1 - 3 Moulder Street,,Orange,NSW,2800
+13693,63 Sanford Street,,WOODLEIGH GARDENS,NT,0812
+13715,890 Bunya Mtns Road,,DALBY,QLD,4405
+13724,105 Malconson Street,,MACKAY,QLD,4740
+13752,5 Little Road,,GLASTONBURY,QLD,4570
+13765,23 Matlock Street,,CANTERBURY,VIC,3126
+13775,1350 Melrose Road,,PRINCETOWN,VIC,3269
+13789,Site 119 'seawinds Village' Frost Rd,,ANNA BAY,NSW,2316
+13796,80/ Hillview Crescent,,Kiama,NSW,2533
+13828,172 Brisbane Street,,HOBART,TAS,7000
+13833,Lot 1 Sheaffes Rd,,GOONENGERRY,NSW,2482
+13864,Lot 494 Gallery Tce,,LYRUP,SA,5343
+13873,47/ Leichhardt Cr,,Forest Lake,QLD,4078
+13887,19A Barina Downs Road,,BAULKHAM HILLS,NSW,2153
+13900,54 10 Diamond Street,,KINGSTON,QLD,4114
+13908,39 Lyndhurst Street,,Wonthaggi,VIC,3995
+13938,295 Beechboro Rd N,,MORLEY,WA,6062
+13940,1/96 Greenacre Drive,,ARUNDEL,QLD,4214
+13995,40 Horseshoe Bend Road,,GYMPIE,QLD,4570
+14021,50A FIRST AVE,,MT CLAREMONT,WA,6010
+14040,172a Government Road,,Labrador,QLD,4215
+14051,36161 Orlando Street,,HAMPTON,VIC,3188
+14097,1 Darlington Park Caravan Park,,Arrawarra,NSW,2456
+14104,Fm/26 Main Canal Road,,Coleambally,NSW,2707
+14134,171 Radcliffe Court,,CARWOOLA,NSW,2620
+14154,161 Kahibah Road,,KAHIBAH,NSW,2290
+14159,270 A Tuggerawong Road,,TUGGERAWONG,NSW,2259
+14164,18 Lisa Crescent,,MILDURA,VIC,3500
+14165,Lot/135 Beachfields Drive,,Busselton,WA,
+14178,1521 Matison Street,,SOUTHERN RIVER GOSNE,WA,6110
+14181,3/99 Dava Drive,,Mornington,VIC,3931
+14202,73 Napier Street,,EAGLEHAWK,VIC,3556
+14203,179 High Street,,WILLOUGHBY,NSW,2068
+14208,36/72 Pearson Drive,,Success,WA,6164
+14213,84 Blackrock Road,,Camperdown,VIC,3260
+14214,53 Vallevista Road,,THE DAWN,QLD,4570
+14216,157 Denmans Camp Road,,Scarness,QLD,4655
+14225,62 Helens Road,,Hawthorn East,VIC,3123
+14228,222 Sheet 'O Bark Road,,WOODSTOCK,NSW,2793
+14238,558 Cabbage Tree Rd 1 Cabbage Tree Road,,William Town,NSW,2318
+14251,1 Morning Star Road,,WISTOW,SA,5251
+14274,86 Parkway Court,,PARAFIELD GARDENS,SA,5107
+14286,16 Goodlet Street,,TELARAH,NSW,2320
+14314,7 Dungowan Road,,DURI,NSW,2344
+14325,33 Boronia Place,,WODONGA,TAS,3690
+14331,Room 24 Alkira Hostel Marquis St,,GUNNEDAH,NSW,2380
+14377,77 Vaucluse Gardens,,SOUTH HOBART,TAS,7004
+14400,19b/ Gambling Road,,Berri,SA,5343
+14427,1038 Green Pigeon Road,,VIA KYOGLE,NSW,2474
+14437,3C 16a Coleman Street,,MOONAH,TAS,7009
+14438,1720 Buffalo Road,,TARWIN LOWER,VIC,3956
+14514,RMB 247B Manilla Rd,,TAMWORTH,NSW,2340
+14534,Unit 1 Old Bangalow Road,,BYRON BAY,NSW,2481
+14538,Rmb 2070 Chapel Rd,,COBRAM,VIC,3644
+14544,21 Waiora Road,,HEIDELBERG,VIC,3084
+14563,39 Barinya Street,,BAROOGA,VIC,3644
+14566,215 Point Cook Road,,LAVERTON,VIC,3028
+14575,RMB 1113 Watts Rd,,VENTNOR,VIC,3922
+14588,1/92 Wattle Street,,Andergrove,QLD,4740
+14595,264 Universal Street,,Pacific Pines,QLD,4211
+14597,153 Opie Street,,ST ALBANS,VIC,3021
+14600,44 Vickery Street,,SOUTH BUNBURY,WA,6239
+14604,730 Lismore Road,,Camperdown,VIC,3260
+14663,2/27 Railway St s,,NARRABRI,NSW,2390
+14664,RMB 4800 Fishers Rd,,DROUIN WEST,VIC,3818
+14675,13/670 Bruce Highway,,CAIRNS,QLD,4870
+14719,5 Tugrah Road,,Devonport,TAS,7310
+14723,57 Joadja Road,,JOADJA,NSW,2575
+14726,5/315 Clarcol Cres Crescent,,KANGAROO FLAT,VIC,3555
+14751,34A Seaham Road,,WOODVILLE,NSW,2321
+14761,29 Baranbah Street,,Rockhampton,QLD,4703
+14778,124 Bell Street,,MOE,VIC,3825
+14791,39A Centre Way,,GLENROY,VIC,3046
+14796,2a/72-80 The Esplanade,,Surfers Paradise,QLD,4217
+14799,243 Carlyle Gardens,,MT PLEASANT,QLD,4740
+14804,83 Keoughs Road,,SOUTH KOLAN,QLD,4670
+14808,29/41 Mcpherson Road,,Chambers Flat,QLD,4133
+14828,185 Austin Road,,VIA MOUNT LACOM,QLD,4695
+14829,76 St.georges Road,,UPPER BEACONSFIELD,VIC,3808
+14845,74/210 Cranbourne Road,,LANGWARRIN,VIC,3910
+14880,House 20 Monaro Circuit,,Mount Louisa,QLD,4814
+14902,45 Grehan Crst,,MT WARREN PARK,QLD,4207
+14909,2 Hoey Road,,KURANDA,QLD,4881
+14910,82 Greenacre Drive,,ARUNDEL,QLD,4214
+14914,181 George Road,,Geraldton,WA,6530
+14923,103 Tozer Loop,,ATWELL,WA,6164
+14941,45 Narla Village,,BELMONT,NSW,2280
+14971,1/15 Albert Street,,KEMPSEY,NSW,2440
+14977,23A Parramatta Road,,BURWOOD,VIC,3125
+15021,44 Short Street,,Kempsey,NSW,2440
+15023,175 Weir Road,,TORRUMBARRY,VIC,3562
+15052,Lot/1782 Brand Hwy,,Gingin,WA,6503
+15059,167 Coolgardie Highway,,SALMON GUMS,WA,6445
+15062,460 South Gippsland Highway,,LEONGATHA,VIC,3953
+15068,17A Ridgevista Court,,REEDY CREEK,QLD,4227
+15084,2aths,,WILLIAMTOWN,NSW,2314
+15096,89 Louth Park Road,,MAITLAND,NSW,2320
+15117,18 O'Dowds Road,,WARRAGUL,VIC,3820
+15119,1 Bolton Road,,KURANDA,QLD,4881
+15181,37a/ Paddington Drive,,Carrara,QLD,4211
+15182,2 Haulahan Place,,CARNARVON,WA,6701
+15207,133 Gordon Avenue,,HAMILTON,NSW,2303
+15208,L O T/1 Horthown Road,,BARGO,NSW,2574
+15269,119 Camberwell Court,,Robina,QLD,4226
+15313,"8 Geraghty Street ",,Cecil Plains,QLD,4407
+15341,"3 mclain st ",,"emu plains ",NSW,2750
+15382,4/3 Village Life/bingham St,,GOOLWA,SA,5124
+15398,RMB 8200 Talgarno Gap Rd,,WODONGA FORWARD,VIC,3691
+15428,00 Concord Avenue,,Croydon Park,NSW,2133
+15433,Lot 1 Charles St,,HILL TOP,NSW,2575
+15471,84 Cowlong Road,,MCLEANS RIDGES,NSW,2480
+15482,212 Morgan Street,,MT MORGAN,QLD,4714
+15521,21 16th Avenue,,Sawtell,NSW,2452
+15531,1266 Deep Creek Road,,Wynyard,TAS,7325
+15556,36 Camilla Court,,CRANBOURNE EAST,VIC,3977
+15561,10 Bagend Court,,Coolum,QLD,4573
+15598,2/13 15th Avenue,,Palm Beach,QLD,4221
+15602,62/ Beechworth Road,,Stanley,VIC,3747
+15615,34 Evans Road,,Cooroy,QLD,4563
+15645,51/263 Kamilaroo Avenue,,Lake Munmorah,NSW,2259
+15650,4/ Kerr St,,West Lakes,SA,5021
+15701,437 Sturt Highway,,MONASH,SA,5342
+15734,Andergrove Van Park 2 Beaconsfield Road,,Andergrove,QLD,4740
+15739,5 Pepperman Road,,TOORMINA,NSW,2452
+15756,213 Palm Lane Resort,,DECEPTION BAY,QLD,4508
+15762,810 49 Jimbour Road,,THE PALMS,QLD,4570
+15793,705 Bylong Road,,TAMWORTH,NSW,2340
+15809,150 Sunnydene Road,,CAPALABA WEST,QLD,4157
+15832,653A Harold Street,,DIANELLA,WA,6059
+15841,"6 Flemmings Cresent ",,Horsley,NSW,2530
+15868,63 Wogolin Street,,Wickepin,WA,6370
+15897,50 Marra Ave,,Camden South,NSW,2570
+15903,20a/17 Fern Street,,Surfers Paradise,QLD,4217
+15912,66 Ardwich Court,,Woodford,QLD,4514
+15922,151 smith rd,,PORTLAND,VIC,3305
+15926,1/161 Church Street,,Albion Park Rail,NSW,2527
+15929,183 Gssm,,URANGAN,QLD,4655
+15953,229 Oaker Street,,GLADSTONE,QLD,4680
+15954,2143/1 The Vistas Drive,,Carrara,QLD,4211
+15955,Lot 9 Dans Rd,,YORKE ISLAND,QLD,4875
+15964,104 Clifton Road,,MARSDEN PARK,NSW,2765
+15969,124 Brisbane Rd,,GYMPIE,QLD,4570
+15970,18 Meredith Street,,KOTARA,NSW,2289
+15983,6/ Nijinsky Way,,Willowvale,QLD,4209
+15984,237 Lawson Street,,HAMILTON,NSW,2303
+15991,71 Noana Place,,ROWVILLE,VIC,3178
+16011,28/192 Piggabean Road,,South Tweed Heads,NSW,2485
+16049,Lot 508 Lower Denmark Rd,,CUTHBERT,WA,6350
+16062,22 Gould Avenue,,PETERSHAM,NSW,2049
+16065,18 Dunne Road,,BURBANK,QLD,4156
+16088,129B Dungowan Road,,PIALLAMORE,NSW,2340
+16092,39 Chelsea Place,,CONDON,QLD,4815
+16117,13 Baple Crescent,,Rochedale,QLD,4123
+16120,33/34-46 Regents Street,,Redfern,NSW,2016
+16155,2/55 Blomfield Street,,MAITLAND,NSW,2320
+16176,113 Nepean St S,,LEONAY,NSW,2750
+16178,"4 Bass Crt ",,Intented  Head,VIC,3223
+16251,Bmt 404 Deakin University,,WARRNAMBOOL,VIC,3280
+16261,Townhouse/317 Buckley St,,ABERFELDIE,VIC,3040
+16275,"74 Bangalee street ",,LAUDERDALE,TAS,7021
+16293,Farm 1657 Yenda Rd,,BEELBANGERA,NSW,2680
+16297,107 Seawinds Village Frost Road,,Anna Bay,NSW,2316
+16300,1/33 Muir Street,,Queanbeyan,NSW,2620
+16301,1 220 Wilsons Road,,NEWCOMB,VIC,3219
+16318,60 Mount View Court,,CROYDON,VIC,3136
+16324,5 19 Queens Court,,Alexandra Hills,QLD,4161
+16330,Rsd 3159a Jervois Rd,,MURRAY BRIDGE,SA,5253
+16371,Lot 1 Plentiful Creek Rd,,THE CAVES,QLD,4702
+16385,22 131 Morala Avenue,,BIGGERA WATERS,QLD,4216
+16395,426 Ballarat Road,,SUNSHINE,VIC,3020
+16404,14 Bristow Smith Avenue,,GOOLWA,SA,5214
+16442,18 Narmbool Street,,GEELONG WEST,VIC,3218
+16465,51 Investigator Street,,RED HILL,NSW,2603
+16524,637/ The Esplanade,,Lakes Entrance,VIC,3909
+16540,55 Darlington Court,,CURRIMUNDI,QLD,4551
+16546,94 Kenilworth Road,,MALENY,QLD,4552
+16558,Keton 1365 Howell Road,,Inverell,NSW,2360
+16560,1/188 Fitzgerald Street,,Geraldton,WA,6530
+16579,133 Stuart St,,Innamincka,SA,5731
+16595,16 Tnnney Way,,ALBANY,WA,6330
+16631,5/603 - 615 Casuarina Way,,CASUARINA,NSW,2487
+16633,52 Lawrence Street,,BLACKBURN,VIC,3130
+16660,251 Mcgarth Road,,WERRIBEE,VIC,3030
+16716,106 Nexus Tower Street,,Southport,QLD,4215
+16738,11/282 Casuarina Drive,,Nightcliff,NT,0810
+16766,MS 13/ Daly Street,,Oakleigh East,VIC,3166
+16769,17A 150 The Esplanade,,SURFERS PARADISE,QLD,4217
+16816,16 Foley Court,,Mt Tarcoola,WA,6530
+16837,550 Princes Way,,DROUIN,VIC,3818
+16861,17 Tweed Heritage Park,,Chinderah,NSW,2487
+16862,118 Clancy Street,,Boulder,WA,6432
+16883,2/207 Mount Pleasant Road,,HIGHTON,VIC,3216
+16889,1108/ Bruce Highway,,MACKAY,QLD,4740
+16914,1/18 Teak Court,,SUFFOLK PARK,NSW,2481
+16953,10 Gleeson Close,,ST FRANCIS,NSW,2282
+16982,113 Denison Street,,NEWTOWN,NSW,2042
+16985,Rmb 89 Windsor Rd,,KELLYVILLE,NSW,2155
+16987,51/ Murray Street,,Yarragon,VIC,3823
+16990,Lot 110 Midlands Road,,Arrino,WA,6519
+17002,7/67 Mt View Road,,BORONIA,VIC,3155
+17010,Lot 1 Alexander Dr,,SEAHAM,NSW,2324
+17012,5/61 STIRLING HWY,,CLAREMONT,WA,6010
+17017,62/BLOCK K Binning Street,,ERSKINEVILLE,NSW,2043
+17035,92 Derwent Avenue,,Lindisfarne,TAS,7015
+17062,"17 th pinnancle ",,worongary,QLD,4227
+17068,2665 Illawarra Highway,,ALBION PARK,NSW,2527
+17079,1438 Tallebudgera Creek Road,,Tallebudgera,QLD,4228
+17100,RMB 1012 Takalarup Rd,,MOUNT BARKER,WA,6324
+17120,Lot 212 Yellowstone Rtt,,GIDGEGANNUP,WA,6081
+17142,370 Moreland Road,,BRUNSWICK,VIC,3056
+17196,84/601 Pineridge Rd,,Runaway Bay,QLD,4216
+17200,6/ Coes Creek Road,,Coes Creek,QLD,4560
+17222,25 Wattle Street,,SWANSEA,NSW,2281
+17236,9 Tan2anite Road,,Australind,WA,
+17257,2/13 Teutoberg Avenue,,WITTA,QLD,4552
+17301,2248 The Boulevard,,LOCH SPORT,VIC,3851
+17315,1 Strathmore Crescent,,KALARU,NSW,2550
+17336,75 Carlise Street,,BARGO,NSW,2574
+17349,9 Hill Street,,KEMPSEY,NSW,2440
+17351,7/8 Tatenham Street,,CARNEGIE,VIC,3163
+17358,27 Seventh Avenue,,St. Peters,S.A.,5069
+17402,535 Armidale Road,,Tamworth,NSW,2340
+17448,21a/ Pixie Hollow Court,,Eagleby,QLD,4207
+17454,6/23 West Street,,FORSTER,NSW,2148
+17460,340 O'regans Creek Road,,TOOGOOM PARK,QLD,4655
+17461,176 Eastern Valley Way,,WILLOUGHBY,NSW,2068
+17472,690 Cedar Party Road,,TAREE,NSW,2430
+17498,897 Monterary Road,,TAMWORTH,NSW,2340
+17508,491 Napier Street,,BENDIGO,VIC,3550
+17517,8/ William Court,,Echuca,NSW,3564
+17542,Lot 108 Gordon St,,ALBANY,WA,6330
+17560,Lot 27 Mount Lindesay Hwy,,NORTH MACLEAN,QLD,4280
+17575,18 Anna Avenue,,Lake Heights,NSW,2502
+17606,RMB 2630 Oxley Flats Rd,,WANGARATTA FORWARD,VIC,3678
+17648,286 Derralea Eulourie Road,,Bingara,NSW,2404
+17662,444 Marshell Mount Road,,Dapto,NSW,2530
+17683,8/223 Popondetta Road,,DHARRUK,NSW,2770
+17697,26/ Coachmans Drive,,Coffs Harbour,NSW,2450
+17704,Lot 6 Millbrook Rd,,MILLBROOK,WA,6330
+17790,90 Capes Road,,LAKES ENTRANCE,ACT,3909
+17794,116 Holdstock Road,,KERANG,VIC,3579
+17800,159 Gilroy Village,,MERRYLANDS,NSW,2160
+17824,314 Cadonia Road,,Tuggerawong,NSW,2259
+17910,855 Watken Avenue,,GRIFFITH,NSW,2680
+17916,Rmb 1350 Larissa Rd,,COBRAM,VIC,3644
+17917,Unit 4 Truro Street,,TORQUAY,QLD,4655
+17924,2/95 Kinglake Road,,ST ANDREWS,VIC,3761
+17938,"2 phillips street ",,Traralgon,VIC,3844
+17947,Unit 2 102 - 106 Macintosh Street,,FORSTER,NSW,2028
+17998,152 Carlisle Avenue,,BIDWILL,NSW,2770
+18002,3/49 Chapman Avenue,,Glenroy,TAS,3046
+18014,24 Skitch Street,,Wodonga,VIC,3690
+18048,193/ Venice Street,,Tweed Heads,NSW,2486
+18066,Lot 58 Grevillea Pl,,PAKENHAM,VIC,3810
+18084,6/846 Marian Road,,PAYNHAM,SA,5070
+18091,307 Blackwall Road,,Woy Woy,NSW,2256
+18158,Lot 1 Brougham Pl,,KANMANTOO,SA,5252
+18211,107 Rose Valley Road,,ROSE VALLEY,NSW,2534
+18224,15 Nardoo Court,,ROBINA,QLD,4226
+18307,RMB 4802 Blackwood Dr,,MORWELL,VIC,3840
+18313,RMB 295 Echuca-Nanneella Rd,,NANNEELLA,VIC,3561
+18315,193/641 Pine Ridge Road,,Runaway Bay,QLD,4216
+18322,96/ Edmund Rice Drive,,Ashmore,QLD,4215
+18328,58 Carnley Avenue,,New Lambton,SA,2305
+18330,62 Backbeach Road,,Sunset Strip,VIC,3922
+18339,11a Tangerine Court,,Munno Para West,SA,5115
+18343,RMB 5120 Dawson St,,SALE,VIC,3850
+18354,Hous 38 O'Donnell Street,,Oonoonba,QLD,4811
+18368,64 Alston Road,,BLAKISTONE,SA,5250
+18379,689 Torrens Road,,PENNINGTON,SA,5013
+18381,7/165 Dickward Drive,,Nightcliff,NT,0810
+18434,28 Sea Eagle Court,,DOUGLAS,QLD,4814
+18447,Meadow Bank 0 Olympic Way,,Koorawatha,NSW,2807
+18459,86 Forrest Avenue,,Bunbury,WA,6231
+18464,Unit F 332 Ulster Road,,Collingwood Heights,WA,6330
+18475,1/4 Langton street Glenroy,,Melbourne,Victoria,3046
+18517,Lot 34 Haslewood Crt,,LANNONVALE,QLD,4802
+18562,2 36 Moreton Parade,,KINGS BEACH,QLD,4551
+18563,46 Lakeside Park Homes,,BALDIVIS,WA,6171
+18565,12 A Parsons Street,,EMBLETON,WA,6062
+18590,170 Ibbotson Street,,INDENTED HEAD,VIC,3223
+18592,475 6th avenue,,eden park,VIC,3757
+18598,Rmb 12 Brunskill Rd,,WAGGA WAGGA,NSW,2650
+18605,3/107 Q1 Tower Street,,Surfers Paradise,QLD,4217
+18615,20/ Meadow Vale Road,,Mocbury,SA,5092
+18627,5/30 She Oak Lane,,Casuarina,NSW,2487
+18658,12 .hardern Street,,NORTH ROCKHAMPTON,QLD,4701
+18662,23 The Elbow,,SWAN VIEW,WA,6056
+18668,25A Empire Court,,FORREST,ACT,2603
+18680,280 Snell Road,,NAR NAR GOON,VIC,3812
+18691,Unit 10 Oakham Gardens Robert St Lane Street,,Bellingen,NSW,2454
+18695,Lot 129 Echidna Rd,,MORANGUP,WA,6083
+18704,"9 Alfa Drive ",,Upper Coomera,QLD,4209
+18730,168 Wondai Road,,CHINCHILLA,QLD,4413
+18745,1 Sunnybrae Court,,CAIRNLEA,VIC,3023
+18761,1350 Melrose Road,,PRINCETOWN,VIC,3269
+18801,12B The Boulevard,,THEODORE,QLD,4719
+18805,200 Darebin Road,,THORNBURY,VIC,3071
+18808,52 Greenacre Drive,,Arundel,QLD,4214
+18838,4/139 Augustus Street,,Beachlands,WA,6530
+18848,19b Cressy Street,,Camperdown,VIC,3260
+18875,Lot 32 Gladrose Crest,,GUANABA,QLD,4210
+18895,68 Hyde Park Drive,,Craigieburn,VIC,3064
+18934,320 David Street,,ALBURY,NSW,2640
+18947,2121 Avalon Avenue,,Broadmeadows,VIC,3047
+18978,Building 10 Charles Sturt Health Clinic Boorooma Street,,WAGGA WAGGA,NSW,2650
+19001,6 Bedwell Crt,,Eimeo,QLD,4740
+19078,RMB 348 Ranges Rd,,BALLAN,VIC,3342
+19081,"624 Kent's road ",,Gimbour,QLD,4406
+19114,7 Broadhurst Lane,,WANDONG,VIC,3758
+19124,4 71-73 Stapleton Street,,WENTWORTHVILLE,NSW,2145
+19149,"399 Palm Lakes ",,Toowoomba,QLD,4350
+19159,Villa 14 Brentwood Village,,KINCUMBER,NSW,2251
+19160,44 Lakeview Crescent,,Marcoola,QLD,4564
+19176,5 Dysart Street,,Deception Bay,QLD,4022
+19191,267 Sloane Street,,Deniliquin,NSW,2710
+19220,370 Baum Road,,RYANSTON,VIC,3992
+19280,2/10 Kingspark Ave,,Fivedock,NSW,2046
+19321,"79/21 bayview st ",,"Runway bay ",QLD,4216
+19356,Lot 5 Tugalong Rd,,CANYONLEIGH,NSW,2577
+19386,1137 Pacific Highway,,BONVILLE,NSW,2441
+19389,7/445 The Esplanade,,Torquay,QLD,4655
+19395,4103/ Archerhill Ross Street,,Benowa,QLD,4217
+19408,35 Kiel Mountain Road,,WOOMBYE,VIC,4559
+19411,38 Fairfax Court,,ST ALBANS,VIC,3021
+19431,Lot 1 Hanlon St,,GERALDTON,WA,6530
+19448,7 Sheeran Lane,,Lara,VIC,3212
+19468,RMB 6730 Millers Rd,,MOE,VIC,3825
+19472,19 Undara Court,,FORSTER,NSW,2428
+19498,2777 Nelson Bay Road,,SALT ASH,NSW,2318
+19526,RMB 1585 Bassett Lane,,GLENGARRY,VIC,3854
+19636,2/106 Avondale Road,,Dapto,NSW,2530
+19682,House 53 Normanby Street,,Wulguru,QLD,4811
+19710,16 Elliott Court,,WHITTINGTON,VIC,3219
+19754,169 McBryde Terrace,,WHYALLA,SA,5600
+19761,Rmb 1263 Yarramalong Rd,,YARRAMALONG,NSW,2259
+19769,1290 Duck Creek Road,,OLD BONALBO,NSW,2469
+19812,401 Manning Road,,Barmera,SA,5345
+19836,3/13-15 Gilmore Place,,Queanbeyan,NSW,2620
+19850,RMB 114 Bradbury Rd,,BRADBURY,SA,5153
+19856,8 Itala Avenue,,CROYDON PARK,SA,5008
+19866,68 Foy Street,,ESPERANCE,WA,6450
+19870,82 The Boulevard Surfers Waters,,Southport,QLD,4215
+19888,81 Lake Bunga Beach Road,,Lakes Entrance,VIC,3909
+19922,11/ Katamatite Road,,Numurkah,VIC,3636
+19926,82 Tam O'shanter Drive,,KIRWAN,QLD,4817
+19942,51 Katoomba Crescent,,MONTROSE,TAS,7010
+19952,197 Scenic Road,,KILLCARE,NSW,2257
+19993,14 Lehmanns Road,,Beenleigh,QLD,4207
+20024,170 Federation Villige Box Forestv Road,,Glenroy,VIC,3046
+20025,Unit 22 Oxford Crest,,GYMPIE,QLD,4570
+20113,54 Tintara Avenue,,Paralowie,SA,5108
+20117,Lot 16 Church Lane,,WINGHAM,NSW,2429
+20156,277 cranky corner,,stanhope,NSW,2335
+20186,154 Flynn Crescent,,BATCHELOR,NT,0845
+20198,25 Bardin Place,,ALBANY,WA,6320
+20216,54 Mackay-habana Road,,Mackay,QLD,4740
+20217,Lot 4 Sugarbag Rd,,CALOUNDRA WEST,QLD,4551
+20226,RMB 1540 Bengworden Rd,,STRATFORD,VIC,3862
+20228,26 A Tompson Street,,GARRAN,ACT,2605
+20257,Lot 24 Old Windsor Rd,,KELLYVILLE,NSW,2155
+20260,RMB 2333 Fullerton Cove Rd,,FULLERTON COVE,NSW,2318
+20273,42 Oxley Drive,,Runaway Bay,QLD,4216
+20298,Lot 224 Mccalls Rd,,GUNNEDAH,NSW,2380
+20325,58 Gordon Pde,,Mt Gravatt East,VIC,4122
+20330,Lot 2 Fryers Rd,,HERVEY RANGE,QLD,4817
+20343,15 Mathers Rd Road,,WARATAH NORTH,VIC,3959
+20344,31 Graylands Road,,Cobden,VIC,3266
+20367,2/486 Kaitlers Road,,ALBURY,NSW,2641
+20370,4/11 Ekkinton Street,,WEST BRUNSWICK,VIC,3055
+20392,A/54 Clara Street,,South Yarra,VIC,3141
+20409,"8 Hakea Court ",,"Nerangba ",QLD,4504
+20412,58 Phoenix Drive,,DURACK,NT,0830
+20440,37 Heritage Court,,SPRINGFIELD LAKES,QLD,4300
+20474,4/3 York Street,,EAST GOSFORD,NSW,2250
+20479,"314 main rd ",,toukley,NSW,2263
+20492,8/85-87 West Faunce Street,,GOSFORD,NSW,2250
+20493,244 Palm Lakes Resort,,DECEPTION BAY,QLD,4508
+20523,11 Nicholl,,PORT MACQUARIE,NSW,2444
+20563,27 Edmund Rice Drive,,Ashmore,QLD,4214
+20565,Lot 3 Abell Rd,,CANNONVALE,QLD,4802
+20574,12 Elvidge Crescent,,KOTARA,NSW,2289
+20614,64 Wettenhall Court,,CALWELL,ACT,2905
+20663,2139 Stanley River Road,,MALENY,QLD,4552
+20695,46 Dalgetty Access,,Narrandera,NSW,2700
+20704,Lot 3 Nerina Lane,,LLOWALONG,VIC,3862
+20739,15 Tumberumba Drive,,Ashmore,QLD,4214
+20743,1069 harrow - clear lake rd,,doughlas,VIC,3409
+20750,676 Cabbage Tree Rd,,WILLIAMTOWN,NSW,2318
+20769,37 Harle Street,,ABERMAIN,NSW,2326
+20778,140 Eastern Court,,ALBURY,NSW,2640
+20788,Box 1297 null,,Millicent,SA,5280
+20800,249 Coburns Road,,MELTON,VIC,3337
+20810,RMB 1055B Considine Dr,,YINNAR,VIC,3869
+20825,8 Reelong Court,,Tallebudgera,QLD,4228
+20844,77 Gordan Drive,,KIALLA LAKES,VIC,3631
+20845,14 Sunrise Road,,TINBEERWAH,QLD,4563
+20862,3264 High Street,,NORTHCOTE,VIC,3070
+20865,Lot 2 Fig Tree Drive,,CARAVONICA,QLD,4878
+20876,RMB 2342 George St,,FULLERTON COVE,NSW,2318
+20882,3101 Bell Park Royal Pines Street,,Benowa,QLD,4217
+20898,328 National Park Road,,PHEASANT CREEK,VIC,3757
+20917,584B Croobyar Road,,MILTON,NSW,2538
+20920,2341 Tungamah Road,,YARRAWONGA,VIC,3730
+20931,37a/ Paddington Dve,,Carrara,QLD,4211
+20932,68/ Brampton Street,,Delahey,VIC,3037
+20937,6/80 Railway Street,,WICKHAM,NSW,2293
+20998,3479 Old Tolmie Road,,BARWITE,VIC,3722
+21000,15 Martin Street,,CASTLEMAINE,VIC,3450
+21013,Lot 2 Mcgugi Rd,,BROOME,WA,6725
+21023,Lot 11 Neudorf Rd,,LOBETHAL,SA,5041
+21047,133 Bucketts Way,,TWELVE MILE CREEK,NSW,2324
+21061,20 Tingira Drive,,TINGIRA HEIGHTS,NSW,2290
+21063,124/45 Cooroora Street,,CALOUNDRA,QLD,4551
+21078,Shop 2 Urana Road,,BURRUMBUTTOCK,NSW,2640
+21097,149 Serafina Drive,,HELENSVALE,QLD,4212
+21112,32 Schaefer Street,,Red Rock,NSW,2456
+21146,64 O'Connell Parade,,WELLINGTON POINT,QLD,4160
+21160,54 Dadswell Place,,MOUNT PRITCHARD,NSW,2170
+21173,355 Farmers Road,,Meeniyan,VIC,3956
+21175,98 Linden Avenue,,TOORMINA,NSW,2452
+21178,14 Rainbow Street,,Randwick,NSW,2031
+21179,MS 75 Oasis Access Rd,,SPRINGSURE,QLD,4722
+21193,625 Steven Street,,Camira,QLD,4300
+21212,Pm Bag 67 Mt Allan Via,,ALICE SPRINGS,NT,0871
+21221,2/146 Creek Road,,MOUNT GRAVATT,QLD,4122
+21223,Lot 9 Cooks Rd,,URRAWEEN,QLD,4655
+21225,60 Nightcliff Road,,Nightcliff,NT,0810
+21234,Lot 7 Young Rd,,KANMANTOO,SA,5252
+21276,165 Dorking Road,,BOX HILL,VIC,3128
+21333,132/ Strawberry Road,,Mudgeeraba,QLD,4213
+21345,47 Johnson Street,,NORTHCOTE,VIC,3070
+21393,60 Odonnell st,,Port kembla,NSW,2505
+21398,223 Lanley Road,,Delungra,NSW,2403
+21399,6665 Kiewa Valley Highway,,DEDERANG,VIC,3691
+21415,15 Sycamore Terrace,,CAMPBELLTOWN,ADL,5070
+21434,6/38-40 Gould Avenue,,PETERSHAM,NSW,2049
+21452,113 Nlack Adder Road,,SWAN VIEW,WA,6056
+21458,115 Linden Avenue,,TOORMINA,NSW,2452
+21463,5 Chelldan Avenue,,DALBY,QLD,4405
+21471,9/36 Gray Street,,TWEED HEADS WEST,NSW,2485
+21488,1/278 The Entrance Road,,Long Jetty,NSW,2261
+21519,301 Bridge 14 Lymaron Villa Street,,Toowoomba,QLD,4350
+21525,1338 Hervey Bay Road,,MARYBOROUGH,QLD,4650
+21565,Lot 2 Cornwall Rd,,EXETER,NSW,2579
+21611,Lot 78 Padbury Rd,,DARDANUP WEST,WA,6236
+21631,13/145 Kennedy Drive,,Tweed Heads,NSW,2485
+21633,27 A Dixon Street,,COOLANGATTA,QLD,4225
+21656,50 Fergus Road,,QUEANBEYAN,NSW,2620
+21660,Lot 1 Graces Rd,,BOWRAVILLE,NSW,2449
+21663,Farm/1772 Brobenah Road,,Leeton,NSW,2705
+21680,880 Blackhills Road,,Magra,TAS,7140
+21695,589 Adelaide Park Road,,Yeppoon,QLD,4703
+21732,16 Blane Street,,WESTON,NSW,2326
+21743,111 North St Ext,,ROCKHAMPTON,QLD,4700
+21759,41 Wishort Street,,FORSTER,NSW,2428
+21787,70 O'Connor Road,,KNOXFIELD,VIC,3180
+21796,1275 Matheson Road,,TONGALA,VIC,3621
+21808,41/ Carara Rd Access,,Mudgee,NSW,2850
+21809,160 Cambridge Road,,Mornington,TAS,7018
+21816,92 Mary Valley Road,,GYMPIE,QLD,4570
+21832,15 Woodlands Way,,Arundel,QLD,4214
+21843,85 Teatrees,,ARUNDEL,QLD,4214
+21848,145 Bobs Street,,BENDIGO,VIC,3550
+21852,21 Srenna Street,,TOTTENHAM,VIC,3012
+21857,72 Veales Road,,JENSEN,QLD,4818
+21862,32/ Adelaide Cr,,Beenleigh,QLD,4207
+21880,933 Nunns Road,,MERINGUR,VIC,3496
+21887,601/7 Pineridge Road,,Biggera Waters,QLD,4216
+21899,"42 Askrigg Road ",,"Gidgegannup ","WA ",6083
+22037,72 Curlew Court,,WULAGI,NT,0812
+22053,"3 hillside cresten ",,Edens landing,QLD,4207
+22068,201 Alara Road,,EAST ST KILDA,VIC,3182
+22076,33/ Devonport Road,,Devonport/quoiba,TAS,7310
+22123,732 Camperdown Road,,Derrinallum,VIC,3325
+22125,57/ Chamberspinesresort St,,Chambers Flat,QLD,4133
+22140,1/22 19th Avenue,,Palm Beach,QLD,4221
+22183,7/19 New Street,,HAMPTON,VIC,3188
+22186,195 Noosa Springs Drive,,NOOSA HEADS,QLD,4567
+22192,1334 Etiwanda Avenue,,MILDURA,VIC,3500
+22207,64/ Atlantis West Apart Street,,Paradise Waters,QLD,4217
+22213,Lot 9 Old Callignee Rd,,CALLIGNEE,VIC,3844
+22218,15 Toorak Avenue,,LENAH VALLEY,TAS,7008
+22234,17/56 Great Eastern Highway,,RIVERVALE,WA,6103
+22249,703 Murray Valley Highway,,WHARPARILLA,VIC,3564
+22271,427 Boundaary Road,,TOOWOOMBA,QLD,4350
+22291,./142 Sampson Street,,Orange,NSW,2800
+22329,60 Second Street,,PARUNA,SA,5311
+22353,"125 Mataran Road ",,woongarah,NSW,2259
+22391,5401 Heywood Road,,BESSIEBELLE,VIC,3304
+22399,14 Queen Street,,MURRUMBURRAH,NSW,2587
+22441,2/124 Greenacre Drive,,Arundel,QLD,4214
+22460,298 Widgee Crossing Road,,GYMPIE,QLD,4570
+22477,550 Albany Highway,,ALBANY,WA,6332
+22478,2/60 Andar Av,,BRIBIE ISLAND,QLD,4507
+22484,119 'st Agnes Village',,PORT MACQUARIE,NSW,2444
+22514,Lot 11 Pasley St,,BUNDALONG,VIC,3730
+22548,24 Spencer Avenue,,Deception Bay,QLD,4508
+22582,1007 Victoria Towers Scarborough Street,,Southport,QLD,4215
+22601,20 - 22 Myer Street,,LAKES ENTRANCE,VIC,3909
+22622,160 Tyabb Road,,MORNINGTON,VIC,3931
+22632,31/ Aurora Dr Access,,Tregear,NSW,2770
+22642,2/ 28th Avenue,,Palm Beach,QLD,4221
+22653,8914 Armidale Road,,Lower Creek,NSW,2440
+22669,51 Lincoln Gardens,,Port Macquarie,NSW,2444
+22671,32 Miller Court,,KIRWAN,QLD,4817
+22741,1536/ Sutton Road,,Sutton,NSW,2620
+22768,1 Bond University,,Varsity Lakes,QLD,4227
+22782,149 C Derwent Avenue,,LINDISFARNE,TAS,7015
+22799,86 Allowah Drive,,Nagambie,VIC,3608
+22819,"19 Scenic Crescent ",,Coomera,QLD,4209
+22835,Lot 4 Belmont Ck,,NORTH ROCKHAMPTON,QLD,4702
+22872,13/138 Maryborough Road,,Bellbird Park,QLD,4300
+22875,23 Sandspit Road,,PORT FAIRY,VIC,3284
+22881,59 Newbrdige Street,,LISMORE,NSW,2480
+22909,35 Pacific Highway,,RAYMOND TERRACE,NSW,2324
+22911,166 Strathalbyn Road,,Aldgate,SA,5152
+22912,2740 Nelson Bay Road,,SALT ASH,NSW,2318
+22924,MS 656 Nebia-Coningsby Rd,,MACKAY DC,QLD,4740
+22941,25 Adina Close,,FORSTER,NSW,2428
+22944,2b/238 The Esplanade,,Burleigh Heads,QLD,4220
+22977,1/41043 Wedge Street,,OCEAN GROVE,VIC,3226
+22987,11 Robertson Avenue,,Loxton,SA,5333
+22996,84 Old Hamilton Road,,Horsham,VIC,3400
+23007,"60 A Cuttriss Street ",,Inverloch,VIC,3996
+23037,65 Graham Road,,ROSANNA EAST,VIC,3084
+23038,35A Alligater Creek Road,,ALLIGATER CREEK,QLD,4818
+23040,161/150 Talltimbers Road,,Doyalson North,NSW,2262
+23068,1041 Kiewa Valley Highway,,KIEWA,VIC,3691
+23090,93/2 Robina Town Centre Drive,,ROBINA,QLD,4226
+23107,Lot 5 Kenilworth Rd,,CONONDALE,QLD,4552
+23136,53 The Scenic Road,,KILLCARE HEIGHTS,NSW,2257
+23162,5930 Gallum Road,,Cooriemungle,VIC,3268
+23179,13 Justice Place,,Gordon,NSW,2906
+23204,754 Beechwood Road,,WAUCHOPE,NSW,2446
+23234,P.o. 1127 Street,,Capalaba,QLD,4157
+23236,86-88 Stapleton Street,,WENTWORTHVILLE,NSW,2145
+23270,F808 Jewell Rd,,STANBRIDGE,NSW,2705
+23271,20 PHILLIP ROAD,,DALKEITH,WA,6009
+23341,306 Preston Road,,Wynnum,QLD,4178
+23356,20 Bribie Island Retirement Village Zephryr Street,,BRIBIE ISLAND,QLD,4507
+23357,Lot 1987 Buckets Way,,BOORAL,NSW,2425
+23360,Lot 4 Wainai Rd,,FARLEIGH,QLD,4741
+23361,Lot 2 Slavins Lane,,STRATFORD,VIC,3862
+23385,25/30 Surfers Palms East,,BENOWA,QLD,4217
+23408,57 Pacific On Coolum,,COOLUM BEACH,QLD,4573
+23411,17/ Aster Street,,Wendouree,VIC,3355
+23463,24 Caravan Park Avenue,,BARKER,SA,5259
+23493,509 Dullard Road,,LOCKINGTON,VIC,3563
+23512,59 Oakview Court,,BROOKWATER,QLD,4300
+23526,7/336 St Helena Road,,ELTHAM NORTH,VIC,3095
+23537,62A Loretto Avenue,,FERNTREE GULLY,VIC,3156
+23570,8/ Holkoxd Street,,Coburg,VIC,3058
+23575,9/6 Albert Street,,Aitkenvale,QLD,4814
+23596,210 Mc Killop Street,,EAST GEELONG,VIC,3219
+23630,6/ Quince Street,,Carnarvon,WA,6701
+23647,8/29a Burleigh Street,,Burleigh Heads,QLD,4220
+23648,25 Noordenne Avenue,,ALTONA,VIC,3018
+23725,28 Courty Drive,,Oakford,WA,6012
+23798,132 Palm Beach Caravan Park,,ROCKINGHAM,WA,6168
+23803,1630A Banyan Street,,WARRNAMBOOL,VIC,3280
+23808,391 Wogamia Dinton Vale Road,,Inverell,NSW,2360
+23813,102/146 Pascoe Vale Gdns Boundary Road,,PASCOE VALE,VIC,3044
+23821,78 Wheeler Court,,KIRWAN,QLD,4817
+23835,Villa 77 John Lund Dr,,HOPE ISLAND,QLD,4212
+23853,30 Bowyr Place,,LAVINGTON,NSW,2640
+23855,Delbridge/28 Wiloultnae Ave,,HOPPERS CROSSING,VIC,3029
+23857,Lot 21 Fanny St,,BENDEMEER,NSW,2355
+23859,A6/14 - 16 Deeban Walk,,CRONULLA,NSW,2230
+23861,105 Karinya Units Grey Street,,Glen Innes,NSW,2370
+23872,205 Bullumwaal Road,,BAIRNSDALE,VIC,3875
+23891,133 Goldfield Road,,ESPERANCE,WA,6450
+23927,5282/ Barr Rd,,Marrakai,NT,0822
+23966,12a/1 University Drive,,Varsity Lakes,QLD,4227
+23969,Lot 1 Prestons Lane,,TYAGARAH,NSW,2481
+23977,35 Tom Price Tourist Park,,Tom Price,WA,6751
+23983,98 Brunker Road,,ADAMSTOWN,NSW,2289
+24013,21 Mark Street,,SEMAPHORE,SA,5019
+24018,RMB 5560 Sale Heyfield Rd,,DENISON,VIC,3858
+24019,47 Sugarcoast Village/elizabeth Street,,URANGAN,QLD,4655
+24054,11 Bayview Drive,,WODONGA,VIC,3690
+24066,43 Montago Bay Road,,ROSNY,TAS,7018
+24105,324/ Popondetta Road,,Blackett,NSW,2770
+24108,153 Penisular Village,,UMINA,NSW,2257
+24157,313 Mahoneys Road,,Reservoir,VIC,3073
+24174,28/21 Gracmere Court,,HOPE ISLAND,QLD,4212
+24181,2 Vines Rd Hamlyn Heights,,GEELONG,TAS,3215
+24188,29/107 Andersons Ck Road,,East Doncaster,VIC,3109
+24200,136 Lucius Road,,HAMILTON HILL,WA,6163
+24239,16/ Conbrio Boulevard,,Upper Coomera,QLD,4209
+24296,31 Frankston Road,,DANDENONG,VIC,3175
+24309,32 Wights Mountain Road,,WIGHTS MOUNTAIN,QLD,4520
+24355,3/3 Avtech Raaf Stt,,FOREST HILL,NSW,2651
+24358,3 Cutler Street,,GERALDTON,WA,6530
+24360,RMB 762 Oberne Rd,,TARCUTTA,NSW,2652
+24361,2/1 Roberts Lane,,BELLINGEN,NSW,2454
+24395,Rmb 2000 Ballarat Rd,,CAMPERDOWN,VIC,3260
+24396,388 Liverpool Rd,,Enfield,NSW,2135
+24400,42 Northcote Avenue,,Caves Beach,NSW,2281
+24405,114/2 Cessnock Road,,GILLIESTON HEIGHTS,NSW,2321
+24415,167 Hinton Road,,NELSONS PLAINS,NSW,2324
+24423,216 Spring Valley Avenue,,CRAIGIEBURN,VIC,3064
+24430,9A Cosgrove Park,,SOUTH LAUNCESTON,TAS,7249
+24438,1 Strathalbyn Road,,Mylor,SA,5153
+24442,26 Lagarna Drive,,MELTON,VIC,3337
+24497,74 Port Jackson Blvd,,Ear Island Waters,QLD,4226
+24510,39 Panguna Street,,TRINITY BEACH,QLD,4879
+24549,3/16 Acacia Avenue,,Waratah,NSW,2298
+24557,56h/111 Borough Road,,Charlestown,NSW,2290
+24573,11 Gleeson Road,,Warnervale,NSW,
+24582,43 Peters Street,,Portland,VIC,3305
+24600,35 Fingal Haven Farm Road,,FINGAL BAY,NSW,2315
+24603,62a Musgrave Avenue,,Southport,QLD,4215
+24625,2 Maddern Road,,BERRI,SA,5343
+24626,Rmb 609 Moorefield Road,,MAIMURU,NSW,2594
+24637,25 Dellwood Court,,MOLENDINAR,QLD,4214
+24650,54 Whilock Street,,Kalgoorlie,WA,6430
+24654,89 Hawker Street,,RIDLEYTON,SA,5008
+24696,370 Old St Leonards Road,,ST LEONARDS,VIC,3223
+24705,Rmb 804 Gregadoo Road,,WAGGA WAGGA,NSW,2650
+24706,8 Barina Downs Road,,BELLA VISTA,NSW,2153
+24715,7 Ellebana Avenue,,OAKLEIGH,VIC,3166
+24762,684 Ferntree Gully Road,,MULGRAVE,VIC,3170
+24773,2/47 Newman Road,,Mooroolbark,VIC,3138
+24779,21 Hunt Drive,,ROBINVALE,VIC,3549
+24821,38 Fairfax Court,,ALBANVALE,VIC,3021
+24864,600 Koweinguburra-wonthaggi Road,,GLEN ALVIE,VIC,3979
+24897,141/2A Soldiers Point Road,,SOLDIERS POINT,NSW,2317
+24913,55 Beards Road,,DROUIN,VIC,3818
+24926,1320 Bucketts Way,,GANGAT,NSW,2422
+24931,1071 Pinchin Road,,GOOLMANGAR,NSW,2480
+24951,4/ Sussex Crt,,Woodburn,NSW,2427
+24997,127 Mcleans La 255 Kealeys Road,,Tamleugh,VIC,3669
+25000,Yallambee Lodge 28/ Yallambee Avenue,,WEST GOSFORD,NSW,2250
+25013,35 Mirboo Stouh Road,,MIRBOO NORTH,VIC,3871
+25039,24 Bluegum Court,,MOUNT HUTTON,NSW,2290
+25059,19 Rodbone Road,,BRIDGEWATER,SA,5155
+25069,Coomera Waters 3 Flamingo Lane,,COOMERA,QLD,4209
+25073,267 Brentwood Village,,KINCUMBER,NSW,2251
+25075,20 Cochrane Street,,KEMPSEY,NSW,2440
+25082,95/260 Pacific Highway,,HEATHERBRAE,NSW,2324
+25089,175 Conns Lane,,YANGERY,VIC,3283
+25090,Rmb 4430 Pinelodge Rd,,SHEPPARTON,VIC,3630
+25098,223 O'hea Street,,PASCOE VALE,VIC,3044
+25112,Suite 205/431-439 Sussex St,,SYDNEY,NSW,2000
+25190,27/ Ormeau Ridge,,Ormeau Hills,QLD,4208
+25202,1044 The Strand,,NORTH WARD,QLD,4810
+25223,10 Kings Park Court,,FIVE DOCK,NSW,2046
+25251,RMB 2120 Turtons Creek Road,,Mirboo North,VIC,3871
+25252,1270 Boorhaman Springhurst Road,,Boorhaman,VIC,3678
+25253,172 Kumbari Close,,SOUTHPORT,QLD,4215
+25256,76 Forrest Crescent,,Thornlie,WA,6108
+25276,22 The Crescent,,BELGRAVE HEIGHTS,VIC,3160
+25285,5/328 Warlters Street,,PORT MACQUARIE,NSW,2444
+25307,1/4 Tritton Road,,POSSUM BRUSH VIA TAR,NSW,2430
+25314,8935 Tarcoola Park Gwydir Highway,,Delungra,NSW,2403
+25318,MS 16 Eastern Mary Farm River Rd,,MALENY,QLD,4552
+25323,297 The Grand Parade,,SANS SOUCI,NSW,2219
+25349,8 Read Street,,PORT PIRIE,QLD,5540
+25378,251 Village Glen,,ROSEBUD WEST,VIC,3940
+25435,58 Rosella Court,,BLUE HAVEN,NSW,2262
+25445,Lot 8 Maryvale Road,,TRARALGON,VIC,3844
+25460,2 Moulamein Road,,Kyalite,NSW,2734
+25462,145 The Avenue Of Honour,,WOODEND,VIC,3442
+25474,691 Mahoneys Road,,Naringal,VIC,3277
+25478,603/ Mooreville Road,,Mooreville,SA,7321
+25493,Lot 9 Old Bangalow Rd,,BYRON BAY,NSW,2481
+25494,4/103 Fiddamans Road,,SANDY BEACH,NSW,2456
+25514,73 Lemongums Drive,,TAMWORTH,NSW,2340
+25526,610 Brentwood Vilalge,,KINCUMBER,NSW,2251
+25568,48 Hargreaves Court,,METFORD,NSW,2323
+25591,30 Carloine Street,,ROCKHAMPTON,QLD,4700
+25618,542 Stradbroke Road West,,STRADBROKE,VIC,3851
+25641,495 Purnell Road,,LOVELY BANKS,VIC,3221
+25642,3/39 Parklane Access,,Traralgon,VIC,3844
+25657,239 Gisborne Road,,Melton,VIC,33337
+25675,34 Orchard Court,,SHEPPARTON,VIC,3630
+25678,77 Green Street,,TELARAH,NSW,2320
+25679,Lot 1 Main Rd,,PALMER,SA,5237
+25710,18/463 Trees Road,,TALLEBUDGERA VALLEY,QLD,4228
+25712,104 The Avenue,,THURGOONA,NSW,2640
+25722,1370 Raglan Parade,,WARRNAMBOOL,VIC,3280
+25725,1316 Hootens Road,,Casino,NSW,2470
+25770,238 Old Veteren Road,,GYMPIE,QLD,4570
+25784,1292 Lakesway,,MAYER FLAT,NSW,2428
+25852,50/27 Euginia Court,,ROBINA,QLD,4226
+25896,412 Pipe Clay Creek Road,,NABIAC,NSW,2312
+25897,55 Paterson Road,,WOODVILLE,NSW,2321
+25907,Lot 1 Armidale St,,CURRABUBULA,NSW,2342
+25942,102 Barker Street,,CASINO,SA,2470
+25950,174 Salisbury Court,,Inglewood,WA,6052
+25962,3/62 Eliza Court,,PORT MACQUARIE,NSW,2444
+25965,4/368 Kaitlers Road,,LAVINGTON,NSW,2641
+25966,RMB 222 Illawarra Hwy,,SUTTON FOREST,NSW,2577
+25972,Lot 66 Kilcoy Lane,,Maleny,QLD,4552
+25977,452 Stony Point Road,,BITTERN,VIC,3918
+25984,119 O'Connor Road,,KNOXFIELD,VIC,3180
+25985,26/ O'Callaghan Street,,Heatley,QLD,4814
+25987,23 Harle Street,,ABERMAIN,NSW,2326
+26009,310 Memorial Drive,,Eumundi,QLD,4562
+26027,19 Mc Nulty Drive,,Wendouree,VIC,3355
+26073,Lot 9 Main Rd,,MOUNT VINCENT,NSW,2323
+26077,240 Old Dookie Road,,SHEPPARTON,VIC,3630
+26079,368 Lawrence Street,,Wodonga,VIC,3690
+26082,12/369-373 The Kingsway,,CARINGBAH,NSW,2229
+26105,481 Camden Valley Way,,CAMDEN,NSW,2570
+26107,35 Bandhall Road,,BAUPLE,QLD,4650
+26111,2/59 Wardell Street,,Petersham,NSW,2049
+26133,2 Pedwell Road,,CAMP MOUNTAIN,QLD,4520
+26140,1/943 Padman Drive,,ALBURY,NSW,2640
+26145,3 Grandview Avenue,,MACEDON,VIC,3440
+26148,Lot 235 Country Rd,,GIDGEGANNUP,WA,6083
+26168,Shop 7 Yuletide St,,HOLLAND PARK WEST,QLD,4121
+26175,212B Pennant Hills Road,,CARLINGFORD,NSW,2118
+26240,10 Palmers Lane,,EMPIRE BAY,NSW,2257
+26251,7 Purcell Road,,GUANABA,QLD,4210
+26254,26 Rodgers Avenue,,Kanahooka,NSW,2530
+26259,Lot 30 Jennings Rd,,HAMILTON,VIC,3300
+26260,23 Greenbank Court,,CARRARA,QLD,4211
+26276,59 Gerona Court,,VARSITY LAKES,QLD,4227
+26324,Lowes Amcal 21/ ... Street,,Werribee,VIC,3030
+26351,Lot 1 Ninth Rd,,BROOKDALE,WA,6112
+26421,58 Florenz Court,,VIRGINIA,SA,5120
+26428,86 Alloura Waters,,DAVISTOWN,NSW,2251
+26454,23 Brampton On The Park,,KINGS MEADOWS,TAS,7249
+26484,32 Durham Road,,Branxton,NSW,2335
+26493,853 Creek Junction Road,,STRATHBOGIE,VIC,3666
+26499,MS 35 'Stanmore',,Dalby,QLD,4405
+26520,11 First Avenue,,Willoughby,NSW,2068
+26523,Villa 2/ May Flower Gardens Rowthorpe,,Bentley,WA,6102
+26544,21 Common Road,,Dungog,NSW,2420
+26582,16 Claire Street,,Brookfield,VIC,3338
+26594,Nottingham Park 1675 Emmaville Road,,Ashford,NSW,2361
+26623,133 Lower Hermitage Road,,HOUGHTON,SA,5131
+26639,22 - 24 Jopheil Close,,Wamuran,QLD,4513
+26645,119 Christo (bupo) Road,,Waratah (nursing Home),NSW,2298
+26653,Lot 24 Scotts Rd,,BOOROOBIN,QLD,4552
+26689,712 Henry Kendall Gardens,,Wyoming,NSW,2250
+26703,Rmb 1160 Springfield,,MOAMA,NSW,2731
+26722,1a Poincjana Place,,BUNBURY,WA,6231
+26733,6 Happy Vally Court,,East Doncaster,VIC,3109
+26751,RMB 6365 null,,HORSHAM FORWARD,VIC,3401
+26761,50 Peel Street,,TAMWORTH,NSW,2340
+26771,22 Kingsford Smith drive wilsonton,,Toowoomba,QLD,4350
+26777,14 Creekside Drive,,Springfield Lakes,QLD,4300
+26783,119 Arcadian Court,,CARLINGFORD,NSW,2118
+26796,8 Benalla Court,,Arundel,QLD,4214
+26800,176 South Cst Highway,,ALBANY,WA,6330
+26811,2231 Bruce Highway,,GYMPIE,QLD,4570
+26813,74 Yarra Glen Road,,HEALESVILLE,VIC,3777
+26850,29/1230 Center Road,,CLAYTON,VIC,3168
+26851,484/ North Redesdale Rd Access,,Redesdale,VIC,3444
+26871,1/61 BAYVIEW TCE,,CLAREMONT,WA,6010
+26888,484 Spring Gully Road,,SPRING GULLY,VIC,3550
+26900,501 Lumkillenbar View,,Dalby,QLD,4405
+26906,Lot/3 Sloan Street,,Billimari,NSW,2804
+26932,Lot 1 Lance St,,MOUNT HELENA,WA,6083
+26942,48a bardbury ave,,campbelltown,NSW,2560
+26961,19 The Crescent,,LEOPOLD,VIC,3224
+26987,2/72 Gay Street,,BLACKBURN,VIC,3130
+27040,261 Bathurst Street,,HOBART,TAS,7000
+27045,4 Chanter Street,,ECHUCA,VIC,3564
+27144,410 Mclean Street,,BERRI,SA,5343
+27160,190 Louisa Road,,BIRCHGROVE,NSW,2041
+27164,320 New Dookie Road,,SHEPPARTON,VIC,3630
+27167,11 balmain curciut,,wallen east,VIC,3756
+27168,Lot 2 Killara Rd,,COWRA,NSW,2794
+27182,131 Mcmillans Raod,,Anula,NT,0812
+27199,"12 Guilfoyle crt ",,Mooloolah,QLD,4553
+27204,44 White Street,,TAMWORTH,NSW,2340
+27211,4 Turret Plaza,,Castle Hill,NSW,2154
+27213,"47 horseshoe bend ",,GYMPIE,QLD,4570
+27217,Lot 3 Minnenooka Rd,,WALKAWAY,WA,6528
+27238,39/ North Boambee Road,,Coffs Harbour,NSW,2450
+27259,75 Melrossa Road,,TRARALGON,VIC,3844
+27268,517 Currumbin Creek Rd,,Currumbin,QLD,4223
+27272,Villa 33 Gilbert Ave,,GOROKAN,NSW,2263
+27278,15B North Curramore Road,,JAMBARU,NSW,2533
+27319,626 Waterfall Way,,BELLINGEN,NSW,2454
+27353,23/2 Campbell Road,,CALALA,NSW,2340
+27368,78/ Canberra Ave,,Griffith,NSW,2603
+27378,Lot 7 Bickle Rd,,GYMPIE,QLD,4570
+27404,384 Gordons Road,,SOUTH MORANG,VIC,3752
+27424,1/4 Collin Avenue,,Kempsey,NSW,2440
+27438,37 Earl Court,,KIRWAN,QLD,4817
+27441,529 Beechboro Rd N,,BEECHBORO,WA,6063
+27462,2915 Waterway Court,,Churchlands,WA,6018
+27468,3300/ Heath Road,,Portland,VIC,3305
+27486,Lot 3 Sunnyvale Rd,,HARVEY,WA,6220
+27503,124/13d Laver Drive,,Robina,QLD,4226
+27550,206 Mathew Street,,URANGAN,QLD,4655
+27564,55 Viewpoint Street,,Ararat,VIC,3377
+27604,70/ Victor Street,,Cranbrook,QLD,4814
+27624,179 Unit 1 Civic Parade,,Altona,VIC,3018
+27638,1/ Douglas Rd Access,,Lavington,NSW,2641
+27685,4/153 Government Rd,,Nelson Bay,NSW,2315
+27736,36 Bell Heven Street,,Raymond Terrace,NSW,2324
+27738,36 Neptune Court,,NOOSAVILLE,QLD,4566
+27744,10/3 Worimi Drive,,Salamander,NSW,2315
+27762,1/12 Boundary Road,,EPPING,NSW,2121
+27779,96 - 98 Firebrace Street,,HORSHAM,VIC,3400
+27780,396/ Shelduck Street,,Inala,QLD,4077
+27781,7 David Smith Place,,KIAMA,NSW,2533
+27793,Lot 4 Coopers Creek Rd,,ERICA,VIC,3825
+27841,1018 Georgraphie Bay Road,,BUSSELTON,WA,6280
+27849,93 Graham Avenue,,CASULA,NSW,2170
+27903,375 Willis Road,,Carrajung Lower,VIC,3844
+27954,33 Mchardy Street,,GULLIVER,QLD,4812
+27980,RSD 1A Morris Rd,,MEADOWS,SA,5201
+28015,553 Glendee Michell Lane,,Delungra,NSW,2403
+28019,Kingston St 1 Willow Farm Darby Road,,Spring Ridge,NSW,2343
+28021,725 Bussell Highway,,ABBEY,WA,6280
+28030,1 4 O'Shanesy Street,,KOONGAL,QLD,4701
+28064,13 Mirrawena Avenue,,FARNBOROUGH,QLD,4703
+28065,458 Colac Road,,Scotts Creek,VIC,3267
+28069,31 Roberts Street,,TRARALGON,VIC,3844
+28076,Villa 26 Corinthian Crt Emerald St,,KIRWAND,QLD,4817
+28088,931 Padman Drive,,ALBURY,NSW,2640
+28103,Lot 64 Jandakot Rd,,banjup,WA,6164
+28104,3598 Bucketts Way,,KRAMBACH,NSW,2429
+28117,5/267 Borella Road,,ALBURY,NSW,2640
+28122,9/ Standard Street,,Robinvale,VIC,3549
+28126,507 Dundas Street,,Rye,VIC,3941
+28155,15 branshaw cresent,,hillside,VIC,3037
+28157,27 Queen Street,,GREENHILL,NSW,2440
+28174,96 Williamstown Road,,YARRAVILLE,VIC,3013
+28184,98 Hills Street,,GOSFORD,NSW,2250
+28188,163 The Boulevard,,THOMASTOWN,VIC,3074
+28196,453 Kurweeton Larra Road,,DERRINALLUM,VIC,3325
+28212,1 Bugaldie Farm,,Bugaldie,NSW,2357
+28223,1/36 William Street,,TAMWORTH,NSW,2340
+28244,112A Warrigal Road,,MENTONE,VIC,3194
+28256,71 Warrawee Court,,FRANKSTON,VIC,3199
+28264,112 Glasgow Street,,ZILLMERE,QLD,4034
+28290,17 Short Street,,GLADSTONE,QLD,4680
+28327,5 Dover Street,,ST.ALBANS,VIC,3021
+28335,1/114 Greenacre Drive,,Arundel,QLD,4214
+28385,24 Chelmsford Avenue,,MILLSWOOD,VIC,5034
+28407,4/ Dame-patti Ave,,Mermaid Beach,QLD,4218
+28411,1/2 'ilikai' Marina Walk,,ALEXANDRA HEADLAND,QLD,4572
+28458,7 Shaun Drive,,GLENWOOD,NSW,2768
+28473,5 Enfield Street,,Hamersley,WA,6022
+28480,M1 Middlerock Tourist Park - Gan Gan Rd,,ANNA BAY,NSW,2316
+28484,50 Dwyer Street,,Boulder,WA,6432
+28489,75/121 Kalaroo Road,,REDHEAD,NSW,2290
+28494,3/184 Weatherall Road,,BEAUMARIS,VIC,3193
+28497,16 Mallett Close,,Gracemere,QLD,4702
+28530,216b First Street,,Wonthella,WA,6530
+28533,774 Meatian/mystic Park Road,,MEATIAN EAST VIA SWA,VIC,3585
+28545,17 The Welkin Trail,,Melton,VIC,3337
+28573,3/27 Eugenia Court,,Robina,QLD,4226
+28579,6/12 - 14 Wirraway Street,,MOE,VIC,3852
+28581,94 Hopkin Street,,Boulder,WA,6432
+28615,128 Schooner Court,,MANLY WEST,QLD,4179
+28619,1 11b Nash Road,,BOX HILL SOUTH,VIC,3128
+28621,27a Turner Crescent,,Wellington Point,QLD,4160
+28624,Lot 3 Skinners Shoot Rd,,BYRON BAY,NSW,2481
+28635,52 Egels Drive,,EAST BALLINA,NSW,2478
+28655,186 Ballarat Road,,Braybrook,VIC,3019
+28659,100 Bonogin Road,,Mudgeeraba,QLD,4213
+28661,15 Diploma Road,,Upper Coomera,NSW,4209
+28703,60 Norton Promanade,,DALYELLUP,WA,6230
+28713,2 Centro Northgate Bailey Street,,Geraldton,WA,6530
+28730,213 patterson road,,bolwarri heights,NSW,2320
+28763,63 Morala Avenue,,BIGGERA WATERS,QLD,4216
+28815,19 'lakeside' Parkhomes,,BALDIVIS,WA,6171
+28845,31/170 Bardon Avenue,,MIAMI,QLD,4220
+28901,1390 Mickleham Road,,YUROKE,VIC,3063
+28924,315 Arthurs Creek Road,,NUTFIELD,VIC,3099
+28929,2 Glyde Court,,Leanyer,SA,5159
+28953,90/ Arwin St Street,,Wulguru,QLD,4811
+28978,17 Shepherds Drive,,Magra,TAS,7140
+29000,566 Balmoral Road,,MALENY,QLD,4552
+29010,262 - 264 York Street,,ALBANY,WA,6330
+29035,450 Mcmillans Road,,Malak,NT,0812
+29038,Lot 5 Gut Rd,,WOOROLOO,WA,6558
+29053,2329 oallen ford rd,,windellama,NSW,2580
+29060,Tweed Mall Amcal Chempro Chemist 46/100 The Quarterdeck Street,,Tweed Heads,NSW,2485
+29064,A/124 Graeme Street,,Kalgoorlie,WA,6430
+29099,Lot 7 Malone Rd,,DIDDILLIBAH,QLD,4559
+29115,"27 Dalgan Street ",,"Oakleigh South ",VIC,3167
+29116,2/84 Seventh Avenue,,INGLEWOOD,WA,6052
+29120,Shop 78 Centro Maddington,,MADDINGTON,WA,6109
+29140,80 Mian Road,,LITTLE HAMPTON,VIC,3458
+29146,31 Devan Street,,NEWTON,SA,5074
+29170,343 Ironstone Road,,Tuchekoi,QLD,4570
+29173,Rmb 414 Patterson Rd,,WAGGA WAGGA,NSW,2650
+29177,6/38-40 Queen Street,,GREENHILL,NSW,2440
+29189,321B Albacore Drive,,CORLETTE,NSW,2315
+29193,Lot 16 Wyndham Cl null,,TAMWORTH,NSW,2340
+29216,Lot 11 Mate St,,HUMULA,NSW,2652
+29222,384 Walmer Road,,MUCKLEFORD,VIC,3451
+29224,Lot 9 Newtown Cl,,VASSE,WA,6280
+29273,38 Pearl Court,,SPRINGFIELD,QLD,4300
+29313,4/378 High Street,,LOWER TEMPLESTOWE,VIC,3107
+29342,103 Hawthory Road,,KILSYTH,VIC,3137
+29362,333 Forestry Road,,BLUEWATER,QLD,4818
+29384,469 Old Port Campbell Road,,COBDEN,VIC,3266
+29513,"16 Brookelime wy ",,"Wallan ",VIC,3756
+29530,131 Richardson Road,,RAYMOND TERRACE,NSW,2324
+29533,8/45 Swan Street,,Tuart Hill,WA,6060
+29536,110 Weblands Street,,ABERGLASSLYN,NSW,2320
+29568,101-102 Carrs Road,,NEATH,NSW,2326
+29575,124 James Cowan Road,,Firefly,NSW,2429
+29580,14/ Ferguson Street,,Anula,ACT,0812
+29598,"3 hull pl ",,gunn,NT,0832
+29634,38-40 Gould Avenue,,PETERSHAM,NSW,2049
+29678,49 Bi-centennial Road,,BENTLEY PARK,QLD,4869
+29687,264/ Ironbank Road,,Ironbank,SA,5153
+29714,78 Moffatts Drive,,DUNDAS,NSW,2117
+29753,3/22 27th Ave,,Paln Beach,QLD,4221
+29765,460 George Street,,MARION,SA,5043
+29793,3360 Coraki Road,,TATHAM,NSW,2471
+29804,12 Kings Lane,,MYOCUM,NSW,2481
+29832,118 Mcphee Road,,Orvale,VIC,3630
+29841,43132 Peter Street,,DONCASTER EAST,VIC,3109
+29847,Lot 2 Wilderness Rd,,MAITLAND,NSW,2320
+29863,15 Balara Street,,FLAGSTAFF,SA,5159
+29866,Lot 2 Balook Rd,,TRARALGON,VIC,3844
+29896,140 Christmas Hills Road,,CHRISTMAS HILLS,TAS,7304
+29901,140 Carnarvon Rd,,Carnarvon,WA,6701
+29932,1/33 South Dudley Road,,Wonthaggi,VIC,3995
+29956,186 Blackwood Park Drive,,Rowville,ACT,3178
+29980,Rsd 238 Macorna Rd,,MACORNA,VIC,3568
+29982,130 Albert Street,,LITTLE GROVE,WA,6330
+29983,75 Kennear Street,,MICKLEHAM,VIC,3064
+30000,338 Hamersley Road,,WALKAWAY,WA,6528
+30007,35 Lesmurdie Road,,KALAMUNDA,WA,6076
+30008,222 Chittering Road,,BULLSBROOK,WA,6084
+30010,7 Westbourne Street,,PETERSHAM,NSW,2040
+30017,32 Cochrane Street,,Kempsey,NSW,2440
+30102,81/50 Barwarre Road,,GROVEDALE,VIC,3216
+30119,1/3507 Main Beach Ave,,Main Beach,QLD,4217
+30121,34/695 'Falcon Lodge' Lne Road,,PARADISE,SA,5075
+30164,255 Walsh Road,,HERBERTON,QLD,4887
+30171,"31 baromi road ",,mirboo north,VIC,3871
+30176,13 Macintyre Lane,,Cooroy,QLD,4563
+30230,Lot 30 North Flingens Esplanade St,,WEEROONA ISLAND,SA,5540
+30234,6 Ellalong Street,,KEARSLEY,NSW,2325
+30253,931 Cobden Road,,CAMPERDOWN,VIC,3260
+30300,1 Riverside Drive,,Jugiong,NSW,2726
+30316,22 Parrot Street,,COBDEN,VIC,3266
+30342,108 Waroula Road,,Stanwell,QLD,4702
+30351,Lot 8 Rose St,,DENILIQUIN,NSW,2710
+30362,13 Bluewater Court,,Portland,VIC,3305
+30368,Lot 1 Waygara Rd,,WAYGARA,VIC,3888
+30377,7/171 Dickward Drive,,Coconut Grove,NT,0810
+30388,3/34 Adelaide Street,,Sunshine,VIC,3020
+30397,2/16 Knollbrook Close,,Highton,VI,3216
+30398,22A Rita Court,,ATHERTON,QLD,4883
+30403,274 Wright Street,,DRUMMOYNE,NSW,2047
+30418,22 Bottletree Close,,Coomera,QLD,4209
+30422,1\5 Oliver Place,,Berkrley,NSW,2506
+30425,77 Amphitheatre Court,,BAULKHAM HILLS,NSW,2153
+30430,5/A Nichols Avenue,,Gorokan,NSW,2263
+30442,106 King Edward Street,,KALUMBURU VIA WYNDHAM,WA,6740
+30446,657 Shallow Bay Road,,COOMBA PARK,NSW,2428
+30462,60 Yagers Lane,,Byron Bay,NSW,2481
+30495,Edgewater Village 37 David Low Way,,Bli Bli,QLD,4560
+30564,2/21 Hazelwood Street,,Highgate Hill,QLD,4101
+30579,Ms 2011/385 Eversleigh Rd,,SARINA,QLD,4737
+30583,835 Weir Road,,TORRUMBARRY,VIC,3562
+30589,Lot 11 Gumland Dr,,WITTA,QLD,4552
+30600,274 O'Donnell Road,,ROCHESTER,VIC,3561
+30608,2 Ahern Street,,HAMILTON HILL,WA,6163
+30610,87 Rivergardens Caravan Park,,Carrara,QLD,4211
+30613,28 Eastwood Park,,SALE,VIC,3850
+30624,1133 Lavers Hill Road,,Cobden,VIC,3266
+30651,23 Coon Street,,BARNEY POINT,QLD,4680
+30702,439 Waterford Road,,Forest Lake,QLD,4078
+30715,28 Christie Court,,Yangebup,WA,6164
+30743,81 Pioneer Road,,EAST CORRIMAL,NSW,2518
+30748,519 Broadwater Ct Carrak Road,,KINCUMBER,NSW,2251
+30759,M2 Ney Rd,,CAPALABA,QLD,4157
+30763,651 The Esplanade,,Lakes Entrance,VIC,3909
+30819,2/ Lagoon Circuit,,Nelson Bay,NSW,2315
+30843,Farm 57 Fivebough Rd,,LEETON,NSW,2705
+30847,2/18 Undoolya Road,,ALICE SPRINGS,NT,0870
+30856,8935 Pacific Highway,,WOODBURN,NSW,2472
+30888,500 Main Street,,Mordialloc,TAS,3195
+30920,"23 Antill Street ",,"Queanbeyan ",NSW,2620
+30925,Tweed Mall Amcal Chempro Chemist 7/ Pirie Lane,,Casuarina Beach,NSW,2487
+30934,66 Drifters Village,,CHINDERAH,NSW,2487
+30945,3A Hamilton Street,,FAIRFIELD,VIC,3078
+30959,218 A Domain Road,,SOUTH YARRA,VIC,3141
+30963,6 Cheviots Court,,MELTON,VIC,3337
+31001,0 Powlett,,Daylston,VIC,3992
+31042,4142 Chinchilla Tara Road,,Chinchilla,QLD,4413
+31046,80 Scotton Street,,BUNDABERG,QLD,4670
+31077,RMB 323 Collies Lane,,MARDI,NSW,2259
+31180,0 Gif Tree Farm Keera Road,,Bingara,NSW,2404
+31192,24 Vievers Road,,LUSCOMBE,QLD,4207
+31219,1 'Conessa Appts' Serisier Avenue,,MAIN BEACH,QLD,4217
+31237,RMB 4140 Tinamba-Newry Rd,,MAFFRA,VIC,3860
+31241,1815 Meeniyan Prom Road,,Fish,VIC,3959
+31253,709 Eueka Street,,Ballarat,VIC,3350
+31256,128/98 Eastern Service Road,,Burpengary,QLD,4505
+31279,68 The Avenue,,ARMIDALE,NSW,2350
+31281,Lot 429 Speewah Rd,,SPEEWAH,QLD,4872
+31300,20 Kelso Lane,,RANDWICK,NSW,2031
+31308,MS 28 Kingsleigh Rd,,WARWICK,QLD,4370
+31311,68 Moorbinda Drive,,NIKENBAH,QLD,4655
+31329,12 Esplanade Drive,,Jacobs Well,QLD,4208
+31365,14A Viviani Crescent,,HEATHMONT,VIC,3135
+31388,51 Gallipoli Road,,PASCOE VALE,VIC,3044
+31412,3/138 Shoal Point Road,,Bucasia,QLD,4740
+31423,Lot 6 Huon St,,GEROGERY,NSW,2642
+31428,RMB 7016 Back Maffra Rd,,SALE,VIC,3850
+31434,34 Beach Road,,WATERMANS BAY,WA,6020
+31464,Unit 4/ Pangarinda Homes,,Narrandera,NSW,2700
+31475,21 Ulee Road,,FLOREAT,WA,6014
+31488,96 Robert Street,,TORQUAY,QLD,4655
+31529,3 Franklin Street,,CANUNGRA,QLD,4275
+31532,Unit H 41 Gotha St,,FORTITUDE VALLEY,QLD,4006
+31539,7/165 Dickward Drive,,Nightcliff,NT,0812
+31551,414 Wilmott Street,,GLADSTONE,QLD,4680
+31554,158 Moran Street,,Boulder,WA,6432
+31556,2b Estelle Step,,Sunshine,VIC,3020
+31576,Lot 21 Hassall St,,ELLEKER,WA,6330
+31586,530 O'Regan Creek Road,,TOOGOOM,QLD,4655
+31594,6 Swamp Road,,URAIDLA,SA,5142
+31595,247 Frees Road,,WARWICK,QLD,4370
+31615,129 Riverlands Moorindil Street,,TEWANTIN,QLD,4565
+31618,49/ Argyle Ave Access,,Anna Bay,NSW,2316
+31637,13/11 Lachlan Street,,Cowra,NSW,2794
+31645,48 Pulford Street,,CHERMSIDE WEST,QLD,4302
+31691,94 Bookpurnong Road,,LOXTON,SA,5333
+31706,56 Oakleigh Street,,CARINDALE,QLD,4152
+31753,4/10 Coin Street,,Kirra,QLD,4225
+31765,78b Aubrey Parade,,Thursday Island,QLD,4875
+31790,51 Bundeera Street,,South Caulfeild,VIC,3162
+31793,1026 Pemberton Street,,ALBURY,NSW,2640
+31835,53 Syndicate Road,,TALLEBUDGERA VALLEY,QLD,4228
+31839,Fig Tree 174 Paytens Road,,COWRA,NSW,2794
+31844,69/ Jaeger Street,,Bruce,ACT,2617
+31852,Lot 122 West Swan Rd,,CAVERSHAM,WA,6055
+31856,13/177 Wanneroo Road,,Yokine,WA,6060
+31858,7 Unit 33 George Street,,Carnarvon,WA,6701
+31862,140 Goobienda Hibbons Road,,Wee Waa,NSW,2388
+31880,2 97 Wellington Street,,MUNDINGBURRA,QLD,4812
+31890,21/1230-1238 Centre Road,,CLAYTON,VIC,3168
+31912,632 Wisemans Ferry Road,,SPENCER,NSW,2775
+31922,282 Browns Road,,SALT ASH,NSW,2318
+31925,340/1126 Bayway Village,,Fern Bay,NSW,2295
+31949,House 25 Garden Cres,,PORT MACQUARIE,NSW,2444
+31984,26 Glastonbury Court,,POINT COOK,VIC,3030
+31987,Lot 24 Sawpitt Gully Rd,,DAWESLEY,SA,5252
+32045,28 Anna Avenue,,LAKE HEIGHTS,NSW,2502
+32059,103 Dwyer Street,,Boulder,WA,6430
+32128,393 Bielby Road,,KENMORE HILLS,QLD,4069
+32132,2 41 Cambridge Street,,GRAND SECRET,QLD,4820
+32154,117 Bayliss Road,,LYNDHURST,VIC,3975
+32174,"11 BISHOP WOOD COURT ",,Upper Coomera,QLD,4209
+32177,127 Yaamba Road,,RIDDELLS CREEK,VIC,3431
+32225,3/1 Wichello Street,,Toowoomba,QLD,4350
+32226,4 Manus Avenue,,Palm Beach,QLD,4221
+32245,32 Airlie Avenue,,Deception Bay,QLD,4508
+32256,31/33 Forrest Street,,Glenorchy,VIC,3351
+32278,332 Pimdimar Road,,Tea Gardens,NSW,2324
+32320,2081 Anglesey Road,,HUMPTY DOO,NT,0836
+32327,29/ Tambo Upper Road,,Bruthen,VIC,3885
+32341,197 North Maleny Road,,MALENY,QLD,4552
+32351,2799 Jerrys Plane Street,,Jerrys Plane,NSW,2330
+32352,37 Wooddale Grove,,MITCHAM,VIC,3132
+32355,Lot 1429 Wattle Valley Dr,,HILLSIDE,VIC,3037
+32375,24 Fowlers Road,,Dapto,NSW,2530
+32386,Lot 9 Torquay Dr,,TABOURIE LAKE,NSW,2539
+32465,259 Cams (rural) Boulevard,,Summerland Point,NSW,2259
+32508,9/9 Homestead Day Avenue,,BUCASIA,QLD,4740
+32557,40 5th Ave,,Plm Beach,QLD,4221
+32565,355 Drome Road,,SALE,VIC,3850
+32573,690 Portarlington Road,,MOOLAP,VIC,3221
+32585,11 Narla Court,,BELMONT,NSW,2280
+32588,1 Orpheus Close,,MOUNT SHERIDAN,QLD,4868
+32616,Glenair 6104 Gwydir Highway,,INVERELL,NSW,2360
+32651,91 Clareville Avenue,,SANS SOUCI,NSW,2219
+32669,101 Stakehill Road,,BALDIVIS,WA,6171
+32670,20/80 The Esplanade,,Surfers Paradise,QLD,4217
+32674,183 Old South Head Road,,BELLEVUE HILL,NSW,2023
+32679,2/124 Greenacre Drive,,ARUNDEL,QLD,4214
+32700,25 King Creek,,Wauchope,NSW,2444
+32721,138 York Road,,POPANYINNING,WA,6309
+32727,49 North Street,,GLENROY,VIC,2640
+32802,186 Little Mtn Home Park Mark Road,,CALOUNDRA,QLD,4551
+32807,290 Brooker Highway,,MOONAH,TAS,7009
+32812,68 Kemp Street,,KEMPSEY,NSW,2440
+32813,Rsd 1142 Cowell Rd,,MOUNT CRAWFORD,SA,5351
+32829,Rm 202 Centaur Hostel,,CALOUNDRA,QLD,4551
+32851,RMB 4471A Sargeant Dr,,MORWELL,VIC,3840
+32899,H302/ George Street,,North Strathfield,NSW,2137
+32917,2/499 Stirling Highway,,COTTESLOE,WA,6011
+32928,5 Watergum Crescent,,Maleny,QLD,4552
+32942,RMB 7450 Clydebank Rd,,CLYDEBANK,VIC,3851
+32950,RMB 2617 Locarno Rd,,YANDOIT,VIC,3461
+32974,39/27 Carolin Street,,HAWTHORN,VIC,3122
+32982,MS 355 null,,CHINCHILLA,QLD,4413
+33005,880d Elders Lei Road,,Elders Lei,NSW,2335
+33006,80 Hillview Court,,KIAMA,NSW,2533
+33029,RMB 6870 Copelands Rd,,WARRAGUL,VIC,3820
+33030,9 Siska Court,,SHELL COVE,NSW,2529
+33045,616/ Pendraat Parade,,Hope Island,QLD,4212
+33059,146 37th Parallel Street,,Deep Lead,VIC,3385
+33118,28 Evans Road,,TOUKLEY,NSW,2262
+33139,1325 Glastonsury Rd,,Gympie,QLD,4570
+33155,86/463 Belair Lifestyle Village,,Geraldton,WA,6530
+33167,600 King Street,,NEWTOWN,NSW,2042
+33172,Lot 80 Sturt Highway,,Robinvale,VIC,3549
+33181,Lot 34 Sheepskin Rd,,BURRAGATE,NSW,2550
+33192,2 Bethsham Street,,Wyee,MSW,2259
+33195,Lot 142 Boyce Ave,,WYONG,NSW,2259
+33200,695 Tunburll Road,,ARDMONA,VIC,3629
+33256,25 West Street,,Newtown Toowoomba,QLD,4350
+33267,U10d/ Princess Palms,,Palm Beach,QLD,4221
+33284,118 LAKELANDS DRV,,GNANGARA,WA,6077
+33292,Lot 29 Nirvana Way,,CLYBUCCA,NSW,2440
+33297,825 Pipers Creek Road,,KYNETON,VIC,3444
+33307,212 Connection Rd,,Tallebudgera,QLD,4228
+33340,9/102-110 Astill Court Autumn Street,,Orange,NSW,2800
+33343,67 Seaford Road,,SEAFORD,VIC,3198
+33348,Lot 223 Minninup Rd,,STRATHAM,WA,6237
+33370,349 Mcbryde Terrace,,WHYALLA,NSW,5600
+33403,Tweed Mall Amcal Chempro Chemist 2/101 Lochomono Drive,,Tweed Heads,NSW,2485
+33417,168 Macedonrd,,LOWER TEMPLESTOWE,VIC,3107
+33420,60169 Vista Drive,,Ashmore,QLD,4214
+33426,Lot 2 Tyers Rd,,YALLOURN NORTH,VIC,3825
+33433,Lot 59 Cen Coast Mobile Village Cutler Dve,,WYONG,NSW,2259
+33445,5 Carpenter Street,,BENDIGO,VIC,3550
+33517,36 Kevin Drive,,YEPPOON,QLD,4703
+33556,11/2 28th Avenue,,Palm Beach,QLD,4221
+33560,RMB 4058 Patison Ct,,DROUIN,VIC,3818
+33563,RMB 9196 Grasmere Rd,,ALBANY,WA,6330
+33590,71\69 Dorcas Street,,SOUTH MELBOURNE,VIC,3205
+33601,1 Sarabah Road,,Nerang,QLD,4275
+33620,36 Griffin Street,,WARRAWONG,NSW,2502
+33626,7a Ebden Avenue,,Black Rock,VIC.,3193
+33627,140 Parkes Road,,COLLAROY,NSW,2097
+33631,80 Xavier Street,,HIGHBURY,SA,5089
+33635,6/ Tinder Box Road,,Bangalow,NSW,2479
+33660,Lot 13 Cambrai Rd,,SEDAN,SA,5353
+33752,82 Eastwood Road,,BROADWATER,VIC,3301
+33779,Lot 100 Bald Hills Rd,,NAIRNE,SA,5250
+33797,187 Mt View Road,,MALENY,QLD,4552
+33813,111 Trafalgar Avenue,,WOY WOY,NSW,2256
+33821,614 Daylesford Street,,Dalesford,VIC,3460
+33830,Lot 21 Quindulup South Rd,,MARYBROOK,WA,6280
+33845,1 Taylors Beach Road,,TAYLORS BEACH,NSW,2316
+33858,4028 Royal Pines Resort Benowa,,Benowa,QLD,4217
+33863,41/ Wardell Road,,Petersham,NSW,2049
+33866,14 590-600 Pine Ridge Road,,RUNAWAY BAY,QLD,4216
+33891,42/53 Ocean Parade,,Ocean Reef,WA,6027
+33898,Shop 5 Belgrave St,,KEMPSEY,NSW,2440
+33902,48 Lauradale Street,,Ormeau,QLD,4680
+33926,51 Linden Avenue,,TOORMINA,NSW,2452
+33929,53/A Inglewood Rd,,Gympie,QLD,4570
+33997,17/26 Glenora Road,,BUSHY PARK,TAS,7140
+34000,27/32 Vincent Street,,INDOOROOPILLY,QLD,4068
+34028,98 Chippindall Court,,THEODORE,ACT,2905
+34060,13 Stuart Highway,,ALICE SPRINGS,NT,0870
+34066,"10 Blackford Avenue ",,Kanwal,NSW,2259
+34067,9/12-18 Wittenoom Street,,Boulder,WA,6432
+34069,68/463 Marine Terrace,,Geraldton,WA,6530
+34079,2/75 Aralia St,,Nightcliff,NT,0810
+34086,4 Timthy Road,,TARA,QLD,4421
+34090,Lot 2 Barnes Rd,,WILSONS HILL,VIC,3515
+34131,RMB 8520 Noojee Rd,,MOE,VIC,3825
+34189,9 Hickmans Road,,LENAH VALLEY,TAS,7008
+34203,'upland' No 2 Cottage,,BOGGABRI,NSW,2382
+34206,34 Leila Road,,ORMOND,VIC,3204
+34210,2 Summerville Road,,KANDANGA,QLD,4570
+34242,34 Maleny/kenilworth Road,,MANELY,QLD,4552
+34265,"27A Lorna Street   ",,WARATAH,NSW,2298
+34304,12 Fourth Avenue,,Willoughby,NSW,2068
+34358,20/ Kreis Road,,Yeppoon,QLD,4703
+34400,71 Minnamurra Road,,Inverell,NSW,2360
+34429,1743 Hawkesdale Road,,MACARTHUR,VIC,2904
+34455,87-91 Arundle Road,,HORSLEY PARK,NSW,2164
+34461,114 Cox Road,,DELORAINE,TAS,7304
+34480,179 Bong Bong Road,,Dapto,NSW,2530
+34489,61 Amphitheatre Court,,BAULKHAM HILLS,NSW,2153
+34490,41 D'Arcy Street,,STAWELL,VIC,3380
+34493,20 Natren Court,,BERWICK,VIC,3806
+34504,MS 293 Scrubby Creek Rd,,GRACEMERE,QLD,4702
+34505,49 Kanni Court,,ASHMORE,QLD,4214
+34510,278 Longwood Road,,LONGWOOD,SA,5153
+34544,2/276 Bathurst Street,,Hobart,TAS,7000
+34555,13/15 Wynnum Esplanade,,WYNNUM,QLD,4178
+34576,Lot 9 Stakehill Rd,,BALDIVIS,WA,6171
+34608,391 Fairybower Road,,Gracemere,QLD,4702
+34621,39 Bangalore Street,,Kensington,NSW,3031
+34627,2100 Barwan Street,,NARRABRI,NSW,2390
+34645,Block62367 Bruce Hwy,,ETNA CREEK,QLD,4702
+34692,1/71 Mattocks Road,,Varsity Lakes,QLD,4227
+34760,7/17 Unit 31 Purli Street,,Chevron Island,QLD,4217
+34764,207 1 Brilliant Street,,BATHURST,NSW,2795
+34766,Lot 9 Pethybridge Lane,,TARADALE,VIC,3447
+34773,101 Risdon Road,,NEW TOWN,TAS,7008
+34834,22 King Street,,CHARTERS TOWERS,QLD,4820
+34853,57 Torrens Road,,BOWDEN,SA,5007
+34891,795 Riverside Rd Road,,HORSHAM,VIC,3400
+34909,A/15 Rosella Street,,Murrumbeena,VIC,3163
+34959,64 Becket St N,,GLENROY,VIC,3046
+34991,63 Springvale Circt,,EDGEWORTH,NSW,2290
+35021,0/ Dont Know Street,,Dont Know,VIC,3204
+35023,8/ Tourmaline Drive,,Wodonga,VIC,3690
+35050,Baringa 1117 Mt Dandenong Tourist Rd,,KALORAMA,VIC,3766
+35061,28/ Freda St,,Picnic Point,NSW,2213
+35077,35A Killarney Street,,LAMINGTON,WA,6430
+35138,10 Pinehill Road,,NARRANDERA,NSW,2700
+35144,34 Jamaica Drive,,Deception Bay,QLD,4508
+35166,259 Wondai Road,,CHINCHILLA,QLD,4413
+35213,3962 Pyreneres Highway,,ARARAT,VIC,3377
+35236,Lot 100 Calarie Rd,,FORBES,NSW,2871
+35241,66 Nelson Avenue,,Highton,VIC,3216
+35273,417 Maudsland Road,,MOUNT NATHAN,QLD,4211
+35321,79 Inthawoona Road,,GIDGEGANNUP,WA,6083
+35382,23 Korogara Street,,Crescent Head,NSW,2440
+35420,92 Woodend Road,,SHEIDOW PARK,SA,5158
+35423,7/2 Theakston Green,,Leeming Way,QLD,6149
+35444,171 Hepburn Street,,Mt Magnet,WA,6638
+35448,10 Rock Farm Avenue,,DUNDAS,NSW,2117
+35450,17 Maritana Place,,BERRIDALE,NSW,2628
+35462,718 Pascoe Vale Road,,GLENROY,VIC,3046
+35481,Lot 1 Alambie Rd,,WELBY,NSW,2575
+35482,8a210/118a soldiers point rd,,soldiers point,NSW,2317
+35516,C/72a Brush Rd,,DENISTONE,NSW,2114
+35526,56 Mcdouall Stuart Avenue,,WHYALLA STUART,SA,5608
+35528,17 Frank Avenue,,CLAYTON,VIC,3168
+35572,164 Ryde Road,,PYMBLE,NSW,2073
+35599,88 Cywood Street,,TOOWONG,QLD,4066
+35602,12 Oakbar Close,,EDMONTON,QLD,4869
+35609,37 Wyndham Street,,BRANXTON,NSW,2335
+35673,43497 Herbert Street,,PARKDALE,VIC,3194
+35676,2 Loch Mews,,NOOSAVILLE,QLD,4566
+35770,Farm 410 Vance Rd,,LEETON,NSW,2705
+35777,62 Estell Street,,Maryville,SA,2293
+35791,19 Clarke Becketts Lane,,BLACK ROCK,NSW,3193
+35792,25 The Crescent,,Belgrave Heights,VIC,3160
+35795,Lot 5 Charles St,,MOONBI,NSW,2353
+35823,2/108 Henderson Road,,QUEANBEYAN,NSW,2620
+35842,Rsm 243 Rms,,BUSSELTON,WA,6280
+35844,624 The Mews - Alan Walker Village - Dalmar Place,,CARLINGFORD,NSW,2118
+35849,181 Palm Lake Resort,,DECEPTION BAY,QLD,4508
+35852,Lot 16 Pollock Ave,,BONNIE DOON,VIC,3720
+35904,105 Vardon Point,,PELICAN WATERS,QLD,4551
+35912,8 - 2 Cooper Street,,EPPING,VIC,3076
+35957,2444 Ranceby Road,,POOWONG,VIC,3988
+35958,The Rector/39 Kurrajong Street null,,Dorrigo,NSW,2453
+35966,34 Panorama Avenue,,YOUNGHUSBAND,SA,5238
+36000,87 Ivo-whitton Court,,KAMBAH,ACT,2902
+36025,"57 Westward Way ",,Coomera,QLD,4209
+36073,5304 Marine Dr Drive,,SANCTUARY COVE,QLD,4212
+36091,RMB 7081 Reith Rd,,WANGARATTA FORWARD,VIC,3678
+36100,165 Upper Road,,CAL GULLY,VIC,3556
+36110,6/5 Augusta,,LENAH VALLEY,TAS,7008
+36114,51/1 Bridgeman Drive,,REEDY CREEK,QLD,4227
+36131,1217 Ellangowan Road,,YORKLEA,NSW,2470
+36139,106 Princes Highway,,LAKES ENTRANCE,VIC,3909
+36140,2/ Noella Crt,,Sorrento,QLD,4217
+36146,Lot 10 Lee Street Dr,,BOYUP BROOK,WA,6244
+36159,A/56 The Anchorage Street,,Port Macquarie,NSW,2444
+36164,5/5a Charles Street,,Moonah,TAS,7009
+36190,RMB 4480 Sale-Cowwarr Rd,,NAMBROK,VIC,3847
+36307,156 Brisbane Street,,TAMWORTH,NSW,2340
+36320,2 West Street,,KEMPSEY,NSW,2440
+36335,46 Tamworth Holiday Park,,NEMINGHA,NSW,2340
+36341,44/45 Fryar Road,,Eagleby,QLD,4207
+36372,Palm Lake Resort 86 Hogg Street,,Toowoomba,QLD,4350
+36384,131 Ross Road,,QUEANBEYAN,NSW,2620
+36390,Lot 1 Shirley Drive,,TARADALE,VIC,3447
+36410,9 Chirnside Road,,Berwick,SA,3806
+36440,45 Sharhaven Drive,,NOOSA,QLD,4566
+36453,328 Annette Street,,TINGALPA,QLD,4173
+36462,56 Warwich Street,,TOOWOOMBA,QLD,4350
+36464,20 Kayina Road,,NORTH YELTA,SA,5558
+36468,RMB 3552 Soldiers Rd,,MANSFIELD,VIC,3722
+36484,5/13 Elvire Street,,MIDLAND,WA,6056
+36526,Woorayl Lodge 0 Mccartin Street,,Leongatha,VIC,3953
+36553,17 Bayway Village,,FERN BAY,NSW,2295
+36555,11/14a Woodside Ave,,Burwood,NSW,2134
+36556,A/8 Cranford Avenue,,Mt Pleasant,WA,6153
+36560,10/57 Kings Way,,CRONULLA,NSW,2230
+36567,RMB 7412 Grampians Rd,,HORSHAM FORWARD,VIC,3401
+36568,108/170 Bardon Avenue,,Miami,QLD,4220
+36593,25 10 Diamond Street,,KINGSTON,QLD,4114
+36609,583 Weir Road,,Torrumbarry,VIC,3562
+36613,11 Caroll Place,,KALGOORLIE,WA,6430
+36616,43 Daniel Drive,,KANGAROO FLAT,VIC,3555
+36620,330 Left Bank Kinchela Creek Road,,VIA KEMPSEY,NSW,2440
+36630,64 Woodbury Park Drive,,TUGGERAH,NSW,2259
+36641,129 Maximilian Road,,NORTH SHORE,QLD,4565
+36646,157 Azalea Place,,Inala,QLD,4077
+36660,233 Oaka Lane,,GLADSTONE,QLD,4680
+36664,127 Quambatook Road,,WANDELLA,VIC,3579
+36677,52 Bushby Road,,LWOER KING,WA,6330
+36681,1/120 The Parade,,OCEAN GROVE,VIC,3226
+36684,238 Simpsons Rd,,Elanora,QLD,4221
+36715,3 Hazelmount Lane,,TUCKI,NSW,2480
+36737,26A Victor Avenue,,PARADISE POINT,QLD,4216
+36761,61A Sycamore Drive,,DUNCRAIG,WA,6023
+36778,Unit 23 Sanctuary Palms,,CURRUMBIN,QLD,4223
+36785,3316 Box Forest Rd,,GLENROY,VIC,3046
+36800,Lot 17 Crystal Waters,,CONONDALE,QLD,4552
+36808,3/299 Terralong Street,,KIAMA,NSW,2533
+36814,18 The Loop,,HADFIELD,VIC,3046
+36839,197 Garthowen Road,,ATTUNGA,NSW,2345
+36841,81 Ambleside Court,,LAKELANDS,NSW,2282
+36897,Rmb 2480 Fotts Rd,,OURIMBAH,NSW,2258
+36900,De La Vida 30 Harrisons Rd,,DROMANA,VIC,3936
+36908,3 Whitelock Street,,CAREY BAY,NSW,2283
+36959,357 Stoney Chute Road,,NIMBIN,NSW,2480
+36976,38 Nooramunga Avenue,,CAMBEWARRA,NSW,2540
+36990,112/45a Tompson Street,,Kiama,NSW,2533
+36994,2/998 Dilkera avenue Avenue,,Valentine,NSW,2280
+37025,MS 1729 Burnett Hwy,,GOOVIGEN,QLD,4702
+37029,RD 73 Urangan Street,,Torquay,QLD,4655
+37041,96 St Andrews Drive,,Tewantin,NSW,4565
+37042,1/ Da Costa Court,,Vincent,QLD,4814
+37060,C/- Post Office 1/22 Montpelier Street,,Exeter,SA,5019
+37071,1090 Cnr Hummerston Street,,MOUNT HELENA,WA,6082
+37081,RMB 8636 Nanarup Rd,,ALBANY,WA,6330
+37090,2/44 Casuarina Drive,,Nightcliff,NT,0810
+37103,2/93 Avondale Road,,Dapto,NSW,2530
+37123,31F Leslie Street,,SOUTH LAUNCESTON,TAS,7249
+37143,33 Paluma Street,,KIRWAN,QLD,4817
+37152,2A Boavista Road,,NEWTOWN,TAS,7008
+37169,333 Parkersford Road,,Squeaking Point,TAS,7307
+37182,12 Gilmore Crescent,,Waoolongbar,NSW,2477
+37186,213/ Harcourt Cres,,Southport,QLD,4215
+37212,56 Anthony Drive,,ROWVILLE,VIC,3178
+37223,109/98 Eastern Service Road,,Burpengary,QLD,4505
+37240,Tweed Mall Amcal Chempro Chemist 402/ Zara Road,,Cullingham,NSW,2484
+37241,59 Humphries Road,,KINCUMBER SOUTH,NSW,2251
+37270,70 Katanning Road,,KOJONUP,WA,6395
+37331,17 Tuckeroo Drive,,EAST BALLINA,NSW,2478
+37338,C/- 615 St Kilda Rd,,MELBOURNE,VIC,3004
+37371,2/27 Belair Road,,Torrens Park,SA,5062
+37378,5/46 'rosedurante' Orange Street,,PARKES,NSW,2870
+37403,306 Mitchell Road,,ECHUCA,VIC,3564
+37404,899 Byrneside/gilleston Road,,TATURA,VIC,3616
+37421,45/ Hinchinbrook Drive,,Kirwan,QLD,4817
+37435,1/94 Hilton St,,Glenroy,VIC,
+37479,50/63a Barnstaple Rd,,Russell Lea,NSW,2046
+37525,390 Hobart Road,,KINGS MEADOWS,TAS,7249
+37549,175 Camms Road,,Mt Julian,QLD,4800
+37559,3/15 Glen Huntly Road,,GLEN HUNTLY,VIC,3163
+37583,25 Hennessys Road,,CAMBOOYA,QLD,4358
+37596,29 Earl St-vincent Court,,ELI WATERS,QLD,4655
+37618,'havilah' Ra 912 Midlands Hwy,,MANGALORE,TAS,7030
+37647,1A Hudson Loop,,BUSSELTON,WA,6280
+37655,31 Adare Close,,MULGRAVE,VIC,3170
+37695,87 Upper Douroby Creek Road,,North Tumbulgum,NSW,2490
+37712,0/ Old Wahalla Road,,Toongabbie,VIC,3856
+37714,574/ Geographe Bay Road,,Busselton,WA,6280
+37737,700 Jumbuk Road,,YINNAR,VIC,3869
+37752,"40 SUNBAKERS DR ",,FORSTER,NSW,2428
+37769,226 Jerrara Road,,KIAMA,NSW,2533
+37813,8/485 Church Street,,PARRAMATTA,NSW,2150
+37822,1262 Yea Road,,KINGLAKE WEST,VIC,3757
+37833,3/72 Kanahooka Road,,Dapto,NSW,2530
+37841,42 R0chford Street,,Erskineville,NSW,2043
+37845,125 Thomson Road,,HAZELWOOD NORTH,VIC,3840
+37880,150 White Cedar Court,,STRETTON,QLD,4116
+37883,3 Oakapple Road,,Duncraig,WA,6023
+37912,72/ Stanley Street,,Kanwal,NSW,2259
+37928,Lot 40 Bibaringa Cl,,BEECHMONT,QLD,4211
+37949,72 Maldon Road,,Castlemaine,VIC,3450
+37964,103 Lansell Street,,Bendigo,VIC,3550
+37978,58 The Avenue,,OCEAN GROVE,VIC,3226
+37990,89 Melrose Drive,,Wodonga,VIC,3690
+37995,50 - 43/ Cadles Road,,CARRUM DOWNS,VIC,3201
+38023,104 Old Tathra Road,,MERIMBULA,NSW,2548
+38048,440 Dargo Road,,BAIRNSDALE,VIC,3875
+38049,Lot 4 Tyson Rd,,HEYFIELD,VIC,3858
+38074,4 Christopher Crescent,,Queanbeyan,NSW,2620
+38104,unit2/3Lightfoot St,,SHEPPARTON,VIC,3630
+38113,62 Boundary Road,,DROMANA,VIC,3936
+38140,16GLYDE ST,,EAST FREMANTLE,WA,6158
+38145,51 Northshore Court,,Idalia,QLD,4811
+38147,24 Albert Street,,LIDCOMBE,NSW,2141
+38212,1800 Pitts Lane,,BISHOPSBOURNE,TAS,7301
+38241,373 Eastbourne Road,,ROSEBUD,VIC,3939
+38242,Lot/3 Twin Creeks Estate,,Coolatai,NSW,2402
+38271,79 Lennox Circle,,POTTSVILLE BEACH,NSW,2489
+38288,2 Albert Street,,MILDURA SOUTH,VIC,3501
+38298,RMB 5078 Porters Rd,,BENALLA,VIC,3673
+38314,MS 1575 Towalla Rd,,MALANDA,QLD,4885
+38315,45 Glastonbury Court,,POINT COOK,VIC,3030
+38347,233 Old Hamilton Road,,Horsham,VIC,3401
+38370,30 Heilig Street,,GLASS HOUSE MOUNTAIN,QLD,4518
+38382,10 Orchis Divide,,Eagle Heights,QLD,4271
+38395,15 Ivo-whitton Court,,KAMBAH,ACT,2902
+38409,7 St Albans Road,,MOUNT LOUISA,QLD,4814
+38417,Lot 153 Perfection Ave,,KELLYVILLE RIDGE,NSW,2155
+38431,89 Wilson Road,,WYUNA EAST,VIC,3620
+38433,396 Catherine Street,,LEICHHARDT,NSW,2040
+38462,14 Lehmanns Road,,Beenleigh,QLD,4207
+38473,119 Birchgrove Road,,BALMAIN,NSW,2041
+38499,7 Bower Avenue,,The Basin,VIC,3154
+38553,590 Edies Road,,CALDERMEADE,VIC,3984
+38577,380 Station Street,,EPSOM,VIC,3551
+38609,1088 Flinders Road,,RED HILL,VIC,3937
+38617,45 King Street,,WARILLA,NSW,2528
+38633,3/4 A Cox Street,,TOOWOOMBA,QLD,4350
+38704,60 Golfcourse Road,,Ascot,VIC,3551
+38708,10/14 Valbonne Avenue,,Varsity Lakes,QLD,4227
+38726,11/ Scribbly Close,,Medowie,NSW,2318
+38761,MS 30 Loloma,,Chinchilla,QLD,4413
+38771,1105 Main Road,,WILLOW GROVE,VIC,3825
+38772,3/40 Abbott Street,,NEWSTEAD,TAS,7250
+38797,39 Carrington Drive,,FLAXTON,QLD,4560
+38810,171/206 Phillip Street,,North Mackay,QLD,4740
+38831,Lot/15 Mount Barker Road,,Hahndorf,SA,5245
+38847,40 Chillingworks Road,,YOUNG,NSW,2594
+38853,47 Potters Road,,WARWICK,QLD,4370
+38869,20 Cooper Court,,MOUNT TARCOOLA,WA,6530
+38872,271 Sadlleback Mountain Road,,Kiama,NSW,2533
+38934,Unit2/83 Belmont Street,,Swansea,NSW,2280
+38943,Lot 8 & 9 Binda Street,,GOOLOOGONG,NSW,2805
+38946,31 Skene Street,,BENDIGO,VIC,3550
+38983,33 Deven Street,,PRIESTS GULLY,QLD,4123
+38990,1/41 Mercorella Court,,ALICE SPRINGS,NT,0870
+39032,2/46 Centenary Avenue,,Melton,VIC,3337
+39093,47 Monaco Court,,ABERFOYLE PARK,SA,5159
+39126,Lot 36 Old Raymond Rd,,ROELANDS,WA,6226
+39164,13 East Park Drive,,Monterey Keys,QLD,4212
+39166,19 Paola Court,,POINT COOK,VIC,3030
+39185,29 Blackwell Court,,FLYNN,ACT,2615
+39192,2 - 20 Rigney Street,,WHYALLA PLAYDORD,SA,5600
+39200,26/A Hensman Street,,South Perth,WA,6151
+39216,1205/33 T.E. Peters Drive,,Broadbeach,QLD,4218
+39224,6493 Old Sale Road,,SHADY CREEK,VIC,3821
+39229,665 Nalangil Road,,NALANGIL,VIC,3249
+39238,61 Felix Street,,LUTWYCHE,QLD,4030
+39256,410 Windham Approach,,Surfers Paradise,QLD,4217
+39281,120 Johnson Road,,ALBURY,NSW,2640
+39327,RMB 1230NEW Brucknell Rd,,ECKLIN SOUTH,VIC,3265
+39352,75/28 Herbert Road,,CARRUM DOWNS,VIC,3201
+39362,841 Ascot Road,,TAMWORTH,NSW,2340
+39367,16 Mccartney Street,,Oxley,VIC,3678
+39380,528 Kalang Road,,Bellingen,NSW,2454
+39411,3/8 - 10 Fyffe Street,,DIAMOND CREEK,VIC,3089
+39437,185 Mothersoles Road,,Ellangowan,NSW,2470
+39450,Room 4/5 'West House' Monash,,CHURCHILL,VIC,3842
+39451,0 Sherwood Hill,,Delungra,NSW,2403
+39452,1142 Kookrook-murrabit Road,,SCOTTWOOD,VIC,3579
+39457,50 Charles Street,,DROMANA,VIC,3936
+39525,39A Windermere Avenue,,NORTHMEAD,NSW,2152
+39550,32/ Schaefer Street,,Red Rock,NSW,2456
+39551,14 Lorenson Avenue,,NORTH COBURG,VIC,3058
+39561,Seawinds Village 112/ Frost Road,,Anna Bay,NSW,2316
+39573,2/4 Church Street,,Melton,VIC,3337
+39582,21 Hazelwood Ridge Road,,Hazelwood North,VIC,3840
+39627,4/12 George Street,,Carnarvon,WA,6701
+39629,C/o Staff 0 ...... Road,,Hayman Island,QLD,4801
+39637,415 Bielby Road,,KENMORE HILLS,QLD,4069
+39643,347 Daunts Lane,,STROUD,NSW,2425
+39675,60 Ozzpwater Road,,CASTLE COVE,NSW,2069
+39681,Villa 212 Henry Kendall Village,,WYOMING,NSW,2250
+39682,3050 Yea Road,,FLOWERDALE,VIC,3658
+39826,481/ Illaroo Road,,North Nowra,NSW,2541
+39831,328 Great Hall Drive,,Miami,QLD,4218
+39837,36 Murray Street,,TAMWORTH,NSW,2340
+39839,6/6001 Pineridge Rd,,Biggera Waters,QLD,4216
+39857,0 Street Street,,Inverell,NSW,2360
+39861,10 Garden Gv,,SPRINGFIELD,TAS,7260
+39886,143 Starke Street,,HOLT,SA,2615
+39888,A/21 Georgie Court,,Coogee,WA,6166
+39897,59 O'Quinn Street,,NUDGEE BEACH,QLD,4014
+39914,55 Southern Road,,BARGO,NSW,2574
+39942,Lot 6 Pitman Ave,,BURONGA,NSW,2739
+39948,212 19th Avenue,,Elanora,QLD,4221
+39958,399 Barry Road,,BROADMEADOWS,VIC,3047
+39985,236 Lyhurst Road,,BOONDALL,QLD,4034
+40106,9 Melfindve,,HILLSIDE,VIC,3037
+40125,19/3 Gambier Avenue,,TEMPLESTOWE LOWER,VIC,3107
+40181,38 Campaste Street,,WODONGA,VIC,3690
+40188,217 Elleker Grasmere Road,,ALBANY,WA,6330
+40191,59/ Bendooley Street,,Bowral,NSW,2576
+40200,11 23rd Avenue,,Palm Beach,QLD,4300
+40209,19 Skene Street,,BENDIGO,VIC,3550
+40225,44 Alexander Street,,CESSNOCK,NSW,2325
+40231,10 J/30 - 34 Churchill Avenue,,STRATHFIELD,NSW,2135
+40234,1614 Lavers Hill Road,,JANCOURT EAST,VIC,3266
+40246,8 Flick Road,,TULLERA,NSW,2480
+40253,RMB 3696OLD Tolmie Rd,,MANSFIELD,VIC,3722
+40287,123 Goverment Drive,,WARDS RIVER,NSW,2422
+40290,RMB 9275 Willow Gr,,MOE,VIC,3825
+40306,8 Elizabeth Street,,Kooyong,VIC,3144
+40311,2 Orr Street,,GEELONG WEST,VIC,3218
+40314,162A Flood St Street,,NARRANDERA,NSW,2700
+40338,2/388 Kaitlers Road,,LAVINGTON,NSW,2641
+40342,82 Princeton Court,,Aubin Grove,WA,6164
+40343,Lot 2 Young Rd,,MOSS VALE,NSW,2577
+40361,127 Regatta Crt Brebner Drive,,WEST LAKES,SA,5021
+40407,90 Alligator Creek Road,,ALLIGATOR CREEK,QLD,4816
+40417,73 Curdievale Road,,TIMBOON,VIC,3268
+40434,37/ Primary Cresent Access,,Nelson Bay,NSW,2315
+40448,2/72 Wantirna Road,,WANTIRNA,VIC,3152
+40460,19 Knightsbridge Court,,NARRE WARREN,VIC,3805
+40491,50 Adelaide Court,,BEENLEIGH,QLD,4207
+40501,7/ Ryfield Rd,,Carrara,NT,4211
+40529,17 Edwards Road,,EAGLEHAWK,VIC,3550
+40549,91 Falkland Street,,Pallara,QLD,4110
+40564,2/266 Boundary Road,,Torquay,QLD,4655
+40581,1 Twenty Third Avenue,,SAWTELL,NSW,2452
+40626,314 Pinecliff Road,,CURLEWIS,NSW,2381
+40665,67 Daintree Drive,,Arundel,QLD,4214
+40686,RMB 410 Yarrol Rd,,KOOTINGAL,NSW,2352
+40738,208 Midship Avenue,,BRIBIE ISLAND,QLD,4507
+40780,734 Cedar Creek Road,,CEDAR CREEK,QLD,4520
+40793,RMB 1320 Buffalo Creek Rd,,MYRTLEFORD,VIC,3737
+40844,29 Seaforth Avenue,,Cronulla,NSW,2230
+40848,16 Grants Lane,,Raglan,VIC,3373
+40850,54 Tarcoola,,SHEPPARTON,VIC,3630
+40862,44 Mt Panorama Drive,,Alligator Creek,QLD,4816
+40864,1981 Emu Parade,,TUNGAMULL,QLD,4702
+40878,482 Camellia Hawkins M Village,,EDGEWORTH,NSW,2285
+40915,Villa/151 Edward Street,,Osborne Park,WA,6017
+40919,1/431 Lawrence Street,,Wodonga,VIC,3690
+40925,2 Guilfoyle Court,,MOOLOOLAH VALLEY,QLD,4553
+40953,32/ Mango Rd,,Girraween,NT,0822
+40981,8464 Gormandale/stradbroke Road,,GORMANDALE,VIC,3873
+40993,107 Reevew Road,,Kentucky,NSW,2354
+40997,39 Dixon Drive,,DUFEY,NSW,2611
+41001,1710 Ky/Cooma,,TATURA,VIC,3616
+41009,51/272 Fryer Road,,Eagleby,QLD,4207
+41054,3 Tattenham Street,,CARNEGIE,VIC,3163
+41069,147A Dempster Street,,BEVERLEY,WA,6304
+41092,5 Wingrove Garden,,Burnie,TAS,7320
+41120,18/259 Linden Avenue,,Boambee East,NSW,2452
+41162,2805/1 Kings Cross Road,,RUSHCUTTERS BAY,NSW,2011
+41216,7 Huntly Place,,CALOUNDRA WEST,QLD,4551
+41282,181 Dallas Drive,,BROADMEADOWS,VIC,3047
+41291,1 103 Hartley Street,,EMU PARK,QLD,4710
+41311,2/19a Charlotte Street,,Sebastopol,VIC,3356
+41376,4 O'Sullivans Road,,HUNTLY,VIC,3551
+41382,17 Paramount Court,,MCDOWALL,QLD,4053
+41403,1/54 Albert Street,,Osborne Park,WA,6017
+41413,1075 Bellarine Highway,,WALLINGTON,VIC,3221
+41434,47 Kariong Court,,DUNCRAIG,WA,6023
+41450,Mews 140 Meadowvale Eagle Dve,,PAKENHAM,VIC,3810
+41461,80 Edward Street,,Tamworth,NSW,2340
+41463,44/52 Morley Street,,TUART HILL,WA,6060
+41471,RMB 2159 Cookinburra Rd,,BARNAWARTHA,VIC,3688
+41479,3/24 EXPLORERS RD,,LAPSTONE,NSW,2773
+41487,77 The Village Paas Place,,WILLIAMSTOWN,VIC,3016
+41493,2A Forrest Street,,NORTH BEACH,WA,6020
+41494,204 Red Hill Road,,TELEGRAPH POINT,NSW,2441
+41519,71 Gleneagles Drive,,Robina,QLD,4226
+41525,9/ Ellavale Drive,,Traralgon,VIC,3844
+41543,9 Pines Mesines,,SHOAL BAY,NSW,2315
+41564,39 A Freemans Road,,Woolgoolga,NSW,2456
+41577,27/90 Caloundra Road,,CALOUNDRA,QLD,4551
+41578,1207/33 Te Peters Drive,,Broadbeach,QLD,4218
+41609,29B Sussex Street,,WEST END,QLD,4101
+41629,13 Mustange Road,,FORRESTDALE,WA,6112
+41637,8A Duns Creek Road,,WOODVILLE,NSW,2321
+41643,1506 Carmut Road,,WINSLOW,VIC,3281
+41664,26/ Wilfred Barret Drive Drive,,The Entrance,NSW,2261
+41684,6 35 Hughes Close,,KURRI KURRI,NSW,2327
+41688,1102 Yeppoon Road,,LIMESTONE CREEK,QLD,4701
+41730,Lot 1 Broken Head Rd,,BROKEN HEAD,NSW,2481
+41736,2 Button Street,,COOLANGATTA,QLD,4225
+41738,123 Northcliffe Drive,,WARRAWONG,NSW,2502
+41747,615 Murray Street,,PARINGA,SA,5340
+41755,RMB 5870 Eldorado Rd,,LONDRIGAN,VIC,3678
+41776,134 Clarence Town Road,,LIMEBURNERS CREEK,NSW,2324
+41781,"28 Inala ",,COOTAMUNDRA,NSW,2590
+41785,139/57 Empire Bay Dvve,,KINCUMBER,NSW,2251
+41810,Lot 30 Westgrove Rd,,EXETER,NSW,2579
+41812,14 Edward Street,,TAMWORTH,NSW,2340
+41820,153 Gymea Bay Road,,GYMEA BAY,NSW,2227
+41831,159 Ironstone Road,,EPSOM,VIC,3551
+41845,7 Mile Road,,NAR NAR GOON,VIC,3812
+41857,26 Quarry Road,,ESPERANCE,WA,6450
+41865,1516 Newland Street,,MOONTA,SA,5558
+41866,Lot 7 Michael Ct,,BRIDGE INN,VIC,3380
+41874,146 Forrest Street,,BOULDER,WA,6432
+41879,0/0 Ruthanne Close,,Labrador,QLD,4215
+41897,142/19 Kalaroo Road,,Redhead,NSW,2290
+41901,Rmb 2615 Huon Creek Rd,,WODONGA,VIC,3690
+41943,8 Doncon Road,,Wandina,WA,6530
+41945,142 Wyndara Way,,Dapto,NSW,2530
+41953,RMB 4686 Codrington Rd,,HEYWOOD,VIC,3304
+41976,5927 Clifton-gatton Road,,CLIFTON,QLD,4361
+41993,7A Barlyn Court,,HORSLEY,NSW,2530
+42003,127 Cpbirms Road,,MELTON SOUTH,VIC,3338
+42005,260 Possum Road,,KINGS MEADOWS,TAS,7249
+42027,8/67 Mena Street,,Moe,VIC,3825
+42055,21 Kathleen Crt Haddan,,BALLARAT,VIC,3350
+42061,25 Mcmillian Lane,,Clermont,QLD,4721
+42075,1026 Findlay Road,,Wyuna East,VIC,3620
+42092,68 Naomi St S,,NORTHMEAD,NSW,2152
+42129,2 Tudor Road,,TARBUCK BAY,NSW,2428
+42140,Lot 7746 Greatorex Rd,,ALICE SPRINGS,NT,0870
+42141,4/40 Pittwin Road South,,Capalaba,QLD,4157
+42151,1255 Main Road,,Port Sorell,TAS,7307
+42169,1727 Serpentine Road,,Albany,WA,6330
+42170,1010 Mariam Grove,,SAWTELL,NSW,2452
+42191,1495 Sandilong Avenue,,IRYMPLE,VIC,3498
+42197,Lot 1 North Marshall Mount Rd,,MARSHALL MOUNTAIN,NSW,2550
+42220,Lot 4 Jennings Rd,,CULCAIRN,NSW,2660
+42235,3 Portsea Place,,Howrah,TASMANIA,7018
+42252,RMB 5180 Bengworden Rd,,COBAINS,VIC,3851
+42263,1102 Duncan Street,,WHYALLA PLAYFORD,SA,5600
+42275,Lot 1 Murphy Rd,,PAKENHAM,VIC,3810
+42277,14 Bribie Island Retirement Village - Foley Street,,BRIBIE ISLAND,QLD,4507
+42302,21 Possum Pie Road,,WOOTTON,NSW,2423
+42304,0/ Humphrey'S Road,,Toongabbie,VIC,3844
+42344,68/A Shortland Ave,,Strathfield,NSW,2135
+42362,26 Newcastle Street,,EAST MAITLAND,NSW,2323
+42366,206/ The Grove,,Tweed Heads,NSW,2485
+42370,"44 Cahill Crescent ",,"Collingswood Park ",QLD,4301
+42380,1651 Ross River Road,,KELSO,QLD,4815
+42386,9 Allawah Road,,OGUNBIL,NSW,2340
+42412,E/43 Simpson Street,,GERALDTON,WA,6530
+42460,Lot 69 Ashwood Dr,,CEDAR VALE,QLD,4285
+42482,66/ Scenic Drive,,Mount Louisa,QLD,4814
+42498,207 Maynard Plains Road,,Dorrigo,NSW,2453
+42528,4/363 Daly Street,,BELMONT,WA,6104
+42534,48/ Woodside Ave Access,,Strathfield,NSW,2135
+42549,5542 Princes Highway,,PORT FAIRY,VIC,3284
+42552,41b Towac Road,,Orange,NSW,2800
+42554,52 Brisbane Street,,Cowra,NSW,2794
+42558,26 Gould Street,,KIRWAN,QLD,4817
+42570,99 Dalton Road,,Epping,VIC,3076
+42580,43/15 Coburns Road,,MELTON SOUTH,VIC,3338
+42581,320 Wire Lane,,Camperdown,VIC,3260
+42592,17 Hillside Road,,MOUNT RICHON,WA,6112
+42601,1010 Old Bundarra Road,,INVERELL,NSW,2360
+42604,617 Kandanga Creek Road,,Kandanga,QLD,4570
+42607,29 Friarson Street,,ESPERANCE,WA,6450
+42612,82 129-139 Commercial Road,,NEWSTEAD,QLD,4006
+42620,86 Monterey Court,,TINGALPA,QLD,4173
+42643,Rmb 2420 Hunters Rd,,WARRAGUL,VIC,3820
+42658,1331 Ross River Road,,KELSO,QLD,4815
+42664,85 Kemp Street,,KEMPSEY,NSW,2440
+42691,86 Maidens Brush Rd Adeline Village,,WYOMING,NSW,2250
+42699,150 Mt Ararat Road,,NAR NAR GOON,VIC,3812
+42701,13 26th Avenue,,Palm Beach,QLD,4221
+42703,198 Eastern Valley Way,,Willoughby,NSW,2066
+42707,H/11 Yallambee Lodge Yallambee Avenue,,West Gosford,NSW,2250
+42728,Lot5 Bellamy Close,,WARRAGUL,VIC,3820
+42735,5/212 Eastern Valley Way,,Willoughby,NSW,2068
+42746,Camden 665 Darlington Road,,Terang,VIC,3264
+42771,1383 Finlay Road,,Tongala,VIC,
+42800,42 a David Street,,ALTONA,VIC,3018
+42811,72c Lae Road,,Robinvale,VIC,3549
+42843,8 Ironbark Crest,,Lidcombe,NSW,2141
+42885,377 Bayway Village,,FULLERTON COVE,NSW,2318
+42923,RMB 1777 Mount Useful Rd,,SEATON,VIC,3858
+42926,1/7 Seven Street,,RALLESTATE,QLD,4812
+42961,96 Shell Habour Road,,PORT KEMBLA,NSW,2505
+43010,4/10 Oliver Street,,GEELONG WEST,VIC,3218
+43015,0 Merryvale Old Mill Road,,Wolumla,NSW,2550
+43034,130 Sunday Creek Road,,KILMORE EAST,VIC,3764
+43090,Lot 22 Belvedere Rd,,VETERAN,QLD,4570
+43107,25 Residential Rifle Range Road,,EAST LISMORE,NSW,2480
+43125,63 Domain Village Road,,Junortoun,VIC,3551
+43131,89 12th Street,,HOME HILL,QLD,4806
+43133,1 72 The Esplanade,,MIAMI,QLD,4220
+43134,384 Caves Rd Siesta Park,,BUSSELTON,WA,6280
+43139,70 St James Road,,Rosanna,VIC,3084
+43154,263 Rocket Street,,BATHURST,NSW,2795
+43198,"101 CARKES ",,BEERWAH,QLD,4519
+43203,24 The Esplanade,,WARRNAMBOOL,VIC,3280
+43210,"37 Honeywood Drive ",,Sandford,TAS,7020
+43240,"49 Golf Links Drive ",,Beveridge,VIC,3052
+43271,42 Beach Road,,BUNBURY,WA,6233
+43274,213 River Road,,Port Sorell,TAS,
+43281,4/69-71 The Avenue,,OCEAN GROVE,VIC,3226
+43302,16/ Mclough Place,,West Dapto,NSW,2530
+43323,46/300 Elgar Road,,BOX HILL,VIC,3128
+43343,147B New Canterbury Road,,PETERSHAM,NSW,2049
+43348,791 Tagigan Road,,Wolvi,QLD,4570
+43371,24 A Brownes Road,,Tarwin,VIC,3956
+43372,73/ Yungar Road,,Coolum,QLD,4573
+43458,Lot 19 Rialto Place,,KELLYVILLE,NSW,2155
+43461,148 Cammeray Road,,CAMMERAY,NSW,2062
+43462,Sucess 00 Back Creek Road,,Young,NSW,2594
+43470,Golden Crest Manners 10 Liverpool St 17 Pappas Way,,HIGHLAND PARK,QLD,4211
+43472,12 Retreat Court,,BEACONSFIELD,VIC,3807
+43481,56 Acacia Place,,Valla Beach,NSW,2448
+43488,Lot 100 Plantation Dr,,EWINGSDALE,NSW,2481
+43506,8 Con Crowley Villiage Blende Street,,RAILWAY TOWN,NSW,2880
+43522,44 Daintree Constution Hil,,OLD TOONGABBIE,NSW,2146
+43535,10/50-52 Fortheringham Street,,Enmore,NSW,2042
+43568,Rmb 662 Andrews Lane,,WILLAURA,VIC,3379
+43585,25 James Court,,WOODROFFE,NT,0830
+43592,115/224 Sunset Drive,,MERIDAN PLAINS,QLD,4551
+43619,171 Red Hill Road,,Upper Beaconsfeild,SA,3808
+43638,6 Bourklands Drive,,WAGGA WAGGA,NSW,2650
+43644,2/82la Warance Drive,,Nerang,QLD,4211
+43645,1408 Centre Road,,CLAYTON,VIC,3168
+43659,215 Richardson Street,,WILLIAMS,WA,6391
+43678,24 Darnley Way,,MOOROOLBARK,VIC,3138
+43679,5/271 Grange Road,,CARNEGIE,VIC,3163
+43688,43 Veales Road,,DEERAGUN,QLD,4818
+43692,19 Keysbourough Street,,C/ Burn,VIC,3064
+43732,2205/177-219 Mitchell Road,,ALEXANDRIA,NSW,2015
+43735,59 Tooma Drive,,MURRAY BRIDGE EAST,SA,5253
+43757,43 Whitewood Court,,Cooroy,QLD,4563
+43760,2c Rivergum Drive,,Nerang,QLD,4211
+43761,Urana 0 Orange Road,,Cowra,NSW,2794
+43811,175 Boundary Road,,Leeton,NSW,2705
+43812,RMB 748 null,,NARROGIN,WA,6312
+43844,61 Railway Terrace,,CRYSTAL BROOK,SA,5523
+43893,166 Brentwood Village,,KINCUMBER,NSW,2251
+43950,43/224 Sunset Drive,,Caloundra,QLD,4551
+43963,50 Constellation Way,,WYNNUM NORTH,TAS,4179
+43992,131 Johnstone Street,,BROADMEADOWS,VIC,3047
+44079,Lot 23 Catherine Way,,TAMWORTH,NSW,2340
+44085,171 Ashmore Road,,BENOWA,QLD,4217
+44120,37 Carnoustie Circle,,NORTHLAKES,NT,0812
+44124,357 Brentwood Village,,KINCUMBER,NSW,2251
+44147,2g Forrest Street,,Boulder,WA,6432
+44173,31 Streeton Court,,MILL PARK,VIC,3082
+44178,46A Adaminaby Drive,,HELENSVALE,QLD,4212
+44190,1/44a Saunders Street,,Wynyard,TAS,7325
+44262,849 Frechman Bay Road,,ALBANY,WA,6330
+44270,9/59 MOUNT ST,,PERTH,WA,6000
+44276,1/99 Church Street,,TAMWORTH,NSW,2340
+44285,Lot 292 Church Street,,ABERMAIN,NSW,2326
+44300,Lot 4 Heyfield Rd,,ROSEDALE,NSW,2536
+44303,2/25 Mcrae Court,,PACIFIC PINES,QLD,4211
+44339,71/A Kite Street,,Cowra,NSW,2794
+44365,Lot 53 Arbor 10 Rd,,GLENWOOD,QLD,4570
+44370,31 Fingal Haven,,FINGAL BAY,NSW,2315
+44394,Lot 1 Tate Rd,,TOLGA,QLD,4882
+44395,173 Broome Vacation Village,,BROOME,WA,6725
+44414,1041 Tallowa Dam Road,,KANGAROO VALLEY,NSW,2577
+44436,59/ Greenpoint Drive,,Forster,NSW,2428
+44445,74 Cardo Drive,,LAVINGTON,NSW,2641
+44468,Bermer 2b Leonay Parade,,Leonay,NSW,2750
+44492,6616 Musgrave Street,,Kirra,QLD,4225
+44504,174 Briers Road,,Loxton,SA,5333
+44508,124 Golf Court,,TURA BEACH,NSW,2548
+44512,33 Woodlands Court,,ECHUCA,VIC,3564
+44523,"Unit 41/10 merriville road ",,"kellyville Ridge ",NSW,2155
+44525,80b Kennedys La,,EWINGSDALE,NSW,2481
+44529,279 Nixon Street,,Benalla,VIC,3672
+44548,77/75 Bayside Court,,Thorneside,QLD,4158
+44556,2706 Murringo Road,,Young,NSW,2594
+44636,LOT 3 OLD SALE ROAD,,NEWBOROUGH,VIC,3825
+44644,608 Ryan Road,,ALBURY,NSW,2640
+44646,178 Bamawm Road,,BAMAWM,VIC,3561
+44647,50 Betty St,,Bulleen,VIC,3105
+44651,29 Gosden Street,,Dalby,QLD,4405
+44672,77 Thomas Street,,PAKENHAM,VIC,3810
+44679,2861 Paddys Flat Road,,Tabulam,NSW,2470
+44700,3/71 Camden Street,,ULLADULLA,NSW,2539
+44705,Lot 21 Pine Hill Rd null,,NARRANDERA,NSW,2700
+44716,4/635 Storey Street,,LAVINGTON,NSW,2641
+44732,46 Grant's Close,,KEMPSEY,NSW,2440
+44736,4 Sunderland Circuit,,TRARALGON,TAS,3844
+44774,8 Hilsley Court,,TOONGABBIE,VIC,3856
+44791,816 Redesdale Road,,BARFOLD,VIC,3444
+44794,Unit 17 Edith Street,,Wellington Point,QLD,4160
+44848,323 Woodlands Boulevard,,WATERFORD,QLD,4133
+44858,38/ Watergum Street,,Elanora,QLD,4221
+44890,2920 Main Road,,ROSEGARLAND,TAS,7140
+44905,27/7 GODERICH STREET,,EAST PERTH,WA,6004
+44907,258 The Terrace,,PORT PIRIE WEST,SA,5540
+44952,17/156 Herbert Street,,ST LEONARDS,NSW,2065
+44961,"255 Carella Street ",,Howrah,TAS,7018
+44963,2/125 Somerset St,,Banrora Point,NSW,2486
+44998,25/84 Cumberland Avenue,,Varsity Lakes,QLD,4227
+45032,55 Thompson Court,,MILL PARK,VIC,3082
+45068,42 Tantitha Street,,BUNDABERG CENTRAL,QLD,4670
+45078,116 Range Rd N,,HOUGHTON,SA,5131
+45145,1A Verii Street,,ALBANY,WA,6330
+45158,4328 Longwarry Road,,DROUIN,VIC,3818
+45177,11/2 Ernest Street,,ERINA,NSW,2250
+45182,74/456 Broadbeach Nerang Road,,CARRARA,QLD,4211
+45191,Rmb 202 Coolamon Rd,,ARIAH PARK,NSW,2665
+45203,55 Chriostina Ryan Way,,Parkwood,QLD,4214
+45221,25 Key West,,Broadbeach Waters,QLD,4218
+45246,85 A'Beckett Road,,NARRE WARREN NORTH,VIC,3804
+45256,1689 Old Sale Road,,BULN BULN,VIC,3821
+45295,23/ Cocos Grove,,West Lakes,SA,5021
+45299,4/46 Fomtemoy Road,,NORTH RYDE,NSW,2113
+45303,132 Kellys Plains Road,,KELLYS PLAINS,NSW,2350
+45323,31 Margaret Street,,HENLEY BEACH,SA,5022
+45330,532 Old Mount Beppo Road,,TOOGOOLANAH,QLD,4313
+45339,15/584 Pascoe Vale Road,,GLENROY,VIC,3046
+45343,2/50 Centaur Street,,REVESBY HEIGHTS,NSW,2212
+45353,1 Narrallan Road,,MURRINGO,NSW,2594
+45373,11 Figtree Place,,BRACKEN RIDGE,QLD,4017
+45374,157/ West Burleigh Road,,Burleigh Heads,QLD,4220
+45385,MS 2248 C1-,,Proserpine,QLD,4800
+45388,Lot 4 Barooga Rd,,TOCUMWAL,NSW,2714
+45411,Lot 92 Hart Dr,,CHITTERING,WA,6084
+45414,Pobox 3097 Street,,West Hobart,TAS,7000
+45419,C/- 11 West Mall Plaza,,RUTHERFORD,NSW,2320
+45428,22 'West House' Monash University,,CHURCHILL,VIC,3842
+45430,33 Glengala Drive,,Rochedale,QLD,
+45451,48 Feathertop Court,,THURGOONA,NSW,2640
+45479,162 Jones Road,,CARINA,QLD,4152
+45481,9A Jubilee Road,,WALLSEND,NSW,2287
+45494,27 Star Crescent,,PENNANT HILLS,NSW,2120
+45510,1/42 Meyers Avenue,,HUNTERS HILL,NSW,2110
+45537,7 Blenheim Place,,Ocean Reef,WA,6027
+45558,1109 'Yarra' Grenfell Road,,Cowra,NSW,2794
+45566,24 Jensens Road,,JENSEN,QLD,4818
+45590,28 Range Caravan Park,,THURGOOGNA,QLD,4817
+45613,51 Gumnut Road,,LANGSHAW,QLD,4570
+45629,13/336 Casuarina Drive,,NIGHTCLIFF,NT,0810
+45686,304/ Leigh Street,,Ballarat,VIC,3350
+45694,135 Grahamvale Road,,SHEPPARTON,VIC,3630
+45743,2121 The Vistas Drive,,Carrara,QLD,4211
+45754,1413 Oxenford-tamborne Road,,WONGAWALLAN,QLD,4210
+45798,1799 Ayreford Road,,Terang,VIC,3264
+45833,38 Stockyard Trk,,TONGIO,VIC,3896
+45864,"32 Cavenor Drive ",,Oakdowns,TAS,7019
+45886,80/175 Grand Junction Road,,Hope Valley,SA,5090
+45891,8360 Princes Highway,,PANMURE,VIC,3265
+45902,270 Pine Street,,HAY,NSW,2711
+45909,4/194 Railway Pd Access,,Leederville,WA,
+45943,1 Dane Court,,WARRANDYTE,VIC,3113
+45969,1 O''Keeffe Rd,,Mothar Mt,QLD,4570
+46048,1 Sophia Road,,ARALUEN,WA,6050
+46060,Lot 11 Diggles Rd,,GLENGALLON,QLD,4370
+46075,1535 Carumut Road,,WINSLOW,VIC,3281
+46090,00/ Lorraines Foxs Lane,,Inverell,NSW,2360
+46095,9/ Tonkin Crest,,Carnarvon,WA,6701
+46113,18 Garnet Crescent,,KILLARA,NSW,2071
+46122,1 Rosehill Dungowan Creek Road,,Dungowan,NSW,2340
+46126,Rmb 4497b Tebb Tce,,MORWELL,VIC,3840
+46190,985 Acklands Hill Road,,COROMANDEL EAST,SA,5157
+46197,122 Maffra Road,,GLENGARRY,VIC,3854
+46217,Site 34/ Tthe Pines Cara Park Goodfellows Rd,,Kallangur,QLD,4503
+46225,"5 Burrugi St ",,Corlette,NSW,2315
+46259,1070 Kangaroo Valley Road,,BERRY,NSW,2535
+46298,425 Dandenong Road,,FRANKSTON,VIC,3199
+46338,45 Holland Street,,SOUTH TAMWORTH,NSW,2340
+46344,51 Edi-cheshunt Road,,Edi Upper,VIC,3678
+46363,16/2 Promanade Avenue,,Robina,QLD,4226
+46370,3 Cardigan Place,,Dapto,NSW,2530
+46372,1385 Coomba Road,,COOMBA PARK,NSW,2428
+46379,100 Wyrallah Road,,LISMORE,NSW,2480
+46413,Site 2/170 Queen St,,YEPPOON,QLD,4703
+46417,535 Main North Road,,ELIZABETH NORTH,SA,5113
+46432,6A The Crescent,,MARRYATVILLE,SA,5068
+46446,94a Alligator Creek Road,,Alligator Creek,QLD,4816
+46489,1037 Archers Crossing Drive,,Chinchilla,QLD,4413
+46492,219E Meldorn Lane,,TAMWORTH,NSW,2340
+46495,40 Bambil Crest,,Dapto,NSW,2530
+46524,1438 New England Highway,,LOCHINVAR,NSW,2321
+46527,10/269 Dugan Street,,KALGOORLIE,WA,6430
+46529,926MALENY Montville Road,,MALENY,QLD,4552
+46534,12 Hamkpole Road,,MCLAREN FLAT,SA,5171
+46583,4 East Ti-tree Road,,BOORAL,QLD,4655
+46602,Cottage 2 Werribee Rd,,WOODSTOCK,NSW,2793
+46622,83` Langer Street,,Woodford,QLD,4514
+46652,237 Ironbank Road,,IRONBANK,SA,5153
+46702,RMB 5410 Scrubby Lane,,TRARALGON,VIC,3844
+46717,Lot 60 Cascade Heights Intake Rd,,REDLYNCH,QLD,4870
+46738,5913 Telosa Street,,GLENORCHY,TAS,7010
+46764,134 East Street,,Glenroy,VIC,3046
+46770,22 Mansfields Rd,,LEITCHVILLE,VIC,3567
+46775,9 Ivor Court,,Benowa,QLD,4211
+46791,33/4 Myilly Tc,,Cullen Bay,NT,0820
+46806,Lot 2 Cross St,,GEROGERY,NSW,2642
+46872,"16 coventry place ",,nelson bay,NSW,2315
+46876,26 Riawena Road,,Rosny,TAS,7018
+46883,27 Pine View Court,,YOUNG,NSW,2594
+46887,3306/151 George Street,,Brisbane,QLD,4000
+46901,129 Rose Valley Road,,GERRINGONG,NSW,2534
+46908,Lot 23 Allen Rd,,FORRESTDALE,WA,6112
+46926,10/ Samtana Rd,,Upper Coomera,QLD,4209
+46959,28 Copeland Gardens Road,,Ocean,WA,6027
+46978,649 Chiltern Road,,Beechworth,VIC,3747
+47014,0 Mountain Home,,Barraba,NSW,2347
+47020,RMB 1285 South Gipps Hwy,,TOORA,VIC,3962
+47023,1/18 Thurston Street,,Moranbah,QLD,4744
+47054,195/490 Pinjarra Road,,Mandurah,WA,6210
+47068,RMB 2130 Omeo Valley Rd,,OMEO,VIC,3898
+47082,"131 Mersey Main Road ",,"Spreyton ",TAS,7310
+47104,410-416 Lyndhurst Lane,,WARWICK,QLD,4370
+47122,23 Manchester St. Access,,Dulwich Hill,NSW,2203
+47123,30/ George Street,,Ballarat,VIC,3350
+47125,Lot 209 Main Street,,BAUPLE,QLD,4650
+47129,60 Lays Road,,GORMANDALE,VIC,3873
+47133,85 Academy Drive,,DALLAS,VIC,3047
+47150,139 Princes Highway,,BAIRNSDALE,VIC,3875
+47158,4 Anthony Road,,MODBURY NORTH,SA,5092
+47162,42/B Begonia Street,,Box Hill South,VIC,3128
+47168,2 St Maurice Court,,Springfield,QLD,4300
+47183,1/3 Bararcourt Road,,Foster,NSW,2428
+47197,43 Summit Place,,Southport,QLD,4215
+47210,RMB 5201 Somerton Dr,,SALE,VIC,3850
+47223,7/95 Coolum-yandina Road,,Coolum Beach,QLD,4573
+47232,8 humphry street,,"bairnsdale ",VIC,3875
+47233,21 Leonardo Court,,COOMBABAH,QLD,4216
+47234,18 Lillypilly Road,,LEETON,NSW,2705
+47241,485 Rockycrossing Road,,Willyung,WA,6330
+47264,4/35 Wreford Road,,BLACKBURN,VIC,3130
+47279,0 Glenartley Way,,Gum Flat,NSW,2360
+47290,53 Mccormicks Road,,SKYE,VIC,3977
+47323,Lot 9 Tallowood Rd,,POSSUM CREEK,NSW,2479
+47325,13/234 Canning Highway,,EAST FREMANTLE,WA,6158
+47326,Lot 17 Honeysuckle Lane,,BONOGIN,QLD,4226
+47334,70 Fitzgerald Court,,SOUTH MORANG,VIC,3752
+47354,45/20 Commodore drive Drive,,Paradise waters,ACT,4217
+47364,4 Thynne Court,,MALENY,QLD,4552
+47366,132/ Cobham Ave,,West Ryde,NSW,2114
+47376,12/20 South Arm,,BOWRAVILLE,NSW,2449
+47387,148 Dawson Street,,LISMORE,NSW,2480
+47389,135 Emerald Road,,UPPER BEACONSFIELD,VIC,3808
+47473,19/ Galapagos Way,,Gaven,QLD,4211
+47474,85 Lillimur Road,,ORMOND,VIC,3204
+47487,Rye Park 0/0 Rye Park Rye Park,,Gilgai,NSW,2360
+47488,2/69 Glenn Street,,Glenroy,VIC,2046
+47509,U/4 Tiepsom Avenue,,Redcliffe,WA,6104
+47511,13A James Street,,WAGGA WAGGA,NSW,2650
+47513,240 Charlemont Road,,CONNEWARRE,VIC,3227
+47537,264 Popondetta Road,,DHARRUK,NSW,2770
+47539,19 Southerlights Dr,,Upper  Coomera,QLD,4209
+47549,H 15 Lakefront Village,,TOUKLEY,NSW,2263
+47554,135 Settlers Village,,WAGGA WAGGA,NSW,2650
+47591,22 Wimbeldon Grove,,KOTARA,NSW,2289
+47604,6 - 8 Nathaneal Street,,PEARCEDALE,VIC,3912
+47605,1 Wilga Vale Street,,Grong  Grong,NSW,2700
+47613,76 Ocean Road,,SPEARWOOD,WA,6163
+47623,201 Mcivor Road,,BENDIGO,VIC,3550
+47629,'willow Flat' 940 Curragh Rd,,ABERCROMBIE,NSW,2795
+47633,47 Peverill Street,,TINONEE,NSW,2430
+47639,Rmb 4456 Millers Rd,,MAFFRA WEST UPPER,VIC,3859
+47653,16zs/ Old Acre Street,,Devonport,TAS,7310
+47658,9B Swales Street,,MUNDINGBURRA,QLD,4812
+47685,1/5 25th Ave,,Palm Beach,QLD,4221
+47719,18 Shackel Street,,Clovelly,NSW,2031
+47743,870 Yarragon Road,,WOOREEN,VIC,3953
+47802,8TH Street,,RENMARK NORTH,SA,5341
+47815,94/13-23 Springfield College Street,,Springfield,QLD,4300
+47824,6/1a Hampstead Rd,,Homebush West,NSW,2140
+47854,9 Sheldon Road,,ESPERANCE,WA,6450
+47879,1212 Woodstock Road,,GIRU,QLD,4809
+47909,44 Perch Court,,SANDSTONE POINT,QLD,4511
+47913,13 Garner Parade,,Broadmeadows,VIC,3047
+47934,79 O'Connor Road,,KNOXFIELD,VIC,3180
+47975,2 Lancaster Way,,MELTON,VIC,3337
+48036,239 Stephenson Street,,Nicholson,VIC,3882
+48040,250/ Maryland Road,,Maryland,NSW,
+48116,68 Sherlock Way,,Rangeway,WA,6530
+48133,32 Dandee Street,,WATSONIA,VIC,3087
+48137,20 Buran Street,,Lota,VIC,4179
+48152,373 Redgum Lease Track,,HALLS GAP,VIC,3381
+48154,62 Omeo Highway,,LUCKNOW,VIC,3875
+48167,RMB 178 Lockhart Rd,,FRENCH PARK,NSW,2655
+48178,9 Eucalypt Court,,FLAGSTAFF HILL,SA,5159
+48186,129/206 Carlyle Gardens,,Mackay,QLD,4740
+48211,49 Burgam Road,,Maleny,QLD,4552
+48223,5/205 Liverpool Road,,ENFIELD,NSW,2136
+48228,7 Rodings St Hadfield,,Melbourne,Victoria,3046
+48230,143/58 Nissen Street,,PIALBA,QLD,4655
+48234,1 Clearys Lane,,Wildes Meadow,NSW,2577
+48236,7/67 'banksia Court' Nerang Street,,NERANG,QLD,4211
+48269,30 Aldinga Avenue,,Dapto,NSW,2530
+48309,210 The Esplanade,,Hervey Bay,QLD,4655
+48316,765 Athlone Road,,ATHLONE,VIC,3818
+48327,114 Bayway Village,,Fern Bay,NSW,2295
+48339,276 Durlacher Street,,Geraldton,WA,6530
+48354,47 Smoult Drive,,MELTON,VIC,3337
+48362,Coolum Caprice 1770/ David Low Way,,Coolum Beach,QLD,4573
+48374,118 Jersey Road,,MERRYLANDS,NSW,2160
+48389,152 Ryans Road,,ELTHAM,VIC,3095
+48399,136 Simpsons Rd Rd,,Elanora,QLD,4221
+48409,4 Hurford Street,,DUNSBOROUGH,WA,6281
+48415,2/542 Newnham Road,,WISHART,QLD,4122
+48424,102 Riverside Gardens,,MADDINGTON,WA,6109
+48444,RMB 8485 Korumburra Rd,,DROUIN,VIC,3818
+48453,550/ Robinson Street,,Carnarvon,WA,6701
+48488,RMB 5391 Jukes Rd,,STRATHBOGIE,VIC,3666
+48489,Hillside Nursing Home 3/224 Violet Town Road,,Mount Hutton,NSW,2290
+48500,280 O'Mearas Road,,POOWONG,VIC,3988
+48527,53 Eucalypt Crescent,,BRIGHTON,TAS,7030
+48542,25 Wister Road,,FLOREAT,WA,6014
+48589,Lot 163 Powderbark Rd,,LOWER CHITTERING,WA,6084
+48666,162 Pratt Street,,CASINO,NSW,2470
+48703,Rmb 2168 Pappinbarra Rd,,PAPPINBARRA,NSW,2446
+48704,61 Fairfax Court,,DEER PARK,VIC,3023
+48727,2 Williams Avenue,,Risdon Park,SOUTH AUSTRALIA,5540
+48750,429 Stuart Drive,,WULGURU,QLD,4810
+48786,House 100 River Boulevard,,Idalia,QLD,4811
+48799,58 Polo Road,,WOORREE,WA,6530
+48800,Lot 3 Marshall St,,HEYFIELD,VIC,3858
+48809,256 Tempy Road,,Nandaly,VIC,3533
+48842,381 Licola Road,,Jamieson,VIC,3723
+48925,Box 18 Parklands Motor Village,,KIALLA,VIC,3631
+48939,11 Mcarthur Road,,South Morang,VIC,3752
+48942,18 Dures La,,EUNGAI RAIL,NSW,2441
+48944,"6 Carnea Pl ",,"Regents Park ",QLD,4118
+48961,Lot 7 Halliford Rd,,KUMBARILLA,QLD,4405
+48987,Lusson Le Vue (15-25) Reserve Rd,,Grovedale,VIC,3216
+48992,604 Valintins Rhains Road,,BILOELA,QLD,4715
+48994,22 Waterlily Close,,Nunderi,TAS,2484
+49002,38A Dixon Street,,STRATHPINE,QLD,4500
+49014,40 Richardson Avenue,,PADSTOW HEIGHTS,NSW,2211
+49037,Teebah 859 Hannaford Road,,Hannaford,QLD,4406
+49048,56/34 Elizab Eth Street,,HERVEY BAY,QLD,4655
+49068,492 Dutton Way,,Portland,VIC,3305
+49121,33 D'Arcy Street,,MADDINGLEY,VIC,3340
+49132,44 Clydsdale Court,,UPPER COOMERA,QLD,4209
+49134,389 'coledale' Schubach Street,,EAST ALBURY,NSW,2640
+49135,5 Hawthorn Street,,KIRWAN,QLD,4817
+49153,MS 2061146 Tagigan Road,,WOLVI,QLD,4570
+49166,1/45A David Street,,EAST DEVONPORT,TAS,7310
+49167,79 The Crescent,,PORT MELBOURNE,VIC,3207
+49178,22 Panorama Towers,,Gosford,NSW,2250
+49181,52814 Arthur Highway,,EAGLEHAWK NECK,TAS,7179
+49216,112 Esplanade,,POINT VERNON,QLD,4655
+49218,3 Kyandra Drive,,TYERS,VIC,3844
+49291,Rmb 79 Inverell Rd,,GLEN INNES,NSW,2370
+49334,59 Mark Hill Road,,BELLINGEN,NSW,2454
+49343,128 High Street,,Willoughby,NSW,2068
+49364,3101 Albert Street,,Camp Hill,QLD,4152
+49386,608 Broadgully Road,,RESERVOIR,VIC,3073
+49448,617 Sydney Street,,NAMBOUR,QLD,4560
+49490,"28 carruthers drive ",,"poppis crossing ",NSW,3029
+49497,"104 Rogersons Road ",,Riverside,VIC,3401
+49506,RMB 8438 Orchard Dr null,,WANGARATTA SOUTH,VIC,3678
+49516,212 Caroona Road,,Wombat,NSW,2587
+49524,70 Becket St N,,GLENROY,VIC,3046
+49544,35 Cooper Parade,,Pimpama,QLD,4209
+49546,27 Lois Street Mount Pleasant,,Mackay,QLD,4740
+49564,17 Clay Gully Court,,BENDIGO,NSW,3550
+49574,Lot 237 Jamby Crt,,SOUTHERN RIVER,WA,6110
+49591,12/2 28th Avenue,,Palm Beach,QLD,4221
+49627,61 590-600 Pine Ridge Road,,RUNAWAY BAY,QLD,4216
+49657,113 Brooks Street,,Telarah,NSW,2320
+49669,336/ Mill Road,,Modbury Heights,SA,5010
+49671,4285 York Williams Road,,West Pingelly,WA,6308
+49672,102 Bushland Dr Drive,,West Kempsey,NSW,2440
+49675,75 Esplanade,,POINT VERNON,QLD,4655
+49685,154 Risdon Road,,NEW TOWN,TAS,7008
+49729,298 Paringa Street,,PARINGA,SA,5340
+49743,3 Short Street,,ENMORE,NSW,2042
+49749,185 Corunna Street,,Stanmore,NSW,2048
+49822,48 Fossicker Circle,,SPRINGFIELD,QLD,4300
+49844,27 Darlington Court,,CURRIMUNDI,QLD,4551
+49852,125 Grahamvale Road,,Shepparton,VIC,3630
+49858,1041 Weetah Road,,DELORAINE,TAS,7304
+49863,Site/17 Margaret Street,,Urangan,QLD,4655
+49867,3 Ringwood Road,,MEDOWIE,NSW,2318
+49878,85 Lonsdale Court,,HOPPERS CROSSING,VIC,3029
+49887,2 351 Carella Street,,Howrah,TAS,7018
+49899,16 Wallace Close,,WHITE ROCK,NSW,2795
+49922,17A The Parade,,BELMONT,NSW,2280
+49948,Lot 55 Ridge St,,ROSENEATH,QLD,4811
+49958,Lot 72 Tranquil Dr,,WINDABOUT,WA,6450
+49970,338 Waterfall Way,,Bellingen,NSW,2454
+49973,87 Rocky Point Road,,BEVERLEY PARK,NSW,2217
+49985,57 Moonibah Road,,KEMPSEY,NSW,2440
+49987,1 Union Collage Upland Road,,St Lucia,QLD,4067
+50019,3/40 Larapinta Drive,,ALICE SPRINGS,NT,0870
+50026,1091 Jamberoo Road,,Jamberoo,NSW,2533
+50029,250 B Mcdonald Street,,Joondanna,WA,6060
+50049,4 Boxtree Road,,Smiths Lake,NSW,2428
+50064,32 O'Loughlan Street,,ORMOND,VIC,3204
+50068,Lot 1 Pomborneit Rd,,CAMPERDOWN,VIC,3260
+50097,46 Kombari Avenue,,LABRADOR,QLD,4215
+50115,425 Pacific Highway,,NORTH GOSFORD,NSW,2250
+50137,1640 Foxhow Road,,LESLIE MANOR,VIC,3260
+50168,5/13 19th Avenue,,Palm Beach,QLD,4221
+50169,17A Horwood Road,,SWANVIEW,WA,6056
+50173,9B 'Burleigh Surf' Sixth Avenue,,BURLEIGH,QLD,4822
+50190,Rsd 4810 Boort Rd,,KERANG,VIC,3579
+50207,56 Queen Street,,GREENHILL,NSW,2440
+50224,82 Fowlers Road,,Dapto,NSW,2530
+50266,158 Mathieson Street,,BELLBIRD,NSW,2325
+50283,288 Midlands Highway,,BRIGHTON,TAS,7030
+50285,Lot 5 Penrose Rd,,BUNDANOON,NSW,2578
+50286,96 Sunrise Road,,TINBEERWAH,QLD,4563
+50295,261 Melody Park - Gilston Road,,NERANG,QLD,4211
+50296,1145 Kinglake Road,,HURSTBRIDGE,VIC,3099
+50298,10 Tourmaline Drive,,WODONGA,VIC,3690
+50310,109 Spearwood Road,,SPEARWOOD,WA,6163
+50314,M/s 162b 'willowdene' Mapes Rd,,WARWICK,QLD,4370
+50336,96 Gordon Street,,NEWPORT,VIC,3015
+50338,143/ The Parade Street,,Ocean Grove,VIC,3226
+50365,430 Spring Grove Road,,CASINO,NSW,2470
+50370,60 Wheeler Court,,KIRWAN,QLD,4817
+50374,7/15 Megan Place,,MACKAY HARBOUR,QLD,4740
+50411,11 Old Maitland Road,,SAWYERS GULLY,NSW,2326
+50418,4 Tallow Street,,WARILLA,NSW,2528
+50448,722 Tomewin Road,,CURRUMBIN VALLEY,QLD,4223
+50455,1838 Maraju-yakapari Road,,BALNAGOWAN,QLD,4740
+50459,Stanbroke Feedlot 1 Greenswamp Road,,Chinchilla,QLD,4413
+50465,756 Chesterpass Road,,Albany,WA,6330
+50468,RSD 2014 Pyap null,,Loxton,SA,5333
+50496,33 Victoria Street,,Glenroy,VIC,3046
+50512,RMB 4018 Newburn Park,,MAFFRA,VIC,3860
+50530,Unit A 32 Norton Dr,,DIANELLA,WA,6059
+50537,12/18-30 Sir Leslie Theiss Drive,,TOWNSVILLE,QLD,4810
+50561,Rmb/4103 Ennals Road,,Barooga,NSW,3644
+50588,7 Rubiton Crt,,Melton,VIC,3337
+50615,56 Tralee Court,,NARRE WARREN,VIC,3805
+50644,92 Donges Lane,,YOUNG,NSW,2594
+50685,57 Warwick Road,,SUNSHINE NORTH,VIC,3020
+50688,48 Chatsworth Court,,CAPALABA,QLD,4157
+50696,201 Pacific Heights Road,,YEPPOON,QLD,4703
+50743,6/3 Landsborough Parade,,CALOUNDRA,QLD,4551
+50762,73 Shannon Avenue,,GEELONG WEST,VIC,3218
+50804,295/ Weir Road,,Toongabbie,VIC,3856
+50816,Rmb 8576 Marsden Park Rd null,,TAMWORTH,NSW,2340
+50863,23 Citronella Circuit,,Brookfield,VIC,3338
+50886,17/ Lace Street,,Wendouree,VIC,3355
+50887,2/2713 Main Place,,BROADBEACH,QLD,4218
+50895,7/23 Frederick Street,,POINT FREDERICK,NSW,2250
+50901,5129 Hill Street,,Cabramatta,NSW,2166
+50911,124 Newington Road,,PETERSHAM,NSW,2049
+50942,4163 Newhaven Street,,PIALBA,QLD,4655
+50944,765 Tatham Road,,Tatham,NSW,2470
+50979,58 Lavender Street,,NORTH SYDNEY,NSW,2060
+50982,22 Linton Street,,CLONBINANE,VIC,3658
+50984,86 Martin Street,,Glynde,SA,5070
+50986,623/ Princeton Terrace,,Bundoora,VIC,3083
+51019,52/ Blougton Street,,Rutherford,NSW,2320
+51127,38 Sullivan Street,,EPSOM,VIC,3551
+51144,Shop 18 Junction Fair,,THE JUNCTION,NSW,2291
+51149,1513 Ontario Avenue,,MILDURA,VIC,3500
+51176,Lot 2 Sorensens Rd,,KUTTABUL,QLD,4741
+51182,76 Fairhaven Court,,BAULKHAM HILLS,NSW,2153
+51201,1042 Greenup Road,,INGLEWOOD,QLD,4387
+51213,270 Evans Road,,BUNYIP,VIC,3815
+51220,60 Cardo Drive,,LAVINGTON,NSW,2641
+51230,RMB 4039A Mackeys Rd,,MORWELL,VIC,3840
+51250,205 Olive Street,,ALBURY,NSW,2640
+51288,101 Retreat Village,,PORT MACQUARIE,NSW,2444
+51346,RMB 1349A Kerry Rd,,YINNAR,VIC,3869
+51369,'Tamaki' 6698 Wisemans Ferry Road,,GUNDERMAN,NSW,2775
+51371,318 Armidale Road,,TAMWORTH,NSW,2340
+51373,6 Katamatite Road,,NUMURKAH,VIC,3636
+51407,2527 Haleny Kenilworth Road,,Kenilworth,QLD,4552
+51424,690 Canobolas Road,,Orange,NSW,2800
+51430,100 Bowes Road,,TYABB,VIC,3913
+51454,164/ Lakes Boulevard,,Lake Wooloweyah,NSW,2464
+51490,79 Heritage Drive,,CLAGIRABA,QLD,4211
+51539,Rmb 284 Rownes Rd,,SALT ASH,NSW,2318
+51571,RMB 4611 Sagars Rd,,HAZELWOOD NORTH,VIC,3840
+51573,"3 tanunda close ",,ELEEBANA,NSW,2282
+51588,162 Kendall Road,,KENDALL,NSW,2439
+51589,960 Glenbrook Road,,Glenbrook,NSW,2773
+51613,267 Tara Road,,Chinchilla,QLD,4413
+51621,82 Shearwater Drive,,BAKEWELL,NT,0832
+51640,2379 Waterfall Way,,Bellingen,NSW,2454
+51645,RMB 4086 null,,WELLINGTON,SA,5259
+51662,13 Perrin Drive,,Morningside,QLD,4170
+51667,221 Old Northern Road,,EVERTON PARK,QLD,4053
+51690,3 Bisclay Court,,West Melton,VIC,3337
+51734,166 Riding Road,,BALMORAL,QLD,4171
+51773,27 Oakdene Grove,,LAVERTON,VIC,3028
+51780,7/A Fifth Street,,BLACK ROCK,VIC,3193
+51793,64 Hexham Road,,Tarragini,QLD,4121
+51808,22/17 Pinoak Tiers - Stonehenge Avenue,,STIRLING,SA,5152
+51813,489 Old Maryborough Road,,GYMPIE,QLD,4570
+51837,V33 Laguna Ret Weyba Road,,Noosaville,QLD,4566
+51862,6 Vale Of Tralee Road,,SAPPHIRE,QLD,4702
+51892,100 Reed Street,,Tweantin,QLD,4565
+51902,11 Cambridge Drive,,WARRAGUL,VIC,3820
+51917,74 Glastonbury Court,,POINT COOK,VIC,3030
+51959,1/4 York Street,,EAST GOSFORD,NSW,2250
+51978,10 Tellem-buggerem Close,,RUBYVALE,QLD,4702
+51988,987 Mcewen Road,,Kyabram,VIC,
+52013,698 Doonella Street,,TEWANTIN,QLD,4565
+52026,2 Glenalpin Court,,NORTH BUDERIM,QLD,4556
+52034,104 Ashbrook Road,,MURRAY BRIDGE,SA,5253
+52067,Rmb 2144 Prairie-Rochester Rd,,TENNYSON,VIC,3572
+52069,13 Dreamtime Drive,,Humpty Doo,NT,0836
+52086,Lot 7033 Mundoonen Cres,,HORSLEY,NSW,2530
+52098,"192 o'haes st ",,"Coburg ",VIC,3058
+52099,Rmb 121 Sandalwood Rd,,WELLSTEAD,WA,6328
+52101,4 North Boundary Road,,EUROA,VIC,3666
+52113,577 Canningvale Road,,WARWICK,QLD,4370
+52127,36 West Street,,BATHURST,NSW,2795
+52138,36 Sawyers Gully Road,,WESTON,NSW,2326
+52141,18 Vitali Street,,KALGOORLIE,WA,6430
+52150,105 Verney Road North,,Congupna,VIC,3633
+52154,RSD 1 Meedo Station,,Carnarvon,WA,6701
+52174,256 Birrell st,,Waverley,NSW,2024
+52181,1/10 Langarna Drive,,Melton,VIC,3337
+52183,519 Lynnes Road,,WONTHAGGI,VIC,3995
+52197,7 54 Merrangbaur Street,,LAKES ENTRANCE,VIC,3909
+52200,4/107 Anderson Creek Road,,Templestowe,VIC,3106
+52201,163 Myles Avenue,,WARNERS BAY,NSW,2282
+52210,53 Kingfisher Lane,,WANGARATTA FORWARD,VIC,3678
+52233,1/2 Wilmott Street,,ASPENDALE,VIC,3195
+52242,111a Railway Street,,Petersham,NSW,2049
+52261,0 Balburnie South Street,,Molong,NSW,2866
+52264,732 Henry Kendall Village,,WYOMING,NSW,2250
+52295,RMB 5538 Yuill Rd,,BUNDALAGUAH,VIC,3851
+52297,9 Broadway Court,,CARLINGFORD,NSW,2118
+52334,"33 bingara street ",,Rutherford,NSW,2320
+52339,Montville 1699 Goomburra Road,,GLADFIELD,QLD,4370
+52374,Beahlieh 92 Van Morey Road,,MARGATE,TAS,7054
+52397,96/ Carlyle Garden,,Condon,QLD,4815
+52415,16 First Avenue,,Arrawarra,NSW,2456
+52425,1/8 22nd Ave,,Palm Beach,QLD,4221
+52448,0/ Deeargee Property,,Uralla,NSW,2358
+52477,"249 soldiers point ",,salamander bay,NSW,2317
+52484,49 Skylark Court,,BELLA VISTA,NSW,2153
+52540,17A Eugaree Street,,SOUTHPORT,QLD,4215
+52542,1399 Excelsior Parade,,CAREY BAY,NSW,2283
+52548,58/ Semillan Drive,,Tamworth,NSW,2340
+52596,4657 Olympic Way,,Young,NSW,2594
+52615,29A Munja Way,,NOLLAMARA,WA,6061
+52665,22/752 Ashmore Road,,MOLENDINAR,QLD,4214
+52687,19/ Gordan Street,,St Agnes,SA,5097
+52690,95 Watsonia Road,,GOOSEBERRY HILL,WA,6076
+52721,Lot 5 Edith Rd,,MOTHAR MOUNTAIN,QLD,4570
+52754,"79 castle drive ",,tarleton,TAS,7310
+52760,Shop/5 Main Road,,Romsey,VIC,3434
+52794,1 Telarah Station,,Clermont,QLD,4721
+52831,7 Pitmeaden Drive,,WODONGA,VIC,3690
+52874,103 Ryans Road,,ELTHAM,VIC,3095
+52889,213 Flinders Street,,ALBION PARK,NSW,2527
+52925," 1/67 AZURE DRIVE",,Wodonga,VIC,3690
+52936,Lot 5 Old Hume Highway,,YERRINBOOL,NSW,2575
+52946,121/ Poinsetti Street,,Inala,QLD,4077
+52947,Lot 1 Ladies Rd,,SAMSONVALE,QLD,4520
+52950,285 Henty Highway,,PORTLAND,VIC,3305
+52999,228 Evans Road,,Cooroy,QLD,4563
+53009,132 Patch Beach Road,,WARDELL,NSW,2477
+53029,10a Scienic Road,,Kilcare,NSW,2257
+53032,7 Hannas Road,,Strath Creek,VIC,3658
+53043,128/ Seawinds Village,,Anna Bay,NSW,2316
+53044,4/151 Riverbreeeze Place,,DOUGLAS,QLD,4814
+53071,Lot 1 Chute Rd,,THORPDALE,VIC,3835
+53102,7 Yolay Mews,,BELLA VISTA,NSW,2153
+53105,6/406 Bruce Street,,Boxhill,VIC,3128
+53114,59 Gailbraith Park Road,,Cannonvale,QLD,4802
+53145,10 Ilinga Avenue,,NOWRA NORTH,NSW,2541
+53156,4/159 Shellharbour Road,,Barrack Heights,NSW,2528
+53192,43 Galleon Street,,Jamboree Heights,Queensland,4074
+53231,Lot 1 Lower Cairnbrook Rd,,GLENGARRY,VIC,3854
+53237,3320 Casino-coraki Road,,CORAKI,NSW,2471
+53243,91 Arnold Street,,Waggrakine,WA,6530
+53248,181 Mandruya Road,,COOROY,QLD,4563
+53249,Rmb 290h Moore Creek Rd,,TAMWORTH,NSW,2340
+53274,237 Henry Kendall Village,,WYOMING,NSW,2250
+53279,244/ Park Street,,Redan,VIC,3350
+53288,13985 Lake Highway,,DELORAINE,TAS,7304
+53296,4 Lampert Road,,PICCADILLY,SA,5151
+53307,19/ James Street,,Enmore,NSW,2042
+53322,2283/ Surf Street,,Mermaid Beach,QLD,4218
+53331,Lot 10 Hives Rd,,NORTH MACLEAN,QLD,4280
+53332,45 Le Hunte Street,,Prospect,SA,5082
+53366,55/25 Lestrange St,,Glenside,SA,5065
+53400,833 Redland Bay Road,,CARBROOK,QLD,4130
+53401,"198 OLD IPSWICH ROAD ",,RIVER VIEW,QLD,4303
+53413,Unit One - 30 Pitt Street,,MORTDALE,NSW,2223
+53426,146 Princes Highway,,BAIRNSDALE,VIC,3875
+53428,2150/1 The Vistas Drive,,CARRARA,QLD,4211
+53430,Amcal Max Belmont 13 Belinda Avenue,,Cloverdale,WA,6105
+53438,"105 Charles rd ",,Lilydale,VIC,3140
+53453,1269 Gregory Cannonvalley Road,,Cannonvalley,QLD,4800
+53486,1105 Spring Terraces - Royal Pines Reserve,,ASHMORE,QLD,4214
+53504,4 Wide Street,,Kempsey,NSW,2440
+53521,94 Pilkington Crescent,,BEECHBORO,WA,6063
+53528,96 kEMP STREET,,Kempsey,NSW,2440
+53535,41 South Terrace,,KENSINGTON,WA,6151
+53553,2 27 Barina Downs Road,,BAULKHAM HILLS,NSW,2153
+53560,38 Rige Street,,TAMWORTH,NSW,2340
+53561,10 33-35 Good Street,,MAYS HILL,NSW,2145
+53592,15A Piccadilly Road,,CRAFERS,SA,5152
+53607,7/4 O'Connell Street,,GYMPIE,QLD,4570
+53639,332 Great North Road,,FIVE DOCK,NSW,2046
+53684,202 Redbank Road,,STRATFORD,VIC,3862
+53687,86 Sturmus Road,,Calen,QLD,4798
+53705,40 Darcington Court,,Currimundi,QLD,4551
+53706,84A Gildercliffe Street,,SCARBOROUGH,WA,6019
+53713,Lot 2/ Pacific Highway,,Knockrow,NSW,2479
+53727,320 South Arm Road,,ROKEBY,TAS,7019
+53753,Po/Box 313 .,,Canley Heights,NSW,2166
+53783,383 Bayway Village Access,,Fern Bay,NSW,2295
+53813,51/ Cleaver Street,,Carnarvon,WA,6701
+53840,1288 Glenhuntly Road,,GLEN HUNTLY,VIC,3163
+53842,56 Curry Road,,THE PALMS,QLD,4570
+53868,./12 El Paso Place,,Orange,NSW,2800
+53903,279 Dixon Street,,Coolangatta,QLD,4225
+53918,Lot 5 Cox St,,MANGOPLAH,NSW,2652
+53924,48 Goulagong Street,,Dapto,NSW,2530
+53979,57 Lake Entrance,,NOOSAVILLE,QLD,4566
+53986,1100 Ellangowan Road,,CASINO,NSW,2470
+53989,12 Ulm Court,,TOOWOOMBA,QLD,4350
+54013,Lot 5 Carinya Court,,ELPHINSTONE,VIC,3448
+54020,6157 Mansfield Road,,WHITFIELD,VIC,3733
+54022,1/195 Tilgonda Road,,Gowrie Junction,QLD,4352
+54078,0 Swanbrook Road,,Inverell,NSW,2360
+54080,Lot 10 Townshend Rd,,NARRIKUP,WA,6326
+54092,12 Murphy Crescent,Whyalla Stuart,Whyalla,South Australia,5608
+54096,6/287 -291 Weyba Road,,Noosaville,QLD,4566
+54121,140 Banksia Grove,,WILLIAMTOWN,NSW,2318
+54129,320/ Gongold Rd,,Concord,NSW,2168
+54139,13 Bellbird Grove,,ASHMORE,QLD,4214
+54153,27 Lucas Court,,KELLYVILLE,NSW,2155
+54170,291 Blacktown Road,,BLACKTOWN,NSW,2148
+54206,210 Quorrobolong Road,,KITCHENER,NSW,2325
+54224,124 Cootharabra Road,,Gympie,QLD,4570
+54257,91/97 Summerplace Edmund Rice Drive,,Southport,QLD,4215
+54268,Site 39 Berridale Caravan Park,,BERRIDALE,TAS,2628
+54272,730 Portarlington Road,,MOOLAP,VIC,3221
+54274,Lot 8 Roland Rd,,GIDGEGANNUP,WA,6083
+54286,35 Hillside Crescent,,Launceston,TAS,7250
+54310,7 Swan Lane,,Southport,QLD,4215
+54315,306/70 Rememberance Drive,,SURFERS PARADISE,QLD,4217
+54344,159 Pacific Palms Road,,Burpengary,QLD,4505
+54352,66 Immanuel Gardens,,BUDERIM,QLD,4556
+54359,Lot 12 Sparks Rd,,WOONGARRAH,NSW,2259
+54385,Lot 1510 Leslie St,,SOUTHERN RIVER,WA,6110
+54386,15 Kings Road,,ST. ALBANS,VIC,3021
+54390,70 Curlew Court,,WULAGI,NT,0812
+54401,10143 Sydney Road,,COWRA,NSW,2794
+54414,Troy St 2a/ Boyd Street,,Cootamundra,NSW,2590
+54419,148 Old Gippsland Road,,LILYDALE,VIC,3140
+54430,15 Eumundi Road,,NOOSAVILLE,QLD,4566
+54437,711 Ders Lane,,Kyneton,VIC,3444
+54499,11/813 Heath Avenue,,Tuncurry,NSW,2428
+54504,18 Hidden Valley Road,,TELEGRAPH POINT,NSW,2441
+54512,1/56 Botanical Drive,,SOUTHPORT,QLD,4215
+54516,251/1 Popondetta Road,,Blackett,NSW,2770
+54524,441 Dyballs Lane,,TAREE,NSW,2430
+54537,73 Charlestown Road,,NEW LAMBTON HEIGHTS,NSW,2305
+54549,RMB 7810 Willowgrove Rd,,MOE,VIC,3825
+54555,5/7 23rd Ave,,Palm Beach,QLD,4221
+54556,44 Tuggerah Street,,Wyee,NSW,2259
+54569,7 Statesman Court,,SIPPY DOWNS,QLD,4556
+54602,97 Gardners Lane,,MALENY,QLD,4552
+54606,19A Nicolson Street,,NORVILLE,NSW,4670
+54609,U6/133 George Road,,Geraldton,WA,6530
+54616,82 Deenyi Close,,CORDEAUX HEIGHTS,NSW,2526
+54637,42 Griffin Street,,WARRAWONG,NSW,2502
+54641,510 Simpson Road,,VERVALE,VIC,3814
+54659,16 Fergus Road,,QUEANBEYAN,NSW,2620
+54660,57 Bald Court,,ALAWA,NT,0810
+54671,13/86 River Way Drive,,Kelso,QLD,4815
+54680,963 Jamberoo Road,,JAMBEROO,NSW,2533
+54725,26 Stapellton Avenue,,South Casino,NSW,2470
+54729,92 Avondale Road,,DAPTO,NSW,2530
+54761,232 White Road,,WONTHAGGI,VIC,3995
+54768,47 Blencowe Geraldton,,Geraldton,WA,6530
+54771,Lot 15 Yata Rd,,MARGARET RIVER,WA,6285
+54795,146 Victoria Street,,MILLTHORPE,NSW,2798
+54804,5320/ Me Gorrie Road,,Marraki,NT,0822
+54813,S9 Gila Place,,Springfield,QLD,4300
+54835,17 Makryllos Court,,TIWI,NT,0810
+54855,7a Sherwood Street,,Glenroy,TAS,3046
+54896,87 Wentworth Road,,Wonthaggi,VIC,3995
+54906,9 Tyeka Drive,,ONE TREE HILL,SA,5114
+54930,Lot 7001 Kitchener Street,,TUGUN,QLD,4224
+54936,32 Palmer Street,,BARNEY POINT,QLD,4680
+54971,197 Windord Road,,BROADMEADOWS,VIC,3047
+54991,17 Kent Street,,LINDISFARNE,TAS,7015
+55018,70 Edward Henty Avenue,,YARRAMBAT,VIC,3091
+55035,27 Bundock Street,,Randwick,NSW,2031
+55037,Box 14 Fleet St,,SALAMANDER BAY,NSW,2317
+55042,20 Noble Road,,ALBION PARK,NSW,2527
+55070,146 Gate Court,,BALDIVIS,WA,6171
+55072,19 Tee Trees Boulevard,,Parkwood,QLD,4214
+55086,Rmb 127c Nundle Rd,,PIALLAMORE,NSW,2340
+55108,RMB 1260 Thoona Rd,,GOORAMBAT,VIC,3725
+55115,Locked Bag 0 0/ Byron Bay,,Byron Bay,NSW,2481
+55116,Shop 36 The Italian Forum,,LEICHHARDT,NSW,2040
+55119,97 Gregory Street,,Geraldton,WA,6530
+55165,11 Scrubby Creek Road,,CONONDALE,QLD,4552
+55169,65946 Bruce Highway,,YAAMBA,QLD,4704
+55188,1 O'Mara Street,,MAYFIELD EAST,NSW,2304
+55247,55 Cobb & Co Drive,,BEERBURRUM,QLD,4517
+55283,1207 Poscovale Road,,Broadmeadows,VIC,3047
+55293,Lot 69 Blacksnake Road,,KILKIVAN,QLD,4600
+55330,184 Bluff Road,,Sandringham,VIC,3191
+55344,132 A Wilding Street,,DOUBLEVIEW,QLD,6018
+55395,14/ Power Street,,Yeppoon,QLD,4703
+55397,213 O'regans Creek Road,,TOOGOOM,QLD,4655
+55406,79/ Karel Place,,Coogee,WA,6166
+55445,18 The Crescent,,LEOPOLD,VIC,3224
+55446,Noumea 1 Noumea .,,Bingara,NSW,2404
+55455,1 Hotel Road,,KALIMNA,VIC,3909
+55484,67 The Loop,,HADFIELD,VIC,3046
+55490,350 Spring Grove Road,,CASINO,NSW,2470
+55495,1 - 22 Tavistock Street,,TORQUAY,QLD,4655
+55499,13/684 Pascoe Vale Rd,,Glenroy,VIC,
+55502,65 Balook Road,,TRARALGON,VIC,3844
+55505,211 Blacktown Ramble,,BLACKTOWN,NSW,2148
+55528,115 The Avenue,,OCEAN GROVE,VIC,3226
+55542,27 Lowerking Road,,ALBANY,WA,6330
+55611,Rmb 160 Old Narrandera Road,,WAGGA WAGGA,NSW,2650
+55619,239 Spencer Street,,Bunbury,WA,6230
+55649,Lot 1 Beeston St,,CUBALLING,WA,6311
+55662,748 Scenic Highway,,Yeppoon,QLD,4703
+55675,12 Patterson Street,,WYNNUM WEST,QLD,4178
+55676,5/42 Playford Court,,PENNINGTON,SA,5013
+55683,91 Pacific Heights Road,,Yeppoon,QLD,4703
+55720,570 Pine Ridge Road,,RUNAWAY BAY,QLD,4216
+55722,199 Pinnacle Drive,,CONDON,QLD,4815
+55758,62A Mitchell Avenue,,MURRAY BRIDGE EAST,SA,5253
+55764,80 Bradys Lake Road,,BRADYS LAKE,TAS,7140
+55776,43 Gillin Park,,Warrnambool,VIC,3280
