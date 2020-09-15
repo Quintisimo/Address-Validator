@@ -605,7 +605,7 @@ namespace AddressValidator
             if (houseId == null) houseId = await GetAddressAsync(addressIdRange, sqlParams, streetId, db, timeout);
             return houseId;
         }
-        private static string GetStreetNumber(string streetNumber)
+        internal static string GetStreetNumber(string streetNumber)
         {
             var stringBuilder = new StringBuilder();
             foreach (var c in streetNumber)
@@ -871,23 +871,23 @@ namespace AddressValidator
         private static async Task<List<AddressLocality>> AddressIds(Address address, Locality locality)
         {
             bool tryStreetMisspelled = false;
-            var streets = GetStreet(address, locality, address.StreetData.Item1, false);
+            var streets = GetStreet(address, locality, address.StreetName, false);
             ConcurrentBag<AddressLocality> addressBag = new ConcurrentBag<AddressLocality>();
             List<AddressLocality> addressIds = new List<AddressLocality>();
 
-            if (streets.Count == 0) streets = GetStreet(address, locality, address.StreetData.Item1, true);
+            if (streets.Count == 0) streets = GetStreet(address, locality, address.StreetName, true);
 
             if (streets.Count < 50)
             {
-                foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetData.Item2, streets.Count, address));
+                foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetNumber, streets.Count, address));
                 addressIds = addressBag.ToArray().Where(s => s != null && !string.IsNullOrEmpty(s.addressId)).Distinct().ToList();
 
                 if (addressIds.Count == 0)
                 {
-                    streets = GetStreet(address, locality, address.StreetData.Item1, true);
+                    streets = GetStreet(address, locality, address.StreetName, true);
                     if (streets.Count < 50)
                     {
-                        foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetData.Item2, streets.Count, address));
+                        foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetNumber, streets.Count, address));
                         addressIds = addressBag.ToList().Where(s => s != null && !string.IsNullOrEmpty(s.addressId)).Distinct().ToList();
 
                     }
@@ -905,8 +905,8 @@ namespace AddressValidator
             }
             if (addressIds.Count == 0 || tryStreetMisspelled)
             {
-                streets = GetStreet(address, locality, address.StreetData.Item1, false, true);
-                foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetData.Item2, streets.Count, address));
+                streets = GetStreet(address, locality, address.StreetName, false, true);
+                foreach (var street in streets) addressBag.Add(await GetAddress(street, address.StreetNumber, streets.Count, address));
                 addressIds = addressBag.ToArray().Where(s => s != null && !string.IsNullOrEmpty(s.addressId)).Distinct().ToList();
             }
             return addressIds.Distinct().ToList();
@@ -948,7 +948,7 @@ namespace AddressValidator
                         else
                         {
                             stateId = 0;
-                            if (postcodeLocalities.ContainsKey(address.Postcode))
+                            if (address.Postcode != null && postcodeLocalities.ContainsKey(address.Postcode))
                             {
                                 var postcodeLoc1 = postcodeLocalities[address.Postcode].Values.FirstOrDefault();
                                 if (postcodeLoc1 != null) stateId = postcodeLoc1.StateId;
@@ -965,7 +965,7 @@ namespace AddressValidator
                         postcodeLoc = nameLocalities[stateId][address.Locality.ToUpper()].Values.ToList();
                     }
 
-                    if (postcodeLoc == null && postcodeLocalities.ContainsKey(address.Postcode))
+                    if (postcodeLoc == null && address.Postcode != null && postcodeLocalities.ContainsKey(address.Postcode))
                     {
                         postcodeLoc = postcodeLocalities[address.Postcode].Values.ToList();
 
@@ -977,14 +977,13 @@ namespace AddressValidator
                     }
 
                     
-                    if (postcodeLoc != null && postcodeLoc.Count > 0)
+                    if (postcodeLoc != null && address.Postcode != null && postcodeLoc.Count > 0)
                     {
                         var temp = postcodeLoc.Where(l => l.Postcode == address.Postcode).ToList();
                         if (temp.Count > 0) postcodeLoc = temp;
 
                         temp = postcodeLoc.Where(l => !l.IsAlias).ToList();
                         if (temp.Count > 0) postcodeLoc = temp;
-
                     }
 
 
@@ -1023,7 +1022,7 @@ namespace AddressValidator
                         each.Stop();
                         Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms, {address.CustomerId}");
                         address.AddressIds = addressIds;
-                        Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()} {address.StreetData.Item2.ToUpper()} ");
+                        Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetNumber.ToUpper()} {address.StreetName.ToUpper()} ");
                         if (addressIds.Count > 0)
                         {
                             if (addressIds.Count > 1)
@@ -1140,13 +1139,12 @@ namespace AddressValidator
                     if (!reader.IsDBNull(3)) item.Locality = reader.GetString(3);
                     if (!reader.IsDBNull(4)) item.State = reader.GetString(4);
                     if (!reader.IsDBNull(5)) item.Postcode = reader.GetString(5);
-                    if (item.CustomerId > 0 && !string.IsNullOrWhiteSpace(item.StreetData.Item1) && !string.IsNullOrWhiteSpace(item.StreetData.Item2)
-                        && !string.IsNullOrWhiteSpace(item.Locality) && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode))
+                    if (item.CustomerId > 0 && !string.IsNullOrWhiteSpace(item.StreetName) && !string.IsNullOrWhiteSpace(item.StreetNumber)
+                        && (!string.IsNullOrWhiteSpace(item.Locality) || !string.IsNullOrWhiteSpace(item.Postcode)) && !string.IsNullOrWhiteSpace(item.State))
                     {
                         addresses.Add(item);
                     }
-                    else if (item.CustomerId > 0 && item.StreetData.Item1 == null && item.StreetData.Item2.ToUpper().StartsWith("PO BOX") && !string.IsNullOrWhiteSpace(item.Locality)
-                        && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode))
+                    else if (item.CustomerId > 0 && item.IsPostBox && !string.IsNullOrWhiteSpace(item.Locality) && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode))
                     {
                         item.IsPostBox = true;
                         addresses.Add(item);
@@ -1157,7 +1155,7 @@ namespace AddressValidator
                     }
                 }
             }
-            UpdateAddressListAsync(invalid).ContinueWith(t => Console.WriteLine(t.Exception), TaskContinuationOptions.OnlyOnFaulted);
+            //UpdateAddressListAsync(invalid).ContinueWith(t => Console.WriteLine(t.Exception), TaskContinuationOptions.OnlyOnFaulted);
             return addresses;
         }
     }
@@ -1167,32 +1165,84 @@ namespace AddressValidator
         public long CustomerId { get; set; }
 
         private string state;
+        private string addressLine;
         public string State { get { return state; } set { state = RemoveSpaces(value); } }
 
         private string locality;
         public string Locality { get { return locality; } set { locality = RemoveSpaces(value); } }
-        public string AddressLine { set { StreetData = StreetName(value); } }
+        public string AddressLine {
+            set {
+                addressLine = value;
+                SplitStreet(value);
+            }
+            get { return addressLine; }
+        }
+
+        public bool MailService { get; set; }
         public string Postcode { get; set; }
         public bool IsPostBox { get; set; }
+        public bool IsBuilding { get; set; }
         public bool ValidPostBox { get; set; }
-        public string[] StreetNameParts { get; set; } 
+        public StreetSegment[] StreetNameParts { get; set; }
+
+        public string StreetName { get; private set; }
+        public string StreetNumber { get; private set; }
         
         public List<AddressLocality> AddressIds { get; set; }
 
-        public Tuple<string, string> StreetData { get; private set; }
-        private Tuple<string, string> StreetName(string streetCombined)
+        private void SplitStreet(string streetCombined)
         {
-            StreetNameParts = streetCombined.ToUpper().Split();
-            Match numberCheck = Regex.Match(streetCombined, @"\d+");
-            Match streetNumber = Regex.Match(streetCombined, @"(.*)\d+[A-z]?");
-            Match postbpox = Regex.Match(streetCombined, @"P\.*O\.* BOX", RegexOptions.IgnoreCase);
+            StreetNameParts = streetCombined.ToUpper().Split().Select(s => new StreetSegment(s)).ToArray();
 
-            if (!numberCheck.Success) return Tuple.Create(streetCombined, streetNumber.Value);
-            if (streetNumber.Success && !postbpox.Success) return Tuple.Create(RemoveSpaces(streetCombined.Substring(streetNumber.Index + streetNumber.Length).Trim()), streetNumber.Value);
-            return Tuple.Create<string, string>(null, streetNumber.Value);
+            if (StreetNameParts.Length > 1)
+            {
+                for (int i = StreetNameParts.Length - 1; i > -1; i--)
+                {
+                    var temp = StreetNameParts[i];
+                    if (temp.HasNumber)
+                    {
+                        StreetNumber = temp.Number;
+                        for (int j = i + 1; j < StreetNameParts.Length; j++)
+                        {
+                            StreetName += " " + StreetNameParts[j].Segment;
+                        }
+                        break;
+                    }
+                }
+
+
+                if (StreetNameParts[0].Segment == "MS" && StreetNameParts[1].HasNumber)
+                {
+                    MailService = true;
+
+                }
+                else if (StreetNameParts[0].Segment == "PO" && StreetNameParts.Length > 2 && StreetNameParts[2].HasNumber)
+                {
+                    IsPostBox = true;
+                }
+            }
+            else
+            {
+                StreetName = StreetNameParts[0].Segment;
+                IsBuilding = true;
+            }
         }
 
         private static string RemoveSpaces(string str) => Regex.Replace(str, @"\s+|/", @" ").Trim();
+    }
+
+    internal class StreetSegment 
+    {
+        public string Segment;
+        public string Number;
+        public bool HasNumber;
+
+        public StreetSegment(string str)
+        {
+            Segment = str;
+            Number = Database.GetStreetNumber(str);
+            if (!string.IsNullOrWhiteSpace(Number)) HasNumber = true;
+        }
     }
 
     internal class Locality
