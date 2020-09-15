@@ -956,8 +956,6 @@ namespace AddressValidator
                         }
                     }
 
-                    //var memTime = System.Diagnostics.Stopwatch.StartNew();
-                    Locality locality = null;
                     var stateLocalities = Database.stateLocalities[stateId];
 
                     
@@ -987,64 +985,85 @@ namespace AddressValidator
                         temp = postcodeLoc.Where(l => !l.IsAlias).ToList();
                         if (temp.Count > 0) postcodeLoc = temp;
 
-                        if (postcodeLoc.Count != 1)
-                        {
-                            var distances = postcodeLoc.ConvertAll(l => Levenshtein.Distance(l.Name, address.Locality));
-                            locality = postcodeLoc[distances.IndexOf(distances.Min())];
-                        }
-                        else locality = postcodeLoc.First();
-                    }
-                    //}
-
-                    if (locality != null && locality.IsAlias)
-                    {
-                        locality = localities[locality.Pid];
                     }
 
-                    //memTime.Stop();
-                    if (locality == null)
+
+                    if (!address.IsPostBox)
                     {
-                        var sts = streets.Values.Where(x => x.Name == string.Join(" ", address.StreetNameParts.Take(address.StreetNameParts.Length - 1))).ToList();
-                        //TODO
-                    }
-                    List<AddressLocality> addressIds;
-                    if (locality != null)
-                    {
-                        addressIds = await AddressIds(address, locality);
-                    }
-                    else
-                    {
-                        addressIds = new List<AddressLocality>();
-                    }
-                    each.Stop();
-                    Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms, {address.CustomerId}");
-                    address.AddressIds = addressIds;
-                    Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()} {address.StreetData.Item2.ToUpper()} ");
-                    if (addressIds.Count > 0)
-                    {
-                        if (addressIds.Count > 1)
+                        Locality locality = null;
+                        if (postcodeLoc != null && postcodeLoc.Count > 0)
                         {
-                            addressIds = addressIds.Distinct().ToList();
+                            if (postcodeLoc.Count != 1)
+                            {
+                                var distances = postcodeLoc.ConvertAll(l => Levenshtein.Distance(l.Name, address.Locality));
+                                locality = postcodeLoc[distances.IndexOf(distances.Min())];
+                            }
+                            else locality = postcodeLoc.First();
                         }
-                        if (addressIds.Count > 1)
+                        
+                        if (locality != null && locality.IsAlias)
                         {
-                            multiMatch++;
+                            locality = localities[locality.Pid];
+                        }
+
+                        if (locality == null)
+                        {
+                            var sts = streets.Values.Where(x => x.Name == string.Join(" ", address.StreetNameParts.Take(address.StreetNameParts.Length - 1))).ToList();
+                            //TODO
+                        }
+                        List<AddressLocality> addressIds;
+                        if (locality != null)
+                        {
+                            addressIds = await AddressIds(address, locality);
                         }
                         else
                         {
-                            matched++;
+                            addressIds = new List<AddressLocality>();
                         }
-                        foreach (var addressId in addressIds)
+                        each.Stop();
+                        Console.WriteLine($"{addressIds.Count} Matches - {each.ElapsedMilliseconds} ms, {address.CustomerId}");
+                        address.AddressIds = addressIds;
+                        Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()} {address.StreetData.Item2.ToUpper()} ");
+                        if (addressIds.Count > 0)
                         {
-                            Console.WriteLine($"Found Locality: {addressId.StreetLoc.Locality.Name} Expected Street: {addressId.StreetLoc.Name} {addressId.StreetLoc.Type} {addressId.CombinedStreet}, {addressId.addressId} ");
+                            if (addressIds.Count > 1)
+                            {
+                                addressIds = addressIds.Distinct().ToList();
+                            }
+                            if (addressIds.Count > 1)
+                            {
+                                multiMatch++;
+                            }
+                            else
+                            {
+                                matched++;
+                            }
+                            foreach (var addressId in addressIds)
+                            {
+                                Console.WriteLine($"Found Locality: {addressId.StreetLoc.Locality.Name} Expected Street: {addressId.StreetLoc.Name} {addressId.StreetLoc.Type} {addressId.CombinedStreet}, {addressId.addressId} ");
+                            }
                         }
+                        else
+                        {
+                            notMatched++;
+                            //Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()} {address.StreetData.Item2.ToUpper()} ");
+                        }
+                        Console.WriteLine();
                     }
                     else
                     {
-                        notMatched++;
-                        //Console.WriteLine($"Expected Locality: {address.Locality} Expected Street: {address.StreetData.Item1.ToUpper()} {address.StreetData.Item2.ToUpper()} ");
+                        if (postcodeLoc != null && postcodeLoc.Count > 0)
+                        {
+                            foreach(var locality in postcodeLoc)
+                            {
+                                if (locality != null && locality.Name.Split(' ').All(word => address.Locality.ToUpper().Contains(word)))
+                                {
+                                    address.ValidPostBox = true;
+                                    break;
+                                }
+                            }
+                        }
                     }
-                    Console.WriteLine();
                 }
                 Console.WriteLine($"Total: {total}, matched: {matched}, Not Matched: {notMatched}, MultiMatch: {multiMatch}, {matched * 100.0m / total}, {(matched + multiMatch)* 100.0m / total}");
             }
@@ -1054,11 +1073,11 @@ namespace AddressValidator
             }
         }
 
-        internal static void UpdateAddressList(List<Address> addresses)
+        internal static async Task UpdateAddressListAsync(List<Address> addresses)
         {
             using (SqlConnection db = ConnectLoyaltyDB())
             {
-                db.Open();
+                await db.OpenAsync();
                 StringBuilder bulkQuery = new StringBuilder();
 
                 foreach (var address in addresses)
@@ -1070,26 +1089,32 @@ namespace AddressValidator
                     }
                     else if (address.AddressIds.Count > 0)
                     {
-                        bulkQuery.AppendLine($@"INSERT INTO [CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [GnafDetailPid])
-                                             VALUES ({address.CustomerId}, '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}', '{address.AddressIds.First().addressId}')");
-                        if (address.AddressIds.Count > 1)
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds.First()}')");
+                    }
+                    else if (address.ValidPostBox)
+                    {
+                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [IsPostBox], [Suburb])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now}', {1}, {address.Locality})");
+                    }
+                    else
+                    {
+                        for (int i = 0; i < address.AddressIds.Count; i++)
                         {
-                            for (int i = 1; i < address.AddressIds.Count; i++)
-                            {
-                                bulkQuery.AppendLine($@"INSERT INTO [CustomerAddress_NORMALIZED_Extra] ([CustomerID], [ProcessedOn], [GnafDetailPid])
-                                                 VALUES ({address.CustomerId}, '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}', '{address.AddressIds[i].addressId}')");
-                            }
+                            bulkQuery.AppendLine($@"INSERT INTO [dbo].[CustomerAddress_NORMALIZED_Extra] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                                 VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds[i]}')");
                         }
                     }
                 }
 
                 SqlCommand command = new SqlCommand(bulkQuery.ToString(), db);
-                command.ExecuteNonQuery();
+                await command.ExecuteNonQueryAsync();
             }
         }
         internal static List<Address> GetAddresses()
         {
             List<Address> addresses = new List<Address>();
+            List<Address> invalid = new List<Address>();
             using (SqlConnection db = ConnectLoyaltyDB())
             {
                 db.Open();
@@ -1116,10 +1141,23 @@ namespace AddressValidator
                     if (!reader.IsDBNull(4)) item.State = reader.GetString(4);
                     if (!reader.IsDBNull(5)) item.Postcode = reader.GetString(5);
                     if (item.CustomerId > 0 && !string.IsNullOrWhiteSpace(item.StreetData.Item1) && !string.IsNullOrWhiteSpace(item.StreetData.Item2)
-                        && !string.IsNullOrWhiteSpace(item.Locality) && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode)) addresses.Add(item);
+                        && !string.IsNullOrWhiteSpace(item.Locality) && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode))
+                    {
+                        addresses.Add(item);
+                    }
+                    else if (item.CustomerId > 0 && item.StreetData.Item1 == null && item.StreetData.Item2.ToUpper().StartsWith("PO BOX") && !string.IsNullOrWhiteSpace(item.Locality)
+                        && !string.IsNullOrWhiteSpace(item.State) && !string.IsNullOrWhiteSpace(item.Postcode))
+                    {
+                        item.IsPostBox = true;
+                        addresses.Add(item);
+                    }
+                    else
+                    {
+                        invalid.Add(item);
+                    }
                 }
             }
-
+            UpdateAddressListAsync(invalid).ContinueWith(t => Console.WriteLine(t.Exception), TaskContinuationOptions.OnlyOnFaulted);
             return addresses;
         }
     }
@@ -1135,7 +1173,8 @@ namespace AddressValidator
         public string Locality { get { return locality; } set { locality = RemoveSpaces(value); } }
         public string AddressLine { set { StreetData = StreetName(value); } }
         public string Postcode { get; set; }
-
+        public bool IsPostBox { get; set; }
+        public bool ValidPostBox { get; set; }
         public string[] StreetNameParts { get; set; } 
         
         public List<AddressLocality> AddressIds { get; set; }
