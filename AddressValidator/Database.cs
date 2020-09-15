@@ -1065,20 +1065,20 @@ namespace AddressValidator
                 {
                     if (address.AddressIds == null || address.AddressIds.Count == 0)
                     {
-                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn])
-                                             VALUES ({address.CustomerId}, '{DateTime.Now}')");
+                        bulkQuery.AppendLine($@"INSERT INTO [CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}')");
                     }
-                    else if (address.AddressIds.Count == 1)
+                    else if (address.AddressIds.Count > 0)
                     {
-                        bulkQuery.AppendLine($@"INSERT INTO [KIALSVR05].[Loyalty].[dbo].[CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [GnafDetailPid])
-                                             VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds.First()}')");
-                    }
-                    else
-                    {
-                        for (int i = 0; i < address.AddressIds.Count; i++)
+                        bulkQuery.AppendLine($@"INSERT INTO [CustomerAddress_NORMALIZED] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                             VALUES ({address.CustomerId}, '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}', '{address.AddressIds.First().addressId}')");
+                        if (address.AddressIds.Count > 1)
                         {
-                            bulkQuery.AppendLine($@"INSERT INTO [dbo].[CustomerAddress_NORMALIZED_Extra] ([CustomerID], [ProcessedOn], [GnafDetailPid])
-                                                 VALUES ({address.CustomerId}, '{DateTime.Now}', '{address.AddressIds[i]}')");
+                            for (int i = 1; i < address.AddressIds.Count; i++)
+                            {
+                                bulkQuery.AppendLine($@"INSERT INTO [CustomerAddress_NORMALIZED_Extra] ([CustomerID], [ProcessedOn], [GnafDetailPid])
+                                                 VALUES ({address.CustomerId}, '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}', '{address.AddressIds[i].addressId}')");
+                            }
                         }
                     }
                 }
@@ -1093,7 +1093,7 @@ namespace AddressValidator
             using (SqlConnection db = ConnectLoyaltyDB())
             {
                 db.Open();
-                string query = @"SELECT TOP (15000)
+                string query = @"SELECT TOP (1000)
                                 c.CustomerID,
                                 c.AddressLine1,
                                 c.AddressLine2,
