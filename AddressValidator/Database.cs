@@ -1157,7 +1157,7 @@ namespace AddressValidator
                         invalid = "1";
                     }
                     string canLookup = "0";
-                    if (!address.CanLookup)
+                    if (address.CanLookup)
                     {
                         canLookup = "1";
                     }
