@@ -31,7 +31,6 @@ namespace AddressValidator
                     });
                     t2.Wait();
                     Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
-                    //count = 0;
                 }
                 Console.WriteLine($"Process complete, press enter key to exit.");
                 Console.ReadLine();
