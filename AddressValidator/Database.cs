@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Device.Location;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -101,17 +102,17 @@ namespace AddressValidator
             using (SqlConnection db = Connect())
             {
                 SqlCommand query = new SqlCommand(@"SELECT state_pid, state_abbreviation, state_name FROM STATE
-                                                      SELECT code, name FROM STREET_TYPE_AUT
-                                                      SELECT DISTINCT l.locality_pid, l.locality_name, l.state_pid, coalesce(coalesce(ad.postcode, l.primary_postcode), '') postcode, locality_class_code 
-                                                      FROM LOCALITY l LEFT JOIN (SELECT DISTINCT locality_pid, postcode FROM ADDRESS_DETAIL) ad on l.locality_pid = ad.locality_pid
-                                                      SELECT oitpostcode, name, stateId, pid, created, reason from OITPOSTCODES
-                                                      SELECT street_locality_pid, street_name, street_type_code, street_suffix_code, locality_pid from STREET_LOCALITY WHERE date_retired IS NULL
-                                                      SELECT street_locality_pid, street_name, street_type_code, street_suffix_code from STREET_LOCALITY_ALIAS WHERE date_retired IS NULL
-                                                      SELECT locality_pid, name, postcode, state_pid FROM LOCALITY_ALIAS WHERE date_retired IS NULL
-                                                      SELECT code, name FROM STREET_SUFFIX_AUT
-                                                      SELECT [locality_pid],[neighbour_locality_pid] FROM [LOCALITY_NEIGHBOUR] where[date_retired] is null
-                                                      SELECT [street_locality_pid],coalesce(Min([flat_number]), 0),coalesce(max([flat_number]),0),coalesce(min([level_number]),0),coalesce(max([level_number]),0),
-                                                      coalesce(min([number_first]),0),coalesce(max([number_first]),0),count(*) FROM [ADDRESS_DETAIL] group by [street_locality_pid]"
+                                                  SELECT code, name FROM STREET_TYPE_AUT
+                                                  SELECT DISTINCT l.locality_pid, l.locality_name, l.state_pid, coalesce(coalesce(ad.postcode, l.primary_postcode), '') postcode, locality_class_code, coalesce(lp.latitude, 0), coalesce(lp.longitude, 0) 
+                                                  FROM LOCALITY l LEFT JOIN (SELECT DISTINCT locality_pid, postcode FROM ADDRESS_DETAIL) ad on l.locality_pid = ad.locality_pid LEFT JOIN LOCALITY_POINT lp on lp.locality_pid = l.locality_pid
+                                                  SELECT o.oitpostcode, o.name, o.stateId, o.pid, o.created, o.reason, coalesce(l.latitude, 0), coalesce(l.longitude, 0) from OITPOSTCODES o LEFT JOIN LOCALITY_POINT l on o.pid = l.locality_pid
+                                                  SELECT street_locality_pid, street_name, street_type_code, street_suffix_code, locality_pid from STREET_LOCALITY WHERE date_retired IS NULL
+                                                  SELECT street_locality_pid, street_name, street_type_code, street_suffix_code from STREET_LOCALITY_ALIAS WHERE date_retired IS NULL
+                                                  SELECT la.locality_pid, la.name, la.postcode, la.state_pid, lp.latitude, lp.longitude FROM LOCALITY_ALIAS la LEFT JOIN LOCALITY_POINT lp on la.locality_pid = lp.locality_pid WHERE la.date_retired IS NULL
+                                                  SELECT code, name FROM STREET_SUFFIX_AUT
+                                                  SELECT locality_pid, neighbour_locality_pid FROM LOCALITY_NEIGHBOUR where date_retired is null
+                                                  SELECT street_locality_pid, coalesce(Min(flat_number), 0), coalesce(max(flat_number),0), coalesce(min(level_number), 0),coalesce(max(level_number), 0),
+                                                  coalesce(min(number_first), 0), coalesce(max(number_first), 0), count(*) FROM ADDRESS_DETAIL GROUP BY street_locality_pid"
                                                   , db);
                 await query.Connection.OpenAsync();
                 SqlDataReader reader = await query.ExecuteReaderAsync();
@@ -158,7 +159,9 @@ namespace AddressValidator
                             Name = reader.GetString(1),
                             Pid = reader.GetString(0),
                             StateId = stateId,
-                            Postcode = reader.GetString(3).PadLeft(4, '0')
+                            Postcode = reader.GetString(3).PadLeft(4, '0'),
+                            Lat = decimal.ToDouble(reader.GetDecimal(5)),
+                            Long = decimal.ToDouble(reader.GetDecimal(6))
                         };
 
                         string localityCode = reader.GetString(4);
@@ -228,7 +231,9 @@ namespace AddressValidator
                             Pid = reader.GetString(3),
                             Name = reader.GetString(1),
                             StateId = reader.GetByte(2),
-                            Postcode = reader.GetInt16(0).ToString("0000")
+                            Postcode = reader.GetInt16(0).ToString("0000"),
+                            Lat = decimal.ToDouble(reader.GetDecimal(6)),
+                            Long = decimal.ToDouble(reader.GetDecimal(7))
                         };
 
                         if (!stateLocalities.ContainsKey(loc.StateId)) stateLocalities.Add(loc.StateId, new SortedList<string, Locality>());
@@ -323,7 +328,9 @@ namespace AddressValidator
                             Name = reader.GetString(1),
                             StateId = stateId,
                             Postcode = "",
-                            IsAlias = true
+                            IsAlias = true,
+                            Lat = decimal.ToDouble(reader.GetDecimal(4)),
+                            Long = decimal.ToDouble(reader.GetDecimal(5))
                         };
 
                         if (!reader.IsDBNull(2)) loc.Postcode = reader.GetString(2).PadLeft(4, '0');
@@ -607,6 +614,17 @@ namespace AddressValidator
                     {
                         matchedStreets = temp;
                     }
+                }
+                
+                if (matchedStreets.Count > 1)
+                {
+                    var locCoord = new GeoCoordinate(locality.Lat, locality.Long);
+                    var physicalDistance = matchedStreets.Select(s => locCoord.GetDistanceTo(new GeoCoordinate(s.Locality.Lat, s.Locality.Long))).ToList();
+                    var newList = new List<StreetLocality>
+                    {
+                    matchedStreets[physicalDistance.IndexOf(physicalDistance.Min())]
+                    };
+                    matchedStreets = newList;
                 }
             }
             return matchedStreets;
@@ -1003,7 +1021,7 @@ namespace AddressValidator
                         }
                     }
                 }
-                if (Database.stateLocalities.ContainsKey(stateId))
+                if (stateLocalities.ContainsKey(stateId))
                 {
                     total++;
                     address.CanLookup = true;
@@ -1157,7 +1175,7 @@ namespace AddressValidator
                         invalid = "1";
                     }
                     string canLookup = "0";
-                    if (address.CanLookup)
+                    if (!address.CanLookup)
                     {
                         canLookup = "1";
                     }
@@ -1195,7 +1213,7 @@ namespace AddressValidator
                 }
             }
         }
-        internal static List<Address> GetAddresses()
+        internal static List<Address> GetAddresses(ref int count)
         {
             List<Address> addresses = new List<Address>();
             List<Address> invalid = new List<Address>();
@@ -1217,8 +1235,10 @@ namespace AddressValidator
 
                 SqlCommand command = new SqlCommand(query, db);
                 SqlDataReader reader = command.ExecuteReader();
+                count = 0;
                 while (reader.Read())
                 {
+                    count++;
                     Address item = new Address();
                     if (!reader.IsDBNull(0)) item.CustomerId = reader.GetInt64(0);
                     if (!reader.IsDBNull(1)) item.AddressLine = reader.GetString(1);
@@ -1347,6 +1367,10 @@ namespace AddressValidator
         public string Postcode { get; set; }
         public byte ClassCodeOrder { get; set; }
         public List<string> Postcodes { get; set; }
+
+        public double Lat;
+
+        public double Long;
 
         public bool IsAlias;
 

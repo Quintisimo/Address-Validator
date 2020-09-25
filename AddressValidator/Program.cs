@@ -12,15 +12,14 @@ namespace AddressValidator
 
         private static void ProcessDB()
         {
-            try
+            var t = Task.Run(async () => await Database.GetDBData());
+            t.Wait();
+            int count = int.MaxValue;
+            while (count > 0)
             {
-                var t = Task.Run(async () => await Database.GetDBData());
-                t.Wait();
-                int count = int.MaxValue;
-                while (count > 0)
+                try
                 {
-                    var addresses = Database.GetAddresses();
-                    count = addresses.Count;
+                    var addresses = Database.GetAddresses(ref count);
                     DiskLog.CreateFile();
                     System.Diagnostics.Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
                     var t2 = Task.Run(async () =>
@@ -32,16 +31,16 @@ namespace AddressValidator
                     t2.Wait();
                     Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
                 }
-                Console.WriteLine($"Process complete, press enter key to exit.");
-                Console.ReadLine();
+                catch (Exception e)
+                {
+                    PrintError(e, ref count);
+                }
             }
-            catch (Exception e)
-            {
-                PrintError(e);
-            }
+            Console.WriteLine($"Process complete, press enter key to exit.");
+            Console.ReadLine();
         }
 
-        private static void PrintError(Exception e)
+        private static void PrintError(Exception e, ref int count)
         {
             Console.WriteLine(e.Message);
             Console.Write("Restart [R] or Exit [E]: ");
@@ -50,7 +49,7 @@ namespace AddressValidator
 
             if (input == 'r')
             {
-                ProcessDB();
+                count = 0;
             }
             else if (input == 'e')
             {
@@ -59,7 +58,7 @@ namespace AddressValidator
             else
             {
                 Console.WriteLine("\nPlease enter a valid option");
-                PrintError(e);
+                PrintError(e, ref count);
             }
 
         }
